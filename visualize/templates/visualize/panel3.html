@@ -1,0 +1,181 @@
+{% load static %}
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.node {
+  cursor: pointer;
+}
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+.node--leaf {
+  /*fill: red;*/
+}
+.label {
+  font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+</style>
+
+
+<div class="card mb-3">
+<div class="card-header">
+    Skill Map for {{ job }} 
+    <script>
+        if ("{{year}}"==="2008_2018"){
+            document.write ( "(Change between 2008 and 2018)");
+        } else {
+            document.write ( "in {{year}}");
+        }
+    </script> 
+    (Click a task to zoom-in skill components)
+    <!--<button style="float:right; padding:0.1rem;" class="btn" onclick="location.href='{% static "data/xlsx/Panel 3.xlsx" %}'"><i class="fa fa-download"></i> Download</button>-->
+</div>
+
+<!-- size of card -->
+<div class="card-body" style="width:400; height:400;">
+    <svg id="chart" width="400" height="400"
+    viewBox="0 0 400 400"
+    perserveAspectRatio="xMinYMid">
+</div>
+
+<br>
+    <i> &nbsp; Note. The size of each skill is proportional to its importance to an occupation. The darker-red color indicates higher degree of automation. </i>
+</br>
+
+<!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
+</div>
+
+<script>
+var svg = d3.select("svg"),
+    margin = 25, 
+    //margin = 130,
+    diameter = +svg.attr("width"),
+    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+var color = d3.scaleLinear()
+    .domain([-1, 5])
+    .range(["hsl(197.4,84%,47%)", "hsl(197.4,47%,17%)"])
+    .interpolate(d3.interpolateHcl);
+    //.range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+var pack = d3.pack()
+    .size([diameter - margin, diameter - margin])
+    .padding(6);
+
+//d3.json("/static/zoomable/flare.json", function(error, root) {
+d3.json("/static/data/network/{{ code|safe }}.json", function(error, root) {    
+  if (error) throw error;
+  //console.log(root);
+  root = d3.hierarchy(root)
+      .sum(function(d) { return d.importance_{{year}}; }) //d.importgitance_{{year}}
+      .sort(function(a, b) { return b.value - a.value; });
+  var focus = root,
+      nodes = pack(root).descendants(),
+      view;    
+  var circle = g.selectAll("circle")
+    .data(nodes)
+    .enter().append("circle")
+      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+      .style("fill", function(d) { return d.parent ? d.children ? d3.rgb(19, 162, 220) : d3.rgb(d.data.r_{{ year|safe }},d.data.g_{{ year|safe }},d.data.b_{{ year|safe }}) : d3.rgb(255,255,255); })
+      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+      // .style("fill", function(d) { return d.parent ? d.children ? color(d.depth) : d3.rgb(d.data.r_{{ year|safe }},d.data.g_{{ year|safe }},d.data.b_{{ year|safe }}) : color(d.depth); })
+  var text = g.selectAll("text")
+    .data(nodes)
+    .enter().append("text")
+      .attr("class", "label")
+      .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
+      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+      .text(function(d) { return d.data.name; })
+      .style("font-size","10px")
+      .each(getSize)
+      .style("font-size", function(d){return d.parent === root? d.scale*12+"px": d.scale*6+"px";});
+  function getSize(d) {
+        var bbox = this.getBBox(),
+            cbbox = this.parentNode.getBBox(),
+            scale = Math.min(cbbox.width/bbox.width, cbbox.height/bbox.height);
+        d.scale = scale;
+      };
+  var node = g.selectAll("circle,text");
+  svg
+      .style("background", d3.rgb(255, 255, 255))
+      .on("click", function() { zoom(root); });
+      //.style("background", color(-1))
+
+  zoomTo([root.x, root.y, root.r * 2 + margin]);
+  function zoom(d) {
+    var focus0 = focus; focus = d;
+    var transition = d3.transition()
+        .duration(d3.event.altKey ? 7500 : 750)
+        .tween("zoom", function(d) {
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
+          return function(t) { zoomTo(i(t)); };
+        });
+    transition.selectAll("text")
+      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+        .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+  }
+  function zoomTo(v) {
+    var k = diameter / v[2]; view = v;
+    node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+    circle.attr("r", function(d) { return d.r * k; });
+  }
+});
+
+</script>
+
+<style>
+    #wrapper {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        /* padding-bottom will be overwritten by JavaScript later */
+        /*padding-bottom: 100%;*/
+    }
+    #wrapper > svg {
+        position: absolute;
+        /*height: 100%;*/
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    </style>
+
+<style>        
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+
+
+<script>
+var chart = $("#chart"),
+    aspect = chart.width() / chart.height(),
+    container = chart.parent();
+$(window).on("resize", function() {
+    if(container.width() > 800) {
+      var targetWidth = Math.max(container.width()*0.5,800);
+    }
+    else{
+      var targetWidth = container.width();
+    }
+    chart.attr("width", targetWidth);
+    chart.attr("height", Math.round(targetWidth / aspect));
+}).trigger("resize");
+
+</script>

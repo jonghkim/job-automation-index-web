@@ -1,0 +1,35 @@
+
+<!-- Sidebar -->
+<ul class="sidebar navbar-nav" id="sidebar-color">
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'visualize:automation_index'%}">
+    <i class="fas fa-fw fa-chart-line" style="color:black"></i>
+    <span class="sidebar-span-dark" >Automation Index</span>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'visualize:skill_map'%}">
+    <i class="fas fa-fw fa-network-wired" style="color:black"></i>
+    <span class="sidebar-span-dark">Skill Map</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'visualize:automation_ranking'%}">
+    <i class="fas fa-fw fa-chart-bar" style="color:black"></i>
+    <span class="sidebar-span-dark">Automation Ranking</span>
+    </a>
+</li>
+</ul>
+
+<style>
+    #sidebar-color {
+        background-color: #E5E6E7;
+    }
+    .sidebar-span-dark {
+        color: black;
+    }
+    .sidebar-span-dark:hover{
+        color: #13A2DC;
+    }    
+</style>

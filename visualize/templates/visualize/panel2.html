@@ -1,0 +1,26 @@
+{% load static %}
+
+<div class="card mb-3">
+<div class="card-header">
+    Task-Level Automation Index for {{job}}
+    <script>
+            if ("{{year}}"==="2008~2018"){
+                document.write ( "(Change between 2008 and 2018)");
+            } else {
+                document.write ( "in {{year}}");
+            }
+    </script>    
+</div>
+
+<div class="card-body">
+        <img src="data:image/png;base64,{{ task_importance|safe }}" class="img-fluid">
+</div>
+<!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
+</div>
+
+<style>        
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+</style>

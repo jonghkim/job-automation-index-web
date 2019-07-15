@@ -1,0 +1,31 @@
+{% load static %}
+<div class="card mb-3">
+<div class="card-header">
+    Basic Information for {{job}} 
+    <script>
+            if ("{{year}}"==="2008~2018"){
+                document.write ( "(Change between 2008 and 2018)");
+            } else {
+                document.write ( "in {{year}}");
+            }
+    </script>
+
+    <button style="float:right; padding:0.1rem;" class="btn" onclick="location.href='{% static "data/xlsx/Panel 1.xlsx" %}'">
+        <i class="fa fa-download"></i> Download
+    </button>
+</div>
+
+
+
+<div class="card-body">
+        <img src="data:image/png;base64,{{ task_automation|safe }}" class="img-fluid">
+</div>
+<!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
+</div>
+
+<style>        
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+</style>

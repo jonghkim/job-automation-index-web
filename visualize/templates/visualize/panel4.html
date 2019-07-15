@@ -1,0 +1,47 @@
+{% load static %}
+
+<!--<script src="https://cdn.jsdelivr.net/sorttable/2/sorttable.js"></script>-->
+<script src="{% static 'sorttable/sorttable.js' %}"></script>
+
+<!-- DataTables Example -->
+<div class="card mb-3">
+<div class="card-header">
+    Job Automation Ranking 
+    <script>
+            if ("{{year}}"==="2008~2018"){
+                document.write ( "(Change between 2008 and 2018)");
+            } else {
+                document.write ( "in {{year}}");
+            }
+    </script>    
+
+    (Click a column head to sort the column)
+    
+    <button style="float:right; padding:0.1rem;" class="btn" onclick="location.href='{% static "data/xlsx/Panel 4.xlsx" %}'"><i class="fa fa-download"></i> Download</button>
+
+</div>
+<div class="card-body">
+    <div class="table-responsive">
+        {% with template_name='visualize/panel4_'|add:year|add:".html" %}
+            {% include ""|add:template_name %}
+        {% endwith %}
+    </div>
+</div>
+<!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
+</div>
+
+<style>        
+
+tr, th {
+    text-align: center;
+}
+
+.sorttable_sorted {background-color: rgba( 142, 185, 217, 0.35 );}
+.sorttable_sorted_reverse {background-color: rgba( 142, 185, 217, 0.35 );}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+</style>
