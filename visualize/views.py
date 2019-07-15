@@ -128,7 +128,7 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
 
                 #axs[i].set_xlim(0, 5000000)
                 #axs[i].set_xlim(1, 5*1e6)
-                axs[i].set_xlim(1*1e2, 5*1e7)
+                axs[i].set_xlim(1*1e2, 1e7)
                 #axs[i].set_xlim(100, 1000000)
 
                 axs[i].set_xticklabels([100,1000,10000,100000,1000000,10000000,500000000])
