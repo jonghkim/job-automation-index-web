@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
+
 import numpy as np
 from io import BytesIO
 import base64
@@ -101,9 +103,11 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
                 #axs[i].set_xlim(1, 3*1e5)
                 axs[i].set_xlim(2**13, 2**18)
 
-                axs[i].xaxis.set_ticklabels([10000,50000,100000,150000,200000,250000,300000])
+                axs[i].set_xticklabels([10000,50000,100000,150000,200000,250000,300000])
 
-
+                #axs[i].xaxis.set_major_formatter(mtick.FuncFormatter(lambda x, p: format(int(x), ',')))
+                #axs[i].set_xticklabels([10000,50000,100000,150000,200000,250000,300000])
+                
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
                 #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
@@ -124,7 +128,11 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
 
                 #axs[i].set_xlim(0, 5000000)
                 #axs[i].set_xlim(1, 5*1e6)
-                axs[i].set_xlim(1*1e2, 1e7)
+                axs[i].set_xlim(1*1e2, 5*1e7)
+                #axs[i].set_xlim(100, 1000000)
+
+                axs[i].set_xticklabels([100,1000,10000,100000,1000000,10000000,500000000])
+
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
                 #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
@@ -206,6 +214,98 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
 
     return task_automation
 
+# Create your views here.
+def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):    
+    #### TASK IMPORTANCE ####    
+    csvpath = djangoSettings.STATICFILES_DIRS[0] +'/data/csv/Panel 2.csv'
+    panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
+    labels = np.array(["Conflict Resolution", "Managerial Task", "Communication", "Information Processing", "Dynamic Physical Task", "Equipment Operation",
+                    "Outdoor Labor", "Hazardous and Group Task", "Clerical Task", "Equipment Maintenance", "Physical Task", 
+                    "Operation Monitoring", "Strategic Thinking", "System Analysis"])
+
+    if job != 'TOTAL AVERAGE':
+        focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
+        max_ytick = max(focal_stats)
+        focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
+
+        total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels].iloc[0].tolist()
+        total_stats=np.concatenate((total_stats,[total_stats[0]]))
+
+        angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)        
+        angles=np.concatenate((angles,[angles[0]]))
+
+        fig = plt.figure(figsize=(8, 8))
+
+        ax = fig.add_subplot(111, polar=True)     
+
+        if year =='2018' or year=='2008':
+            ax.plot(angles, focal_stats, 'o-', linewidth=2)
+            ax.fill(angles, focal_stats, alpha=0.25)
+
+            ax.plot(angles, total_stats, 'o-', linewidth=2)
+            ax.fill(angles, total_stats, alpha=0.25)
+        else:
+            ax.plot(angles, focal_stats, 'o-', linewidth=2)
+            ax.plot(angles, total_stats, 'o-', linewidth=2)
+            neg = np.minimum(focal_stats, total_stats)
+            pos = np.maximum(focal_stats, total_stats)
+            ax.fill_between(angles, 0, neg, alpha=0.25)
+            ax.fill_between(angles, 0, pos, alpha=0.25)
+
+        ax.set_thetagrids(angles * 180/np.pi, labels)
+        ax.grid(True)
+
+        ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
+
+    elif job == 'TOTAL AVERAGE':
+        focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
+        max_ytick = max(focal_stats)
+        focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
+
+        angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)        
+        angles=np.concatenate((angles,[angles[0]]))
+
+        fig = plt.figure(figsize=(8, 8))
+
+        ax = fig.add_subplot(111, polar=True)
+
+        if year =='2018' or year=='2008':
+            ax.plot(angles, focal_stats, 'o-', linewidth=2)
+            ax.fill(angles, focal_stats, alpha=0.25)
+        else:
+            ax.plot(angles, focal_stats, 'o-', linewidth=2)
+
+        ax.set_thetagrids(angles * 180/np.pi, labels)
+        ax.grid(True)
+        ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
+
+    if year =='2018' or year=='2008':
+        ax.set_rorigin(0)
+        if max_ytick < 100:
+            ax.set_ylim(0,100)
+            ax.set_yticks(np.arange(0,100,10))
+        else:
+            ax.set_ylim(0,150)
+            ax.set_yticks(np.arange(0,150,10))
+
+    elif year=='2008~2018':
+        ax.set_rorigin(-60)
+        ax.set_ylim(-60,60)
+        ax.set_yticks(np.arange(-60,60,10))
+
+    plt.tight_layout()
+
+    buffer = BytesIO()
+    plt.savefig(buffer, format='png')
+    buffer.seek(0)
+    image_png = buffer.getvalue()
+    buffer.close()
+
+    task_importance = base64.b64encode(image_png)
+    task_importance = task_importance.decode('utf-8')
+    return task_importance
+
+"""
 # Create your views here.
 def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):    
     #### TASK IMPORTANCE ####    
@@ -295,7 +395,7 @@ def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):
     task_importance = base64.b64encode(image_png)
     task_importance = task_importance.decode('utf-8')
     return task_importance
-
+"""
 def job_description(job='TOTAL AVERAGE'):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
     panel_df = pd.read_csv(csvpath, encoding='utf-8')
