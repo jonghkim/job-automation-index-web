@@ -283,7 +283,7 @@ def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):
             ax.set_xticks(np.arange(-5,6,1))
         else:
             ax.set_xlim(-50,50)
-            ax.set_xticks(np.arange(-50,50,10))
+            ax.set_xticks(np.arange(-50,60,10))
 
     plt.tight_layout()
 
