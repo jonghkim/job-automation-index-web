@@ -283,7 +283,7 @@ def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):
             ax.set_xticks(np.arange(-5,6,1))
         else:
             ax.set_xlim(-50,50)
-            ax.set_xticks(np.arange(-50,60,10))
+            ax.set_xticks(np.arange(-50,50,10))
 
     plt.tight_layout()
 
@@ -478,15 +478,17 @@ def skill_map(request):
             year = form.cleaned_data['year']
             code = form.cleaned_data['occupation']
             job, code, code_desc = code_description(code)
-   
+
+            return render(request, 'visualize/skill_map.html', {'year':year, 'job':job, 'code':code,
+                    'form': form, 'code_description':code_desc})        
     else:
         form = SkillMap()
         year = '2008_2018'
         code = '00-0000'
         job, code , code_desc = code_description()        
-    
-    return render(request, 'visualize/skill_map.html', {'year':year, 'job':job, 'code':code,
-            'form': form, 'code_description':code_desc,'code':code})    
+        
+        return render(request, 'visualize/skill_map.html', {'year':year, 'job':job, 'code':code,
+                'form': form, 'code_description':code_desc})    
 
 def automation_ranking(request):
     if request.method == 'POST':
