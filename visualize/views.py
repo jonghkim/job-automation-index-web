@@ -103,10 +103,7 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
                 #axs[i].set_xlim(1, 3*1e5)
                 axs[i].set_xlim(2**13, 2**18)
 
-                axs[i].set_xticklabels([10000,50000,100000,150000,200000,250000,300000])
-
-                #axs[i].xaxis.set_major_formatter(mtick.FuncFormatter(lambda x, p: format(int(x), ',')))
-                #axs[i].set_xticklabels([10000,50000,100000,150000,200000,250000,300000])
+                axs[i].set_xticklabels([format(label, ',.0f') for label in [10000,50000,100000,150000,200000,250000,300000]])
                 
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
@@ -130,8 +127,8 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
                 #axs[i].set_xlim(1, 5*1e6)
                 axs[i].set_xlim(1*1e2, 1e7)
                 #axs[i].set_xlim(100, 1000000)
-
-                axs[i].set_xticklabels([100,1000,10000,100000,1000000,10000000,500000000])
+                
+                axs[i].set_xticklabels([format(label, ',.0f') for label in [100,1000,10000,100000,1000000,10000000,50000000]])
 
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
