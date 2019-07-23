@@ -221,63 +221,87 @@ def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):
                     "Outdoor Labor", "Hazardous and Group Task", "Clerical Task", "Equipment Maintenance", "Physical Task", 
                     "Operation Monitoring", "Strategic Thinking", "System Analysis"])
     
-    if job != 'TOTAL AVERAGE':
-        focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
-        max_xtick = max(focal_stats.iloc[0].tolist())
-
-        total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels]
-
-        barh_df = focal_stats.append(total_stats)
-        barh_df.index = [job,'TOTAL AVERAGE']
-
-        barh_df = barh_df.T
-
-        ax=barh_df.plot.barh(figsize=(8, 8))
-
-        """
-        if year =='2018' or year=='2008':
-            ax.plot(angles, focal_stats, 'o-', linewidth=2)
-            ax.fill(angles, focal_stats, alpha=0.25)
-
-            ax.plot(angles, total_stats, 'o-', linewidth=2)
-            ax.fill(angles, total_stats, alpha=0.25)
-        else:
-            ax.plot(angles, focal_stats, 'o-', linewidth=2)
-            ax.plot(angles, total_stats, 'o-', linewidth=2)
-            neg = np.minimum(focal_stats, total_stats)
-            pos = np.maximum(focal_stats, total_stats)
-            ax.fill_between(angles, 0, neg, alpha=0.25)
-            ax.fill_between(angles, 0, pos, alpha=0.25)
-        """
-
-        ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
-
-    elif job == 'TOTAL AVERAGE':
-        focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
-        max_xtick = max(focal_stats.iloc[0].tolist())
-
-        focal_stats.index=['TOTAL_AVERAGE']
-        focal_stats = focal_stats.T
-        ax = focal_stats.plot.barh(figsize=(8, 8))
-
-        """
-        if year =='2018' or year=='2008':
-            ax.plot(angles, focal_stats, 'o-', linewidth=2)
-            ax.fill(angles, focal_stats, alpha=0.25)
-        else:
-            ax.plot(angles, focal_stats, 'o-', linewidth=2)
-        """
-        ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
-
     if year =='2018' or year=='2008':
-        if max_xtick < 100:
-            ax.set_xlim(0,100)
-            ax.set_xticks(np.arange(0,110,10))
+        if job != 'TOTAL AVERAGE':
+            focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
+            max_ytick = max(focal_stats)
+            focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
+
+            total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels].iloc[0].tolist()
+            total_stats=np.concatenate((total_stats,[total_stats[0]]))
+
+            angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)        
+            angles=np.concatenate((angles,[angles[0]]))
+
+            fig = plt.figure(figsize=(8, 8))
+
+            ax = fig.add_subplot(111, polar=True)    
+
+            ax.plot(angles, focal_stats, 'o-', linewidth=2)
+            ax.fill(angles, focal_stats, alpha=0.25)
+
+            ax.plot(angles, total_stats, 'o-', linewidth=2)
+            ax.fill(angles, total_stats, alpha=0.25)        
+
+            ax.set_thetagrids(angles * 180/np.pi, labels)
+            ax.grid(True)
+            ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
+
+        elif job == 'TOTAL AVERAGE':
+            focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
+            max_ytick = max(focal_stats)
+            focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
+
+            angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)        
+            angles=np.concatenate((angles,[angles[0]]))
+
+            fig = plt.figure(figsize=(8, 8))
+
+            ax = fig.add_subplot(111, polar=True)
+
+            if year =='2018' or year=='2008':
+                ax.plot(angles, focal_stats, 'o-', linewidth=2)
+                ax.fill(angles, focal_stats, alpha=0.25)
+            else:
+                ax.plot(angles, focal_stats, 'o-', linewidth=2)
+
+            ax.set_thetagrids(angles * 180/np.pi, labels)
+            ax.grid(True)
+            ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
+
+        ax.set_rorigin(0)
+        if max_ytick < 100:
+            ax.set_ylim(0,100)
+            ax.set_yticks(np.arange(0,100,10))
         else:
-            ax.set_xlim(0,150)
-            ax.set_xticks(np.arange(0,160,10))
+            ax.set_ylim(0,150)
+            ax.set_yticks(np.arange(0,150,10))
 
     elif year=='2008~2018':
+
+        if job != 'TOTAL AVERAGE':
+            focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
+            max_xtick = max(focal_stats.iloc[0].tolist())
+
+            total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels]
+
+            barh_df = focal_stats.append(total_stats)
+            barh_df.index = [job,'TOTAL AVERAGE']
+
+            barh_df = barh_df.T
+
+            ax=barh_df.plot.barh(figsize=(8, 8))
+            ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
+
+        elif job == 'TOTAL AVERAGE':
+            focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
+            max_xtick = max(focal_stats.iloc[0].tolist())
+
+            focal_stats.index=['TOTAL_AVERAGE']
+            focal_stats = focal_stats.T
+            ax = focal_stats.plot.barh(figsize=(8, 8))
+            ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
+
         if job == 'TOTAL AVERAGE':
             ax.set_xlim(-5,5)
             ax.set_xticks(np.arange(-5,6,1))
