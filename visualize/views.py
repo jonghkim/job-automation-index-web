@@ -39,7 +39,7 @@ def percentileofscore(a, score, kind='rank'):
     else:
         raise ValueError("kind can only be 'rank', 'strict', 'weak' or 'mean'")
 
-def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
+def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
     #### TASK AUTOMATION ####
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/Panel 1.csv'
     panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
@@ -103,7 +103,8 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
                 #axs[i].set_xlim(1, 3*1e5)
                 axs[i].set_xlim(2**13, 2**18)
 
-                axs[i].set_xticklabels([format(label, ',.0f') for label in [10000,50000,100000,150000,200000,250000,300000]])
+                #axs[i].set_xticklabels([format(label, ',.0f') for label in [10000,50000,100000,150000,200000,250000,300000]])
+                axs[i].set_xticklabels([label for label in [10000,50000,100000,150000,200000,250000,300000]])
                 
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
@@ -128,7 +129,8 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
                 axs[i].set_xlim(1*1e2, 1e7)
                 #axs[i].set_xlim(100, 1000000)
                 
-                axs[i].set_xticklabels([format(label, ',.0f') for label in [100,1000,10000,100000,1000000,10000000,50000000]])
+                #axs[i].set_xticklabels([format(label, ',.0f') for label in [100,1000,10000,100000,1000000,10000000,50000000]])
+                axs[i].set_xticklabels([label for label in [100,1000,10000,100000,1000000,10000000,50000000]])
 
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
@@ -212,16 +214,17 @@ def draw_task_automation(year='2008~2018', job='TOTAL AVERAGE'):
     return task_automation
 
 # Create your views here.
-def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):    
+def draw_task_importance(year='2018', job='TOTAL AVERAGE'):    
     #### TASK IMPORTANCE ####    
     csvpath = djangoSettings.STATICFILES_DIRS[0] +'/data/csv/Panel 2.csv'
     panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
     
-    labels = np.array(["Conflict Resolution", "Managerial Task", "Communication", "Information Processing", "Dynamic Physical Task", "Equipment Operation",
-                    "Outdoor Labor", "Hazardous and Group Task", "Clerical Task", "Equipment Maintenance", "Physical Task", 
-                    "Operation Monitoring", "Strategic Thinking", "System Analysis"])
-    
     if year =='2018' or year=='2008':
+        labels = np.array(["Operation Monitoring", "System Analysis", "Strategic Thinking","Conflict Resolution", 
+                        "Communication", "Managerial Task",  "Clerical Task", "Information Processing", 
+                        "Hazardous and Group Task", "Outdoor Labor", "Dynamic Physical Task", "Physical Task", 
+                        "Equipment Operation", "Equipment Maintenance"])                    
+        
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
             max_ytick = max(focal_stats)
@@ -278,7 +281,10 @@ def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):
             ax.set_yticks(np.arange(0,150,10))
 
     elif year=='2008~2018':
-
+        labels = np.array(["Hazardous and Group Task","Outdoor Labor","Dynamic Physical Task", "Physical Task",
+                         "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
+                         "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
+        
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
             max_xtick = max(focal_stats.iloc[0].tolist())

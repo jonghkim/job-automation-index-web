@@ -23,7 +23,7 @@ class JobAutomationIndexForm(forms.Form):
     occupation = forms.ChoiceField(choices=JOBS)
 
     #YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', '2008~2018'))
-    YEARS = (('2008~2018', 'Evolution during 2008-2018'),('2018', '2018'),('2008', '2008'))
+    YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', 'Change between 2008-2018'))
     
     year = forms.ChoiceField(choices=YEARS)
 
@@ -46,9 +46,10 @@ class SkillMap(forms.Form):
 
     occupation = forms.ChoiceField(choices=JOBS)
 
-    YEARS = (('2008_2018', 'Evolution during 2008-2018'),('2018', '2018'),('2008', '2008'))
+    #YEARS = (('2008_2018', 'Evolution during 2008-2018'),('2018', '2018'),('2008', '2008'))
+    YEARS = (('2018', '2018'),('2008', '2008'),('2008_2018', 'Change between 2008-2018'))
     year = forms.ChoiceField(choices=YEARS)
 
 class AutomationRanking(forms.Form):
-    YEARS = (('2008~2018', 'Evolution during 2008-2018'),('2018', '2018'),('2008', '2008'))
+    YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', 'Change between 2008-2018'))
     year = forms.ChoiceField(choices=YEARS)        
