@@ -4,6 +4,7 @@ from django.http import HttpResponse
 
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
+from  matplotlib import ticker
 
 import numpy as np
 from io import BytesIO
@@ -46,12 +47,12 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
 
     if year=='2018':
         if job=='TOTAL AVERAGE':
-            objects = ['Job Automation Index']
+            objects = ['Job Automation Index','Annual Wage']
         else:
             objects = ['Job Automation Index', 'Employment','Annual Wage']
     elif year=='2008':
         if job=='TOTAL AVERAGE':
-            objects = ['Job Automation Index']
+            objects = ['Job Automation Index','Annual Wage']
         else:
             objects = ['Job Automation Index', 'Employment','Annual Wage']
     elif year=='2008~2018':
@@ -61,12 +62,12 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
             objects = ['Job Automation Index Change', 'Wage Share Change']
     else:
         if job=='TOTAL AVERAGE':
-            objects = ['Job Automation Index']
+            objects = ['Job Automation Index','Annual Wage']
         else:
             objects = ['Job Automation Index', 'Employment','Annual Wage']
 
-    if len(objects) == 3 :
-        fig, axs = plt.subplots(len(objects), figsize=(7,3))
+    if (len(objects) == 3 or len(objects) == 2) and (year=='2018' or year=='2008'):
+        fig, axs = plt.subplots(len(objects), figsize=(7,len(objects)*1.3))
         
         for i, obj in enumerate(objects):
             if obj =='Job Automation Index':
@@ -80,6 +81,9 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
                 axs[i].set_yticklabels([])
 
                 axs[i].set_xlim(0, 100)
+                
+                plt.setp(axs[i].get_xticklabels(), rotation=30)
+
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
                 #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
@@ -90,8 +94,9 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
                 percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
                 #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
                 #percentile = percentileofscore(arr, val)
-
+                
                 axs[i].barh(0, val, align='center', alpha=0.5)
+                #axs[i].barh(0, np.log2(val), align='center', alpha=0.5)
 
                 #axs[i].set_xscale('log')
                 axs[i].set_xscale('log', basex=2)
@@ -104,7 +109,10 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
                 axs[i].set_xlim(2**13, 2**18)
 
                 #axs[i].set_xticklabels([format(label, ',.0f') for label in [10000,50000,100000,150000,200000,250000,300000]])
-                axs[i].set_xticklabels([label for label in [10000,50000,100000,150000,200000,250000,300000]])
+                axs[i].set_xticks([label for label in [10000,50000,100000,150000,200000,250000,300000]])
+                axs[i].get_xaxis().set_major_formatter(ticker.ScalarFormatter())
+
+                plt.setp(axs[i].get_xticklabels(), rotation=30)
                 
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
@@ -118,6 +126,7 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
                 #percentile = percentileofscore(arr, val)
 
                 axs[i].barh(0, val, align='center', alpha=0.5)
+                #axs[i].barh(0, val, align='center', alpha=0.5)
 
                 axs[i].set_xscale('log')
                 
@@ -126,11 +135,15 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
 
                 #axs[i].set_xlim(0, 5000000)
                 #axs[i].set_xlim(1, 5*1e6)
-                axs[i].set_xlim(1*1e2, 1e7)
+                axs[i].set_xlim(10**2, 10**7)
                 #axs[i].set_xlim(100, 1000000)
                 
                 #axs[i].set_xticklabels([format(label, ',.0f') for label in [100,1000,10000,100000,1000000,10000000,50000000]])
-                axs[i].set_xticklabels([label for label in [100,1000,10000,100000,1000000,10000000,50000000]])
+                axs[i].set_xticks([label for label in [100,1000,10000,100000,1000000,10000000,50000000]])
+                #axs[i].get_xaxis().set_major_formatter(ticker.ScalarFormatter())
+                axs[i].get_xaxis().set_major_formatter(ticker.FormatStrFormatter("%d"))
+
+                plt.setp(axs[i].get_xticklabels(), rotation=30)
 
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
@@ -139,14 +152,14 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
 
         plt.tight_layout()
 
-    elif len(objects) == 2 :
-        fig, axs = plt.subplots(len(objects), figsize=(7,2))
+    elif (len(objects) == 2) and (year=='2008~2018'):
+        fig, axs = plt.subplots(len(objects), figsize=(7,2*1.3))
         
         for i, obj in enumerate(objects):
             if obj == 'Job Automation Index Change':
                 val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
                 percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
-               #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
+                #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
                 #percentile = percentileofscore(arr, val)
 
                 axs[i].barh(0, val, align='center', alpha=0.5)
@@ -154,6 +167,9 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
                 axs[i].set_yticklabels([])
 
                 axs[i].set_xlim(-20, 20)
+                
+                plt.setp(axs[i].get_xticklabels(), rotation=30)
+
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
                 #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
@@ -170,6 +186,9 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
                 axs[i].set_yticklabels([])
 
                 axs[i].set_xlim(-1, 1)
+
+                plt.setp(axs[i].get_xticklabels(), rotation=30)
+
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
                 #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
@@ -178,7 +197,7 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
         plt.tight_layout()    
 
     else:
-        fig = plt.figure(figsize=(7, 1))
+        fig = plt.figure(figsize=(7, 1*1.3))
         ax = fig.add_subplot(111)
         val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][objects[0]].iloc[0].tolist()
         percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][objects[0]+' Percentile'].iloc[0]
@@ -194,6 +213,9 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
             
         ax.set_title(objects[0])
         ax.set_yticklabels([])
+
+        plt.setp(axs[i].get_xticklabels(), rotation=30)
+
         ax.text(0.9, 0.5, percentile, horizontalalignment='center',
                     verticalalignment='center', transform=ax.transAxes)
 
