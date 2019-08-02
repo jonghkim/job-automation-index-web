@@ -32,33 +32,32 @@
 
 
 <div class="card mb-3">
-<div class="card-header">
-    Skill Map for {{ job }} 
-    <script>
-        if ("{{year}}"==="2008_2018"){
-            document.write ( "(Change between 2008 and 2018)");
-        } else {
-            document.write ( "in {{year}}");
-        }
-    </script> 
-    (Click a task to zoom-in skill components)
-    <!--<button style="float:right; padding:0.1rem;" class="btn" onclick="location.href='{% static "data/xlsx/Panel 3.xlsx" %}'"><i class="fa fa-download"></i> Download</button>-->
-</div>
+  <div class="card-header">
+      Skill Map for {{ job }} 
+      <script>
+          if ("{{year}}"==="2008_2018"){
+              document.write ( "(Change between 2008 and 2018)");
+          } else {
+              document.write ( "in {{year}}");
+          }
+      </script> 
+      (Click a task to zoom-in skill components)
+      <!--<button style="float:right; padding:0.1rem;" class="btn" onclick="location.href='{% static "data/xlsx/Panel 3.xlsx" %}'"><i class="fa fa-download"></i> Download</button>-->
+  </div>
 
-<!-- size of card -->
-<div class="card-body" style="width:400; height:400;">
-    <svg id="chart" width="400" height="400"
-    viewBox="0 0 400 400"
-    perserveAspectRatio="xMinYMid">
-</div>
+  <!-- size of card -->
+  <div class="card-body" style="width:400; height:400;">
+      <svg id="chart" width="400" height="400"
+      viewBox="0 0 400 400"
+      perserveAspectRatio="xMinYMid">
+  </div>
 
-<!--
-<br>
-    <i> &nbsp; Note. The size of each skill is proportional to its importance to an occupation. The darker-red color indicates higher degree of automation. </i>
-</br>
--->
 
-<!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
+  <br>
+      <i> &nbsp; The size of each skill is proportional to its importance to an occupation. The darker-red color indicates higher degree of automation. </i>
+  </br>
+
+  <!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
 </div>
 
 <script>

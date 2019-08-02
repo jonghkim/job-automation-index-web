@@ -45,12 +45,7 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/Panel 1.csv'
     panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
 
-    if year=='2018':
-        if job=='TOTAL AVERAGE':
-            objects = ['Job Automation Index','Annual Wage']
-        else:
-            objects = ['Job Automation Index', 'Employment','Annual Wage']
-    elif year=='2008':
+    if (year=='2018') or (year=='2008'):
         if job=='TOTAL AVERAGE':
             objects = ['Job Automation Index','Annual Wage']
         else:
@@ -60,13 +55,8 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
             objects = ['Job Automation Index Change']
         else:
             objects = ['Job Automation Index Change', 'Wage Share Change']
-    else:
-        if job=='TOTAL AVERAGE':
-            objects = ['Job Automation Index','Annual Wage']
-        else:
-            objects = ['Job Automation Index', 'Employment','Annual Wage']
 
-    if (len(objects) == 3 or len(objects) == 2) and (year=='2018' or year=='2008'):
+    if (year=='2018') or (year=='2008'):        
         fig, axs = plt.subplots(len(objects), figsize=(7,len(objects)*1.3))
         
         for i, obj in enumerate(objects):
@@ -152,77 +142,79 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
 
         plt.tight_layout()
 
-    elif (len(objects) == 2) and (year=='2008~2018'):
-        fig, axs = plt.subplots(len(objects), figsize=(7,2*1.3))
-        
-        for i, obj in enumerate(objects):
-            if obj == 'Job Automation Index Change':
-                val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
-                percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
-                #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
-                #percentile = percentileofscore(arr, val)
+    elif year=='2008~2018':
 
-                axs[i].barh(0, val, align='center', alpha=0.5)
-                axs[i].set_title(obj)
-                axs[i].set_yticklabels([])
-
-                axs[i].set_xlim(-20, 20)
-                
-                plt.setp(axs[i].get_xticklabels(), rotation=30)
-
-                axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
-                            verticalalignment='center', transform=axs[i].transAxes)
-                #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
-                #            verticalalignment='center', transform=axs[i].transAxes)
-                
-            elif obj == 'Wage Share Change':
-                val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
-                percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
-                #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
-                #percentile = percentileofscore(arr, val)
-
-                axs[i].barh(0, val, align='center', alpha=0.5)
-                axs[i].set_title(obj+' (%p)')
-                axs[i].set_yticklabels([])
-
-                axs[i].set_xlim(-1, 1)
-
-                plt.setp(axs[i].get_xticklabels(), rotation=30)
-
-                axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
-                            verticalalignment='center', transform=axs[i].transAxes)
-                #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
-                #            verticalalignment='center', transform=axs[i].transAxes)
-
-        plt.tight_layout()    
-
-    else:
-        fig = plt.figure(figsize=(7, 1*1.3))
-        ax = fig.add_subplot(111)
-        val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][objects[0]].iloc[0].tolist()
-        percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][objects[0]+' Percentile'].iloc[0]
-        #arr = panel_df[(panel_df['Year']==year)][objects[0]].tolist()
-        #percentile = percentileofscore(arr, val)
-        
-        ax.barh(0, val, align='center', alpha=0.5)
-
-        if objects[0] == 'Job Automation Index':
-            ax.set_xlim(0, 100)
-        elif objects[0] == 'Job Automation Index Change':
-            ax.set_xlim(-20, 20)
+        if len(objects) == 2:
+            fig, axs = plt.subplots(len(objects), figsize=(7,2*1.3))
             
-        ax.set_title(objects[0])
-        ax.set_yticklabels([])
+            for i, obj in enumerate(objects):
+                if obj == 'Job Automation Index Change':
+                    val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
+                    percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
+                    #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
+                    #percentile = percentileofscore(arr, val)
 
-        plt.setp(axs[i].get_xticklabels(), rotation=30)
+                    axs[i].barh(0, val, align='center', alpha=0.5)
+                    axs[i].set_title(obj)
+                    axs[i].set_yticklabels([])
 
-        ax.text(0.9, 0.5, percentile, horizontalalignment='center',
-                    verticalalignment='center', transform=ax.transAxes)
+                    axs[i].set_xlim(-20, 20)
+                    
+                    plt.setp(axs[i].get_xticklabels(), rotation=30)
 
-        #ax.text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
-        #            verticalalignment='center', transform=ax.transAxes)
+                    axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
+                                verticalalignment='center', transform=axs[i].transAxes)
+                    #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
+                    #            verticalalignment='center', transform=axs[i].transAxes)
+                    
+                elif obj == 'Wage Share Change':
+                    val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
+                    percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
+                    #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
+                    #percentile = percentileofscore(arr, val)
 
-        plt.tight_layout()
+                    axs[i].barh(0, val, align='center', alpha=0.5)
+                    axs[i].set_title(obj+' (%p)')
+                    axs[i].set_yticklabels([])
+
+                    axs[i].set_xlim(-1, 1)
+
+                    plt.setp(axs[i].get_xticklabels(), rotation=30)
+
+                    axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
+                                verticalalignment='center', transform=axs[i].transAxes)
+                    #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
+                    #            verticalalignment='center', transform=axs[i].transAxes)
+
+            plt.tight_layout()    
+
+        elif len(objects) == 1:
+            fig = plt.figure(figsize=(7, 1*1.3))
+            ax = fig.add_subplot(111)
+            val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][objects[0]].iloc[0].tolist()
+            percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][objects[0]+' Percentile'].iloc[0]
+            #arr = panel_df[(panel_df['Year']==year)][objects[0]].tolist()
+            #percentile = percentileofscore(arr, val)
+            
+            ax.barh(0, val, align='center', alpha=0.5)
+
+            if objects[0] == 'Job Automation Index':
+                ax.set_xlim(0, 100)
+            elif objects[0] == 'Job Automation Index Change':
+                ax.set_xlim(-20, 20)
+                
+            ax.set_title(objects[0])
+            ax.set_yticklabels([])
+
+            plt.setp(ax.get_xticklabels(), rotation=30)
+
+            ax.text(0.9, 0.5, percentile, horizontalalignment='center',
+                        verticalalignment='center', transform=ax.transAxes)
+
+            #ax.text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
+            #            verticalalignment='center', transform=ax.transAxes)
+
+            plt.tight_layout()
 
     buffer = BytesIO()
     plt.savefig(buffer, format='png')
@@ -335,7 +327,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_xticks(np.arange(-5,6,1))
         else:
             ax.set_xlim(-50,50)
-            ax.set_xticks(np.arange(-50,50,10))
+            ax.set_xticks(np.arange(-50,60,10))
 
     plt.tight_layout()
 
@@ -487,7 +479,7 @@ def index(request):
         task_automation = draw_task_automation()
         code, job_desc = job_description()
 
-        year='2008~2018'
+        year='2018'
         job='TOTAL AVERAGE'
 
         return render(request, 'visualize/index.html',{'task_importance':task_importance, 
@@ -516,7 +508,7 @@ def automation_index(request):
 
         code, job_desc = job_description()      
         
-        year='2008~2018'
+        year='2018'
         job='TOTAL AVERAGE'
 
         return render(request, 'visualize/index.html',{'task_importance':task_importance, 
@@ -535,7 +527,7 @@ def skill_map(request):
                     'form': form, 'code_description':code_desc})        
     else:
         form = SkillMap()
-        year = '2008_2018'
+        year = '2018'
         code = '00-0000'
         job, code , code_desc = code_description()        
         
@@ -550,5 +542,5 @@ def automation_ranking(request):
             return render(request, 'visualize/automation_ranking.html',{'year':year, 'form': form})      
     else:
         form = AutomationRanking()
-        year = '2008~2018'
+        year = '2018'
         return render(request, 'visualize/automation_ranking.html', {'year':year, 'form' : form})
