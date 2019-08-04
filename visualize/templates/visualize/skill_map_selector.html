@@ -37,7 +37,7 @@ li {
 <script>
 $(document).ready(function(){
     var occupation_button = $("#id_occupation"),
-        parent_width = $(document).width()*0.7;
+        parent_width = $(document).width()*0.5;
     $(window).on("resize", function() {
         if(parent_width > 300) {
             var occupation_targetWidth = 300;
@@ -49,7 +49,7 @@ $(document).ready(function(){
     }).trigger("resize");
 
     var year_button = $("#id_year"),
-        parent_width = $(document).width()*0.7;
+        parent_width = $(document).width()*0.5;
     $(window).on("resize", function() {
         if(parent_width > 200) {
             var year_targetWidth = 200;
