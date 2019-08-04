@@ -20,12 +20,12 @@ class JobAutomationIndexForm(forms.Form):
 
         JOBS = JOBS + (('(SOC '+code+') '+df.iloc[0]['Job Family'], JOB),)
         
-    occupation = forms.ChoiceField(choices=JOBS)
+    occupation = forms.ChoiceField(choices=JOBS, widget=forms.Select(attrs={'style': 'width:300px'}))
 
     #YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', '2008~2018'))
     YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', 'Change between 2008-2018'))
     
-    year = forms.ChoiceField(choices=YEARS)
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:200px'}))
 
 class SkillMap(forms.Form):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
@@ -44,12 +44,12 @@ class SkillMap(forms.Form):
             JOB = JOB + ((r['Job Code'], r['Job Title']),)
         JOBS = JOBS + (('(SOC '+code+') '+df.iloc[0]['Job Family'], JOB),)
 
-    occupation = forms.ChoiceField(choices=JOBS)
+    occupation = forms.ChoiceField(choices=JOBS, widget=forms.Select(attrs={'style': 'width:300px'}))
 
     #YEARS = (('2008_2018', 'Evolution during 2008-2018'),('2018', '2018'),('2008', '2008'))
     YEARS = (('2018', '2018'),('2008', '2008'),('2008_2018', 'Change between 2008-2018'))
-    year = forms.ChoiceField(choices=YEARS)
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:200px'}))
 
 class AutomationRanking(forms.Form):
     YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', 'Change between 2008-2018'))
-    year = forms.ChoiceField(choices=YEARS)        
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:200px'}))        
