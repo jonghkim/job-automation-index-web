@@ -459,6 +459,9 @@ def about(request):
 def methodology(request):
     return render(request, 'visualize/methodology.html')
 
+def sitemap(request):
+    return render(request, 'visualize/sitemap.xml')
+    
 def index(request):
     if request.method == 'POST':
         form = JobAutomationIndexForm(request.POST)
