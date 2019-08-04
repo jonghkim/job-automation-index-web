@@ -1,3 +1,4 @@
+{% load static %}
 <div class="card mb-3">
 <div class="card-header">
     Selection
@@ -32,4 +33,21 @@ li {
     padding-right: 10px;    
 }
 </style>
-        
+
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+    var year_button = $("#id_year"),
+        parent_width = $(document).width()*0.7;
+    $(window).on("resize", function() {
+        if(parent_width > 200) {
+            var year_targetWidth = 200;
+        }
+        else{
+            var year_targetWidth = parent_width;
+        }
+        year_button.css('width',year_targetWidth);
+    }).trigger("resize");
+});
+</script>

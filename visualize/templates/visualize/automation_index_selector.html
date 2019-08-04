@@ -1,9 +1,10 @@
+{% load static %}
 <div class="card mb-3">
 <div class="card-header">
     Selection
 </div>
 
-<div class="card-body">
+<div id='form_parent' class="card-body">
     <form method="POST" class="post-form">
         {%csrf_token%}
         <!--{{form.as_table}}-->
@@ -13,7 +14,6 @@
         {% endfor %}
 
         <!--
-        
             {% for field in form %}
             <tr><td>{{field}}</td></tr>
             {% endfor %}
@@ -31,3 +31,33 @@ li {
     padding-right: 10px;    
 }
 </style>
+
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+    var occupation_button = $("#id_occupation"),
+        parent_width = $(document).width()*0.7;
+    $(window).on("resize", function() {
+        if(parent_width > 300) {
+            var occupation_targetWidth = 300;
+        }
+        else{
+            var occupation_targetWidth = parent_width;
+        }
+        occupation_button.css('width',occupation_targetWidth);
+    }).trigger("resize");
+
+    var year_button = $("#id_year"),
+        parent_width = $(document).width()*0.7;
+    $(window).on("resize", function() {
+        if(parent_width > 200) {
+            var year_targetWidth = 200;
+        }
+        else{
+            var year_targetWidth = parent_width;
+        }
+        year_button.css('width',year_targetWidth);
+    }).trigger("resize");
+});
+</script>
