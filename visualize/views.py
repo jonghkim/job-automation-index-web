@@ -460,6 +460,7 @@ def sitemap(request):
     return render(request, 'visualize/sitemap.xml')
     
 def index(request):
+    """
     if request.method == 'POST':
         form = JobAutomationIndexForm(request.POST)
         if form.is_valid():
@@ -485,6 +486,8 @@ def index(request):
         return render(request, 'visualize/index.html',{'task_importance':task_importance, 
                     'task_automation':task_automation, 'year': year, 'job':job,
                     'form' : form, 'job_description':job_desc,'code':code})
+    """
+    return render(request, 'visualize/index.html')
 
 def automation_index(request):
     if request.method == 'POST':
@@ -497,22 +500,20 @@ def automation_index(request):
 
             task_importance = draw_task_importance(year, job)
             task_automation = draw_task_automation(year, job)
-
-            return render(request, 'visualize/index.html',{'task_importance':task_importance, 
-                    'task_automation':task_automation, 'year': year, 'job':job, 
+            return render(request, 'visualize/automation_index.html',{'task_importance':task_importance, 
+                    'task_automation':task_automation, 'year': year, 'job':job,
                     'form' : form, 'job_description':job_desc,'code':code})
     else:
         form = JobAutomationIndexForm()
         task_importance = draw_task_importance()
         task_automation = draw_task_automation()
+        code, job_desc = job_description()
 
-        code, job_desc = job_description()      
-        
         year='2018'
         job='TOTAL AVERAGE'
 
-        return render(request, 'visualize/index.html',{'task_importance':task_importance, 
-                    'task_automation':task_automation, 'year': year, 'job':job, 
+        return render(request, 'visualize/automation_index.html',{'task_importance':task_importance, 
+                    'task_automation':task_automation, 'year': year, 'job':job,
                     'form' : form, 'job_description':job_desc,'code':code})
 
 def skill_map(request):
