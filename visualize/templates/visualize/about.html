@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 
-<div class="card mb-3">
+<div class="card mb-3" style="max-width: 800px;">
 <div class="card-header">
     About
 </div>
@@ -17,11 +17,11 @@ Firstly, we introduced a data-driven approach to reveal the latent task types in
 <img src="{% static 'img/race_with_the_machine.png' %}" class="img-fluid"></br></br>
 
 Based on our analysis, we provide this online system to encourage further research and policy discussions on the societal challenge of automation and the future of work. This tool provides the task-level susceptibility to automation of each occupation. Given that not all automation technologies are created equal, the task-level decomposition of automation levels allows to look into the types of tasks that contribute to the degree of automation of each occupation. This system consists of three functions:</br></br>
-&nbsp; <b>(1)	Automation Index </b> [<a href="{% url 'visualize:automation_index'%}">Link</a>]</br>
+&nbsp; (1)	<a href="{% url 'visualize:automation_index'%}">Automation Index </a></br>
 &nbsp; Provide basic information and task-level susceptibility to automation for each occupation in 2008 and 2018</br>
-&nbsp; <b>(2)	Skill Map </b> [<a href="{% url 'visualize:skill_map'%}">Link</a>]</br>
+&nbsp; (2)	<a href="{% url 'visualize:skill_map'%}">Skill Map</a></br>
 &nbsp; Visualize the importance of tasks (skill clusters) and task-level susceptibility to automation for each occupation in 2008 and 2018.</br>
-&nbsp; <b>(3)	Automation Ranking </b> [<a href="{% url 'visualize:automation_ranking'%}">Link</a>]</br>
+&nbsp; (3)	<a href="{% url 'visualize:automation_ranking'%}">Automation Ranking </a></br>
 &nbsp; Sort all occupations by task-level susceptibility to automation in 2008 and 2018</br></br>
 
 The entire source code is publicly accessible to encourage reproducibility at [<a href="">Github Link</a>]. Please see our research paper for detailed descriptions behind the job automation index. <u>[They are confidential at the reviewing stage.]</u></br></br>
