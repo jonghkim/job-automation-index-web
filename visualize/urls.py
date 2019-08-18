@@ -6,7 +6,6 @@ urlpatterns = [
     #url(r'^$', views.index.as_view(), name='index'),
     url(r'^$', views.index, name='index'),
     url(r'^about/$', views.about, name='about'),
-    url(r'^methodology/$', views.methodology, name='methodology'),
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^automation_index/$', views.automation_index, name='automation_index'),
     url(r'^skill_map/$', views.skill_map, name='skill_map'),

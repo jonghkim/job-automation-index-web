@@ -456,9 +456,6 @@ def contact(request):
 def about(request):
     return render(request, 'visualize/about.html')
 
-def methodology(request):
-    return render(request, 'visualize/methodology.html')
-
 def sitemap(request):
     return render(request, 'visualize/sitemap.xml')
     

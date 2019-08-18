@@ -1,4 +1,5 @@
 {% extends "visualize/layout.html" %}
+{% load static %}
 {% block content %}
 
 <div class="card mb-3">
@@ -6,8 +7,26 @@
     About
 </div>
 
-<div class="card-body">
-    To be updated
+<div class="card-body" style="text-align: justify;">
+    <h5 style="text-align: center;"><strong><em>A Data-Driven Exploration of the Race between Man and Machine</em></strong></h5> </br>
+Anxiety about automation is prevalent in this era of rapid technological advances especially in artificial intelligence, machine learning, and robotics. Although there have been doom-laden prophecies about new technology and automation replacing human tasks and wiping out a large number of jobs at least since the Industrial Revolution two centuries ago, recent technological advances in performing sophisticated and complex tasks differentiate the 21st century from previous ones.</br></br>
+<img src="{% static 'img/automation.png' %}" class="img-fluid"></br></br>
+Given that technology directly affects the demand for specific skills, instead of acting on whole occupations, the impacts of automation technology vary widely according to task types. Thus, it is important to understand the types of jobs that are more, or less, susceptible to technological advances; as Peter Drucker stated, “proper measurement of information will lead to advances in effectiveness and performance of management.” To this end, we initiated this research project to empirically explore the evolution of task automation during 2008-2018.</br></br>
+
+Firstly, we introduced a data-driven approach to reveal the latent task types in various occupations. We then measure the task-level degree of automation and task complementarity with respect to the demand for occupations in which such a task is performed. As a result, we classify the revealed task types into distinct categories according to their relation to automation technology in the 21st century. First, we identify four task types that are associated with the reduction in labor demands, even as the degree of automation of these tasks has increased (<i>race against the machine</i>)—clerical task, information processing, communication, and conflict resolution. Second, managerial tasks and dynamic physical tasks are in demand in the labor market, although their degree of automation has increased (<i>race with the machine</i>). Third, human labors appear to <i>race ahead of the machine</i> in two tasks—strategic thinking and system analysis—because they are associated with an increase in labor demands and their automation levels have also decreased. Finally, the remaining tasks—mostly manual—seem not to be significantly associated with the automation technology (<i>run a difference race</i>); these include hazardous and group task, outdoor labor, operation monitoring, equipment maintenance, equipment operation, and physical task.</br></br>
+<img src="{% static 'img/race_with_the_machine.png' %}" class="img-fluid"></br></br>
+
+Based on our analysis, we provide this online system to encourage further research and policy discussions on the societal challenge of automation and the future of work. This tool provides the task-level susceptibility to automation of each occupation. Given that not all automation technologies are created equal, the task-level decomposition of automation levels allows to look into the types of tasks that contribute to the degree of automation of each occupation. This system consists of three functions:</br></br>
+&nbsp; <b>(1)	Automation Index </b> [<a href="{% url 'visualize:automation_index'%}">Link</a>]</br>
+&nbsp; Provide basic information and task-level susceptibility to automation for each occupation in 2008 and 2018</br></br>
+&nbsp; <b>(2)	Skill Map </b> [<a href="{% url 'visualize:skill_map'%}">Link</a>]</br>
+&nbsp; Visualize the importance of tasks (skill clusters) and task-level susceptibility to automation for each occupation in 2008 and 2018.</br></br>
+&nbsp; <b>(3)	Automation Ranking </b> [<a href="{% url 'visualize:automation_ranking'%}">Link</a>]</br>
+&nbsp; Sort all occupations by task-level susceptibility to automation in 2008 and 2018</br></br>
+
+The entire source code is publicly accessible to encourage reproducibility at [<a href="">Github Link</a>]. Please see our research paper for detailed descriptions behind the job automation index. <u>[They are confidential at the reviewing stage.]</u></br></br>
+
+We hope our research and this online system can encourage further research and policy discussions on the societal challenge of automation and the future of work. We welcome any comments and feedback [<a href="{% url 'visualize:contact'%}">Contact</a>].</br></br>
 </div>
 </div>
 
