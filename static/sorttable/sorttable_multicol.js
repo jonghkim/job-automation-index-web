@@ -76,8 +76,8 @@ sorttable = {
 
     // work through each column and calculate its type
     // rowsinheader = table.tHead.rows.length;
-    console.log(table.tHead);
-    console.log(table.tHead.rows);
+    //console.log(table.tHead);
+    //console.log(table.tHead.rows);
     
     // headrow = table.tHead.rows[0].cells;  
     headrow = table.tHead.rows[1].cells;
