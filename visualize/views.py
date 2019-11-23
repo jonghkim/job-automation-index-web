@@ -264,7 +264,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.plot(angles, total_stats, 'o-', linewidth=2)
             ax.fill(angles, total_stats, alpha=0.25)        
 
-            ax.set_thetagrids(angles * 180/np.pi, labels)
+            ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=12)
             ax.grid(True)
             ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
 
@@ -286,7 +286,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             else:
                 ax.plot(angles, focal_stats, 'o-', linewidth=2)
 
-            ax.set_thetagrids(angles * 180/np.pi, labels)
+            ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=12)
             ax.grid(True)
             ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
@@ -297,6 +297,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
         else:
             ax.set_ylim(0,150)
             ax.set_yticks(np.arange(0,150,10))
+        
 
     elif year=='2008~2018':
         """
