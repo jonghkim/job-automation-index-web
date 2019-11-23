@@ -234,10 +234,14 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
     panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
     
     if year =='2018' or year=='2008':
+        """
         labels = np.array(["Operation Monitoring", "System Analysis", "Strategic Thinking","Conflict Resolution", 
                         "Communication", "Managerial Task",  "Clerical Task", "Information Processing", 
                         "Hazardous and Group Task", "Outdoor Labor", "Dynamic Physical Task", "Physical Task", 
                         "Equipment Operation", "Equipment Maintenance"])                    
+        """
+        labels = np.array(["Running a Different Race", "Race with the Machine",	
+                            "Race ahead of the Machine", "Race against the Machine"])                    
         
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
