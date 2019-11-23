@@ -318,7 +318,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             barh_df = barh_df.T
 
-            ax=barh_df.plot.barh(figsize=(8, 8))
+            ax=barh_df.plot.barh(figsize=(8, 4))
             ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
@@ -327,7 +327,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             focal_stats.index=['TOTAL_AVERAGE']
             focal_stats = focal_stats.T
-            ax = focal_stats.plot.barh(figsize=(8, 8))
+            ax = focal_stats.plot.barh(figsize=(8, 4))
             ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
         if job == 'TOTAL AVERAGE':
