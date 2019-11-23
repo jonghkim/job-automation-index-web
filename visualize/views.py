@@ -299,9 +299,13 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_yticks(np.arange(0,150,10))
 
     elif year=='2008~2018':
+        """
         labels = np.array(["Hazardous and Group Task","Outdoor Labor","Dynamic Physical Task", "Physical Task",
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
                          "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
+        """
+        labels = np.array(["Running a Different Race", "Race with the Machine",	
+                            "Race ahead of the Machine", "Race against the Machine"])                    
         
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
@@ -330,8 +334,8 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_xlim(-5,5)
             ax.set_xticks(np.arange(-5,6,1))
         else:
-            ax.set_xlim(-50,50)
-            ax.set_xticks(np.arange(-50,60,10))
+            ax.set_xlim(-45,45)
+            ax.set_xticks(np.arange(-40,50,10))
 
     plt.tight_layout()
 
