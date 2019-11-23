@@ -264,7 +264,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.plot(angles, total_stats, 'o-', linewidth=2)
             ax.fill(angles, total_stats, alpha=0.25)        
 
-            ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=12)
+            ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
             ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
 
@@ -286,7 +286,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             else:
                 ax.plot(angles, focal_stats, 'o-', linewidth=2)
 
-            ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=12)
+            ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
             ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
@@ -319,7 +319,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             barh_df = barh_df.T
 
-            ax=barh_df.plot.barh(figsize=(8, 4))
+            ax=barh_df.plot.barh(figsize=(8, 4), fontsize=11)
             ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
@@ -328,7 +328,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             focal_stats.index=['TOTAL_AVERAGE']
             focal_stats = focal_stats.T
-            ax = focal_stats.plot.barh(figsize=(8, 4))
+            ax = focal_stats.plot.barh(figsize=(8, 4), fontsize=11)
             ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
         if job == 'TOTAL AVERAGE':
