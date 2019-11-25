@@ -2,7 +2,7 @@
 
 <div class="card mb-3">
 <div class="card-header">
-    Task-Level Susceptibility to Automation for {{job}}
+    Decomposition of Automation into Different Dimensions of Impact of Automation, for {{job}}
     <script>
             if ("{{year}}"==="2008~2018"){
                 document.write ( "(Change between 2008 and 2018)");
@@ -14,6 +14,12 @@
 
 <div class="card-body">
         <img src="data:image/png;base64,{{ task_importance|safe }}" class="img-fluid">
+</div>
+<div class="card-footer small text-muted">
+    &middot; Race with the Machine: Importance of tasks that are being automated, but complementary to labor demands </br>
+    &middot; Race against the Machine: Importance of tasks that are being automated and substitutable in the labor markets </br>
+    &middot; Race ahead of the Machine: Importance of tasks that are unlikely to be automated and complementary to labor demands </br>
+    &middot; Running a Different Race: Importance of tasks that are being automated to a certain extent, but seemly unrelated to labor demands
 </div>
 <!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
 </div>
