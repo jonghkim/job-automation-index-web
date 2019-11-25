@@ -43,7 +43,7 @@ def percentileofscore(a, score, kind='rank'):
 def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
     #### TASK AUTOMATION ####
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/Panel 1.csv'
-    panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
+    panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Year':str})
 
     if (year=='2018') or (year=='2008'):
         if job=='TOTAL AVERAGE':
@@ -231,7 +231,7 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
 def draw_task_importance(year='2018', job='TOTAL AVERAGE'):    
     #### TASK IMPORTANCE ####    
     csvpath = djangoSettings.STATICFILES_DIRS[0] +'/data/csv/Panel 2.csv'
-    panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
+    panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Year':str})
     
     if year =='2018' or year=='2008':
         """
@@ -443,7 +443,7 @@ def draw_task_importance(year='2008~2018', job='TOTAL AVERAGE'):
 """
 def job_description(job='TOTAL AVERAGE'):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
-    panel_df = pd.read_csv(csvpath, encoding='utf-8')
+    panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1')
 
     code = panel_df[(panel_df['Job Title']==job)]['Job Code'].iloc[0]
     job_desc = panel_df[(panel_df['Job Title']==job)]['Description'].iloc[0]
@@ -452,7 +452,7 @@ def job_description(job='TOTAL AVERAGE'):
 
 def code_description(code='00-0000'):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
-    panel_df = pd.read_csv(csvpath, encoding='utf-8')
+    panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1')
 
     code_desc = panel_df[panel_df['Job Code']==code]['Description'].iloc[0]
     job = panel_df[panel_df['Job Code']==code]['Job Title'].iloc[0]

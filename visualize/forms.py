@@ -4,7 +4,7 @@ import pandas as pd
 
 class JobAutomationIndexForm(forms.Form):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
-    panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Family Code':str})
+    panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Family Code':str})
 
     panel_df_gp = panel_df.groupby('Family Code')
 
@@ -29,7 +29,7 @@ class JobAutomationIndexForm(forms.Form):
 
 class SkillMap(forms.Form):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
-    panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Family Code':str})
+    panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Family Code':str})
 
     panel_df_gp = panel_df.groupby('Family Code')
 
