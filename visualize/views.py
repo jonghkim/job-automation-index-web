@@ -258,11 +258,11 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             ax = fig.add_subplot(111, polar=True)    
 
-            ax.plot(angles, focal_stats, 'o-', linewidth=2)
-            ax.fill(angles, focal_stats, alpha=0.25)
+            ax.plot(angles, focal_stats, 'o-', linewidth=2, color='#db3f3f', alpha=0.5)
+            ax.fill(angles, focal_stats, alpha=0.25, facecolor='#db3f3f')
 
-            ax.plot(angles, total_stats, 'o-', linewidth=2)
-            ax.fill(angles, total_stats, alpha=0.25)        
+            ax.plot(angles, total_stats, 'o-', linewidth=2, color='#1f77b4', alpha=0.5)
+            ax.fill(angles, total_stats, alpha=0.25, facecolor='#1f77b4')        
 
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
@@ -281,10 +281,10 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax = fig.add_subplot(111, polar=True)
 
             if year =='2018' or year=='2008':
-                ax.plot(angles, focal_stats, 'o-', linewidth=2)
-                ax.fill(angles, focal_stats, alpha=0.25)
+                ax.plot(angles, focal_stats, 'o-', linewidth=2, color='#1f77b4', alpha=0.5)
+                ax.fill(angles, focal_stats, alpha=0.25, facecolor='#1f77b4')
             else:
-                ax.plot(angles, focal_stats, 'o-', linewidth=2)
+                ax.plot(angles, focal_stats, 'o-', linewidth=2, color='#1f77b4', alpha=0.5)
 
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
@@ -319,7 +319,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             barh_df = barh_df.T
 
-            ax=barh_df.plot.barh(figsize=(8, 4), fontsize=10)
+            ax=barh_df.plot.barh(figsize=(8, 4), fontsize=10, color=['#db3f3f','#1f77b4'], alpha=0.5)
             ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
@@ -328,7 +328,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             focal_stats.index=['TOTAL_AVERAGE']
             focal_stats = focal_stats.T
-            ax = focal_stats.plot.barh(figsize=(8, 4), fontsize=10)
+            ax = focal_stats.plot.barh(figsize=(8, 4), fontsize=10,  color=['#1f77b4'], alpha=0.5)
             ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
         if job == 'TOTAL AVERAGE':
