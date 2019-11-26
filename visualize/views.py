@@ -269,7 +269,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
             ax.yaxis.grid(False)
-            ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
+            ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
@@ -293,7 +293,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
             ax.yaxis.grid(False)
-            ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
+            ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
 
         ax.set_rorigin(0)
         """
@@ -337,7 +337,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             barh_df = barh_df.T
 
             ax=barh_df.plot.barh(figsize=(8, 4), fontsize=10, color=['#db3f3f','#1f77b4'], alpha=0.5)
-            ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
+            ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
@@ -350,7 +350,7 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             focal_stats[focal_stats<-30] = -30
 
             ax = focal_stats.plot.barh(figsize=(8, 4), fontsize=10,  color=['#1f77b4'], alpha=0.5)
-            ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
+            ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
 
         if job == 'TOTAL AVERAGE':
             ax.set_xlim(-5,5)
