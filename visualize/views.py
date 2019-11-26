@@ -247,9 +247,11 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
             max_ytick = max(focal_stats)
             focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
+            focal_stats[focal_stats>70] = 70
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels].iloc[0].tolist()
             total_stats=np.concatenate((total_stats,[total_stats[0]]))
+            total_stats[total_stats>70] = 70
 
             angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)        
             angles=np.concatenate((angles,[angles[0]]))
@@ -266,12 +268,14 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
+            ax.yaxis.grid(False)
             ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
             max_ytick = max(focal_stats)
             focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
+            focal_stats[focal_stats>70] = 70
 
             angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)        
             angles=np.concatenate((angles,[angles[0]]))
@@ -288,15 +292,23 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
+            ax.yaxis.grid(False)
             ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
         ax.set_rorigin(0)
-        if max_ytick < 100:
-            ax.set_ylim(0,100)
-            ax.set_yticks(np.arange(0,100,10))
+        """
+        if max_ytick < 70:
+            ax.set_ylim(0,70)
+            yticks = np.arange(0,80,10)
+            ax.set_yticks(yticks)
         else:
-            ax.set_ylim(0,150)
-            ax.set_yticks(np.arange(0,150,10))
+        """
+        ax.set_ylim(0,70)
+        yticks = np.arange(0,80,10)
+        ax.set_yticks(yticks)           
+        ax_ytick = ax.get_yticks().tolist() 
+        ax_ytick[-1] = '>70'
+        ax.set_yticklabels(ax_ytick)
         
 
     elif year=='2008~2018':
@@ -310,9 +322,14 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
         
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
+            focal_stats[focal_stats>30] = 30
+            focal_stats[focal_stats<-30] = -30
+
             max_xtick = max(focal_stats.iloc[0].tolist())
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels]
+            total_stats[total_stats>30] = 30
+            total_stats[total_stats<-30] = -30
 
             barh_df = focal_stats.append(total_stats)
             barh_df.index = [job,'TOTAL AVERAGE']
@@ -328,6 +345,10 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             focal_stats.index=['TOTAL_AVERAGE']
             focal_stats = focal_stats.T
+
+            focal_stats[focal_stats>30] = 30
+            focal_stats[focal_stats<-30] = -30
+
             ax = focal_stats.plot.barh(figsize=(8, 4), fontsize=10,  color=['#1f77b4'], alpha=0.5)
             ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
@@ -335,8 +356,12 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_xlim(-5,5)
             ax.set_xticks(np.arange(-5,6,1))
         else:
-            ax.set_xlim(-45,45)
-            ax.set_xticks(np.arange(-40,50,10))
+            ax.set_xlim(-30,30)
+            ax.set_xticks(np.arange(-30,40,10))
+            ax_xtick = ax.get_xticks().tolist() 
+            ax_xtick[0] = '<-30'
+            ax_xtick[-1] = '30<'
+            ax.set_xticklabels(ax_xtick)            
 
     plt.tight_layout()
 
