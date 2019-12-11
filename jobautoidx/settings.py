@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['jobautomation.pythonanywhere.com',
              '.pythonanywhere.com', '.googleapis.com',
-             'www.jobautomation.pythonanywhere.com','localhost', '127.0.0.1']
+             'www.jobautomation.pythonanywhere.com','localhost', '127.0.0.1', 
+             '.jobautomationindex.com', 'www.jobautomationindex.com']
 
 # Application definition
 
