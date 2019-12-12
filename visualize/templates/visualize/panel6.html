@@ -51,5 +51,16 @@
 	<script type="text/javascript" src="{% static 'mods/city_typeahead.js' %}"></script>
 	<script type="text/javascript" src="{% static 'mods/map.js' %}"> </script>
 	<script type="text/javascript" src="{% static 'mods/frame.js' %}"></script>
-	<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
+	
+	{% if year == "2018" %}
+		<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
+	{% endif %}
+	{% if year == "2008" %}
+		<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
+	{% endif %}	
+	{% if year == "2008~2018" %}
+		<script type="text/javascript" src="{% static 'mods/draw_small_scale.js' %}"></script>
+	{% endif %}
+
+
 </div>
