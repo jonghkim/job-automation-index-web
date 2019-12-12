@@ -1,4 +1,5 @@
 {% load static %}
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
 <nav class="navbar navbar-expand navbar-dark bg-light static-top">
 
@@ -40,3 +41,10 @@
     </ul>
 
 </nav>
+
+<script>
+    if ($(window).width() > 750) {
+       var element = document.getElementById('sidebarToggle');
+       element.style.display = "none";
+    }
+</script>
