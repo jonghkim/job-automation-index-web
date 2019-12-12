@@ -1,4 +1,7 @@
 
+{% load static %}
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
 <!-- Sidebar -->
 <ul class="sidebar navbar-nav" id="sidebar-color">
 
@@ -9,11 +12,11 @@
     </a>
 </li> 
 
-<li class="nav-item dropdown show">
+<li id="anatomy_nav" class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sidebar-span-dark" style="font-size: 0.91em;">Anatomy of Automation</span>
+    <span class="sidebar-span-dark" style="font-size: 0.85em;">Anatomy of Automation</span>
 </a>
-<div class="dropdown-menu show" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.83em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
+<div id="anatomy_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.83em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
 
     <a class="dropdown-item" href="{% url 'visualize:automation_index'%}">
         <i class="fas fa-fw fa-chart-line" style="color:black"></i>
@@ -38,11 +41,11 @@
 </div>
 </li>
 
-<li class="nav-item dropdown show">
+<li id="geo_nav" class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sidebar-span-dark" style="font-size: 0.91em;">Geography of Automation</span>
+    <span class="sidebar-span-dark" style="font-size: 0.85em;">Geography of Automation</span>
 </a>
-<div class="dropdown-menu show" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.83em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
+<div id="geo_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.83em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
 
     <a class="dropdown-item">
         <i class="fas fa-fw fa-chart-line" style="color:black"></i>
@@ -70,3 +73,16 @@
         color: #13A2DC;
     }    
 </style>
+
+<script>
+if ($(window).width() > 960) {
+   var element = document.getElementById('anatomy_nav');
+   element.classList.add('show');
+   var element = document.getElementById('anatomy_menu');
+   element.classList.add('show');
+   var element = document.getElementById('geo_nav');
+   element.classList.add('show');
+   var element = document.getElementById('geo_menu');
+   element.classList.add('show');
+}
+</script>
