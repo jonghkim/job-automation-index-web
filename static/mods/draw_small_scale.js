@@ -3,7 +3,8 @@ tilde.notices = {}
 tilde.colors = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"] //["#951F24","#F2E3E4"]
 tilde.risks = [1,.89,.75,.45,.2,0] //[1,0]
 
-tilde.needleScale = d3.scale.linear().domain([0.502,0.731438356]).range([0,1])
+//tilde.needleScale = d3.scale.linear().domain([0.502,0.731438356]).range([0,1])
+tilde.needleScale = d3.scale.linear().domain([-1.2,1.7]).range([-2,2])
 
 tilde.updateNeedle = function() {
 	d3.selectAll('.needle, .needle-center').style('opacity',0)

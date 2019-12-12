@@ -3,7 +3,7 @@ var needle;
 (function(){
 
 var barWidth, chart, chartInset, degToRad, repaintGauge,
-    height, margin, numSections, padRad, percToDeg, percToRad, 
+    height, margin, numSections, padRad, percToDeg, percToRad,
     percent, radius, sectionIndx, svg, totalPercent, width;
 
   percent = .5;
@@ -13,7 +13,7 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
   chartInset = 10;
 
   // Orientation of gauge:
-  totalPercent = 40;
+  totalPercent = .75;
 
   el = d3.select('#needle');
 
@@ -31,7 +31,7 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
 
 
   /*
-    Utility methods 
+    Utility methods
   */
   percToDeg = function(perc) {
     return perc * 360;
@@ -57,10 +57,11 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
   arc2 = d3.svg.arc().outerRadius(radius - chartInset).innerRadius(radius - chartInset - barWidth)
   arc1 = d3.svg.arc().outerRadius(radius - chartInset).innerRadius(radius - chartInset - barWidth)
 
-  repaintGauge = function (perc) 
+  repaintGauge = function (perc)
   {
     var next_start = totalPercent;
     arcStartRad = percToRad(next_start);
+    //arcEndRad = arcStartRad + percToRad(perc / 2);
     arcEndRad = arcStartRad + percToRad(perc / 2);
     next_start += perc / 2;
 
@@ -79,7 +80,7 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
 
   var Needle = (function() {
 
-    /** 
+    /**
       * Helper function that returns the `d` value
       * for moving the needle
     **/
@@ -97,8 +98,6 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
       return "M " + leftX + " " + leftY + " L " + topX + " " + topY + " L " + rightX + " " + rightY;
     };
 
-    console.log(recalcPointerPos);
-
     function Needle(el) {
       this.el = el;
       this.len = width / 3;
@@ -113,16 +112,17 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
     Needle.prototype.moveTo = function(perc) {
       var self,
           oldValue = this.perc || 0;
-
+      
+      perc = perc/160;
       this.perc = perc;
       self = this;
 
       // Reset pointer position/*
-      
+
       this.el.transition().delay(0).ease('quad').duration(0).select('.needle').tween('reset-progress', function() {
         return function(percentOfPercent) {
           var progress = (1 - percentOfPercent) * oldValue;
-          
+
           repaintGauge(progress);
           return d3.select(this).attr('d', recalcPointerPos.call(self, progress));
         };
@@ -130,7 +130,7 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
       this.el.transition().delay(300).ease('bounce').duration(1500).select('.needle').tween('progress', function() {
         return function(percentOfPercent) {
           var progress = percentOfPercent * perc;
-          
+
           repaintGauge(progress);
           return d3.select(this).attr('d', recalcPointerPos.call(self, progress));
         };
