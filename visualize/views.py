@@ -12,7 +12,7 @@ import base64
 
 from django.http import JsonResponse
 
-from .forms import JobAutomationIndexForm, SkillMap, AutomationRanking
+from .forms import JobAutomationIndexForm, SkillMap, AutomationRanking, MapForm
 
 from django.conf import settings as djangoSettings
 import pandas as pd
@@ -599,23 +599,18 @@ def task_level_automation(request):
         
 def map_automation(request):
     if request.method == 'POST':
-        form = SkillMap(request.POST) 
+        form = MapForm(request.POST) 
         if form.is_valid():
+            task_type = form.cleaned_data['task_type']
             year = form.cleaned_data['year']
-            code = form.cleaned_data['occupation']
-            job, code, code_desc = code_description(code)
-
-            return render(request, 'visualize/map_automation.html', {'year':year, 'job':job, 'code':code,
-                    'form': form, 'code_description':code_desc})        
+            return render(request, 'visualize/map_automation.html',{'task_type':task_type, 'year':year,'form': form})      
     else:
-        form = SkillMap()
+        form = MapForm()
+        task_type = 'Race against the Machine'
         year = '2018'
-        code = '00-0000'
-        job, code , code_desc = code_description()        
-        
-        return render(request, 'visualize/map_automation.html', {'year':year, 'job':job, 'code':code,
-                'form': form, 'code_description':code_desc})    
-    
+        return render(request, 'visualize/map_automation.html', {'task_type':task_type, 'year':year,'form': form})      
+         
+
 def city_level_automation(request):
     if request.method == 'POST':
         form = AutomationRanking(request.POST) 
