@@ -1,8 +1,8 @@
 tilde.map = L.map('map');
 tilde.map.scrollWheelZoom.disable()
-tilde.employmentDomain = [0,7614660]
-tilde.ai_riskDomain = [0.507867024,0.66,0.731438356]
-tilde.colorRange = ["#87FF7B","#FF9300","#AD0012"]
+tilde.employmentDomain = [-2,2]
+tilde.ai_riskDomain = [-10,10]
+tilde.colorRange = ["#FFF","#DC143C"]
 tilde.radiusScale = d3.scale.linear().domain(tilde.employmentDomain).range([1000,60000])
 tilde.colorScale = d3.scale.linear().domain(tilde.ai_riskDomain).range(tilde.colorRange)
 tilde.token = 'pk.eyJ1Ijoia2VsbG9nZ2luc2lnaHQiLCJhIjoiY2poMmRyYTBlMDNpNjJxcGR0ZWQzN2ZpbyJ9.P2iJTWi-a-cf5tJ0m7520A'
@@ -23,7 +23,7 @@ for (var num = 0; num < tilde.cities.length; num++) {
   var place_long = d["Lng"];
 
   var circle = L.circle([place_lat, place_long], {
-      color: tilde.colorScale(d.ai),
+      color: tilde.colorScale(d.ai_task_type),
       stroke: false,
       fillOpacity:.95,
       data: d,

@@ -49,17 +49,19 @@
 	<script type="text/javascript" src="/static/data/map/{{year|safe}}_{{task_type|safe}}.js"></script>
 	<script type="text/javascript" src="{% static 'mods/query.js' %}"></script>
 	<script type="text/javascript" src="{% static 'mods/city_typeahead.js' %}"></script>
-	<script type="text/javascript" src="{% static 'mods/map.js' %}"> </script>
 	<script type="text/javascript" src="{% static 'mods/frame.js' %}"></script>
 	
 	{% if year == "2018" %}
 		<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
+		<script type="text/javascript" src="{% static 'mods/map_large_scale.js' %}"> </script>
 	{% endif %}
 	{% if year == "2008" %}
 		<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
+		<script type="text/javascript" src="{% static 'mods/map_large_scale.js' %}"> </script>
 	{% endif %}	
 	{% if year == "2008~2018" %}
 		<script type="text/javascript" src="{% static 'mods/draw_small_scale.js' %}"></script>
+		<script type="text/javascript" src="{% static 'mods/mapsmall_scale.js' %}"> </script>
 	{% endif %}
 
 
