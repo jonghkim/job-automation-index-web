@@ -35,6 +35,16 @@ li {
 <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
 <script>
+
+if ($(window).width() < 750) {
+    var occupation_button = $("#id_occupation");
+    occupation_button.css('width',300);
+    
+    var year_button = $("#id_year");
+    year_button.css('width',200);
+}
+
+
 $(document).ready(function(){
     var occupation_button = $("#id_occupation"),
         parent_width = $(document).width()*0.5;

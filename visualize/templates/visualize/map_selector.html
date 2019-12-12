@@ -35,17 +35,25 @@ li {
 <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
 <script>
+if ($(window).width() < 750) {
+    var task_type_button = $("#id_task_type");
+    task_type_button.css('width',300);
+    
+    var year_button = $("#id_year");
+    year_button.css('width',200);
+}
+
 $(document).ready(function(){
-    var occupation_button = $("#id_occupation"),
+    var task_type_button = $("#id_task_type"),
         parent_width = $(document).width()*0.5;
     $(window).on("resize", function() {
         if(parent_width > 300) {
-            var occupation_targetWidth = 300;
+            var task_type_targetWidth = 300;
         }
         else{
-            var occupation_targetWidth = parent_width;
+            var task_type_targetWidth = parent_width;
         }
-        occupation_button.css('width',occupation_targetWidth);
+        task_type_button.css('width',task_type_targetWidth);
     }).trigger("resize");
     var year_button = $("#id_year"),
         parent_width = $(document).width()*0.5;
