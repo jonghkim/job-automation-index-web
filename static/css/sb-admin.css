@@ -3462,7 +3462,7 @@ input[type="button"].btn-block {
   display: block;
   width: 100%;
   /*padding: 0.25rem 1.5rem;*/
-  padding: 0rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   clear: both;
   font-weight: 400;
   color: #212529;
