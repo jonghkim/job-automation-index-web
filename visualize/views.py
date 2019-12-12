@@ -322,16 +322,16 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
         lim_range = False
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
-            lim_range = True if max(focal_stats.values[0]) > 10 else lim_range
-            lim_range = True if min(focal_stats.values[0]) < -10 else lim_range
+            lim_range = True if max(focal_stats.iloc[0].tolist()) > 10 else lim_range
+            lim_range = True if min(focal_stats.iloc[0].tolist()) < -10 else lim_range
             focal_stats[focal_stats>10] = 10
             focal_stats[focal_stats<-10] = -10
 
             max_xtick = max(focal_stats.iloc[0].tolist())
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels]
-            lim_range = True if max(total_stats.values[0]) > 10 else lim_range
-            lim_range = True if min(total_stats.values[0]) < -10 else lim_range            
+            lim_range = True if max(total_stats.iloc[0].tolist()) > 10 else lim_range
+            lim_range = True if min(total_stats.iloc[0].tolist()) < -10 else lim_range            
             total_stats[total_stats>10] = 10
             total_stats[total_stats<-10] = -10
 
@@ -349,8 +349,8 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             focal_stats.index=['TOTAL_AVERAGE']
             focal_stats = focal_stats.T
-            lim_range = True if max(focal_stats.values[0]) > 10 else lim_range
-            lim_range = True if min(focal_stats.values[0]) < -10 else lim_range     
+            lim_range = True if max(focal_stats.iloc[0].tolist()) > 10 else lim_range
+            lim_range = True if min(focal_stats.iloc[0].tolist()) < -10 else lim_range     
             focal_stats[focal_stats>10] = 10
             focal_stats[focal_stats<-10] = -10
 
