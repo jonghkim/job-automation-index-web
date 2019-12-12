@@ -1,36 +1,62 @@
 
 <!-- Sidebar -->
 <ul class="sidebar navbar-nav" id="sidebar-color">
+
 <li class="nav-item">
     <a class="nav-link" href="{% url 'visualize:about'%}">
-    <i class="fas fa-fw fa-info" style="color:black"></i>
-    <span class="sidebar-span-dark" >About</span>
+    <i class="fas fa-fw fa-info" style="color:black; font-size: 1em;"></i>
+    <span class="sidebar-span-dark" style="color:black; font-size: 1em;">About</span>
     </a>
-</li>    
-<li class="nav-item">
-    <a class="nav-link" href="{% url 'visualize:automation_index'%}">
-    <i class="fas fa-fw fa-chart-line" style="color:black"></i>
-    <span class="sidebar-span-dark" >Automation Index</span>
+</li> 
+
+<li class="nav-item dropdown show">
+<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sidebar-span-dark" style="font-size: 0.91em;">Anatomy of Automation</span>
+</a>
+<div class="dropdown-menu show" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.83em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
+
+    <a class="dropdown-item" href="{% url 'visualize:automation_index'%}">
+        <i class="fas fa-fw fa-chart-line" style="color:black"></i>
+        Automation Index
+        </a>
     </a>
+    <a class="dropdown-item" href="{% url 'visualize:automation_ranking'%}">
+        <i class="fas fa-fw fa-chart-bar" style="color:black"></i>
+        Automation Ranking
+        </a>
+    </a>
+    <a class="dropdown-item" href="{% url 'visualize:task_level_automation'%}">
+        <i class="fas fa-fw fa-table" style="color:black"></i>
+        Task-Level Automation
+        </a>
+    </a>
+    <a class="dropdown-item" href="{% url 'visualize:skill_map'%}">
+        <i class="fas fa-fw fa-network-wired" style="color:black"></i>
+        Skill-DNA of a Job
+        </a>
+    </a>    
+</div>
 </li>
-<li class="nav-item">
-    <a class="nav-link" href="{% url 'visualize:automation_ranking'%}">
-    <i class="fas fa-fw fa-chart-bar" style="color:black"></i>
-    <span class="sidebar-span-dark">Automation Ranking</span>
+
+<li class="nav-item dropdown show">
+<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sidebar-span-dark" style="font-size: 0.91em;">Geography of Automation</span>
+</a>
+<div class="dropdown-menu show" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.83em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
+
+    <a class="dropdown-item">
+        <i class="fas fa-fw fa-chart-line" style="color:black"></i>
+        A Map of Automation
+        </a>
     </a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="{% url 'visualize:task_level_automation'%}">
-    <i class="fas fa-fw fa-table" style="color:black"></i>
-    <span class="sidebar-span-dark">Task Level Automation</span>
+    <a class="dropdown-item">
+        <i class="fas fa-fw fa-chart-bar" style="color:black"></i>
+        City-Level Automation
+        </a>
     </a>
+</div>
 </li>
-<li class="nav-item">
-    <a class="nav-link" href="{% url 'visualize:skill_map'%}">
-    <i class="fas fa-fw fa-network-wired" style="color:black"></i>
-    <span class="sidebar-span-dark">Skill Map</span>
-    </a>
-</li>
+
 </ul>
 
 <style>
