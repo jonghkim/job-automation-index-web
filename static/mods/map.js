@@ -62,7 +62,7 @@ tilde.map.mark = function() {
   var data = tilde.current_selection;
   tilde.map.markerGroup.clearLayers()
   tilde.marker = L.marker([data.Lat, data.Lng]).addTo(tilde.map.markerGroup)
-  var popup_html = '<h3><b>' + data['Location'] + '</b></h3><p><b>Year</b>: '+data.year+   '<br><b>Employment</b>: ' +data.e+  '<br><b>Automation Index</b>: ' +round(data.ai,2)+'<br><b>'+  data['task_type']+'</b>: '+ +round(data.ai_task_type,2) +'</p>';
+  var popup_html = '<h3><b>' + data['Location'] + '</b></h3><p><b>Year</b>: '+data.year+   '<br><b>Employment</b>: ' +data.employment+  '<br><b>Automation Index</b>: ' +round(data.ai,2)+'<br><b>'+  data['task_type']+'</b>: '+ +round(data.ai_task_type,2) +'</p>';
   tilde.marker.bindPopup(popup_html);
   tilde.marker.openPopup()
 }
