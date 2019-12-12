@@ -319,15 +319,19 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
         """
         labels = np.array(["Running a Different Race", "Race with the Machine",	
                             "Race ahead of the Machine", "Race against the Machine"])                    
-        
+        lim_range = False
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
+            lim_range = True if max(focal_stats) > 10 else lim_range
+            lim_range = True if min(focal_stats) < -10 else lim_range
             focal_stats[focal_stats>10] = 10
             focal_stats[focal_stats<-10] = -10
 
             max_xtick = max(focal_stats.iloc[0].tolist())
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels]
+            lim_range = True if max(total_stats) > 10 else lim_range
+            lim_range = True if min(total_stats) < -10 else lim_range            
             total_stats[total_stats>10] = 10
             total_stats[total_stats<-10] = -10
 
@@ -345,7 +349,8 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
             focal_stats.index=['TOTAL_AVERAGE']
             focal_stats = focal_stats.T
-
+            lim_range = True if max(focal_stats) > 10 else lim_range
+            lim_range = True if min(focal_stats) < -10 else lim_range     
             focal_stats[focal_stats>10] = 10
             focal_stats[focal_stats<-10] = -10
 
@@ -357,10 +362,11 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_xticks(np.arange(-5,6,1))
         else:
             ax.set_xlim(-10,10)
-            ax.set_xticks(np.arange(-10,11,1))
+            ax.set_xticks(np.arange(-10,11,2))
             ax_xtick = ax.get_xticks().tolist() 
-            ax_xtick[0] = '<-10'
-            ax_xtick[-1] = '10<'
+            if lim_range == True:
+                ax_xtick[0] = '<-10'
+                ax_xtick[-1] = '10<'
             ax.set_xticklabels(ax_xtick)            
 
     plt.tight_layout()
