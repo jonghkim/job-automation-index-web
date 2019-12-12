@@ -9,6 +9,7 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
   percent = .5;
   numSections = 1;
   sectionPerc = 1 / numSections / 2;
+  //padRad = 0.025;
   padRad = 0.025;
   chartInset = 10;
 
@@ -112,8 +113,7 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
     Needle.prototype.moveTo = function(perc) {
       var self,
           oldValue = this.perc || 0;
-      
-      perc = perc/160;
+
       this.perc = perc;
       self = this;
 
