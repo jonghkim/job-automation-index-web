@@ -597,3 +597,17 @@ def task_level_automation(request):
         year = '2018'
         return render(request, 'visualize/task_level_automation.html', {'year':year, 'form' : form})
         
+def map_automation(request):
+    pass
+    
+def city_level_automation(request):
+    if request.method == 'POST':
+        form = AutomationRanking(request.POST) 
+        if form.is_valid():
+            year = form.cleaned_data['year']
+            return render(request, 'visualize/city_level_automation.html',{'year':year, 'form': form})      
+    else:
+        form = AutomationRanking()
+        year = '2018'
+        return render(request, 'visualize/city_level_automation.html', {'year':year, 'form' : form})
+                

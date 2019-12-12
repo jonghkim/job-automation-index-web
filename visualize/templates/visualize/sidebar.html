@@ -46,13 +46,13 @@
 </a>
 <div id="geo_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.95em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
 
-    <a class="dropdown-item">
-        <i class="fas fa-fw fa-chart-line" style="color:black"></i>
+    <a class="dropdown-item" href="{% url 'visualize:map_automation'%}">
+        <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
         A Map of Automation
         </a>
     </a>
-    <a class="dropdown-item">
-        <i class="fas fa-fw fa-chart-bar" style="color:black"></i>
+    <a class="dropdown-item" href="{% url 'visualize:city_level_automation'%}">
+        <i class="fas fa-fw fa-table" style="color:black"></i>
         City-Level Automation
         </a>
     </a>
