@@ -13,7 +13,7 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
   chartInset = 10;
 
   // Orientation of gauge:
-  totalPercent = .75;
+  totalPercent = 40;
 
   el = d3.select('#needle');
 
@@ -96,6 +96,8 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
       rightY = centerY - this.radius * Math.sin(thetaRad + Math.PI / 2);
       return "M " + leftX + " " + leftY + " L " + topX + " " + topY + " L " + rightX + " " + rightY;
     };
+
+    console.log(recalcPointerPos);
 
     function Needle(el) {
       this.el = el;
