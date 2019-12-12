@@ -5,7 +5,7 @@
 <!-- Sidebar -->
 <ul class="sidebar navbar-nav" id="sidebar-color">
 
-<li class="nav-item">
+<li id="about" class="nav-item">
     <a class="nav-link" href="{% url 'visualize:about'%}">
     <span class="sidebar-span-dark" style="color:black; font-size: 1em;">About</span>
     </a>
@@ -74,6 +74,7 @@
 </style>
 
 <script>
+
 if ($(window).width() > 750) {
    var element = document.getElementById('anatomy_nav');
    element.classList.add('show');
@@ -84,4 +85,44 @@ if ($(window).width() > 750) {
    var element = document.getElementById('geo_menu');
    element.classList.add('show');
 }
+
+if ($(window).width() < 750) {
+    var element = document.getElementById('about');
+    element.style.fontSize = '0.7em';    
+    var element = document.getElementById('anatomy_nav');
+    element.style.fontSize = '0.7em';
+    var element = document.getElementById('anatomy_menu');
+    element.style.fontSize = '0.665em';
+    var element = document.getElementById('geo_nav');
+    element.style.fontSize = '0.7em';
+    var element = document.getElementById('geo_menu');
+    element.style.fontSize = '0.665em';
+}
+
+
+$(window).resize(function() {
+if ($(window).width() < 750) {
+    var element = document.getElementById('about');
+    element.style.fontSize = '0.7em';    
+    var element = document.getElementById('anatomy_nav');
+    element.style.fontSize = '0.7em';
+    var element = document.getElementById('anatomy_menu');
+    element.style.fontSize = '0.665em';
+    var element = document.getElementById('geo_nav');
+    element.style.fontSize = '0.7em';
+    var element = document.getElementById('geo_menu');
+    element.style.fontSize = '0.665em';
+    }
+else {
+    var element = document.getElementById('about');
+    element.style.fontSize = '1em';    
+    var element = document.getElementById('anatomy_nav');
+    element.style.fontSize = '1em';
+    var element = document.getElementById('anatomy_menu');
+    element.style.fontSize = '0.95em';
+    var element = document.getElementById('geo_nav');
+    element.style.fontSize = '1em';
+    var element = document.getElementById('geo_menu');
+    element.style.fontSize = '0.95em';
+}});
 </script>
