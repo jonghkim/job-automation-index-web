@@ -606,7 +606,7 @@ def map_automation(request):
             return render(request, 'visualize/map_automation.html',{'task_type':task_type, 'year':year,'form': form})      
     else:
         form = MapForm()
-        task_type = 'Race against the Machine'
+        task_type = u'Running a Different Race'
         year = '2018'
         return render(request, 'visualize/map_automation.html', {'task_type':task_type, 'year':year,'form': form})      
          

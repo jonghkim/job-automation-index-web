@@ -44,10 +44,9 @@
 
     <!--<div class="card-footer small text-muted">The size of each skill is proportional to its importance to an occupation. The darker-red color indicates higher degree of automation.</div>-->
 
-
 	<script type="text/javascript" src="{% static 'mods/tilde.js' %}"></script>
 	<script type="text/javascript" src="{% static 'mods/starters.js' %}"></script>
-	<script type="text/javascript" src="{% static 'data/map/test.js' %}"></script>
+	<script type="text/javascript" src="/static/data/map/{{year|safe}}_{{task_type|safe}}.js"></script>
 	<script type="text/javascript" src="{% static 'mods/query.js' %}"></script>
 	<script type="text/javascript" src="{% static 'mods/city_typeahead.js' %}"></script>
 	<script type="text/javascript" src="{% static 'mods/map.js' %}"> </script>

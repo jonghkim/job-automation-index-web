@@ -12,9 +12,9 @@ tilde.updateNeedle = function() {
 		.transition()
 		.duration(500)
 		.style('opacity',1)
-	needle.moveTo(tilde.needleScale(data.ai))
+	needle.moveTo(tilde.needleScale(data.ai_task_type))
 	d3.select(".chart-filled")
-		.style('fill',tilde.colorScale(data.ai))
+		.style('fill',tilde.colorScale(data.ai_task_type))
 
 	if (!d3.select("#needle_annotation").node()) {
 		tilde.annotation = d3.select("#sub_wrapper")
@@ -88,7 +88,7 @@ tilde.updateNeedle = function() {
 
 		tilde.target = g
 			.append("text")
-			.text(round(data.ai*100,1)+'%')
+			.text(round(data.ai_task_type,2))
 			.attr('text-anchor','middle')
 			.style('font-weight','bold')
 
@@ -111,7 +111,7 @@ tilde.updateNeedle = function() {
 			.style('opacity',1)	
 	} else {
 		tilde.target
-			.text(round(data.ai*100,1)+'%')
+			.text(round(data.ai_task_type,2))
 			.style('opacity',0)
 			.transition()
 			.duration(800)
