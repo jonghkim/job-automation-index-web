@@ -8,5 +8,7 @@
 <url><loc>http://www.jobautomationindex.com//skill_map/</loc><changefreq>daily</changefreq><priority>0.85</priority></url>
 <url><loc>http://www.jobautomationindex.com//automation_ranking/</loc><changefreq>daily</changefreq><priority>0.85</priority></url>
 <url><loc>http://www.jobautomationindex.com//task_level_automation/</loc><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.jobautomationindex.com//map_automation/</loc><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.jobautomationindex.com//city_level_automation/</loc><changefreq>daily</changefreq><priority>0.85</priority></url>
 </urlset>
  
