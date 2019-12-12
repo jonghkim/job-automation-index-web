@@ -3461,7 +3461,8 @@ input[type="button"].btn-block {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1.5rem;
+  /*padding: 0.25rem 1.5rem;*/
+  padding: 0.1rem 0.5rem;
   clear: both;
   font-weight: 400;
   color: #212529;
@@ -10538,14 +10539,14 @@ body {
 
 @media (min-width: 768px) {
   .sidebar {
-    width: 225px !important;
+    width: 300px !important;
   }
   .sidebar .nav-item .nav-link {
     display: block;
     width: 100%;
     text-align: left;
     padding: 1rem;
-    width: 225px;
+    width: 300px;
   }
   .sidebar .nav-item .nav-link span {
     font-size: 1rem;
