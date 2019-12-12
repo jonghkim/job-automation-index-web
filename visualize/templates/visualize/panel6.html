@@ -1,0 +1,56 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/leaflet.css' %}" />
+
+
+<!-- ~EXPERIMENTAL~ Mapbox GL -->
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+
+<!-- LOAD DEPENDENCIES -->
+<script type="text/javascript" src="{% static 'libs/d3.js' %}"></script>
+<script type="text/javascript" src="{% static 'libs/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'libs/typeahead.js' %}"></script>
+<script type="text/javascript" src="{% static 'libs/leaflet.js' %}"></script>
+<script type="text/javascript" src="{% static 'libs/leaflet-mapbox-gl.js' %}"></script>
+
+<div class="card mb-3">
+    <div class="card-header">
+        City Level Automation for {{ job }} 
+    </div>
+
+    <!-- size of card -->
+    <div class="card-body" style="width:400; height:400;">
+        <!--
+        <svg id="chart" width="400" height="400"
+        viewBox="0 0 400 400"
+        perserveAspectRatio="xMinYMid">
+        </svg>
+        -->
+
+		<div id="job_dropdown" class='tilde-centered' style='font-size: 5.3vw; font-family: Arial, sans-serif; margin:0;'>
+			<input class="typeahead" type="text" placeholder="Find a city...">
+		</div>
+        
+		<div class='needle-wrapper'>
+			<div id='map'></div>
+			<div id='sub_wrapper'>
+				<div id='needle'></div>
+
+			</div>
+		</div>
+    </div>
+
+    <!--<div class="card-footer small text-muted">The size of each skill is proportional to its importance to an occupation. The darker-red color indicates higher degree of automation.</div>-->
+
+
+	<script type="text/javascript" src="{% static 'mods/tilde.js' %}"></script>
+	<script type="text/javascript" src="{% static 'mods/starters.js' %}"></script>
+	<script type="text/javascript" src="{% static 'data/map/test.js' %}"></script>
+	<script type="text/javascript" src="{% static 'mods/query.js' %}"></script>
+	<script type="text/javascript" src="{% static 'mods/city_typeahead.js' %}"></script>
+	<script type="text/javascript" src="{% static 'mods/map.js' %}"> </script>
+	<script type="text/javascript" src="{% static 'mods/frame.js' %}"></script>
+	<script type="text/javascript" src="{% static 'mods/draw.js' %}"></script>
+</div>

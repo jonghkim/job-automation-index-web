@@ -1,0 +1,140 @@
+#map {
+    width:100%;
+    height:600px;
+}
+#tilde_notice {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    font-size: 75%;
+}
+#citations {
+    position:relative;
+    top:2vw;
+    text-align: center;
+    font-size:60%;
+    color:grey;
+}
+
+.needle-wrapper {
+    height:600px;
+    position:relative;
+}
+.chart-gauge{
+  width: 400px;
+  margin: 100px auto  
+ } 
+.chart-filled{
+    fill: darkgrey;
+}
+.chart-empty{
+    fill: #dedede;
+}
+
+.needle, .needle-center{
+    fill: #464A4F;
+}
+
+#sub_wrapper {
+    pointer-events: none;
+    position:absolute;
+    width:60%;
+    max-width: 320px;
+    right:3.5%;
+    top:63%;
+    z-index:100;
+    font-size: 55%;
+    fill:white;
+}
+
+#needle {
+    width:100%;
+    opacity:0;
+}
+
+#needle_annotation {
+    width:100%;
+    z-index:500;
+}
+
+/*
+#needle {
+    pointer-events: none;
+    opacity:0;
+    position:absolute;
+    width:60%;
+    max-width: 300px;
+    right:3.5%;
+    top:63%;
+}
+
+#needle_annotation {
+    font-size: 55%;
+    fill:white;
+    pointer-events: none;
+    position:absolute;
+    width:60%;
+    max-width: 300px;
+    left:5vw;
+    top:79%;
+    z-index:100;
+    opacity: 0.8;
+}
+*/
+#needle svg {
+    position:absolute;
+    top:0;
+    z-index: 100;
+}
+
+
+
+.twitter-typeahead {
+    width:100%;
+}
+.tt-input,
+.tt-hint {
+    width: 94%;
+    height: 5.5vw;
+    padding: 2vw 2.5vw;
+    font-size: 90%;
+    line-height: 5.5vw;
+    border: 2px solid #ccc;
+    border-radius: 1.5vw;
+    outline: none;
+}
+.tt-input {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.tt-hint {
+    color: #999;
+}
+.tt-menu {
+    width: 100%;
+    margin-top: 1.5vw;
+    padding: 1.5vw 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1.5vw;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    z-index: 9999;
+}
+.tt-suggestion {
+    padding: 1vw 3.5vw;
+    font-size: 70%;
+    line-height: 4vw;
+    z-index: 9999;
+}
+.tt-suggestion.tt-cursor {
+    color: #fff;
+    background-color: #4E2A84;
+}
+.tt-suggestion:hover {
+    cursor:pointer;
+    color: #fff;
+    background-color: #988FBF;
+}
+.tt-suggestion p {
+    margin: 0;
+}

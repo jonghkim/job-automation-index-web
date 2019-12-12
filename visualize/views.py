@@ -598,7 +598,23 @@ def task_level_automation(request):
         return render(request, 'visualize/task_level_automation.html', {'year':year, 'form' : form})
         
 def map_automation(request):
-    pass
+    if request.method == 'POST':
+        form = SkillMap(request.POST) 
+        if form.is_valid():
+            year = form.cleaned_data['year']
+            code = form.cleaned_data['occupation']
+            job, code, code_desc = code_description(code)
+
+            return render(request, 'visualize/map_automation.html', {'year':year, 'job':job, 'code':code,
+                    'form': form, 'code_description':code_desc})        
+    else:
+        form = SkillMap()
+        year = '2018'
+        code = '00-0000'
+        job, code , code_desc = code_description()        
+        
+        return render(request, 'visualize/map_automation.html', {'year':year, 'job':job, 'code':code,
+                'form': form, 'code_description':code_desc})    
     
 def city_level_automation(request):
     if request.method == 'POST':
