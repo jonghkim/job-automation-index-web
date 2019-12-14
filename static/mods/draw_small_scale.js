@@ -26,7 +26,7 @@ tilde.updateNeedle = function() {
 			.append('svg')
 			.attr('width',function(d,i){
 				var x = +d3.select("#needle_annotation")[0][0].offsetWidth
-					return x*3
+					return x*2
 			})
 			.attr('height',function(d,i){
 				var x = +d3.select("#needle_annotation")[0][0].offsetWidth/4 + tilde.dropheight
@@ -38,9 +38,9 @@ tilde.updateNeedle = function() {
 			.append('g')
 			.attr('transform',"translate(0, " + tilde.dropheight + ")")
 			
-		var first = g
+			var first = g
 			.append("text")
-			.text("Predicted "+ data['task_type'])
+			.text("Predicted")
 			.attr('text-anchor','middle')
 			.style('font-weight','bold')
 			
@@ -59,13 +59,13 @@ tilde.updateNeedle = function() {
 			.transition()
 			.duration(1200)
 			.style('opacity',1)
-
-		/*
+		
+		
 		var second = g
 			.append("text")
-			.text("(gauge is relative to all cities studied)")
+			.text(data['task_type'])
 			.attr('text-anchor','middle')
-			.style('font-style','italic')
+			.style('font-weight','bold')
 			
 		second.attr('y',function(d,i){
 				var y = (+d3.select(this).node().getBBox().height)*2.2
@@ -82,7 +82,6 @@ tilde.updateNeedle = function() {
 			.transition()
 			.duration(1200)
 			.style('opacity',1)
-		*/
 
 		var g = svg	
 			.append('g')
