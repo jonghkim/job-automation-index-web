@@ -36,7 +36,7 @@ li {
 
 <script>
 if ($(window).width() < 750) {
-    var task_type_button = $("#id_task_type");
+    var task_type_button = $("#id_relation_to_automation");
     task_type_button.css('width',300);
     
     var year_button = $("#id_year");
@@ -44,7 +44,7 @@ if ($(window).width() < 750) {
 }
 
 $(document).ready(function(){
-    var task_type_button = $("#id_task_type"),
+    var task_type_button = $("#id_relation_to_automation"),
         parent_width = $(document).width()*0.5;
     $(window).on("resize", function() {
         if(parent_width > 300) {

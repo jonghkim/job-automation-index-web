@@ -70,7 +70,7 @@ def draw_task_automation(year='2018', job='TOTAL AVERAGE'):
                 axs[i].set_title(obj)
                 axs[i].set_yticklabels([])
 
-                axs[i].set_xlim(0, 100)
+                axs[i].set_xlim(30, 70)
                 
                 plt.setp(axs[i].get_xticklabels(), rotation=30)
 
@@ -242,16 +242,23 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
         """
         labels = np.array(["Running a Different Race", "Race with the Machine",	
                             "Race ahead of the Machine", "Race against the Machine"])                    
-        
+        lim_range = False
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
             max_ytick = max(focal_stats)
             focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
-            #focal_stats[focal_stats>70] = 70
+
+            lim_range = True if max(focal_stats.max()) > 30 else lim_range
+            
+            focal_stats[focal_stats>30] = 30
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels].iloc[0].tolist()
             total_stats=np.concatenate((total_stats,[total_stats[0]]))
             #total_stats[total_stats>70] = 70
+
+            lim_range = True if max(total_stats.max()) > 30 else lim_range
+            
+            total_stats[total_stats>30] = 30
 
             angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)        
             angles=np.concatenate((angles,[angles[0]]))
@@ -272,10 +279,13 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
-            focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
+            focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()            
             max_ytick = max(focal_stats)
             focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
-            #focal_stats[focal_stats>70] = 70
+
+            lim_range = True if max(focal_stats.max()) > 30 else lim_range
+            
+            focal_stats[focal_stats>30] = 30
 
             angles=np.linspace(0, 2*np.pi, len(labels), endpoint=False)        
             angles=np.concatenate((angles,[angles[0]]))
@@ -303,14 +313,15 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_yticks(yticks)
         else:
         """
-        ax.set_ylim(0,40)
-        yticks = np.arange(0,45,5)
+        ax.set_ylim(0,30)
+        yticks = np.arange(0,35,5)
         ax.set_yticks(yticks)           
         ax_ytick = ax.get_yticks().tolist() 
         #ax_ytick[-1] = '>70'
+        if lim_range == True:
+            ax_ytick[-1] = '30<'   
         ax.set_yticklabels(ax_ytick)
         
-
     elif year=='2008~2018':
         """
         labels = np.array(["Hazardous and Group Task","Outdoor Labor","Dynamic Physical Task", "Physical Task",
@@ -601,14 +612,14 @@ def map_automation(request):
     if request.method == 'POST':
         form = MapForm(request.POST) 
         if form.is_valid():
-            task_type = form.cleaned_data['task_type']
+            relation_to_automation = form.cleaned_data['relation_to_automation']
             year = form.cleaned_data['year']
-            return render(request, 'visualize/map_automation.html',{'task_type':task_type, 'year':year,'form': form})      
+            return render(request, 'visualize/map_automation.html',{'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
     else:
         form = MapForm()
-        task_type = u'Running a Different Race'
+        relation_to_automation = u'Race ahead of the Machine'
         year = '2018'
-        return render(request, 'visualize/map_automation.html', {'task_type':task_type, 'year':year,'form': form})      
+        return render(request, 'visualize/map_automation.html', {'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
          
 
 def city_level_automation(request):
