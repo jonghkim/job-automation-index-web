@@ -98,16 +98,16 @@
 <script>
 
 	if ($(window).width() < 750) {
-	   var element = document.getElementsByClassName('tt-suggestion tt-selectable');
+	   var element = document.getElementsByClassName('tt-suggestion');
 	   for(var i=0, len=element.length; i<len; i++)
 		{
-			element[i].style["height"] = "8vw";
 			element[i].style["line-height"] = "8vw";
 		}	   
 	   var element = document.getElementsByClassName('typeahead tt-input');
 	   for(var i=0, len=element.length; i<len; i++)
 		{
-			element[i].style["height"] = "8vw";
+			element[i].style["height"] = "8vw";	
+			element[i].style["line-height"] = "8vw";
 		}	
 		var element = document.getElementById('job_dropdown'); 
 		element.style["font-size"] = "7vw";
@@ -116,33 +116,30 @@
 	$(window).resize(function() {	
 	if ($(window).width() < 750) {
 		console.log($(window).width());
-		var element = document.getElementsByClassName('tt-suggestion tt-selectable');
+		var element = document.getElementsByClassName('tt-suggestion');
 	   for(var i=0, len=element.length; i<len; i++)
 		{
-			element[i].style["height"] = "8vw";
 			element[i].style["line-height"] = "8vw";
 		}	   
 	   var element = document.getElementsByClassName('typeahead tt-input');
 	   for(var i=0, len=element.length; i<len; i++)
 		{
-			element[i].style["height"] = "8vw";
+			element[i].style["height"] = "8vw";	
 			element[i].style["line-height"] = "8vw";
 		}
 		var element = document.getElementById('job_dropdown'); 
 		element.style["font-size"] = "7vw";		
 	}
 	else {
-		var element = document.getElementsByClassName('tt-suggestion tt-selectable');
+		var element = document.getElementsByClassName('tt-suggestion');
 	   for(var i=0, len=element.length; i<len; i++)
 		{
-			element[i].style["height"] = "2vw";
-			element[i].style["line-height"] = "2vw";
+			element[i].style["line-height"] = "4vw";
 		}	   
 	   var element = document.getElementsByClassName('typeahead tt-input');
 	   for(var i=0, len=element.length; i<len; i++)
-		{	
-			element[i].style["height"] = "2vw";
-			element[i].style["line-height"] = "2vw";
+		{	element[i].style["height"] = "4vw";	
+			element[i].style["line-height"] = "4vw";
 		}
 		var element = document.getElementById('job_dropdown'); 
 		element.style["font-size"] = "1.5vw";		
