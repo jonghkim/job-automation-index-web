@@ -245,18 +245,14 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
         lim_range = False
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
-            max_ytick = max(focal_stats)
+            lim_range = True if max(focal_stats) > 30 else lim_range
             focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
-
-            lim_range = True if max(focal_stats.max()) > 30 else lim_range
             
             focal_stats[focal_stats>30] = 30
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels].iloc[0].tolist()
+            lim_range = True if max(total_stats) > 30 else lim_range
             total_stats=np.concatenate((total_stats,[total_stats[0]]))
-            #total_stats[total_stats>70] = 70
-
-            lim_range = True if max(total_stats.max()) > 30 else lim_range
             
             total_stats[total_stats>30] = 30
 
@@ -280,10 +276,8 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
 
         elif job == 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()            
-            max_ytick = max(focal_stats)
+            lim_range = True if max(focal_stats) > 30 else lim_range
             focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
-
-            lim_range = True if max(focal_stats.max()) > 30 else lim_range
             
             focal_stats[focal_stats>30] = 30
 
