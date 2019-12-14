@@ -10710,7 +10710,7 @@ footer.sticky-footer .copyright {
 
 @media (min-width: 768px) {
   footer.sticky-footer {
-    width: calc(100% - 225px);
+    width: calc(100% - 300px);
   }
 }
 

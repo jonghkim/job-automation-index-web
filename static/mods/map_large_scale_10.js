@@ -9,7 +9,7 @@ tilde.token = 'pk.eyJ1Ijoiam9uZ2hvIiwiYSI6ImNqNXVwNDVxMzBvYW8yeWtmeWlpb3pmb28ifQ
 
 tilde.map.circleGroup = L.featureGroup().addTo(tilde.map);
 tilde.map.markerGroup = L.layerGroup().addTo(tilde.map);
-tilde.map.setView([39.8283, -98.5795], 3);
+tilde.map.setView([39.8283, -98.5795], 4);
 
 tilde.gl = L.mapboxGL({
   style: 'mapbox://styles/jongho/ck454q6nm009i1cpdjnbwj591',
