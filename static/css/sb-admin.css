@@ -10503,7 +10503,7 @@ body {
 }
 
 .sidebar .nav-item .nav-link span {
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   display: block;
 }
 
@@ -10573,7 +10573,7 @@ body {
     width: 90px;
   }
   .sidebar.toggled .nav-item .nav-link span {
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     display: block;
   }
   .sidebar.toggled .nav-item .dropdown-menu {
