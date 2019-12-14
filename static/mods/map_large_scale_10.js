@@ -5,16 +5,15 @@ tilde.ai_riskDomain = [8,10,13]
 tilde.colorRange = ["#FAFAFA","#EB97A8","#DC143C"]
 tilde.radiusScale = d3.scale.linear().domain(tilde.employmentDomain).range([500,30000])
 tilde.colorScale = d3.scale.linear().domain(tilde.ai_riskDomain).range(tilde.colorRange)
-tilde.token = 'pk.eyJ1Ijoia2VsbG9nZ2luc2lnaHQiLCJhIjoiY2poMmRyYTBlMDNpNjJxcGR0ZWQzN2ZpbyJ9.P2iJTWi-a-cf5tJ0m7520A'
+tilde.token = 'pk.eyJ1Ijoiam9uZ2hvIiwiYSI6ImNqNXVwNDVxMzBvYW8yeWtmeWlpb3pmb28ifQ.Eei6uDn--hcmZ6M3ZNXjGg'
 
 tilde.map.circleGroup = L.featureGroup().addTo(tilde.map);
 tilde.map.markerGroup = L.layerGroup().addTo(tilde.map);
 tilde.map.setView([39.8283, -98.5795], 3);
 
 tilde.gl = L.mapboxGL({
-    style: 'mapbox://styles/felavsky/cjh10iif904ai2sk5xfxgfqjv',
-    accessToken: tilde.token,
-    attribution: 'Style: <a href="https://twitter.com/rasagy">@rasagy</a> | &copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> | <a href="https://www.mapbox.com/map-feedback/"><b>Improve this map</b></a>'
+  style: 'mapbox://styles/jongho/ck4541x0g1p5l1cryxa3whqnh',
+  accessToken: tilde.token,
 }).addTo(tilde.map);
 
 for (var num = 0; num < tilde.cities.length; num++) {
