@@ -19,7 +19,7 @@
     <ul class="navbar-nav ml-auto ml-md-0">
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span id='nav-about'>Contact</span>
+            <span id='nav-about' style="font-size: 1em;">Contact</span>
                 <style>
                     #nav-about {
                         color: #333333;
@@ -46,5 +46,9 @@
     if ($(window).width() > 750) {
        var element = document.getElementById('sidebarToggle');
        element.style.display = "none";
+    }
+    else{
+        var element = document.getElementById('nav-about');
+        element.style.fontSize = '0.83em';           
     }
 </script>
