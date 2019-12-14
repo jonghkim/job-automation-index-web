@@ -59,7 +59,8 @@ tilde.updateNeedle = function() {
 			.transition()
 			.duration(1200)
 			.style('opacity',1)
-
+		
+		/*
 		var second = g
 			.append("text")
 			.text("(gauge is relative to all cities studied)")
@@ -81,6 +82,7 @@ tilde.updateNeedle = function() {
 			.transition()
 			.duration(1200)
 			.style('opacity',1)
+		*/
 
 		var g = svg	
 			.append('g')
