@@ -26,7 +26,7 @@ tilde.updateNeedle = function() {
 			.append('svg')
 			.attr('width',function(d,i){
 				var x = +d3.select("#needle_annotation")[0][0].offsetWidth
-					return x
+					return x*2
 			})
 			.attr('height',function(d,i){
 				var x = +d3.select("#needle_annotation")[0][0].offsetWidth/4 + tilde.dropheight
