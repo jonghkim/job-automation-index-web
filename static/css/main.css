@@ -123,7 +123,7 @@
 .tt-suggestion {
     padding: 1vw 2vw;
     font-size: 70%;
-    line-height: 4vw;
+    line-height: 2vw;
     z-index: 9999;
 }
 .tt-suggestion.tt-cursor {
