@@ -14,6 +14,7 @@ tilde.map.setView([39.8283, -98.5795], 3);
 tilde.gl = L.mapboxGL({
   style: 'mapbox://styles/jongho/ck454q6nm009i1cpdjnbwj591',
   accessToken: tilde.token,
+  attribution: 'Style: <a href="https://twitter.com/rasagy">@rasagy</a> | &copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> | <a href="https://www.mapbox.com/map-feedback/"><b>Improve this map</b></a>'
 }).addTo(tilde.map);
 
 for (var num = 0; num < tilde.cities.length; num++) {

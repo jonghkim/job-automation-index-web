@@ -40,7 +40,7 @@ tilde.updateNeedle = function() {
 			
 		var first = g
 			.append("text")
-			.text("Predicted impact of automation")
+			.text("Predicted "+ data['task_type'])
 			.attr('text-anchor','middle')
 			.style('font-weight','bold')
 			
