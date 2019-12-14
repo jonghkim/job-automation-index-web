@@ -7,15 +7,15 @@
 
 <li id="about" class="nav-item">
     <a class="nav-link" href="{% url 'visualize:about'%}">
-    <span class="sidebar-span-dark" style="color:black; font-size: 1em;">About</span>
+    <span class="sidebar-span-dark" style="color:black;">About</span>
     </a>
 </li> 
 
 <li id="anatomy_nav" class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sidebar-span-dark" style="font-size: 1em;">Anatomy of Automation</span>
+    <span class="sidebar-span-dark">Anatomy of Automation</span>
 </a>
-<div id="anatomy_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.95em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
+<div id="anatomy_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
 
     <a class="dropdown-item" href="{% url 'visualize:automation_index'%}">
         <i class="fas fa-fw fa-chart-line" style="color:black"></i>
@@ -42,9 +42,9 @@
 
 <li id="geo_nav" class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sidebar-span-dark" style="font-size: 1em;">Geography of Automation</span>
+    <span class="sidebar-span-dark">Geography of Automation</span>
 </a>
-<div id="geo_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="font-size: 0.95em; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
+<div id="geo_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
 
     <a class="dropdown-item" href="{% url 'visualize:map_automation'%}">
         <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
@@ -73,6 +73,42 @@
     }    
 </style>
 
+<style>
+#about{
+    font-size: 1em;
+}
+#anatomy_nav{
+    font-size: 1em;
+}
+#anatomy_menu{
+    font-size: 0.95em;
+}
+#geo_nav{
+    font-size: 1em;
+}
+#geo_menu{
+    font-size: 0.95em;
+}
+
+@media only screen and (max-width: 750px) {
+    #about {
+        font-size: 0.83em!important;
+    }        
+    #anatomy_nav {
+        font-size: 0.83em!important;
+    }    
+    #anatomy_menu {
+        font-size: 0.9em!important;
+    }    
+    #geo_nav {
+        font-size: 0.83em!important;
+    }    
+    #geo_menu {
+        font-size: 0.9em!important;
+    }                
+}
+</style>
+
 <script>
 
 if ($(window).width() > 750) {
@@ -86,43 +122,4 @@ if ($(window).width() > 750) {
    element.classList.add('show');
 }
 
-if ($(window).width() < 750) {
-    var element = document.getElementById('about');
-    element.style.fontSize = '0.83em';    
-    var element = document.getElementById('anatomy_nav');
-    element.style.fontSize = '0.83em';
-    var element = document.getElementById('anatomy_menu');
-    element.style.fontSize = '0.9em';
-    var element = document.getElementById('geo_nav');
-    element.style.fontSize = '0.83em';
-    var element = document.getElementById('geo_menu');
-    element.style.fontSize = '0.9em';
-}
-
-
-$(window).resize(function() {
-if ($(window).width() < 750) {
-    var element = document.getElementById('about');
-    element.style.fontSize = '0.83em';    
-    var element = document.getElementById('anatomy_nav');
-    element.style.fontSize = '0.83em';
-    var element = document.getElementById('anatomy_menu');
-    element.style.fontSize = '0.9em';
-    var element = document.getElementById('geo_nav');
-    element.style.fontSize = '0.83em';
-    var element = document.getElementById('geo_menu');
-    element.style.fontSize = '0.9em';
-    }
-else {
-    var element = document.getElementById('about');
-    element.style.fontSize = '1em';    
-    var element = document.getElementById('anatomy_nav');
-    element.style.fontSize = '1em';
-    var element = document.getElementById('anatomy_menu');
-    element.style.fontSize = '0.95em';
-    var element = document.getElementById('geo_nav');
-    element.style.fontSize = '1em';
-    var element = document.getElementById('geo_menu');
-    element.style.fontSize = '0.95em';
-}});
 </script>

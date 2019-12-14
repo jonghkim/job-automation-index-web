@@ -95,10 +95,10 @@
 .tt-input,
 .tt-hint {
     width: 94%;
-    height: 4vw;
+    height: 3vw;
     padding: 1.5vw 2vw;
     font-size: 90%;
-    line-height: 4vw;
+    line-height: 3vw;
     border: 2px solid #ccc;
     border-radius: 1.5vw;
     outline: none;
@@ -121,9 +121,9 @@
     z-index: 9999;
 }
 .tt-suggestion {
-    padding: 1vw 3vw;
+    padding: 1vw 2vw;
     font-size: 70%;
-    line-height: 4vw;
+    line-height: 2vw;
     z-index: 9999;
 }
 .tt-suggestion.tt-cursor {
@@ -137,4 +137,25 @@
 }
 .tt-suggestion p {
     margin: 0;
+}
+@media (max-width: 750px) {
+    .tt-input {
+        height: 8vw;
+    }       
+    .tt-hint {
+        width: 94%;
+        height: 8vw;
+        padding: 1.5vw 2vw;
+        font-size: 90%;
+        line-height: 8vw;
+        border: 2px solid #ccc;
+        border-radius: 1.5vw;
+        outline: none;
+    }    
+    .tt-suggestion {
+        padding: 1vw 2vw;
+        font-size: 70%;
+        line-height: 8vw;
+        z-index: 9999;
+    }    
 }

@@ -30,41 +30,19 @@ li {
     list-style-type: none;
     padding-right: 10px;    
 }
-</style>
-
-<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
-<script>
-if ($(window).width() < 750) {
-    var task_type_button = $("#id_relation_to_automation");
-    task_type_button.css('width',300);
-    
-    var year_button = $("#id_year");
-    year_button.css('width',200);
+#id_relation_to_automation{
+    width: 300px;
 }
+#id_year{
+    width: 200px;
 
-$(document).ready(function(){
-    var task_type_button = $("#id_relation_to_automation"),
-        parent_width = $(document).width()*0.5;
-    $(window).on("resize", function() {
-        if(parent_width > 300) {
-            var task_type_targetWidth = 300;
-        }
-        else{
-            var task_type_targetWidth = parent_width;
-        }
-        task_type_button.css('width',task_type_targetWidth);
-    }).trigger("resize");
-    var year_button = $("#id_year"),
-        parent_width = $(document).width()*0.5;
-    $(window).on("resize", function() {
-        if(parent_width > 200) {
-            var year_targetWidth = 200;
-        }
-        else{
-            var year_targetWidth = parent_width;
-        }
-        year_button.css('width',year_targetWidth);
-    }).trigger("resize");
-});
-</script>
+}
+@media only screen and (max-width: 750px) {
+    #id_relation_to_automation {
+        width: 30vw !important;
+    }
+    #id_year {
+        width: 20vw !important;
+    }    
+}
+</style>

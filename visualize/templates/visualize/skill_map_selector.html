@@ -32,40 +32,21 @@ li {
 }
 </style>
 
-<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<style>
+#id_occupation{
+    width: 300px;
 
-<script>
-if ($(window).width() < 750) {
-    var occupation_button = $("#id_occupation");
-    occupation_button.css('width',300);
-    
-    var year_button = $("#id_year");
-    year_button.css('width',200);
+}    
+#id_year{
+    width: 200px;
+
 }
-
-$(document).ready(function(){
-    var occupation_button = $("#id_occupation"),
-        parent_width = $(document).width()*0.5;
-    $(window).on("resize", function() {
-        if(parent_width > 300) {
-            var occupation_targetWidth = 300;
-        }
-        else{
-            var occupation_targetWidth = parent_width;
-        }
-        occupation_button.css('width',occupation_targetWidth);
-    }).trigger("resize");
-
-    var year_button = $("#id_year"),
-        parent_width = $(document).width()*0.5;
-    $(window).on("resize", function() {
-        if(parent_width > 200) {
-            var year_targetWidth = 200;
-        }
-        else{
-            var year_targetWidth = parent_width;
-        }
-        year_button.css('width',year_targetWidth);
-    }).trigger("resize");
-});
-</script>
+@media only screen and (max-width: 750px) {
+    #id_occupation {
+        width: 30vw !important;
+    }        
+    #id_year {
+        width: 20vw !important;
+    }    
+}
+</style>

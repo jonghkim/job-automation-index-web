@@ -41,14 +41,21 @@
     </ul>
 
 </nav>
+<style>
+#nav-about{
+    font-size: 0.95em;
+}
+
+@media only screen and (max-width: 750px) {
+    #nav-about {
+        font-size: 0.83em!important;
+    }            
+}
+</style>
 
 <script>
     if ($(window).width() > 750) {
        var element = document.getElementById('sidebarToggle');
        element.style.display = "none";
-    }
-    else{
-        var element = document.getElementById('nav-about');
-        element.style.fontSize = '0.83em';           
     }
 </script>
