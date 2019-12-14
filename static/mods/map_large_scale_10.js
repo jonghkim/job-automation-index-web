@@ -12,7 +12,7 @@ tilde.map.markerGroup = L.layerGroup().addTo(tilde.map);
 tilde.map.setView([39.8283, -98.5795], 3);
 
 tilde.gl = L.mapboxGL({
-  style: 'mapbox://styles/jongho/ck4541x0g1p5l1cryxa3whqnh',
+  style: 'mapbox://styles/jongho/ck454q6nm009i1cpdjnbwj591',
   accessToken: tilde.token,
 }).addTo(tilde.map);
 
