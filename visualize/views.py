@@ -312,8 +312,8 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
         ax.set_yticks(yticks)           
         ax_ytick = ax.get_yticks().tolist() 
         #ax_ytick[-1] = '>70'
-        if lim_range == True:
-            ax_ytick[-1] = '30<'   
+        #if lim_range == True:
+        ax_ytick[-1] = '30<'   
         ax.set_yticklabels(ax_ytick)
         
     elif year=='2008~2018':
@@ -369,9 +369,9 @@ def draw_task_importance(year='2018', job='TOTAL AVERAGE'):
             ax.set_xlim(-10,10)
             ax.set_xticks(np.arange(-10,11,2))
             ax_xtick = ax.get_xticks().tolist() 
-            if lim_range == True:
-                ax_xtick[0] = '<-10'
-                ax_xtick[-1] = '10<'
+            #if lim_range == True:
+            ax_xtick[0] = '<-10'
+            ax_xtick[-1] = '10<'
             ax.set_xticklabels(ax_xtick)            
 
     plt.tight_layout()

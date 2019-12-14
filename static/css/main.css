@@ -95,10 +95,10 @@
 .tt-input,
 .tt-hint {
     width: 94%;
-    height: 5.5vw;
-    padding: 2vw 2.5vw;
+    height: 2vw;
+    padding: 1vw 1.5vw;
     font-size: 90%;
-    line-height: 5.5vw;
+    line-height: 3vw;
     border: 2px solid #ccc;
     border-radius: 1.5vw;
     outline: none;
