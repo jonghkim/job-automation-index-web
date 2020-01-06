@@ -54,7 +54,7 @@
 	<script type="text/javascript" src="{% static 'mods/frame.js' %}"></script>
 	
 	{% if year == "2018" %}
-		<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
+		<script type="text/javascript" src="{% static 'mods/map_large_scale_10.js' %}"></script>
 		{% if relation_to_automation == "Running a Different Race" %}
 			<script type="text/javascript" src="{% static 'mods/map_large_scale_19.js' %}"> </script>
 		{% elif relation_to_automation == "Race with the Machine" %}
@@ -68,7 +68,7 @@
 		{% endif %}	
 	{% endif %}
 	{% if year == "2008" %}
-		<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
+		<script type="text/javascript" src="{% static 'mods/map_large_scale_10.js' %}"></script>
 		{% if relation_to_automation == "Running a Different Race" %}
 			<script type="text/javascript" src="{% static 'mods/map_large_scale_19.js' %}"> </script>
 		{% elif relation_to_automation == "Race with the Machine" %}
