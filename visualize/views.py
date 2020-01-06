@@ -615,7 +615,7 @@ def map_automation(request):
             return render(request, 'visualize/map_automation.html',{'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
     else:
         form = MapForm()
-        relation_to_automation = u'Race ahead of the Machine'
+        relation_to_automation = u'Race with the Machine'
         year = '2018'
         return render(request, 'visualize/map_automation.html', {'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
          
