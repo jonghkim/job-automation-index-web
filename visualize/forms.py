@@ -55,9 +55,10 @@ class AutomationRanking(forms.Form):
     year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:200px'}))        
 
 class MapForm(forms.Form):
-    TYPES = (("Race ahead of the Machine","Race ahead of the Machine"),("Race with the Machine","Race with the Machine"),
-              ("Race against the Machine","Race against the Machine"),("Running a Different Race","Running a Different Race"))
-        
+    TYPES = (("Race with the Machine","Race with the Machine"), ("Race against the Machine","Race against the Machine"),
+             ("Race ahead of the Machine","Race ahead of the Machine"),("Running a Different Race","Running a Different Race"),
+             ("Changing the Course of a Race","Changing the Course of a Race"))
+
     relation_to_automation = forms.ChoiceField(choices=TYPES, widget=forms.Select(attrs={'style': 'width:300px'}))
 
     YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', 'Change during 2008-2018'))
