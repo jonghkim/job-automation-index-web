@@ -1,7 +1,7 @@
 tilde.map = L.map('map');
 tilde.map.scrollWheelZoom.disable()
 tilde.employmentDomain = [10000,8500000]
-tilde.ai_riskDomain = [3,5,9]
+tilde.ai_riskDomain = [1.3,2.5,3.7]
 tilde.colorRange = ["#FAFAFA","#EB97A8","#DC143C"]
 tilde.radiusScale = d3.scale.linear().domain(tilde.employmentDomain).range([1500,54000])
 tilde.colorScale = d3.scale.linear().domain(tilde.ai_riskDomain).range(tilde.colorRange)
