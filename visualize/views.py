@@ -62,16 +62,18 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
         for i, obj in enumerate(objects):
             if obj =='Job Automation Index':
                 val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
+                val = val*100
                 percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
                 #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
                 #percentile = percentileofscore(arr, val)
 
                 axs[i].barh(0, val, align='center', alpha=0.5)
-                axs[i].set_title(obj)
+                axs[i].set_title(obj+' (%)')
                 axs[i].set_yticklabels([])
 
-                axs[i].set_xlim(30, 70)
-                
+                axs[i].set_xlim(40, 60)
+                axs[i].set_xticks(np.arange(40,65,5))
+
                 plt.setp(axs[i].get_xticklabels(), rotation=30)
 
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
@@ -150,15 +152,23 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
             for i, obj in enumerate(objects):
                 if obj == 'Job Automation Index Change':
                     val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
+                    val = val*100
+
                     percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
                     #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
                     #percentile = percentileofscore(arr, val)
 
                     axs[i].barh(0, val, align='center', alpha=0.5)
-                    axs[i].set_title(obj)
+                    axs[i].set_title(obj+' (%p)')
                     axs[i].set_yticklabels([])
 
-                    axs[i].set_xlim(-20, 20)
+                    axs[i].set_xlim(-5, 5)
+                    axs[i].set_xticks(np.arange(-5,6,1))
+
+                    ax_xtick = axs[i].get_xticks().tolist() 
+                    ax_xtick[0] = '<-5'
+                    ax_xtick[-1] = '5<'
+                    axs[i].set_xticklabels(ax_xtick)            
                     
                     plt.setp(axs[i].get_xticklabels(), rotation=30)
 
@@ -192,6 +202,8 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
             fig = plt.figure(figsize=(7, 1*1.3))
             ax = fig.add_subplot(111)
             val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][objects[0]].iloc[0].tolist()
+            val = val*100
+
             percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][objects[0]+' Percentile'].iloc[0]
             #arr = panel_df[(panel_df['Year']==year)][objects[0]].tolist()
             #percentile = percentileofscore(arr, val)
@@ -199,11 +211,23 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
             ax.barh(0, val, align='center', alpha=0.5)
 
             if objects[0] == 'Job Automation Index':
-                ax.set_xlim(0, 100)
-            elif objects[0] == 'Job Automation Index Change':
-                ax.set_xlim(-20, 20)
+                ax.set_xlim(40, 60)
+                ax.set_xticks(np.arange(40,65,5))
                 
-            ax.set_title(objects[0])
+                ax.set_title(objects[0]+' (%)')
+            elif objects[0] == 'Job Automation Index Change':
+                ax.set_xlim(-5,5)
+                ax.set_xticks(np.arange(-5,6,1))
+
+                ax_xtick = ax.get_xticks().tolist() 
+                ax_xtick[0] = '<-5'
+                ax_xtick[-1] = '5<'
+                ax.set_xticklabels(ax_xtick)            
+
+                ax.set_title(objects[0]+' (%p)')
+            else:    
+                ax.set_title(objects[0])
+
             ax.set_yticklabels([])
 
             plt.setp(ax.get_xticklabels(), rotation=30)
@@ -246,12 +270,16 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
         lim_range = False
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()
+            focal_stats = np.array(focal_stats)*100
+
             lim_range = True if max(focal_stats) > 30 else lim_range
             focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
             
             focal_stats[focal_stats>30] = 30
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels].iloc[0].tolist()
+            total_stats = np.array(total_stats)*100
+
             lim_range = True if max(total_stats) > 30 else lim_range
             total_stats=np.concatenate((total_stats,[total_stats[0]]))
             
@@ -273,10 +301,12 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
             ax.yaxis.grid(False)
-            ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=2)
+            ax.legend([job+' (%)','TOTAL AVERAGE'+' (%)'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels].iloc[0].tolist()            
+            focal_stats = np.array(focal_stats)*100
+
             lim_range = True if max(focal_stats) > 30 else lim_range
             focal_stats=np.concatenate((focal_stats,[focal_stats[0]]))
             
@@ -298,7 +328,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.grid(True)
             ax.yaxis.grid(False)
-            ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
+            ax.legend(['TOTAL AVERAGE'+' (%)'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
 
         ax.set_rorigin(0)
         """
@@ -330,6 +360,8 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
         lim_range = False
         if job != 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
+            focal_stats = focal_stats*100
+
             lim_range = True if max(focal_stats.max()) > 10 else lim_range
             lim_range = True if min(focal_stats.min()) < -10 else lim_range
             focal_stats[focal_stats>10] = 10
@@ -338,6 +370,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
             max_xtick = max(focal_stats.iloc[0].tolist())
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels]
+            total_stats = total_stats*100
             lim_range = True if max(total_stats.max()) > 10 else lim_range
             lim_range = True if min(total_stats.min()) < -10 else lim_range            
             total_stats[total_stats>10] = 10
@@ -349,10 +382,11 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
             barh_df = barh_df.T
 
             ax=barh_df.plot.barh(figsize=(8, 4), fontsize=10, color=['#db3f3f','#1f77b4'], alpha=0.5)
-            ax.legend([job,'TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=2)
+            ax.legend([job+' (%p)','TOTAL AVERAGE'+' (%p)'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=2)
 
         elif job == 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
+            focal_stats = focal_stats*100
             max_xtick = max(focal_stats.iloc[0].tolist())
 
             focal_stats.index=['TOTAL_AVERAGE']
@@ -363,7 +397,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
             focal_stats[focal_stats<-10] = -10
 
             ax = focal_stats.plot.barh(figsize=(8, 4), fontsize=10,  color=['#1f77b4'], alpha=0.5)
-            ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
+            ax.legend(['TOTAL AVERAGE'+' (%p)'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
 
         if job == 'TOTAL AVERAGE':
             ax.set_xlim(-5,5)
