@@ -1,183 +1,183 @@
-﻿Skill Id,Skill Name,Description,Task,2008 Automation Level,2018 Automation Level,Change during 2008-2018
-1.A.1.a.1,Oral Comprehension,The ability to listen to and understand information and ideas presented through spoken words and sentences.,Clerical Task,50.16844358,49.58895915,-0.579484435
-1.A.1.a.2,Written Comprehension,The ability to read and understand information and ideas presented in writing.,Clerical Task,54.39262976,52.16541474,-2.227215016
-1.A.1.a.3,Oral Expression,The ability to communicate information and ideas in speaking so others will understand.,Clerical Task,47.0090054,46.40723008,-0.601775327
-1.A.1.a.4,Written Expression,The ability to communicate information and ideas in writing so others will understand.,Clerical Task,51.88848827,49.18967159,-2.698816689
-1.A.1.b.1,Fluency of Ideas,"The ability to come up with a number of ideas about a topic (the number of ideas is important, not their quality, correctness, or creativity).",Creative Thinking,42.60327666,40.54994888,-2.053327774
-1.A.1.b.2,Originality,"The ability to come up with unusual or clever ideas about a given topic or situation, or to develop creative ways to solve a problem.",Creative Thinking,40.64506159,38.1995243,-2.445537294
-1.A.1.b.3,Problem Sensitivity,"The ability to tell when something is wrong or is likely to go wrong. It does not involve solving the problem, only recognizing there is a problem.",Operation Monitoring,49.41438814,48.87190446,-0.542483687
-1.A.1.b.4,Deductive Reasoning,The ability to apply general rules to specific problems to produce answers that make sense.,Operation Monitoring,49.43052491,46.87034368,-2.560181221
-1.A.1.b.5,Inductive Reasoning,The ability to combine pieces of information to form general rules or conclusions (includes finding a relationship among seemingly unrelated events).,Operation Monitoring,46.87468897,45.42189273,-1.452796245
-1.A.1.b.6,Information Ordering,"The ability to arrange things or actions in a certain order or pattern according to a specific rule or set of rules (e.g., patterns of numbers, letters, words, pictures, mathematical operations).",Routine Task,58.74023376,54.27599691,-4.464236849
-1.A.1.b.7,Category Flexibility,The ability to generate or use different sets of rules for combining or grouping things in different ways.,Routine Task,54.07738087,50.59689057,-3.480490299
-1.A.1.c.1,Mathematical Reasoning,The ability to choose the right mathematical methods or formulas to solve a problem.,Information Processing ,59.82291789,59.21707841,-0.605839485
-1.A.1.c.2,Number Facility,"The ability to add, subtract, multiply, or divide quickly and correctly.",Information Processing ,59.03345396,59.84295595,0.809501991
-1.A.1.d.1,Memorization,"The ability to remember information such as words, numbers, pictures, and procedures.",Strategic Thinking,50.40727909,45.45107058,-4.956208511
-1.A.1.e.1,Speed of Closure,"The ability to quickly make sense of, combine, and organize information into meaningful patterns.",Operation Monitoring,52.08821925,52.11348307,0.02526382
-1.A.1.e.2,Flexibility of Closure,"The ability to identify or detect a known pattern (a figure, object, word, or sound) that is hidden in other distracting material.",Operation Monitoring,53.7115266,52.01876858,-1.692758027
-1.A.1.e.3,Perceptual Speed,"The ability to quickly and accurately compare similarities and differences among sets of letters, numbers, objects, pictures, or patterns. The things to be compared may be presented at the same time or one after the other. This ability also includes comparing a presented object with a remembered object.",Operation Monitoring,60.97527286,62.46499325,1.489720391
-1.A.1.f.1,Spatial Orientation,The ability to know your location in relation to the environment or to know where other objects are in relation to you.,Equipment Operation,46.89873277,47.94744837,1.048715608
-1.A.1.f.2,Visualization,The ability to imagine how something will look after it is moved around or when its parts are moved or rearranged.,Equipment Maintenance,44.51733146,41.46974227,-3.047589185
-1.A.1.g.1,Selective Attention,The ability to concentrate on a task over a period of time without being distracted.,Operation Monitoring,56.85854489,52.15567039,-4.702874495
-1.A.1.g.2,Time Sharing,"The ability to shift back and forth between two or more activities or sources of information (such as speech, sounds, touch, or other sources).",Operation Monitoring,49.29162267,46.81616333,-2.475459336
-1.A.2.a.1,Arm-Hand Steadiness,The ability to keep your hand and arm steady while moving your arm or while holding your arm and hand in one position.,Equipment Operation,45.99125698,47.59717083,1.60591385
-1.A.2.a.2,Manual Dexterity,"The ability to quickly move your hand, your hand together with your arm, or your two hands to grasp, manipulate, or assemble objects.",Physical Task,47.36858459,47.55870086,0.19011627
-1.A.2.a.3,Finger Dexterity,"The ability to make precisely coordinated movements of the fingers of one or both hands to grasp, manipulate, or assemble very small objects.",Physical Task,51.05229702,49.66285198,-1.389445038
-1.A.2.b.1,Control Precision,The ability to quickly and repeatedly adjust the controls of a machine or a vehicle to exact positions.,Equipment Operation,50.6969105,52.47390468,1.776994183
-1.A.2.b.2,Multilimb Coordination,"The ability to coordinate two or more limbs (for example, two arms, two legs, or one leg and one arm) while sitting, standing, or lying down. It does not involve performing the activities while the whole body is in motion.",Physical Task,42.89848794,44.72875382,1.830265882
-1.A.2.b.3,Response Orientation,"The ability to choose quickly between two or more movements in response to two or more different signals (lights, sounds, pictures). It includes the speed with which the correct response is started with the hand, foot, or other body part.",Hazardous Task,48.80242219,49.61142988,0.80900769
-1.A.2.b.4,Rate Control,The ability to time your movements or the movement of a piece of equipment in anticipation of changes in the speed and/or direction of a moving object or scene.,Equipment Operation,54.35692882,56.04083799,1.683909164
-1.A.2.c.1,Reaction Time,"The ability to quickly respond (with the hand, finger, or foot) to a signal (sound, light, picture) when it appears.",Hazardous Task,51.26289061,52.97450106,1.711610445
-1.A.2.c.2,Wrist-Finger Speed,"The ability to make fast, simple, repeated movements of the fingers, hands, and wrists.",Equipment Operation,54.24147434,53.605275,-0.636199339
-1.A.2.c.3,Speed of Limb Movement,The ability to quickly move the arms and legs.,Dynamic Physical Task,45.13243134,46.62965893,1.497227583
-1.A.3.a.1,Static Strength,"The ability to exert maximum muscle force to lift, push, pull, or carry objects.",Physical Task,43.25361309,43.47620749,0.222594408
-1.A.3.a.2,Explosive Strength,"The ability to use short bursts of muscle force to propel oneself (as in jumping or sprinting), or to throw an object.",Dynamic Physical Task,41.57373883,43.99743917,2.423700343
-1.A.3.a.3,Dynamic Strength,The ability to exert muscle force repeatedly or continuously over time. This involves muscular endurance and resistance to muscle fatigue.,Dynamic Physical Task,40.3640868,43.31649289,2.952406093
-1.A.3.a.4,Trunk Strength,The ability to use your abdominal and lower back muscles to support part of the body repeatedly or continuously over time without 'giving out' or fatiguing.,Dynamic Physical Task,41.44065186,41.31548712,-0.125164745
-1.A.3.b.1,Stamina,The ability to exert yourself physically over long periods of time without getting winded or out of breath.,Dynamic Physical Task,41.92209179,42.7428196,0.820727808
-1.A.3.c.1,Extent Flexibility,"The ability to bend, stretch, twist, or reach with your body, arms, and/or legs.",Physical Task,41.90751757,42.91322284,1.005705274
-1.A.3.c.2,Dynamic Flexibility,"The ability to quickly and repeatedly bend, stretch, twist, or reach out with your body, arms, and/or legs.",Dynamic Physical Task,43.28192745,43.87385393,0.591926474
-1.A.3.c.3,Gross Body Coordination,"The ability to coordinate the movement of your arms, legs, and torso together when the whole body is in motion.",Dynamic Physical Task,40.96068728,41.89969038,0.939003109
-1.A.3.c.4,Gross Body Equilibrium,The ability to keep or regain your body balance or stay upright when in an unstable position.,Dynamic Physical Task,41.00558019,41.9515048,0.94592461
-1.A.4.a.1,Near Vision,The ability to see details at close range (within a few feet of the observer).,Routine Task,56.97276407,52.37514633,-4.597617734
-1.A.4.a.2,Far Vision,The ability to see details at a distance.,Equipment Operation,46.56667791,44.10072458,-2.465953332
-1.A.4.a.3,Visual Color Discrimination,"The ability to match or detect differences between colors, including shades of color and brightness.",Equipment Maintenance,46.59962294,45.63543435,-0.964188596
-1.A.4.a.4,Night Vision,The ability to see under low light conditions.,Perceptual Task,46.60966636,49.8680578,3.258391444
-1.A.4.a.5,Peripheral Vision,The ability to see objects or movement of objects to one's side when the eyes are looking ahead.,Perceptual Task,46.19339151,48.5661388,2.372747284
-1.A.4.a.6,Depth Perception,"The ability to judge which of several objects is closer or farther away from you, or to judge the distance between you and an object.",Equipment Operation,46.30821765,47.03421017,0.725992518
-1.A.4.a.7,Glare Sensitivity,The ability to see objects in the presence of glare or bright lighting.,Perceptual Task,47.13311424,48.11127979,0.978165545
-1.A.4.b.1,Hearing Sensitivity,The ability to detect or tell the differences between sounds that vary in pitch and loudness.,Operation Monitoring,49.16443126,49.14045806,-0.023973194
-1.A.4.b.2,Auditory Attention,The ability to focus on a single source of sound in the presence of other distracting sounds.,Operation Monitoring,52.01431528,51.85110522,-0.16321006
-1.A.4.b.3,Sound Localization,The ability to tell the direction from which a sound originated.,Perceptual Task,46.95646174,48.45517224,1.498710495
-1.A.4.b.4,Speech Recognition,The ability to identify and understand the speech of another person.,Communication,50.30089042,49.45201196,-0.848878455
-1.A.4.b.5,Speech Clarity,The ability to speak clearly so others can understand you.,Communication,46.57630385,45.87857849,-0.697725362
-2.A.1.a,Reading Comprehension,Understanding written sentences and paragraphs in work related documents.,Strategic Thinking,49.37266313,50.98374679,1.611083668
-2.A.1.b,Active Listening,"Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.",Clerical Task,46.09157226,48.17332984,2.081757581
-2.A.1.c,Writing,Communicating effectively in writing as appropriate for the needs of the audience.,Information Processing ,47.19050806,48.43665351,1.246145453
-2.A.1.d,Speaking,Talking to others to convey information effectively.,Clerical Task,39.51036695,45.15696139,5.646594442
-2.A.1.e,Mathematics,Using mathematics to solve problems.,Information Processing ,56.14825369,58.82052411,2.672270418
-2.A.1.f,Science,Using scientific rules and methods to solve problems.,Operation Monitoring,38.65809073,43.86920452,5.211113795
-2.A.2.a,Critical Thinking,"Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions or approaches to problems.",Strategic Thinking,44.01847159,46.92932115,2.910849565
-2.A.2.b,Active Learning,Understanding the implications of new information for both current and future problem-solving and decision-making.,Strategic Thinking,43.78170651,42.53885448,-1.242852033
-2.A.2.c,Learning Strategies,Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things.,Strategic Thinking,44.00947355,37.85597572,-6.153497832
-2.A.2.d,Monitoring,"Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.",Communication,45.4146588,48.62485207,3.210193267
-2.B.1.a,Social Perceptiveness,Being aware of others' reactions and understanding why they react as they do.,Communication,40.67092921,43.20625354,2.535324336
-2.B.1.b,Coordination,Adjusting actions in relation to others' actions.,Communication,42.32185205,45.74213551,3.420283467
-2.B.1.c,Persuasion,Persuading others to change their minds or behavior.,Communication,41.43097893,45.73493987,4.303960939
-2.B.1.d,Negotiation,Bringing others together and trying to reconcile differences.,Conflict Resolution,45.45367095,48.18012233,2.726451384
-2.B.1.e,Instructing,Teaching others how to do something.,Managerial Task,40.99293806,39.19547386,-1.797464193
-2.B.1.f,Service Orientation,Actively looking for ways to help people.,Communication,48.06852321,43.95562069,-4.112902526
-2.B.2.i,Complex Problem Solving,Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions.,Strategic Thinking,45.21446121,44.98023075,-0.234230461
-2.B.3.a,Operations Analysis,Analyzing needs and product requirements to create a design.,Strategic Thinking,51.14863429,45.79517615,-5.35345813
-2.B.3.b,Technology Design,Generating or adapting equipment and technology to serve user needs.,Equipment Maintenance,49.0005517,45.99617182,-3.004379881
-2.B.3.c,Equipment Selection,Determining the kind of tools and equipment needed to do a job.,Equipment Maintenance,42.77102937,46.37230023,3.601270857
-2.B.3.d,Installation,"Installing equipment, machines, wiring, or programs to meet specifications.",Equipment Maintenance,45.19858051,45.44616846,0.247587953
-2.B.3.e,Programming,Writing computer programs for various purposes.,Clerical Task,56.62900192,60.14453321,3.515531296
-2.B.3.g,Operation Monitoring,"Watching gauges, dials, or other indicators to make sure a machine is working properly.",Operation Monitoring,58.50580567,57.70039979,-0.805405879
-2.B.3.h,Operation and Control,Controlling operations of equipment or systems.,Equipment Operation,60.8714007,55.74087428,-5.130526418
-2.B.3.j,Equipment Maintenance,Performing routine maintenance on equipment and determining when and what kind of maintenance is needed.,Equipment Maintenance,49.52014508,50.81820185,1.298056771
-2.B.3.k,Troubleshooting,Determining causes of operating errors and deciding what to do about it.,Equipment Maintenance,50.71499642,51.05859422,0.343597794
-2.B.3.l,Repairing,Repairing machines or systems using the needed tools.,Equipment Maintenance,47.31910934,48.64918717,1.330077829
-2.B.3.m,Quality Control Analysis,"Conducting tests and inspections of products, services, or processes to evaluate quality or performance.",Equipment Maintenance,56.42215152,53.38546385,-3.036687671
-2.B.4.e,Judgment and Decision Making,Considering the relative costs and benefits of potential actions to choose the most appropriate one.,Strategic Thinking,44.37447619,46.76658,2.392103817
-2.B.4.g,Systems Analysis,"Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.",Routine Task,55.24308367,49.77095515,-5.472128522
-2.B.4.h,Systems Evaluation,"Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.",Strategic Thinking,55.33164392,47.1981773,-8.133466616
-2.B.5.a,Time Management,Managing one's own time and the time of others.,Communication,42.19400479,48.6310392,6.43703441
-2.B.5.b,Management of Financial Resources,"Determining how money will be spent to get the work done, and accounting for these expenditures.",Managerial Task,44.80216399,52.77579182,7.97362783
-2.B.5.c,Management of Material Resources,"Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.",Managerial Task,42.30406063,46.18638342,3.882322795
-2.B.5.d,Management of Personnel Resources,"Motivating, developing, and directing people as they work, identifying the best people for the job.",Communication,44.44014733,48.51594606,4.075798728
-4.A.1.a.1,Getting Information,"Observing, receiving, and otherwise obtaining information from all relevant sources.",Information Processing ,53.73226123,54.85518798,1.122926741
-4.A.1.a.2,"Monitor Processes, Materials, or Surroundings","Monitoring and reviewing information from materials, events, or the environment, to detect or assess problems.",Information Processing ,51.23416069,55.7225769,4.488416209
-4.A.1.b.1,"Identifying Objects, Actions, and Events","Identifying information by categorizing, estimating, recognizing differences or similarities, and detecting changes in circumstances or events.",Information Processing ,49.22603552,50.21221491,0.986179389
-4.A.1.b.2,"Inspecting Equipment, Structures, or Material","Inspecting equipment, structures, or materials to identify the cause of errors or other problems or defects.",Equipment Operation,46.84957976,51.32859279,4.479013032
-4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information","Estimating sizes, distances, and quantities; or determining time, costs, resources, or materials needed to perform a work activity.",Equipment Maintenance,49.63518714,50.99615776,1.360970613
-4.A.2.a.1,"Judging the Qualities of Things, Services, or People","Assessing the value, importance, or quality of things or people.",Managerial Task,41.26115415,43.43346244,2.17230829
-4.A.2.a.2,Processing Information,"Compiling, coding, categorizing, calculating, tabulating, auditing, or verifying information or data.",Information Processing ,63.25968319,62.05373318,-1.205950013
-4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,"Using relevant information and individual judgment to determine whether events or processes comply with laws, regulations, or standards.",Information Processing ,57.35208674,61.75631345,4.404226713
-4.A.2.a.4,Analyzing Data or Information,"Identifying the underlying principles, reasons, or facts of information by breaking down information or data into separate parts.",Information Processing ,53.85789115,53.81806062,-0.039830533
-4.A.2.b.1,Making Decisions and Solving Problems,Analyzing information and evaluating results to choose the best solution and solve problems.,Information Processing ,44.83855495,47.94569212,3.10713717
-4.A.2.b.2,Thinking Creatively,"Developing, designing, or creating new applications, ideas, relationships, systems, or products, including artistic contributions.",Creative Thinking,36.41673829,32.67305455,-3.743683738
-4.A.2.b.3,Updating and Using Relevant Knowledge,Keeping up-to-date technically and applying new knowledge to your job.,Information Processing ,45.74518481,45.35035585,-0.394828965
-4.A.2.b.4,Developing Objectives and Strategies,Establishing long-range objectives and specifying the strategies and actions to achieve them.,Strategic Thinking,41.18737107,39.44849875,-1.738872318
-4.A.2.b.5,Scheduling Work and Activities,"Scheduling events, programs, and activities, as well as the work of others.",Strategic Thinking,42.07275814,39.74047174,-2.332286393
-4.A.2.b.6,"Organizing, Planning, and Prioritizing Work","Developing specific goals and plans to prioritize, organize, and accomplish your work.",Strategic Thinking,47.81287288,46.59396292,-1.218909959
-4.A.3.a.1,Performing General Physical Activities,"Performing physical activities that require considerable use of your arms and legs and moving your whole body, such as climbing, lifting, balancing, walking, stooping, and handling of materials.",Physical Task,40.76592579,42.56274094,1.796815154
-4.A.3.a.2,Handling and Moving Objects,"Using hands and arms in handling, installing, positioning, and moving materials, and manipulating things.",Physical Task,44.82925671,46.20985643,1.380599716
-4.A.3.a.3,Controlling Machines and Processes,Using either control mechanisms or direct physical activity to operate machines or processes (not including computers or vehicles).,Equipment Operation,53.88945075,56.70703577,2.817585016
-4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment","Running, maneuvering, navigating, or driving vehicles or mechanized equipment, such as forklifts, passenger vehicles, aircraft, or water craft.",Perceptual Task,46.45922887,48.52065838,2.061429516
-4.A.3.b.1,Interacting With Computers,"Using computers and computer systems (including hardware and software) to program, write software, set up functions, enter data, or process information.",Clerical Task,63.95707172,62.40860155,-1.548470179
-4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment","Providing documentation, detailed instructions, drawings, or specifications to tell others about how devices, parts, equipment, or structures are to be fabricated, constructed, assembled, modified, maintained, or used.",Equipment Maintenance,49.0203138,47.93713844,-1.083175365
-4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,"Servicing, repairing, adjusting, and testing machines, devices, moving parts, and equipment that operate primarily on the basis of mechanical (not electronic) principles.",Equipment Maintenance,48.59838959,49.92480495,1.326415356
-4.A.3.b.5,Repairing and Maintaining Electronic Equipment,"Servicing, repairing, calibrating, regulating, fine-tuning, or testing machines, devices, and equipment that operate primarily on the basis of electrical or electronic (not mechanical) principles.",Equipment Maintenance,50.89384276,53.39933641,2.505493645
-4.A.3.b.6,Documenting/Recording Information,"Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic form.",Information Processing ,54.7407909,55.91973412,1.178943218
-4.A.4.a.1,Interpreting the Meaning of Information for Others,Translating or explaining what information means and how it can be used.,Information Processing ,46.67509145,46.76162559,0.086534135
-4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates","Providing information to supervisors, co-workers, and subordinates by telephone, in written form, e-mail, or in person.",Managerial Task,55.99981193,56.87413947,0.874327543
-4.A.4.a.3,Communicating with Persons Outside Organization,"Communicating with people outside the organization, representing the organization to customers, the public, government, and other external sources. This information can be exchanged in person, in writing, or by telephone or e-mail.",Clerical Task,44.72698651,45.45468468,0.727698169
-4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,"Developing constructive and cooperative working relationships with others, and maintaining them over time.",Communication,44.58062818,46.84810785,2.267479671
-4.A.4.a.5,Assisting and Caring for Others,"Providing personal assistance, medical attention, emotional support, or other personal care to others such as coworkers, customers, or patients.",Conflict Resolution,38.66583987,42.40087327,3.735033402
-4.A.4.a.6,Selling or Influencing Others,Convincing others to buy merchandise/goods or to otherwise change their minds or actions.,Communication,42.34939255,45.1209707,2.771578145
-4.A.4.a.7,Resolving Conflicts and Negotiating with Others,"Handling complaints, settling disputes, and resolving grievances and conflicts, or otherwise negotiating with others.",Conflict Resolution,45.62537726,50.54546113,4.920083866
-4.A.4.a.8,Performing for or Working Directly with the Public,"Performing for people or dealing directly with the public. This includes serving customers in restaurants and stores, and receiving clients or guests.",Communication,39.91774535,41.80263128,1.884885926
-4.A.4.b.1,Coordinating the Work and Activities of Others,Getting members of a group to work together to accomplish tasks.,Managerial Task,46.53288975,47.6853974,1.152507645
-4.A.4.b.2,Developing and Building Teams,"Encouraging and building mutual trust, respect, and cooperation among team members.",Managerial Task,45.16423168,49.61195614,4.447724452
-4.A.4.b.3,Training and Teaching Others,"Identifying the educational needs of others, developing formal educational or training programs or classes, and teaching or instructing others.",Managerial Task,40.31549073,41.93751989,1.622029162
-4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates","Providing guidance and direction to subordinates, including setting performance standards and monitoring performance.",Managerial Task,43.64481753,45.7805359,2.135718374
-4.A.4.b.5,Coaching and Developing Others,"Identifying the developmental needs of others and coaching, mentoring, or otherwise helping others to improve their knowledge or skills.",Managerial Task,40.81845409,42.7840757,1.965621612
-4.A.4.b.6,Provide Consultation and Advice to Others,"Providing guidance and expert advice to management or other groups on technical, systems-, or process-related topics.",Strategic Thinking,43.05826846,45.67488906,2.616620603
-4.A.4.c.1,Performing Administrative Activities,Performing day-to-day administrative tasks such as maintaining information files and processing paperwork.,Clerical Task,53.57217142,55.71895283,2.146781405
-4.A.4.c.2,Staffing Organizational Units,"Recruiting, interviewing, selecting, hiring, and promoting employees in an organization.",Managerial Task,46.64450232,49.26477099,2.620268664
-4.A.4.c.3,Monitoring and Controlling Resources,Monitoring and controlling resources and overseeing the spending of money.,Managerial Task,45.75131206,48.70765507,2.956343007
-4.C.1.a.2.c,Public Speaking,How often do you have to perform public speaking in this job?,Managerial Task,39.63969563,38.72302044,-0.916675183
-4.C.1.a.2.f,Telephone,How often do you have telephone conversations in this job?,Clerical Task,48.48987479,49.25317258,0.763297793
-4.C.1.a.2.h,Electronic Mail,How often do you use electronic mail in this job?,Clerical Task,53.50789345,50.32939409,-3.17849936
-4.C.1.a.2.j,Letters and Memos,How often does the job require written letters and memos?,Clerical Task,50.94625429,52.40906158,1.462807295
-4.C.1.a.2.l,Face-to-Face Discussions,How often do you have to have face-to-face discussions with individuals or teams in this job?,Group Task,48.37972236,47.28476761,-1.094954751
-4.C.1.a.4,Contact With Others,"How much does this job require the worker to be in contact with others (face-to-face, by telephone, or otherwise) in order to perform it?",Communication,49.64275145,48.12148074,-1.521270708
-4.C.1.b.1.e,Work With Work Group or Team,How important is it to work with others in a group or team in this job?,Group Task,54.56411702,55.37433925,0.810222225
-4.C.1.b.1.f,Deal With External Customers,How important is it to work with external customers or the public in this job?,Communication,46.09407937,45.63091422,-0.463165151
-4.C.1.b.1.g,Coordinate or Lead Others,How important is it to coordinate or lead others in accomplishing work activities in this job?,Group Task,49.07899413,48.32920183,-0.749792296
-4.C.1.c.1,Responsible for Others' Health and Safety,How much responsibility is there for the health and safety of others in this job?,Group Task,46.30383758,49.20538353,2.901545953
-4.C.1.c.2,Responsibility for Outcomes and Results,How responsible is the worker for work outcomes and results of other workers?,Group Task,54.79076136,52.18407366,-2.606687701
-4.C.1.d.1,Frequency of Conflict Situations,How often are there conflict situations the employee has to face in this job?,Conflict Resolution,52.09015556,53.04057012,0.950414559
-4.C.1.d.2,Deal With Unpleasant or Angry People,"How frequently does the worker have to deal with unpleasant, angry, or discourteous individuals as part of the job requirements?",Conflict Resolution,55.56844708,55.69511492,0.126667835
-4.C.1.d.3,Deal With Physically Aggressive People,How frequently does this job require the worker to deal with physical aggression of violent individuals?,Conflict Resolution,46.39187002,47.70574907,1.313879051
-4.C.2.a.1.a,"Indoors, Environmentally Controlled",How often does this job require working indoors in environmentally controlled conditions?,Clerical Task,54.9625939,54.26808593,-0.69450797
-4.C.2.a.1.b,"Indoors, Not Environmentally Controlled","How often does this job require working indoors in non-controlled environmental conditions (e.g., warehouse without heat)?",Perceptual Task,47.210677,48.38793199,1.17725499
-4.C.2.a.1.c,"Outdoors, Exposed to Weather","How often does this job require working outdoors, exposed to all weather conditions?",Perceptual Task,42.42501235,43.48179049,1.056778135
-4.C.2.a.1.d,"Outdoors, Under Cover","How often does this job require working outdoors, under cover (e.g., structure with roof but no walls)?",Perceptual Task,43.17780803,42.04902538,-1.128782654
-4.C.2.a.1.e,In an Open Vehicle or Equipment,"How often does this job require working in an open vehicle or equipment (e.g., tractor)?",Perceptual Task,48.88525514,48.95423934,0.068984201
-4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,"How often does this job require working in a closed vehicle or equipment (e.g., car)?",Perceptual Task,43.19195827,43.60697055,0.415012273
-4.C.2.a.3,Physical Proximity,To what extent does this job require the worker to perform job tasks in close physical proximity to other people?,Conflict Resolution,40.6005028,43.05390247,2.453399667
-4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",How often does this job require working exposed to sounds and noise levels that are distracting or uncomfortable?,Hazardous Task,57.26953807,55.21349654,-2.056041531
-4.C.2.b.1.b,Very Hot or Cold Temperatures,How often does this job require working in very hot (above 90 F degrees) or very cold (below 32 F degrees) temperatures?,Perceptual Task,48.42620377,50.50401877,2.077814994
-4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,How often does this job require working in extremely bright or inadequate lighting conditions?,Perceptual Task,46.76174295,46.47666862,-0.28507433
-4.C.2.b.1.d,Exposed to Contaminants,"How often does this job require working exposed to contaminants (such as pollutants, gases, dust or odors)?",Hazardous Task,49.00357291,48.73757495,-0.265997958
-4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",How often does this job require working in cramped work spaces that requires getting into awkward positions?,Perceptual Task,44.53370377,43.71804968,-0.815654093
-4.C.2.b.1.f,Exposed to Whole Body Vibration,"How often does this job require exposure to whole body vibration (e.g., operate a jackhammer)?",Perceptual Task,45.37652277,47.37823212,2.001709348
-4.C.2.c.1.a,Exposed to Radiation,How often does this job require exposure to radiation?,Conflict Resolution,48.43737992,51.12611536,2.688735436
-4.C.2.c.1.b,Exposed to Disease or Infections,How often does this job require exposure to disease/infections?,Conflict Resolution,39.49937192,42.30448,2.805108072
-4.C.2.c.1.c,Exposed to High Places,How often does this job require exposure to high places?,Perceptual Task,48.3039333,49.49916695,1.195233658
-4.C.2.c.1.d,Exposed to Hazardous Conditions,How often does this job require exposure to hazardous conditions?,Hazardous Task,48.42981224,48.08404959,-0.345762647
-4.C.2.c.1.e,Exposed to Hazardous Equipment,How often does this job require exposure to hazardous equipment?,Hazardous Task,50.09910306,50.75271638,0.653613328
-4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings","How often does this job require exposure to minor burns, cuts, bites, or stings?",Hazardous Task,45.67213629,45.23861961,-0.433516675
-4.C.2.d.1.a,Spend Time Sitting,How much does this job require sitting?,Clerical Task,59.81154177,58.6382165,-1.173325271
-4.C.2.d.1.b,Spend Time Standing,How much does this job require standing?,Dynamic Physical Task,41.86046281,43.02396264,1.163499827
-4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles","How much does this job require climbing ladders, scaffolds, or poles?",Perceptual Task,44.54936476,45.56179652,1.012431758
-4.C.2.d.1.d,Spend Time Walking and Running,How much does this job require walking and running?,Dynamic Physical Task,47.08990119,48.15137171,1.06147052
-4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling","How much does this job require kneeling, crouching, stooping or crawling?",Physical Task,39.94268841,39.88937142,-0.053316987
-4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,How much does this job require keeping or regaining your balance?,Dynamic Physical Task,40.5021701,41.46413013,0.961960032
-4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls","How much does this job require using your hands to handle, control, or feel objects, tools or controls?",Physical Task,51.67483033,51.80805491,0.133224585
-4.C.2.d.1.h,Spend Time Bending or Twisting the Body,How much does this job require bending or twisting your body?,Physical Task,45.14964068,43.78326923,-1.366371446
-4.C.2.d.1.i,Spend Time Making Repetitive Motions,How much does this job require making repetitive motions?,Physical Task,60.95802477,57.43587903,-3.522145736
-4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets","How much does this job require wearing common protective or safety equipment such as safety shoes, glasses, gloves, hard hats or life jackets?",Hazardous Task,46.188151,48.56301909,2.374868094
-4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection","How much does this job require wearing specialized protective or safety equipment such as breathing apparatus, safety harness, full protection suits, or radiation protection?",Hazardous Task,44.79466627,47.05967167,2.265005393
-4.C.3.a.1,Consequence of Error,How serious would the result usually be if the worker made a mistake that was not readily correctable?,Equipment Operation,52.96912539,57.42933776,4.460212366
-4.C.3.a.2.a,Impact of Decisions on Co-workers or Company Results,What results do your decisions usually have on other people or the image or reputation or financial resources of your employer?,Operation Monitoring,49.78021256,52.76397886,2.983766292
-4.C.3.a.2.b,Frequency of Decision Making,"How frequently is the worker required to make decisions that affect other people, the financial resources, and/or the image and reputation of the organization?",Operation Monitoring,51.94722715,53.05674256,1.109515415
-4.C.3.a.4,Freedom to Make Decisions,"How much decision making freedom, without supervision, does the job offer?",Strategic Thinking,42.1536186,36.24701339,-5.90660521
-4.C.3.b.4,Importance of Being Exact or Accurate,How important is being very exact or highly accurate in performing this job?,Routine Task,66.26255777,66.11939906,-0.143158701
-4.C.3.b.7,Importance of Repeating Same Tasks,"How important is repeating the same physical activities (e.g., key entry) or mental activities (e.g., checking entries in a ledger) over and over, without stopping, to performing this job?",Routine Task,76.54719665,74.92915081,-1.618045845
-4.C.3.b.8,Structured versus Unstructured Work,"To what extent is this job structured for the worker, rather than allowing the worker to determine tasks, priorities, and goals?",Equipment Operation,55.5279698,60.14603813,4.618068328
-4.C.3.c.1,Level of Competition,To what extent does this job require the worker to compete or to be aware of competitive pressures?,Creative Thinking,47.40619614,46.39124349,-1.014952658
-4.C.3.d.1,Time Pressure,How often does this job require the worker to meet strict deadlines?,Routine Task,59.61641271,57.93635691,-1.680055794
-4.C.3.d.3,Pace Determined by Speed of Equipment,How important is it to this job that the pace is determined by the speed of equipment or machinery? (This does not refer to keeping busy at all times on this job.),Equipment Operation,68.8099754,67.95682003,-0.853155376
+Skill Id,Skill Name,Task,2019 Automation Level,2008 Automation Level,Change during 2008-2019
+4.A.3.b.1,Interacting With Computers,Administrative Task,0.608170101204322,0.632423424012091,-0.02425332280776893
+2.B.3.e,Programming,Administrative Task,0.588503255311108,0.560940945867143,0.027562309443964983
+4.C.2.d.1.a,Spend Time Sitting,Administrative Task,0.572815911288249,0.588515863466811,-0.015699952178561905
+4.A.4.c.1,Performing Administrative Activities,Administrative Task,0.550240096999138,0.536964576654014,0.013275520345124026
+4.C.1.a.2.j,Letters and Memos,Administrative Task,0.531585042923248,0.505102710568589,0.02648233235465902
+4.C.2.a.1.a,"Indoors, Environmentally Controlled",Administrative Task,0.527936154425913,0.545075909515824,-0.017139755089910946
+1.A.1.a.2,Written Comprehension,Administrative Task,0.516990594356164,0.537304326699265,-0.020313732343100965
+4.C.1.a.2.f,Telephone,Administrative Task,0.513346756075969,0.480807028121753,0.032539727954216
+2.A.1.a,Reading Comprehension,Administrative Task,0.502187521773681,0.490861622691107,0.011325899082573976
+4.C.1.a.2.h,Electronic Mail,Administrative Task,0.491849150609952,0.526335682782177,-0.034486532172225026
+1.A.1.a.1,Oral Comprehension,Administrative Task,0.488210913144641,0.50089237392638,-0.012681460781738985
+1.A.1.a.4,Written Expression,Administrative Task,0.483764063223431,0.51263174067223,-0.028867677448799034
+2.A.1.b,Active Listening,Administrative Task,0.474894039376605,0.454179292433937,0.020714746942668005
+1.A.1.a.3,Oral Expression,Administrative Task,0.457635769315215,0.468904695137849,-0.011268925822634002
+2.A.1.d,Speaking,Administrative Task,0.449878067270376,0.395858813181932,0.05401925408844399
+4.A.4.a.3,Communicating with Persons Outside Organization,Administrative Task,0.446223818235269,0.443633427208716,0.0025903910265530072
+4.C.1.d.2,Deal With Unpleasant or Angry People,Conflict Resolution,0.558359854191715,0.554738236161144,0.003621618030570928
+4.C.1.d.1,Frequency of Conflict Situations,Conflict Resolution,0.540854078540045,0.5204034317217,0.020450646818344964
+4.C.2.c.1.a,Exposed to Radiation,Conflict Resolution,0.519879707023748,0.49082925454365,0.029050452480097966
+4.A.4.a.7,Resolving Conflicts and Negotiating with Others,Conflict Resolution,0.509386854295262,0.452982210960501,0.05640464333476097
+4.C.1.d.3,Deal With Physically Aggressive People,Conflict Resolution,0.483979623306641,0.467303111058559,0.01667651224808203
+2.B.1.d,Negotiation,Conflict Resolution,0.476845387317419,0.44670434631319,0.030141041004228986
+4.C.2.a.3,Physical Proximity,Conflict Resolution,0.432591393257944,0.406134760870411,0.026456632387532986
+4.C.2.c.1.b,Exposed to Disease or Infections,Conflict Resolution,0.431274865052254,0.402904470581615,0.028370394470638993
+4.A.4.a.5,Assisting and Caring for Others,Conflict Resolution,0.427232913575518,0.396936600364038,0.03029631321148002
+2.A.2.d,Monitoring,Creative and Critical Thinking,0.485310102985854,0.447985458129674,0.03732464485617998
+2.A.2.a,Critical Thinking,Creative and Critical Thinking,0.470018684530548,0.435326439529149,0.034692245001399
+4.C.3.c.1,Level of Competition,Creative and Critical Thinking,0.463355333833049,0.471142382297506,-0.0077870484644569915
+1.A.1.d.1,Memorization,Creative and Critical Thinking,0.448598093861787,0.496910572147433,-0.048312478285646
+2.A.2.b,Active Learning,Creative and Critical Thinking,0.419451623027954,0.43218615909418,-0.012734536066225988
+1.A.1.b.1,Fluency of Ideas,Creative and Critical Thinking,0.399844880433699,0.419432465544642,-0.019587585110942995
+2.B.1.e,Instructing,Creative and Critical Thinking,0.388201651454704,0.40989586643563,-0.021694214980925997
+4.C.1.a.2.c,Public Speaking,Creative and Critical Thinking,0.38210147055632,0.393804172467017,-0.011702701910697
+1.A.1.b.2,Originality,Creative and Critical Thinking,0.379642395039213,0.401645688091705,-0.02200329305249199
+2.A.2.c,Learning Strategies,Creative and Critical Thinking,0.374530008497625,0.438616915685437,-0.06408690718781196
+4.C.3.a.4,Freedom to Make Decisions,Creative and Critical Thinking,0.374490011112719,0.418757701742576,-0.04426769062985697
+4.A.2.b.2,Thinking Creatively,Creative and Critical Thinking,0.322617100163821,0.35823724657989,-0.035620146416068976
+4.C.2.d.1.d,Spend Time Walking and Running,Dynamic Physical Task,0.495129812512502,0.476341630266856,0.01878818224564599
+1.A.2.c.3,Speed of Limb Movement,Dynamic Physical Task,0.48149448279575,0.455986664188598,0.02550781860715201
+1.A.3.c.2,Dynamic Flexibility,Dynamic Physical Task,0.450301132779676,0.432292956939228,0.018008175840448004
+1.A.3.a.2,Explosive Strength,Dynamic Physical Task,0.444051088048133,0.414877052815849,0.029174035232283957
+4.C.2.d.1.b,Spend Time Standing,Dynamic Physical Task,0.441730214538926,0.427115285783777,0.014614928755149026
+1.A.3.a.3,Dynamic Strength,Dynamic Physical Task,0.438519689820765,0.40752653849345,0.030993151327315005
+1.A.3.b.1,Stamina,Dynamic Physical Task,0.437376613487163,0.423301396010034,0.014075217477128976
+1.A.3.c.3,Gross Body Coordination,Dynamic Physical Task,0.426952890377346,0.414532193779413,0.01242069659793299
+1.A.3.c.4,Gross Body Equilibrium,Dynamic Physical Task,0.426115831835491,0.413197301837035,0.012918529998455996
+1.A.3.a.4,Trunk Strength,Dynamic Physical Task,0.42418561872853,0.420146215763214,0.004039402965316019
+1.A.1.e.3,Perceptual Speed,Equipment Maintenance,0.628766743478875,0.606896578214036,0.02187016526483898
+2.B.3.g,Operation Monitoring,Equipment Maintenance,0.582206325427133,0.590392908738697,-0.008186583311563966
+2.B.3.m,Quality Control Analysis,Equipment Maintenance,0.539890688976876,0.561942489340293,-0.02205180036341703
+4.A.3.b.5,Repairing and Maintaining Electronic Equipment,Equipment Maintenance,0.534056243518723,0.515788826674599,0.01826741684412403
+1.A.1.g.1,Selective Attention,Equipment Maintenance,0.523511104075215,0.562550193781412,-0.03903908970619707
+1.A.1.e.2,Flexibility of Closure,Equipment Maintenance,0.523071379986386,0.533117373714498,-0.01004599372811199
+1.A.4.b.2,Auditory Attention,Equipment Maintenance,0.52305243318926,0.52173326524808,0.0013191679411800328
+2.B.3.k,Troubleshooting,Equipment Maintenance,0.514229112114315,0.508163313188512,0.0060657989258029454
+2.B.3.j,Equipment Maintenance,Equipment Maintenance,0.512287577973528,0.49842580713054,0.013861770842987953
+4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,Equipment Maintenance,0.506743774189879,0.492690722875311,0.014053051314568021
+2.B.3.l,Repairing,Equipment Maintenance,0.490950151883324,0.476338423908219,0.014611727975105016
+1.A.4.b.1,Hearing Sensitivity,Equipment Maintenance,0.489564497735266,0.490943286656153,-0.0013787889208869974
+4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",Equipment Maintenance,0.487267422256758,0.487204545002237,6.28772545210321e-05
+2.B.3.c,Equipment Selection,Equipment Maintenance,0.469754297162432,0.427603366714516,0.04215093044791601
+1.A.4.a.3,Visual Color Discrimination,Equipment Maintenance,0.462592246537363,0.471117907141622,-0.008525660604258967
+2.B.3.d,Installation,Equipment Maintenance,0.452416376668456,0.453334553128328,-0.0009181764598719666
+1.A.1.f.2,Visualization,Equipment Maintenance,0.422280945051397,0.444197899955046,-0.021916954903648977
+4.C.2.d.1.i,Spend Time Making Repetitive Motions,General Physical Task,0.572622377620256,0.606822196980363,-0.034199819360106964
+4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",General Physical Task,0.529711653409873,0.520471715479844,0.009239937930028974
+1.A.2.a.3,Finger Dexterity,General Physical Task,0.513600656794249,0.5133704169062,0.00023023988804904416
+1.A.2.a.2,Manual Dexterity,General Physical Task,0.485295436892191,0.478502740240543,0.006792696651648
+4.A.3.a.2,Handling and Moving Objects,General Physical Task,0.470047642625061,0.456742946537541,0.013304696087519996
+1.A.2.b.2,Multilimb Coordination,General Physical Task,0.457353224033274,0.435804203022943,0.021549021010331015
+4.C.2.d.1.h,Spend Time Bending or Twisting the Body,General Physical Task,0.451319458404011,0.458559205376447,-0.007239746972436012
+1.A.3.a.1,Static Strength,General Physical Task,0.445203297428812,0.438565992296083,0.006637305132728977
+1.A.3.c.1,Extent Flexibility,General Physical Task,0.438996219550016,0.42560209812095,0.013394121429065986
+4.A.3.a.1,Performing General Physical Activities,General Physical Task,0.436070021637,0.415125433141444,0.02094458849555597
+4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,General Physical Task,0.419312357768001,0.409619480663683,0.009692877104318043
+4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling",General Physical Task,0.412287151839955,0.406025821489186,0.006261330350769034
+4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",Hazardous and Group Task,0.559747405563968,0.575770785192988,-0.016023379629020007
+4.C.1.b.1.e,Work With Work Group or Team,Hazardous and Group Task,0.550847746892065,0.541744181147256,0.009103565744808972
+1.A.2.c.1,Reaction Time,Hazardous and Group Task,0.540661862698134,0.521093851001778,0.019568011696356025
+4.C.1.c.2,Responsibility for Outcomes and Results,Hazardous and Group Task,0.539453747714385,0.551150980557696,-0.011697232843310923
+4.C.2.c.1.e,Exposed to Hazardous Equipment,Hazardous and Group Task,0.519761722693856,0.507906436214912,0.01185528647894396
+4.C.2.b.1.d,Exposed to Contaminants,Hazardous and Group Task,0.502382717330451,0.498821316247058,0.0035614010833930343
+4.C.1.c.1,Responsible for Others' Health and Safety,Hazardous and Group Task,0.501373557519087,0.473011668587611,0.028361888931475954
+4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",Hazardous and Group Task,0.501367290287758,0.470251512011313,0.03111577827644496
+4.C.1.b.1.g,Coordinate or Lead Others,Hazardous and Group Task,0.491122551538106,0.490639133475848,0.0004834180622580453
+4.C.2.c.1.d,Exposed to Hazardous Conditions,Hazardous and Group Task,0.490041198153747,0.491752812414476,-0.0017116142607289664
+4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",Hazardous and Group Task,0.483602940317535,0.452840960680116,0.030761979637419
+1.A.4.a.6,Depth Perception,Hazardous and Group Task,0.480473305697954,0.467422292816364,0.013051012881589996
+4.C.1.a.2.l,Face-to-Face Discussions,Hazardous and Group Task,0.476410143869606,0.483374485486572,-0.006964341616966019
+4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings",Hazardous and Group Task,0.466832897280948,0.461010375990339,0.005822521290609006
+1.A.4.a.2,Far Vision,Hazardous and Group Task,0.42928076212738,0.464206928115344,-0.034926165987964
+4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,Information Processing,0.623949602309176,0.569722427172142,0.0542271751370339
+4.A.2.a.2,Processing Information,Information Processing,0.599769046781379,0.626121908767856,-0.026352861986477016
+1.A.1.c.2,Number Facility,Information Processing,0.59383227460431,0.582126657405754,0.011705617198556006
+1.A.1.c.1,Mathematical Reasoning,Information Processing,0.590200586435222,0.589420016487177,0.0007805699480449846
+2.A.1.e,Mathematics,Information Processing,0.584075669361987,0.555263283589648,0.02881238577233891
+4.A.1.a.2,"Monitor Processes, Materials, or Surroundings",Information Processing,0.556102839667474,0.519003528734942,0.03709931093253194
+4.A.3.b.6,Documenting/Recording Information,Information Processing,0.546638174721553,0.545139880050981,0.0014982946705719424
+4.A.1.a.1,Getting Information,Information Processing,0.537047705982493,0.53277233108468,0.0042753748978129336
+4.A.2.a.4,Analyzing Data or Information,Information Processing,0.527997428097532,0.53436041475246,-0.00636298665492796
+4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",Information Processing,0.521304432152494,0.493216121770973,0.028088310381520987
+4.A.1.b.1,"Identifying Objects, Actions, and Events",Information Processing,0.483666655595491,0.488777496667534,-0.005110841072043015
+4.A.2.b.1,Making Decisions and Solving Problems,Information Processing,0.482518594563501,0.447790035350637,0.034728559212863996
+2.A.1.c,Writing,Information Processing,0.475920851727999,0.470631461709235,0.005289390018763995
+4.A.4.a.1,Interpreting the Meaning of Information for Others,Information Processing,0.45596412913501,0.462466893330194,-0.006502764195183974
+4.A.2.b.3,Updating and Using Relevant Knowledge,Information Processing,0.450582170633967,0.454072274112347,-0.0034901034783800244
+4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",Interpersonal Task,0.564304137921505,0.560741603346254,0.0035625345752510196
+2.B.5.a,Time Management,Interpersonal Task,0.489070173690078,0.416219553256517,0.072850620433561
+4.A.4.b.2,Developing and Building Teams,Interpersonal Task,0.488628002918963,0.451520856864259,0.037107146054704
+1.A.4.b.4,Speech Recognition,Interpersonal Task,0.488577772780409,0.501868332183658,-0.013290559403249025
+2.B.5.d,Management of Personnel Resources,Interpersonal Task,0.488555388785654,0.439272513368344,0.049282875417310024
+4.C.1.a.4,Contact With Others,Interpersonal Task,0.484409294436179,0.494539635064017,-0.010130340627837964
+2.B.1.b,Coordination,Interpersonal Task,0.462462835258302,0.411841507462868,0.05062132779543399
+4.C.1.b.1.f,Deal With External Customers,Interpersonal Task,0.459293119014452,0.458649530620251,0.0006435883942010334
+4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,Interpersonal Task,0.455545958496296,0.442915482894086,0.012630475602209978
+2.B.1.c,Persuasion,Interpersonal Task,0.455320344467255,0.412695998556109,0.042624345911146
+4.A.4.a.6,Selling or Influencing Others,Interpersonal Task,0.451913760407101,0.420473267435542,0.03144049297155904
+1.A.4.b.5,Speech Clarity,Interpersonal Task,0.451488985908163,0.466085089430365,-0.014596103522201975
+2.B.1.f,Service Orientation,Interpersonal Task,0.435795305729748,0.478819610246052,-0.04302430451630401
+2.B.1.a,Social Perceptiveness,Interpersonal Task,0.432813644528181,0.403363433123081,0.029450211405100013
+4.A.4.a.8,Performing for or Working Directly with the Public,Interpersonal Task,0.414836921246758,0.399040217881672,0.015796703365085984
+4.C.3.d.3,Pace Determined by Speed of Equipment,Machine Control,0.687556000216215,0.695336392710252,-0.007780392494037058
+4.C.3.b.8,Structured versus Unstructured Work,Machine Control,0.592529884533951,0.553519216820996,0.039010667712954916
+4.C.3.a.1,Consequence of Error,Machine Control,0.581571389901401,0.536034493093627,0.04553689680777395
+4.A.3.a.3,Controlling Machines and Processes,Machine Control,0.574020725309824,0.548192287274615,0.025828438035208956
+1.A.2.b.4,Rate Control,Machine Control,0.570760152357352,0.549835628998429,0.02092452335892303
+2.B.3.h,Operation and Control,Machine Control,0.565053359335656,0.610140616928289,-0.04508725759263299
+1.A.2.c.2,Wrist-Finger Speed,Machine Control,0.535377194176445,0.546190149094106,-0.010812954917660988
+1.A.2.b.1,Control Precision,Machine Control,0.534596511162792,0.514125265594795,0.020471245567997065
+4.A.1.b.2,"Inspecting Equipment, Structures, or Material",Machine Control,0.521511640792581,0.47467822333738,0.04683341745520103
+1.A.2.a.1,Arm-Hand Steadiness,Machine Control,0.483732807623968,0.465032973365456,0.01869983425851196
+2.B.5.b,Management of Financial Resources,Management and Supervision,0.525472744949822,0.443212546504136,0.082260198445686
+4.A.4.c.2,Staffing Organizational Units,Management and Supervision,0.495224829394542,0.471377581476061,0.023847247918480974
+4.A.4.c.3,Monitoring and Controlling Resources,Management and Supervision,0.484274697397865,0.45611336978755,0.02816132761031498
+4.A.4.b.1,Coordinating the Work and Activities of Others,Management and Supervision,0.479325833456041,0.460944322825162,0.018381510630879005
+2.B.5.c,Management of Material Resources,Management and Supervision,0.468685260337789,0.420059146485809,0.04862611385198001
+4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",Management and Supervision,0.462123760830654,0.439083983664616,0.023039777166038
+4.A.2.a.1,"Judging the Qualities of Things, Services, or People",Management and Supervision,0.437913459726468,0.417452293074549,0.020461166651918994
+4.A.4.b.5,Coaching and Developing Others,Management and Supervision,0.428155998396745,0.410076049200521,0.01807994919622402
+4.A.4.b.3,Training and Teaching Others,Management and Supervision,0.417981473287903,0.404849120699868,0.013132352588035023
+4.C.3.b.7,Importance of Repeating Same Tasks,Problem Solving,0.744779456063239,0.758524163146567,-0.013744707083327978
+4.C.3.b.4,Importance of Being Exact or Accurate,Problem Solving,0.658729602298494,0.658185114051348,0.0005444882471459245
+4.C.3.d.1,Time Pressure,Problem Solving,0.592142188931468,0.595300163550177,-0.0031579746187090363
+4.C.3.a.2.a,Impact of Decisions on Co-workers or Company Results,Problem Solving,0.541938949952567,0.498595468089841,0.04334348186272596
+4.C.3.a.2.b,Frequency of Decision Making,Problem Solving,0.539677506532765,0.518869049627671,0.02080845690509403
+1.A.1.b.6,Information Ordering,Problem Solving,0.533915154580739,0.578877702831408,-0.04496254825066903
+1.A.1.e.1,Speed of Closure,Problem Solving,0.52181077742147,0.513844750234823,0.007966027186646962
+1.A.4.a.1,Near Vision,Problem Solving,0.514013939887797,0.57128154575512,-0.057267605867323046
+1.A.1.b.7,Category Flexibility,Problem Solving,0.505235026590964,0.533611837259502,-0.028376810668538033
+1.A.1.b.3,Problem Sensitivity,Problem Solving,0.498480370262017,0.493418067617139,0.005062302644878003
+1.A.1.g.2,Time Sharing,Problem Solving,0.473016422470584,0.492789952648347,-0.01977353017776301
+1.A.1.b.4,Deductive Reasoning,Problem Solving,0.471311915923046,0.489641452936767,-0.018329537013720976
+1.A.1.b.5,Inductive Reasoning,Problem Solving,0.455397816195687,0.465026714275113,-0.009628898079426018
+2.A.1.f,Science,Problem Solving,0.439853344461574,0.386663472836361,0.05318987162521299
+2.B.4.g,Systems Analysis,Systems Thinking,0.493504235274167,0.545826867314466,-0.052322632040298966
+2.B.4.h,Systems Evaluation,Systems Thinking,0.471397978152156,0.548594491208526,-0.07719651305636999
+2.B.3.a,Operations Analysis,Systems Thinking,0.466418948097692,0.50519224669958,-0.03877329860188794
+2.B.4.e,Judgment and Decision Making,Systems Thinking,0.466274084075912,0.441205994755817,0.025068089320094966
+4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",Systems Thinking,0.464105771269651,0.47341516215974,-0.009309390890088975
+4.A.4.b.6,Provide Consultation and Advice to Others,Systems Thinking,0.452410918382114,0.429232031545976,0.023178886836138002
+2.B.2.i,Complex Problem Solving,Systems Thinking,0.449748354240316,0.448796267959103,0.000952086281213016
+2.B.3.b,Technology Design,Systems Thinking,0.445365958440096,0.483841120715394,-0.03847516227529796
+4.A.2.b.5,Scheduling Work and Activities,Systems Thinking,0.402996867500847,0.418337527078429,-0.015340659577581961
+4.A.2.b.4,Developing Objectives and Strategies,Systems Thinking,0.390144970151823,0.407273662570978,-0.017128692419155045
+4.C.2.b.1.b,Very Hot or Cold Temperatures,Vehicle and Equipment Operation,0.513357220211073,0.488048845455619,0.025308374755454
+1.A.4.a.4,Night Vision,Vehicle and Equipment Operation,0.510835934109064,0.467874668121945,0.042961265987119024
+1.A.2.b.3,Response Orientation,Vehicle and Equipment Operation,0.508647777982045,0.495027236196045,0.013620541785999973
+4.C.2.c.1.c,Exposed to High Places,Vehicle and Equipment Operation,0.499290661551561,0.484598849238213,0.014691812313347985
+1.A.4.a.5,Peripheral Vision,Vehicle and Equipment Operation,0.498935229737543,0.463886608671659,0.03504862106588402
+4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",Vehicle and Equipment Operation,0.49618190239506,0.468269213541845,0.027912688853215017
+4.C.2.a.1.e,In an Open Vehicle or Equipment,Vehicle and Equipment Operation,0.49605860226079,0.486848263864518,0.009210338396272
+1.A.4.a.7,Glare Sensitivity,Vehicle and Equipment Operation,0.493509663128595,0.471268652340235,0.022241010788359994
+1.A.4.b.3,Sound Localization,Vehicle and Equipment Operation,0.490292563300538,0.4681226886049,0.022169874695638025
+1.A.1.f.1,Spatial Orientation,Vehicle and Equipment Operation,0.489691020122217,0.469230342038578,0.020460678083638995
+4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",Vehicle and Equipment Operation,0.489418065250009,0.472600677459134,0.01681738779087505
+4.C.2.b.1.f,Exposed to Whole Body Vibration,Vehicle and Equipment Operation,0.480484406235064,0.453116159040053,0.02736824719501102
+4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,Vehicle and Equipment Operation,0.47219713282464,0.468450088463844,0.0037470443607959814
+4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles",Vehicle and Equipment Operation,0.459888228462507,0.447733107527477,0.012155120935029962
+4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",Vehicle and Equipment Operation,0.447541778228999,0.449804660737734,-0.00226288250873502
+4.C.2.a.1.c,"Outdoors, Exposed to Weather",Vehicle and Equipment Operation,0.437941074507881,0.42439025449181,0.013550820016070997
+4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,Vehicle and Equipment Operation,0.437726910088716,0.434173200173981,0.003553709914735026
+4.C.2.a.1.d,"Outdoors, Under Cover",Vehicle and Equipment Operation,0.423597017602976,0.432631988629428,-0.009034971026451954

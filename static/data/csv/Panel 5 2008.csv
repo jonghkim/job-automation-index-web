@@ -1,622 +1,643 @@
-﻿Job Code,Job Title,Job Family,Automation Index,Race with the Machine,Race against the Machine,Race ahead of the Machine,Running a Different Race,Changing the Course of a Race
-00-0000,TOTAL AVERAGE,TOTAL AVERAGE,48.65148864,14.962629,18.17287248,3.426164371,9.44946984,2.640352945
-11-1011,Chief Executives,Management Occupations,47.99625226,20.71455252,9.554557668,7.018607054,7.498673217,3.209861807
-11-1021,General and Operations Managers,Management Occupations,47.64692824,22.79429037,9.381169698,4.416452188,9.318488657,1.736527325
-11-2011,Advertising and Promotions Managers,Management Occupations,47.77907996,23.04557746,9.394688608,4.628036468,8.26751084,2.443266581
-11-2021,Marketing Managers,Management Occupations,47.88807918,25.85317087,6.570421368,5.742205396,7.223801127,2.498480422
-11-2022,Sales Managers,Management Occupations,46.76957891,25.65323102,7.938994086,5.692384752,6.172909975,1.312059075
-11-2031,Public Relations and Fundraising Managers,Management Occupations,46.89385808,25.29502087,8.849693936,5.568885067,6.18551831,0.994739897
-11-3011,Administrative Services Managers,Management Occupations,48.36749093,27.54277856,5.940704668,3.807245474,9.123663565,1.953098666
-11-3021,Computer and Information Systems Managers,Management Occupations,48.94786596,22.54216492,12.2782672,5.69200204,5.253493363,3.181938432
-11-3031,Financial Managers,Management Occupations,49.9918229,20.38525207,14.19161109,5.56899369,5.985313248,3.860652801
-11-3051,Industrial Production Managers,Management Occupations,48.87046776,17.22592934,12.67738938,4.395695829,11.53923652,3.032216693
-11-3061,Purchasing Managers,Management Occupations,49.26933048,18.36188457,14.51278165,5.02704357,8.004916998,3.362703683
-11-3071,"Transportation, Storage, and Distribution Managers",Management Occupations,48.96861576,23.89133673,10.01402634,3.740519118,8.700594904,2.622138678
-11-3111,Compensation and Benefits Managers,Management Occupations,49.8415956,25.12584136,11.88598081,7.573769113,2.971357459,2.284646852
-11-3131,Training and Development Managers,Management Occupations,46.64755362,27.19679588,5.574895094,7.652319658,4.233894192,1.989648798
-11-9021,Construction Managers,Management Occupations,48.67294951,18.27076747,16.72271306,4.072655917,7.582613115,2.024199942
-11-9031,"Education Administrators, Preschool and Childcare Center/Program",Management Occupations,46.02585102,24.18256094,7.872221833,5.740014907,8.04163801,0.189415322
-11-9032,"Education Administrators, Elementary and Secondary School",Management Occupations,47.19949957,24.25657393,6.885067863,6.909469699,8.040251381,1.108136702
-11-9033,"Education Administrators, Postsecondary",Management Occupations,47.39535071,23.57974416,8.029083491,8.129399926,6.102063079,1.555060052
-11-9041,Architectural and Engineering Managers,Management Occupations,48.9351633,21.85908809,12.00910568,5.236043212,6.570648609,3.26027771
-11-9051,Food Service Managers,Management Occupations,47.43776089,18.52031583,12.2233077,2.605239346,11.66085163,2.428046388
-11-9071,Gaming Managers,Management Occupations,48.29228523,19.54532064,10.41231606,4.727716166,12.41395016,1.192982198
-11-9081,Lodging Managers,Management Occupations,47.19891559,27.27453592,7.007424394,6.384329451,5.044636809,1.487989016
-11-9111,Medical and Health Services Managers,Management Occupations,48.06266061,22.19883977,9.2972972,5.488273383,8.343348756,2.734901501
-11-9121,Natural Sciences Managers,Management Occupations,48.89444632,19.58643332,12.49739056,5.193797205,9.742513791,1.874311437
-11-9131,Postmasters and Mail Superintendents,Management Occupations,48.6686811,21.11939467,9.57763912,4.000141429,11.05106646,2.920439425
-11-9141,"Property, Real Estate, and Community Association Managers",Management Occupations,48.85970813,25.4663429,7.655270947,2.606073028,11.35606842,1.775952833
-11-9151,Social and Community Service Managers,Management Occupations,47.37038592,23.17563082,8.171660165,6.603978943,7.841351502,1.577764498
-11-9161,Emergency Management Directors,Management Occupations,48.24382444,22.1483053,11.32257649,5.426429926,7.189441964,2.157070752
-13-1031,"Claims Adjusters, Examiners, and Investigators",Business and Financial Operations Occupations,51.43209607,21.81248836,14.24378318,3.830832922,6.486602808,5.058388802
-13-1032,"Insurance Appraisers, Auto Damage",Business and Financial Operations Occupations,48.35756556,18.49609313,14.04874604,4.005830113,8.792421392,3.014474892
-13-1041,Compliance Officers,Business and Financial Operations Occupations,49.53545868,14.92090359,22.64883685,3.780712387,5.579806953,2.605198897
-13-1051,Cost Estimators,Business and Financial Operations Occupations,51.84824714,22.68628332,18.08196219,3.938374642,3.149894392,3.991732598
-13-1081,Logisticians,Business and Financial Operations Occupations,48.4889994,20.44300818,10.58377386,7.088462455,7.492575267,2.881179631
-13-1111,Management Analysts,Business and Financial Operations Occupations,49.19566183,24.03695017,12.33819013,7.840788761,2.958436899,2.02129586
-13-1121,"Meeting, Convention, and Event Planners",Business and Financial Operations Occupations,48.26086762,25.65808493,8.133272846,3.045765881,8.762381477,2.661362488
-13-1141,"Compensation, Benefits, and Job Analysis Specialists",Business and Financial Operations Occupations,52.47107212,21.09549424,15.2973644,4.794620657,3.901251312,7.382341511
-13-1151,Training and Development Specialists,Business and Financial Operations Occupations,47.21218268,25.69626514,6.683286723,7.678171824,4.743944435,2.410514551
-13-1161,Market Research Analysts and Marketing Specialists,Business and Financial Operations Occupations,50.80091374,26.73761118,14.2291204,5.048654993,2.52784727,2.257679897
-13-2011,Accountants and Auditors,Business and Financial Operations Occupations,52.28624542,20.23158979,19.96535463,6.008164536,1.027883392,5.053253079
-13-2021,Appraisers and Assessors of Real Estate,Business and Financial Operations Occupations,51.80548938,17.02759186,25.28959014,2.127854194,1.918680682,5.441772507
-13-2031,Budget Analysts,Business and Financial Operations Occupations,54.95014118,20.22922542,19.43356727,5.76009269,1.247652452,8.279603356
-13-2041,Credit Analysts,Business and Financial Operations Occupations,54.50961332,20.32055723,20.39632491,4.182138584,2.19297027,7.417622329
-13-2051,Financial Analysts,Business and Financial Operations Occupations,49.92822025,19.24012792,13.90919498,10.19659864,3.504990529,3.077308181
-13-2052,Personal Financial Advisors,Business and Financial Operations Occupations,49.21316007,21.09782029,15.62299555,6.048697176,4.144515664,2.299131392
-13-2053,Insurance Underwriters,Business and Financial Operations Occupations,51.88777242,18.28637384,20.89406829,4.470182067,2.231085441,6.006062786
-13-2061,Financial Examiners,Business and Financial Operations Occupations,50.09057189,17.60359447,16.87073266,6.729691334,4.039522763,4.847030655
-13-2071,Credit Counselors,Business and Financial Operations Occupations,49.83337286,20.27592217,17.78654446,3.595869702,4.804011173,3.371025352
-13-2072,Loan Officers,Business and Financial Operations Occupations,49.86425773,24.4941699,12.9313577,3.245550975,6.761351313,2.431827849
-13-2081,"Tax Examiners and Collectors, and Revenue Agents",Business and Financial Operations Occupations,53.47002018,15.95905931,23.51462478,3.876003872,2.359246991,7.761085226
-13-2082,Tax Preparers,Business and Financial Operations Occupations,53.34979572,19.47819431,15.58101937,6.318287575,3.117802861,8.854491603
-15-1121,Computer Systems Analysts,Computer and Mathematical Occupations,50.88091974,20.07652337,14.0608005,10.28597507,2.367524186,4.090096615
-15-1131,Computer Programmers,Computer and Mathematical Occupations,51.71337736,20.08908203,10.75220631,10.03882559,3.251165354,7.582098082
-15-1132,"Software Developers, Applications",Computer and Mathematical Occupations,50.99274552,20.20630648,12.20501656,9.722301867,3.87008225,4.989038365
-15-1133,"Software Developers, Systems Software",Computer and Mathematical Occupations,51.34169492,17.79018723,14.88848533,10.06030528,3.142584138,5.460132943
-15-1141,Database Administrators,Computer and Mathematical Occupations,54.40389964,19.19202758,19.28123205,6.000540734,1.963789776,7.966309505
-15-1142,Network and Computer Systems Administrators,Computer and Mathematical Occupations,52.29581987,17.66584723,19.45361246,6.032599877,2.868058061,6.275702237
-15-1151,Computer User Support Specialists,Computer and Mathematical Occupations,51.98355215,21.03454402,16.96484012,3.509822621,3.908232349,6.566113036
-15-1199,"Computer Occupations, All Other",Computer and Mathematical Occupations,51.35151161,21.20022884,11.40300107,10.11858565,3.303710372,5.325985688
-15-2011,Actuaries,Computer and Mathematical Occupations,51.63343027,17.80074899,18.40897875,7.954483933,1.537359394,5.931859198
-15-2021,Mathematicians,Computer and Mathematical Occupations,50.68151808,12.10782882,18.92641417,10.27782713,4.942333652,4.427114303
-15-2031,Operations Research Analysts,Computer and Mathematical Occupations,50.64891122,14.44920583,17.51501029,11.95543573,2.953273057,3.775986311
-15-2041,Statisticians,Computer and Mathematical Occupations,52.39229265,14.60843013,22.74420664,7.031625566,1.666956474,6.341073834
-17-1011,"Architects, Except Landscape and Naval",Architecture and Engineering Occupations,48.82099448,22.34458825,8.228269887,6.143431695,7.104638053,5.000066594
-17-1012,Landscape Architects,Architecture and Engineering Occupations,48.26002559,17.94193823,13.78081574,4.37426806,8.199539066,3.9634645
-17-1021,Cartographers and Photogrammetrists,Architecture and Engineering Occupations,54.24946522,16.10447115,23.54483252,4.192536698,0.836913391,9.570711456
-17-1022,Surveyors,Architecture and Engineering Occupations,49.50205872,13.98751167,23.45728298,2.762703587,6.223005515,3.071554963
-17-2011,Aerospace Engineers,Architecture and Engineering Occupations,49.23328857,18.44589994,13.50618552,8.776522138,3.590657756,4.914023217
-17-2021,Agricultural Engineers,Architecture and Engineering Occupations,48.98256997,17.86096991,18.49462477,6.564969242,3.395614858,2.66639119
-17-2031,Biomedical Engineers,Architecture and Engineering Occupations,48.82197339,18.40682955,15.49847613,5.484933936,6.614385087,2.817348687
-17-2041,Chemical Engineers,Architecture and Engineering Occupations,50.40585602,16.15382879,18.20486754,6.804271481,4.907678079,4.335210134
-17-2051,Civil Engineers,Architecture and Engineering Occupations,50.02861425,18.36024603,19.2590151,5.166322425,3.095938485,4.14709221
-17-2061,Computer Hardware Engineers,Architecture and Engineering Occupations,49.96043114,22.09187856,9.016074096,10.69116533,5.316131409,2.845181746
-17-2071,Electrical Engineers,Architecture and Engineering Occupations,49.77798311,22.06441938,10.83438958,9.827044072,2.457384067,4.59474602
-17-2072,"Electronics Engineers, Except Computer",Architecture and Engineering Occupations,50.07870006,21.81685621,13.18436154,8.834609056,4.289684582,1.953188672
-17-2081,Environmental Engineers,Architecture and Engineering Occupations,50.99671244,15.07623574,21.86749748,4.462622649,4.001487118,5.588869448
-17-2111,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",Architecture and Engineering Occupations,48.62944367,18.25051247,16.68670365,6.505435254,4.498813462,2.687978842
-17-2112,Industrial Engineers,Architecture and Engineering Occupations,50.40873385,19.93006382,14.53483756,3.438244232,8.026409562,4.479178675
-17-2121,Marine Engineers and Naval Architects,Architecture and Engineering Occupations,49.08359095,17.29116126,18.70197215,6.235390057,3.638911131,3.216156356
-17-2131,Materials Engineers,Architecture and Engineering Occupations,50.1283217,18.30029579,16.00091075,5.047899652,6.42966008,4.349555435
-17-2141,Mechanical Engineers,Architecture and Engineering Occupations,50.06576757,13.58299485,18.79360367,7.720866969,5.062961639,4.905340435
-17-2151,"Mining and Geological Engineers, Including Mining Safety Engineers",Architecture and Engineering Occupations,49.15883512,16.93909978,17.67798015,4.484487383,6.823720394,3.233547414
-17-2161,Nuclear Engineers,Architecture and Engineering Occupations,50.21838794,18.93584961,16.16390497,6.417146177,5.28214279,3.419344391
-17-2171,Petroleum Engineers,Architecture and Engineering Occupations,49.62803204,17.86750034,18.552114,7.062122673,3.865259813,2.281035214
-17-3011,Architectural and Civil Drafters,Architecture and Engineering Occupations,53.20607014,23.47694375,14.52600056,1.943131334,4.408370705,8.851623792
-17-3012,Electrical and Electronics Drafters,Architecture and Engineering Occupations,52.29416977,29.26395646,7.622440663,4.428921481,4.365476373,6.613374799
-17-3013,Mechanical Drafters,Architecture and Engineering Occupations,52.57055899,19.14035986,19.33370399,3.596252677,3.017340593,7.482901874
-17-3022,Civil Engineering Technicians,Architecture and Engineering Occupations,51.14007101,12.43939139,26.98177191,2.804234296,3.890637934,5.024035479
-17-3023,Electrical and Electronics Engineering Technicians,Architecture and Engineering Occupations,51.92521677,25.45124406,14.13656647,2.22561197,5.646511496,4.465282783
-17-3024,Electro-Mechanical Technicians,Architecture and Engineering Occupations,50.64394475,11.95993352,25.29898696,2.444146078,8.257579048,2.683299147
-17-3025,Environmental Engineering Technicians,Architecture and Engineering Occupations,49.44891948,11.20803365,26.60519705,1.194405559,7.13202715,3.309256079
-17-3026,Industrial Engineering Technicians,Architecture and Engineering Occupations,50.64571786,15.20940601,14.9289849,3.597287169,13.52232716,3.387712614
-17-3027,Mechanical Engineering Technicians,Architecture and Engineering Occupations,49.65727168,14.26426461,20.2534672,4.820340434,7.864659304,2.454540129
-17-3031,Surveying and Mapping Technicians,Architecture and Engineering Occupations,53.40136717,11.56669174,28.78040983,1.509754628,4.101412966,7.443098003
-19-1011,Animal Scientists,"Life, Physical, and Social Science Occupations",48.62041803,16.03222801,18.32325413,6.588442802,3.397255189,4.279237906
-19-1012,Food Scientists and Technologists,"Life, Physical, and Social Science Occupations",50.41694185,15.33166987,16.72419767,3.333302434,8.690666316,6.33710556
-19-1013,Soil and Plant Scientists,"Life, Physical, and Social Science Occupations",48.16227858,15.58164188,20.9542732,6.212640223,3.340027177,2.073696098
-19-1021,Biochemists and Biophysicists,"Life, Physical, and Social Science Occupations",50.12630037,13.57780022,19.8999914,5.705936055,5.298312289,5.644260401
-19-1022,Microbiologists,"Life, Physical, and Social Science Occupations",49.69620199,13.2140613,19.03199908,4.400914035,7.870915246,5.178312328
-19-1023,Zoologists and Wildlife Biologists,"Life, Physical, and Social Science Occupations",47.94095778,16.10377825,16.7582275,6.569309971,4.682816203,3.826825856
-19-1031,Conservation Scientists,"Life, Physical, and Social Science Occupations",47.3157346,16.19537757,20.32669428,4.187414976,5.304381972,1.301865803
-19-1032,Foresters,"Life, Physical, and Social Science Occupations",47.94957115,13.70538119,18.43977789,5.054337233,8.682328376,2.067746457
-19-1041,Epidemiologists,"Life, Physical, and Social Science Occupations",49.59912354,17.75891415,18.53944021,7.032844157,3.411116369,2.856808657
-19-1042,"Medical Scientists, Except Epidemiologists","Life, Physical, and Social Science Occupations",48.52038313,19.23206541,12.47037244,8.039340368,6.290596304,2.488008614
-19-2011,Astronomers,"Life, Physical, and Social Science Occupations",50.16191975,15.68395214,19.88153522,7.484646307,3.898476168,3.213309924
-19-2021,Atmospheric and Space Scientists,"Life, Physical, and Social Science Occupations",51.76207897,22.15941362,15.17851005,6.475575841,2.15447639,5.794103065
-19-2031,Chemists,"Life, Physical, and Social Science Occupations",50.02176476,16.98078292,14.51754302,5.766411668,8.4631365,4.293890646
-19-2032,Materials Scientists,"Life, Physical, and Social Science Occupations",49.56150856,18.34248071,14.87435863,6.072701797,7.867495009,2.404472408
-19-2041,"Environmental Scientists and Specialists, Including Health","Life, Physical, and Social Science Occupations",50.6360968,13.66060162,24.30326438,4.458504037,3.477126185,4.736600584
-19-2042,"Geoscientists, Except Hydrologists and Geographers","Life, Physical, and Social Science Occupations",50.23429992,17.51254646,20.89650033,5.438988974,2.337587069,4.048677085
-19-2043,Hydrologists,"Life, Physical, and Social Science Occupations",48.71543122,19.70834582,17.58469549,6.127226481,2.588892893,2.706270538
-19-3011,Economists,"Life, Physical, and Social Science Occupations",50.28863375,18.6111872,17.23281424,8.571514256,3.977308275,1.895809775
-19-3022,Survey Researchers,"Life, Physical, and Social Science Occupations",49.76271156,22.93196107,15.51960517,6.652929429,2.453757097,2.204458795
-19-3031,"Clinical, Counseling, and School Psychologists","Life, Physical, and Social Science Occupations",46.75649815,21.46640927,11.05274387,6.576135387,7.188373153,0.472836479
-19-3032,Industrial-Organizational Psychologists,"Life, Physical, and Social Science Occupations",48.44300176,21.4608973,13.55452212,6.732140504,4.091611747,2.603830091
-19-3041,Sociologists,"Life, Physical, and Social Science Occupations",47.65101916,20.50441472,13.89058725,10.30992473,2.708376535,0.237715922
-19-3051,Urban and Regional Planners,"Life, Physical, and Social Science Occupations",48.89314828,19.16534919,14.11122202,4.844625168,7.526583688,3.24536822
-19-3091,Anthropologists and Archeologists,"Life, Physical, and Social Science Occupations",47.9922974,17.08423544,17.13979052,7.427921119,3.021242736,3.319107584
-19-3092,Geographers,"Life, Physical, and Social Science Occupations",50.14878475,16.36678867,19.52004422,6.486625276,2.832715512,4.94261107
-19-3093,Historians,"Life, Physical, and Social Science Occupations",50.54786847,16.74585473,14.68832999,1.597160205,12.17358925,5.342934287
-19-3094,Political Scientists,"Life, Physical, and Social Science Occupations",47.30915588,22.28243688,13.21980364,7.463017199,3.779165988,0.564732178
-19-4011,Agricultural and Food Science Technicians,"Life, Physical, and Social Science Occupations",52.43292476,14.55786737,21.68471087,2.456949507,8.429677834,5.303719175
-19-4021,Biological Technicians,"Life, Physical, and Social Science Occupations",51.75091771,11.57645867,25.58061862,1.775234249,7.034264128,5.784342046
-19-4031,Chemical Technicians,"Life, Physical, and Social Science Occupations",53.24970275,12.06841358,22.38385215,3.346037011,6.000411006,9.450989003
-19-4051,Nuclear Technicians,"Life, Physical, and Social Science Occupations",49.90362654,6.776304472,25.09884912,0.9711578,14.93622477,2.121090378
-19-4091,"Environmental Science and Protection Technicians, Including Health","Life, Physical, and Social Science Occupations",49.63312872,8.746258908,29.71856223,2.430481333,7.332899332,1.404926923
-19-4092,Forensic Science Technicians,"Life, Physical, and Social Science Occupations",49.53673045,17.01706629,20.36601346,2.007722613,3.685374544,6.460553551
-19-4093,Forest and Conservation Technicians,"Life, Physical, and Social Science Occupations",46.29597415,9.432462334,24.40227595,2.176056076,10.28517979,0
-21-1012,"Educational, Guidance, School, and Vocational Counselors",Community and Social Service Occupations,46.49100738,26.83549783,5.329369213,6.117500442,8.208639904,0
-21-1013,Marriage and Family Therapists,Community and Social Service Occupations,47.09150744,17.60820682,13.20826261,6.2961083,8.318824141,1.660105571
-21-1015,Rehabilitation Counselors,Community and Social Service Occupations,46.9616674,19.06562367,6.877765661,4.410098067,16.6001434,0.00803661
-21-1021,"Child, Family, and School Social Workers",Community and Social Service Occupations,46.90990564,28.57153395,7.513385594,3.04707296,7.777913139,0
-21-1022,Healthcare Social Workers,Community and Social Service Occupations,47.59536018,18.39174746,8.966228762,4.216907991,14.34980824,1.670667726
-21-1023,Mental Health and Substance Abuse Social Workers,Community and Social Service Occupations,47.07886542,20.48569478,6.194940354,5.378028525,13.75540195,1.264799812
-21-1091,Health Educators,Community and Social Service Occupations,46.97125799,23.67590518,10.71285258,6.105710502,5.347866661,1.128923065
-21-1092,Probation Officers and Correctional Treatment Specialists,Community and Social Service Occupations,47.28665631,18.03172836,10.43624266,4.966236609,12.29852681,1.553921879
-21-1093,Social and Human Service Assistants,Community and Social Service Occupations,47.33013243,15.65199173,11.51802298,3.534568565,15.51298248,1.112566667
-21-2011,Clergy,Community and Social Service Occupations,46.51708315,22.01066637,9.690744531,7.177750762,6.150059289,1.487862201
-21-2021,"Directors, Religious Activities and Education",Community and Social Service Occupations,45.20219301,28.88979335,2.928234436,3.860687422,8.833646272,0.689831525
-23-1011,Lawyers,Legal Occupations,48.06390857,15.98523373,13.03364588,7.669016738,8.575219402,2.800792813
-23-1012,Judicial Law Clerks,Legal Occupations,50.52192924,17.71277523,11.05929433,10.24053432,5.896785008,5.612540352
-23-1021,"Administrative Law Judges, Adjudicators, and Hearing Officers",Legal Occupations,50.18627013,16.30404521,17.87000417,7.511039963,3.738268344,4.762912439
-23-1022,"Arbitrators, Mediators, and Conciliators",Legal Occupations,46.96745565,21.20077697,8.376648477,7.396104832,9.51956625,0.474359121
-23-1023,"Judges, Magistrate Judges, and Magistrates",Legal Occupations,48.27129935,18.60074142,12.58940451,6.321321166,8.748439307,2.011392946
-23-2011,Paralegals and Legal Assistants,Legal Occupations,52.3811661,20.29167061,16.75000915,4.551584372,3.465732393,7.322169572
-23-2091,Court Reporters,Legal Occupations,54.21472877,20.69346053,17.20776109,5.331235083,0.896713879,10.08555818
-23-2093,"Title Examiners, Abstractors, and Searchers",Legal Occupations,52.77842345,23.51439191,13.84620637,5.909313649,1.609716976,7.898794547
-25-1011,"Business Teachers, Postsecondary","Education, Training, and Library Occupations",46.44583351,25.36484641,9.461821085,10.1527377,1.466428315,0
-25-1021,"Computer Science Teachers, Postsecondary","Education, Training, and Library Occupations",47.75248866,25.67429026,8.605654795,10.01956642,1.785591634,1.66738555
-25-1022,"Mathematical Science Teachers, Postsecondary","Education, Training, and Library Occupations",47.55683973,21.58790954,14.77315364,7.685010003,2.623580528,0.887186024
-25-1031,"Architecture Teachers, Postsecondary","Education, Training, and Library Occupations",45.83412495,24.62205808,6.729909058,9.165729737,4.513517508,0.802910566
-25-1032,"Engineering Teachers, Postsecondary","Education, Training, and Library Occupations",47.76869982,20.69804364,11.99623845,9.349685308,4.228200089,1.496532321
-25-1041,"Agricultural Sciences Teachers, Postsecondary","Education, Training, and Library Occupations",46.39589531,24.81491933,9.862666173,8.762899333,2.562386151,0.393024318
-25-1042,"Biological Science Teachers, Postsecondary","Education, Training, and Library Occupations",46.00110968,23.21419907,10.19705513,9.199718965,3.046069619,0.344066893
-25-1043,"Forestry and Conservation Science Teachers, Postsecondary","Education, Training, and Library Occupations",46.69800091,23.03250043,10.57673824,8.787407887,3.65085041,0.650503942
-25-1051,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary","Education, Training, and Library Occupations",47.8790562,24.12344422,12.37036152,7.374065414,2.970738615,1.040446432
-25-1052,"Chemistry Teachers, Postsecondary","Education, Training, and Library Occupations",46.90686733,22.43805513,12.06496623,7.349258033,4.768110694,0.286477244
-25-1053,"Environmental Science Teachers, Postsecondary","Education, Training, and Library Occupations",46.88871255,22.02304924,11.8352365,9.063222208,3.461013261,0.506191343
-25-1054,"Physics Teachers, Postsecondary","Education, Training, and Library Occupations",47.30673555,24.95737258,10.02392162,8.436607795,3.09336226,0.795471294
-25-1061,"Anthropology and Archeology Teachers, Postsecondary","Education, Training, and Library Occupations",46.50215552,20.60547683,11.75927239,9.271779709,4.097256909,0.768369688
-25-1062,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary","Education, Training, and Library Occupations",46.49690468,23.22876363,9.397538087,9.255630998,4.140961605,0.474010363
-25-1063,"Economics Teachers, Postsecondary","Education, Training, and Library Occupations",47.58612658,18.98838666,16.42300859,7.993533392,3.385009588,0.796188348
-25-1064,"Geography Teachers, Postsecondary","Education, Training, and Library Occupations",46.09474445,24.37288894,8.936633792,9.471873974,3.313347744,0
-25-1065,"Political Science Teachers, Postsecondary","Education, Training, and Library Occupations",45.98633756,24.05563502,8.977259065,9.695145465,3.25829801,0
-25-1066,"Psychology Teachers, Postsecondary","Education, Training, and Library Occupations",45.7332262,22.46875077,10.22298792,9.74662659,3.183590452,0.111270468
-25-1067,"Sociology Teachers, Postsecondary","Education, Training, and Library Occupations",45.77550055,24.64626815,7.884721499,9.565313507,3.655305805,0.023891592
-25-1071,"Health Specialties Teachers, Postsecondary","Education, Training, and Library Occupations",46.6298208,21.51369809,12.14608635,8.580840495,4.159237607,0.22995826
-25-1072,"Nursing Instructors and Teachers, Postsecondary","Education, Training, and Library Occupations",46.72458673,20.38729572,10.7514242,7.279813942,7.103585995,1.20246688
-25-1081,"Education Teachers, Postsecondary","Education, Training, and Library Occupations",46.04193092,24.94018069,7.351674481,9.511338077,4.099019969,0.139717703
-25-1082,"Library Science Teachers, Postsecondary","Education, Training, and Library Occupations",46.76202909,22.17294843,9.339718595,11.66898141,2.335501984,1.244878663
-25-1111,"Criminal Justice and Law Enforcement Teachers, Postsecondary","Education, Training, and Library Occupations",45.99256568,22.43068107,10.41529842,9.904070996,3.242515191,0
-25-1112,"Law Teachers, Postsecondary","Education, Training, and Library Occupations",46.24053623,25.27582097,8.415238091,7.85119527,4.054713743,0.643568153
-25-1113,"Social Work Teachers, Postsecondary","Education, Training, and Library Occupations",46.1283114,24.791139,6.213104331,9.963099866,4.600102106,0.560866098
-25-1121,"Art, Drama, and Music Teachers, Postsecondary","Education, Training, and Library Occupations",44.82533156,27.90556762,2.837325628,8.593233278,5.489205033,0
-25-1122,"Communications Teachers, Postsecondary","Education, Training, and Library Occupations",45.80321006,26.23380255,5.986682423,9.594233456,3.954048315,0.034443317
-25-1123,"English Language and Literature Teachers, Postsecondary","Education, Training, and Library Occupations",45.58886759,24.7082432,6.641178524,9.959334469,4.124179303,0.155932093
-25-1124,"Foreign Language and Literature Teachers, Postsecondary","Education, Training, and Library Occupations",45.73997105,27.83690604,4.134559762,9.025869333,4.506578443,0.236057472
-25-1125,"History Teachers, Postsecondary","Education, Training, and Library Occupations",45.78490184,23.63549661,8.493880197,10.39516851,3.214120511,0.046236004
-25-1126,"Philosophy and Religion Teachers, Postsecondary","Education, Training, and Library Occupations",45.25192191,25.59863974,6.44620214,9.571542805,3.445006433,0.190530794
-25-1191,Graduate Teaching Assistants,"Education, Training, and Library Occupations",45.73448664,25.77152465,7.938742124,10.5008155,1.523404367,0
-25-1192,"Home Economics Teachers, Postsecondary","Education, Training, and Library Occupations",45.78948076,24.6360569,7.205351497,9.703245561,3.705745861,0.539080938
-25-1193,"Recreation and Fitness Studies Teachers, Postsecondary","Education, Training, and Library Occupations",44.99854759,25.91900166,5.213434648,7.456321149,6.409790132,0
-25-1194,"Vocational Education Teachers, Postsecondary","Education, Training, and Library Occupations",45.31577832,27.09291616,5.573017881,7.261087802,5.326128921,0.062627554
-25-2011,"Preschool Teachers, Except Special Education","Education, Training, and Library Occupations",44.22442612,12.82132554,9.774552706,4.079654373,17.25083359,0.298059906
-25-2012,"Kindergarten Teachers, Except Special Education","Education, Training, and Library Occupations",46.09334109,17.91753214,11.61876642,6.172559531,8.951106511,1.433376482
-25-2021,"Elementary School Teachers, Except Special Education","Education, Training, and Library Occupations",46.25945399,18.44357237,10.92128453,5.954124837,9.306791731,1.633680522
-25-2022,"Middle School Teachers, Except Special and Career/Technical Education","Education, Training, and Library Occupations",46.33282867,19.09595685,9.595905545,6.334524376,9.889083872,1.417358023
-25-2023,"Career/Technical Education Teachers, Middle School","Education, Training, and Library Occupations",45.93382695,21.40552079,7.993295704,5.475781361,10.17153443,0.887694668
-25-2031,"Secondary School Teachers, Except Special and Career/Technical Education","Education, Training, and Library Occupations",45.9390833,20.83059684,7.999549187,7.274615848,8.425695667,1.408625753
-25-2032,"Career/Technical Education Teachers, Secondary School","Education, Training, and Library Occupations",46.49098011,21.23457844,8.542252569,5.925040229,9.756655253,1.032453625
-25-2053,"Special Education Teachers, Middle School","Education, Training, and Library Occupations",46.76548859,18.96480685,10.40974202,5.359315625,10.97115308,1.060471019
-25-2054,"Special Education Teachers, Secondary School","Education, Training, and Library Occupations",46.20539806,20.9591833,7.643735256,5.74186748,11.26391129,0.596700741
-25-3011,Adult Basic and Secondary Education and Literacy Teachers and Instructors,"Education, Training, and Library Occupations",44.79101542,23.24364202,7.191639562,7.732262605,6.208629978,0.414841253
-25-3021,Self-Enrichment Education Teachers,"Education, Training, and Library Occupations",42.47774563,22.44855231,3.960153828,5.645102149,10.42393734,0
-25-4011,Archivists,"Education, Training, and Library Occupations",51.1604901,20.98299804,13.66865351,8.725829518,0.732155454,7.050853578
-25-4012,Curators,"Education, Training, and Library Occupations",46.95008532,18.44989961,14.27705585,6.354296436,4.16289673,3.705936696
-25-4013,Museum Technicians and Conservators,"Education, Training, and Library Occupations",46.20739646,22.92240495,14.58245818,7.742834497,0.682227152,0.277471682
-25-4021,Librarians,"Education, Training, and Library Occupations",48.99044647,21.18951844,10.87866242,6.40449229,4.357196631,6.16057669
-25-4031,Library Technicians,"Education, Training, and Library Occupations",52.02015086,21.76017046,9.312654975,2.916539328,7.021015645,11.00977044
-25-9011,Audio-Visual and Multimedia Collections Specialists,"Education, Training, and Library Occupations",47.27290139,25.7374792,10.86540515,8.580249086,1.797855758,0.291912193
-25-9021,Farm and Home Management Advisors,"Education, Training, and Library Occupations",46.50127829,22.26694083,12.74657498,7.187292359,3.383130342,0.917339777
-25-9031,Instructional Coordinators,"Education, Training, and Library Occupations",47.35595944,21.40257432,10.42991668,8.402219034,5.595830208,1.525419193
-25-9041,Teacher Assistants,"Education, Training, and Library Occupations",45.06526714,13.61887257,5.58083863,3.454222738,22.4113332,0
-27-1011,Art Directors,"Arts, Design, Entertainment, Sports, and Media Occupations",47.75412367,21.49809156,4.984498299,6.46233171,11.3067812,3.502420906
-27-1012,Craft Artists,"Arts, Design, Entertainment, Sports, and Media Occupations",47.2218499,16.05298773,17.14663241,2.678523283,9.928108304,1.415598181
-27-1013,"Fine Artists, Including Painters, Sculptors, and Illustrators","Arts, Design, Entertainment, Sports, and Media Occupations",45.49003123,15.7076649,13.22664712,3.536607518,13.0191117,0
-27-1014,Multimedia Artists and Animators,"Arts, Design, Entertainment, Sports, and Media Occupations",50.06181592,20.25975626,11.6086992,8.706536443,4.469807498,5.017016522
-27-1021,Commercial and Industrial Designers,"Arts, Design, Entertainment, Sports, and Media Occupations",50.93502497,20.22961638,17.00983783,4.554672314,5.362527654,3.7783708
-27-1023,Floral Designers,"Arts, Design, Entertainment, Sports, and Media Occupations",46.55266414,19.45258727,9.570575288,3.476125546,9.115880775,4.937495257
-27-1024,Graphic Designers,"Arts, Design, Entertainment, Sports, and Media Occupations",48.77299483,23.69977535,8.414002418,2.601400727,9.957679686,4.100136642
-27-1025,Interior Designers,"Arts, Design, Entertainment, Sports, and Media Occupations",46.9808039,26.46373743,8.923564679,4.317948492,5.93416492,1.341388375
-27-1026,Merchandise Displayers and Window Trimmers,"Arts, Design, Entertainment, Sports, and Media Occupations",45.83464725,6.041313288,20.61448252,0.503275962,16.82106695,1.854508542
-27-1027,Set and Exhibit Designers,"Arts, Design, Entertainment, Sports, and Media Occupations",47.27003964,17.79739577,17.04206493,4.085183959,7.192724928,1.152670051
-27-2011,Actors,"Arts, Design, Entertainment, Sports, and Media Occupations",44.66086611,20.38974948,4.311743107,8.416989399,10.43211043,1.110273692
-27-2012,Producers and Directors,"Arts, Design, Entertainment, Sports, and Media Occupations",48.04072338,23.2310931,10.13193031,4.912988937,7.154316922,2.61039411
-27-2021,Athletes and Sports Competitors,"Arts, Design, Entertainment, Sports, and Media Occupations",45.18850908,8.832502296,9.654644596,2.879287603,22.73473476,1.087339826
-27-2022,Coaches and Scouts,"Arts, Design, Entertainment, Sports, and Media Occupations",45.473439,21.27904013,8.363278896,4.199630377,10.37875859,1.252731015
-27-2023,"Umpires, Referees, and Other Sports Officials","Arts, Design, Entertainment, Sports, and Media Occupations",47.67984438,3.073763523,24.1367405,3.073163123,16.33338063,1.062796603
-27-2032,Choreographers,"Arts, Design, Entertainment, Sports, and Media Occupations",44.66090201,16.03754647,6.719765444,3.333423557,17.7415996,0.828566937
-27-2041,Music Directors and Composers,"Arts, Design, Entertainment, Sports, and Media Occupations",45.92545199,19.64624671,10.93790053,6.616369108,7.399106539,1.325829103
-27-3011,Radio and Television Announcers,"Arts, Design, Entertainment, Sports, and Media Occupations",47.71081664,24.68704798,11.38005556,5.098595312,4.988920931,1.556196862
-27-3012,Public Address System and Other Announcers,"Arts, Design, Entertainment, Sports, and Media Occupations",46.56107953,22.62902561,18.38327299,1.320445073,4.096316751,0.132019113
-27-3021,Broadcast News Analysts,"Arts, Design, Entertainment, Sports, and Media Occupations",49.32022795,19.55387124,14.90436002,3.346359329,5.998955012,5.516682339
-27-3022,Reporters and Correspondents,"Arts, Design, Entertainment, Sports, and Media Occupations",48.78150117,20.15434824,13.73614986,4.044163512,6.805838903,4.04100066
-27-3031,Public Relations Specialists,"Arts, Design, Entertainment, Sports, and Media Occupations",48.21827753,24.50718299,7.173307053,5.257701307,8.098892901,3.181193274
-27-3041,Editors,"Arts, Design, Entertainment, Sports, and Media Occupations",50.31399119,19.61971148,12.5520987,5.727952112,5.47610211,6.938126789
-27-3042,Technical Writers,"Arts, Design, Entertainment, Sports, and Media Occupations",51.89009628,22.37827177,10.48200382,8.363537578,4.732691985,5.933591137
-27-3043,Writers and Authors,"Arts, Design, Entertainment, Sports, and Media Occupations",47.96302133,23.23501859,5.751673864,3.759111689,10.47621125,4.741005936
-27-3091,Interpreters and Translators,"Arts, Design, Entertainment, Sports, and Media Occupations",50.75329503,18.96938763,20.75195512,1.507232459,4.19607494,5.328644887
-27-4011,Audio and Video Equipment Technicians,"Arts, Design, Entertainment, Sports, and Media Occupations",49.41421509,14.36541157,23.63130886,2.818376512,5.449101393,3.15001675
-27-4012,Broadcast Technicians,"Arts, Design, Entertainment, Sports, and Media Occupations",52.20639411,14.97694327,28.59493199,2.439235617,3.362743851,2.832539375
-27-4014,Sound Engineering Technicians,"Arts, Design, Entertainment, Sports, and Media Occupations",49.56854943,14.61926614,23.74820482,3.152992122,5.094134605,2.953951745
-27-4021,Photographers,"Arts, Design, Entertainment, Sports, and Media Occupations",48.34913061,22.25493813,16.59674898,1.480151776,5.398969246,2.618322479
-27-4031,"Camera Operators, Television, Video, and Motion Picture","Arts, Design, Entertainment, Sports, and Media Occupations",48.23413139,8.637073381,28.94961228,1.023143548,8.182248971,1.442053204
-27-4032,Film and Video Editors,"Arts, Design, Entertainment, Sports, and Media Occupations",50.57496912,17.81557274,18.2759792,3.256737782,6.869149252,4.357530141
-29-1011,Chiropractors,Healthcare Practitioners and Technical Occupations,48.07365181,14.67211309,15.18419627,3.637440648,10.48079655,4.09910526
-29-1021,"Dentists, General",Healthcare Practitioners and Technical Occupations,47.98363301,14.66687199,16.59108637,3.902457205,10.29256115,2.530656295
-29-1022,Oral and Maxillofacial Surgeons,Healthcare Practitioners and Technical Occupations,47.94235203,13.18041223,19.26915897,4.928166176,8.111354195,2.453260471
-29-1023,Orthodontists,Healthcare Practitioners and Technical Occupations,47.56617814,19.81472879,11.61122565,4.910962786,9.117308398,2.111952516
-29-1024,Prosthodontists,Healthcare Practitioners and Technical Occupations,47.45622435,16.20214074,9.804170365,5.137972034,13.62009201,2.691849203
-29-1031,Dietitians and Nutritionists,Healthcare Practitioners and Technical Occupations,47.60653324,18.36895477,17.95160466,5.832454472,3.335874497,2.11764484
-29-1041,Optometrists,Healthcare Practitioners and Technical Occupations,49.73255072,13.9355909,21.86489122,1.466358706,7.869485013,4.596224888
-29-1051,Pharmacists,Healthcare Practitioners and Technical Occupations,50.37574815,16.38415127,17.6085533,2.404789661,5.975469777,8.002784156
-29-1061,Anesthesiologists,Healthcare Practitioners and Technical Occupations,48.87770945,12.39324289,18.6712899,4.935517549,10.34804423,2.529614887
-29-1062,Family and General Practitioners,Healthcare Practitioners and Technical Occupations,47.03438732,16.84756473,13.77239671,5.925465039,8.878932961,1.610027883
-29-1063,"Internists, General",Healthcare Practitioners and Technical Occupations,47.64652773,17.15065498,14.70867736,6.621783383,6.700332531,2.465079472
-29-1064,Obstetricians and Gynecologists,Healthcare Practitioners and Technical Occupations,47.79614972,12.82763973,17.32407243,5.901323407,9.460446343,2.282667813
-29-1065,"Pediatricians, General",Healthcare Practitioners and Technical Occupations,47.37042948,15.84364688,15.95713602,6.330655824,7.634725526,1.604265232
-29-1066,Psychiatrists,Healthcare Practitioners and Technical Occupations,47.97709025,17.72429777,12.70454141,5.660352999,9.178340035,2.709558043
-29-1067,Surgeons,Healthcare Practitioners and Technical Occupations,48.20162208,12.5991634,18.0284285,5.159045552,9.419183636,2.995800994
-29-1071,Physician Assistants,Healthcare Practitioners and Technical Occupations,48.76495174,12.35938327,17.82627175,3.590152702,11.30957623,3.679567786
-29-1081,Podiatrists,Healthcare Practitioners and Technical Occupations,47.75173412,16.23360498,15.54757105,5.608006896,7.696430952,2.666120244
-29-1122,Occupational Therapists,Healthcare Practitioners and Technical Occupations,46.84376706,14.78474474,15.40821824,3.932938103,10.27910607,2.438759904
-29-1123,Physical Therapists,Healthcare Practitioners and Technical Occupations,46.74617658,14.21409279,16.53857116,3.653884818,10.52345765,1.816170166
-29-1124,Radiation Therapists,Healthcare Practitioners and Technical Occupations,50.40704301,7.759712514,23.7948893,0.96274092,13.51694533,4.372754954
-29-1125,Recreational Therapists,Healthcare Practitioners and Technical Occupations,45.83988952,15.14775436,8.80980336,3.663609634,16.6589412,1.559780963
-29-1126,Respiratory Therapists,Healthcare Practitioners and Technical Occupations,48.26905983,13.34540729,17.5250033,2.129349933,13.53423796,1.735061351
-29-1127,Speech-Language Pathologists,Healthcare Practitioners and Technical Occupations,48.37383543,15.89314594,19.14375537,6.647866636,4.41616685,2.272900629
-29-1131,Veterinarians,Healthcare Practitioners and Technical Occupations,47.56822791,12.94193867,17.76395278,4.031477556,11.44107377,1.389785132
-29-1181,Audiologists,Healthcare Practitioners and Technical Occupations,47.81260366,23.30846544,13.36644787,5.170940851,4.518786864,1.447962633
-29-2021,Dental Hygienists,Healthcare Practitioners and Technical Occupations,47.6305143,11.17865445,17.5232466,1.337999858,14.22598816,3.364625238
-29-2031,Cardiovascular Technologists and Technicians,Healthcare Practitioners and Technical Occupations,49.41386665,10.95346534,19.12316856,1.296913968,14.32419038,3.716128411
-29-2032,Diagnostic Medical Sonographers,Healthcare Practitioners and Technical Occupations,49.62998143,9.857501517,24.03454828,0.70262671,11.21209806,3.823206862
-29-2033,Nuclear Medicine Technologists,Healthcare Practitioners and Technical Occupations,49.05810671,8.403376482,13.78921487,1.415101048,21.39738627,4.05302805
-29-2041,Emergency Medical Technicians and Paramedics,Healthcare Practitioners and Technical Occupations,47.20670263,4.657344576,24.43506974,0.707202206,15.78456413,1.622521974
-29-2051,Dietetic Technicians,Healthcare Practitioners and Technical Occupations,48.69974243,5.495775644,19.99723266,1.210107185,19.82235789,2.174269055
-29-2052,Pharmacy Technicians,Healthcare Practitioners and Technical Occupations,50.9997318,18.95385785,12.56357611,1.704547038,8.446899411,9.330851394
-29-2053,Psychiatric Technicians,Healthcare Practitioners and Technical Occupations,46.15975308,10.656371,13.67545324,2.511593321,18.26573091,1.050604614
-29-2054,Respiratory Therapy Technicians,Healthcare Practitioners and Technical Occupations,47.77241121,16.02069377,14.06108455,5.393708581,10.0581607,2.238763611
-29-2055,Surgical Technologists,Healthcare Practitioners and Technical Occupations,48.45129179,7.61205756,21.70336718,1.065939787,16.61271717,1.457210086
-29-2056,Veterinary Technologists and Technicians,Healthcare Practitioners and Technical Occupations,47.46954492,12.20207072,15.75170132,2.154074882,16.9021264,0.45957159
-29-2061,Licensed Practical and Licensed Vocational Nurses,Healthcare Practitioners and Technical Occupations,47.84799242,9.439216096,16.42187257,1.231670957,17.35079504,3.404437759
-29-2071,Medical Records and Health Information Technicians,Healthcare Practitioners and Technical Occupations,53.84860621,17.03520682,12.29927059,3.88561958,7.727956649,12.90055257
-29-2081,"Opticians, Dispensing",Healthcare Practitioners and Technical Occupations,47.41530182,26.02085117,11.30170713,1.062291136,5.75985633,3.270596057
-29-2091,Orthotists and Prosthetists,Healthcare Practitioners and Technical Occupations,46.94364866,21.15894821,9.883592951,5.969773191,8.204290736,1.727043573
-29-9011,Occupational Health and Safety Specialists,Healthcare Practitioners and Technical Occupations,48.06358974,16.4051896,18.65235136,5.520719251,5.905681972,1.579647558
-29-9012,Occupational Health and Safety Technicians,Healthcare Practitioners and Technical Occupations,47.30690372,16.36766066,18.10275313,4.661324955,7.247248846,0.927916119
-29-9091,Athletic Trainers,Healthcare Practitioners and Technical Occupations,45.65087089,18.00891579,11.60451415,5.523185055,9.893072987,0.62118291
-31-1011,Home Health Aides,Healthcare Support Occupations,45.2472803,3.962202778,18.69707901,0.176680438,22.41131807,0
-31-1013,Psychiatric Aides,Healthcare Support Occupations,46.95720491,14.22357637,9.678666746,2.454777041,20.18430793,0.415876818
-31-2011,Occupational Therapy Assistants,Healthcare Support Occupations,46.51379759,9.722675225,15.07246886,2.965841418,16.77984285,1.972969243
-31-2012,Occupational Therapy Aides,Healthcare Support Occupations,45.58321605,9.165701567,10.95209644,0.828567566,23.93706822,0.699782269
-31-2021,Physical Therapist Assistants,Healthcare Support Occupations,46.10370812,8.718579963,17.72660073,1.580801998,16.73029604,1.347429386
-31-2022,Physical Therapist Aides,Healthcare Support Occupations,44.93573949,5.800105877,14.31858849,0,24.81704512,0
-31-9011,Massage Therapists,Healthcare Support Occupations,44.36040313,11.18721516,14.64309006,1.603218985,16.33972403,0.587154903
-31-9091,Dental Assistants,Healthcare Support Occupations,47.83045767,16.69825925,15.51791927,2.347704655,11.07512615,2.19144834
-31-9092,Medical Assistants,Healthcare Support Occupations,49.02657272,12.72286375,17.48271835,0.599738631,15.03441694,3.18683505
-31-9093,Medical Equipment Preparers,Healthcare Support Occupations,49.26241389,11.08653969,21.02069475,1.804913416,13.03112892,2.319137115
-31-9094,Medical Transcriptionists,Healthcare Support Occupations,57.08596848,16.78904899,26.40822714,1.87816553,0,12.01052681
-31-9095,Pharmacy Aides,Healthcare Support Occupations,48.46048326,17.38313873,11.65898616,4.628292451,12.86343526,1.92663066
-31-9096,Veterinary Assistants and Laboratory Animal Caretakers,Healthcare Support Occupations,47.06682343,3.325591795,21.00732214,0.119492404,20.32509092,2.289326163
-33-1011,First-Line Supervisors of Correctional Officers,Protective Service Occupations,47.58488188,13.3628551,14.11514013,3.108704507,14.89458215,2.103599984
-33-1012,First-Line Supervisors of Police and Detectives,Protective Service Occupations,47.88338322,13.45302243,16.82157903,3.252657786,12.36267107,1.993452896
-33-1021,First-Line Supervisors of Fire Fighting and Prevention Workers,Protective Service Occupations,47.13849557,12.85959617,19.11175931,3.073591663,11.37035197,0.723196458
-33-2011,Firefighters,Protective Service Occupations,46.59373103,8.459977041,21.82240555,1.999409587,13.87721194,0.434726917
-33-2021,Fire Inspectors and Investigators,Protective Service Occupations,47.64073353,14.33114353,19.08523922,4.417221782,8.406598048,1.400530956
-33-3011,Bailiffs,Protective Service Occupations,46.93054635,9.384929607,14.3889075,0,22.73516472,0.421544515
-33-3012,Correctional Officers and Jailers,Protective Service Occupations,47.78027636,8.359227216,17.10518577,0.036959153,19.77657333,2.502330897
-33-3021,Detectives and Criminal Investigators,Protective Service Occupations,48.53541097,10.51143366,21.53837509,2.776189405,10.4629635,3.246449306
-33-3031,Fish and Game Wardens,Protective Service Occupations,46.47574694,8.989134273,23.69941079,2.051620354,11.58068932,0.154892198
-33-3041,Parking Enforcement Workers,Protective Service Occupations,47.56909166,5.847699161,24.03535448,0.527026049,15.37153152,1.787480445
-33-3051,Police and Sheriff's Patrol Officers,Protective Service Occupations,47.75619284,8.197532873,21.59889899,1.526946402,15.07566854,1.357146037
-33-3052,Transit and Railroad Police,Protective Service Occupations,46.94611272,7.525742091,22.91748152,2.509448148,13.25740085,0.736040112
-33-9011,Animal Control Workers,Protective Service Occupations,46.64474867,9.292387878,20.96833924,1.495348161,14.12865486,0.760018542
-33-9021,Private Detectives and Investigators,Protective Service Occupations,49.2554018,15.68348646,18.91306153,4.727446755,5.90048536,4.030921693
-33-9031,Gaming Surveillance Officers and Gaming Investigators,Protective Service Occupations,50.97856262,14.05621,18.98102494,3.454635078,10.52641868,3.960273929
-33-9032,Security Guards,Protective Service Occupations,47.31191027,6.375058417,18.66408377,0.265080951,19.59526087,2.41242626
-33-9091,Crossing Guards,Protective Service Occupations,46.7371177,3.126683251,20.09703772,0.791637158,21.10247072,1.619288847
-33-9092,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",Protective Service Occupations,46.34752537,7.274773244,21.06640379,0.071956626,17.93439171,0
-35-1011,Chefs and Head Cooks,Food Preparation and Serving Related Occupations,47.96767662,16.71280471,14.74079171,1.755243876,11.86000462,2.898831694
-35-1012,First-Line Supervisors of Food Preparation and Serving Workers,Food Preparation and Serving Related Occupations,47.86300746,20.00962843,10.05774767,0.518437857,15.84660041,1.430593098
-35-2011,"Cooks, Fast Food",Food Preparation and Serving Related Occupations,47.46692686,5.045002301,13.98817854,1.080127585,26.65769031,0.695928126
-35-2012,"Cooks, Institution and Cafeteria",Food Preparation and Serving Related Occupations,48.90547613,3.481170751,22.06054712,0,19.65987272,3.703885528
-35-2013,"Cooks, Private Household",Food Preparation and Serving Related Occupations,46.25794069,18.46445808,14.58631424,4.0287305,7.924589943,1.25384793
-35-2014,"Cooks, Restaurant",Food Preparation and Serving Related Occupations,48.43061458,1.507348346,23.79319448,0.79858793,19.80529003,2.526193787
-35-2015,"Cooks, Short Order",Food Preparation and Serving Related Occupations,47.87010766,11.32985544,21.26212979,1.856479497,12.23885022,1.182792716
-35-2021,Food Preparation Workers,Food Preparation and Serving Related Occupations,46.7479342,6.22506533,20.41228216,1.314356136,18.79623058,0
-35-3011,Bartenders,Food Preparation and Serving Related Occupations,46.13327978,14.23164669,9.907296656,2.816877559,17.18560949,1.991849388
-35-3021,"Combined Food Preparation and Serving Workers, Including Fast Food",Food Preparation and Serving Related Occupations,46.41388497,9.998512648,14.17578319,0,22.23958914,0
-35-3022,"Counter Attendants, Cafeteria, Food Concession, and Coffee Shop",Food Preparation and Serving Related Occupations,45.34207928,10.27692385,8.232802465,0,26.83235297,0
-35-3031,Waiters and Waitresses,Food Preparation and Serving Related Occupations,45.58176123,12.43552706,9.854877768,0.961801313,22.32955509,0
-35-3041,"Food Servers, Nonrestaurant",Food Preparation and Serving Related Occupations,47.14836363,8.0840089,16.91447856,0.048694687,22.10118148,0
-35-9011,Dining Room and Cafeteria Attendants and Bartender Helpers,Food Preparation and Serving Related Occupations,44.78175381,3.393737687,16.71824672,0,24.6697694,0
-35-9021,Dishwashers,Food Preparation and Serving Related Occupations,48.29877792,4.212807281,26.24946258,0.541677988,16.64439786,0.6504322
-35-9031,"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",Food Preparation and Serving Related Occupations,46.56148696,20.73878127,3.488635466,0.079746811,22.25432342,0
-37-1011,First-Line Supervisors of Housekeeping and Janitorial Workers,Building and Grounds Cleaning and Maintenance Occupations,47.56420381,17.46751444,8.362412853,2.818882653,18.48734624,0.42804762
-37-1012,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",Building and Grounds Cleaning and Maintenance Occupations,46.9478639,15.97257129,16.40502953,3.957621843,9.385854208,1.226787025
-37-2011,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",Building and Grounds Cleaning and Maintenance Occupations,45.16723502,4.18127463,22.82696239,0,18.158998,0
-37-2012,Maids and Housekeeping Cleaners,Building and Grounds Cleaning and Maintenance Occupations,45.62831529,0,18.09648612,0,27.15542876,0.376400419
-37-2021,Pest Control Workers,Building and Grounds Cleaning and Maintenance Occupations,46.53179452,11.55199088,21.41822217,3.015389312,8.981102421,1.565089732
-37-3011,Landscaping and Groundskeeping Workers,Building and Grounds Cleaning and Maintenance Occupations,47.10846224,5.043555691,28.34088538,0.015758464,13.7082627,0
-37-3012,"Pesticide Handlers, Sprayers, and Applicators, Vegetation",Building and Grounds Cleaning and Maintenance Occupations,48.69216823,11.01054169,25.13260493,2.966638935,7.441625481,2.140757198
-37-3013,Tree Trimmers and Pruners,Building and Grounds Cleaning and Maintenance Occupations,47.08524884,5.803682868,25.23655944,0.437020459,14.29863146,1.309354619
-39-1021,First-Line Supervisors of Personal Service Workers,Personal Care and Service Occupations,46.03657867,19.35908008,9.265072715,6.508628147,10.58812492,0.315672817
-39-2011,Animal Trainers,Personal Care and Service Occupations,44.48887593,10.98399956,18.37874352,4.22361502,10.90251783,0
-39-2021,Nonfarm Animal Caretakers,Personal Care and Service Occupations,44.94080296,5.622952953,23.17236743,0.660633878,15.48484869,0
-39-3011,Gaming Dealers,Personal Care and Service Occupations,49.95166096,9.730488449,23.94657353,0,13.31437683,2.960222144
-39-3012,Gaming and Sports Book Writers and Runners,Personal Care and Service Occupations,53.77294873,12.98863909,24.45884888,0,8.845748765,7.479711992
-39-3031,"Ushers, Lobby Attendants, and Ticket Takers",Personal Care and Service Occupations,48.37903791,14.05602141,18.23246474,0,16.00137756,0.089174203
-39-3091,Amusement and Recreation Attendants,Personal Care and Service Occupations,46.50211804,13.79229526,12.80584975,1.499456219,18.40451682,0
-39-3092,Costume Attendants,Personal Care and Service Occupations,46.61652502,12.01786923,18.84998944,1.634466295,14.11420005,0
-39-3093,"Locker Room, Coatroom, and Dressing Room Attendants",Personal Care and Service Occupations,45.63937358,14.22709718,11.46846824,0.044676506,19.89913165,0
-39-4011,Embalmers,Personal Care and Service Occupations,46.51011242,15.40959022,15.39342182,3.205582201,10.8366763,1.664841882
-39-4021,Funeral Attendants,Personal Care and Service Occupations,43.57987268,15.25716212,19.58313068,0,8.739579877,0
-39-5011,Barbers,Personal Care and Service Occupations,45.91921133,14.5204364,16.64788307,2.224864476,12.52602739,0
-39-5012,"Hairdressers, Hairstylists, and Cosmetologists",Personal Care and Service Occupations,46.11679604,12.32612856,14.89099051,3.440219361,14.25181318,1.207644427
-39-5091,"Makeup Artists, Theatrical and Performance",Personal Care and Service Occupations,46.64304532,17.23245671,13.21433133,2.720673587,11.08544429,2.390139401
-39-5092,Manicurists and Pedicurists,Personal Care and Service Occupations,47.16693686,19.55123688,10.62026735,1.642509442,14.27325428,1.079668913
-39-5094,Skincare Specialists,Personal Care and Service Occupations,45.37047314,20.75805853,13.00909982,2.345668053,8.810656335,0.446990394
-39-6011,Baggage Porters and Bellhops,Personal Care and Service Occupations,46.88804603,8.751635726,19.4246943,0.949658083,15.79358529,1.968472625
-39-6012,Concierges,Personal Care and Service Occupations,46.89691976,26.07042272,7.7293341,2.401334806,10.11801749,0.577810641
-39-9011,Childcare Workers,Personal Care and Service Occupations,44.98527498,7.63434749,15.11021841,1.619651113,20.31222491,0.30883305
-39-9021,Personal Care Aides,Personal Care and Service Occupations,44.0101068,15.96568284,9.70762962,1.32425516,17.01253917,0
-39-9031,Fitness Trainers and Aerobics Instructors,Personal Care and Service Occupations,43.45482453,16.64243993,6.788926715,2.523590038,17.49986785,0
-39-9032,Recreation Workers,Personal Care and Service Occupations,45.56230701,20.64493903,7.226383774,6.434004193,10.23078758,1.026192431
-39-9041,Residential Advisors,Personal Care and Service Occupations,46.96074221,25.11122776,4.190605628,3.244674263,14.07536297,0.338871583
-41-1011,First-Line Supervisors of Retail Sales Workers,Sales and Related Occupations,47.02767216,18.79198014,8.946371311,2.701508963,15.96607839,0.621733346
-41-1012,First-Line Supervisors of Non-Retail Sales Workers,Sales and Related Occupations,47.79612361,22.76641666,9.171977742,5.717345222,8.6581144,1.482269581
-41-2011,Cashiers,Sales and Related Occupations,50.39386246,6.147580666,26.7259074,1.153589223,13.75126679,2.615518375
-41-2012,Gaming Change Persons and Booth Cashiers,Sales and Related Occupations,50.39099001,9.451121274,21.59926767,0,15.44792579,3.892675276
-41-2021,Counter and Rental Clerks,Sales and Related Occupations,47.49442122,14.11482517,8.801463004,0.105939295,22.93638253,1.53581122
-41-2022,Parts Salespersons,Sales and Related Occupations,49.24200394,21.0007918,13.18528786,1.632320016,8.433437174,4.990167099
-41-2031,Retail Salespersons,Sales and Related Occupations,46.63071052,13.1860993,13.34892571,0.971294856,19.12439065,0
-41-3011,Advertising Sales Agents,Sales and Related Occupations,47.4117922,22.16866564,7.868385886,3.330137138,11.07114527,2.973458272
-41-3021,Insurance Sales Agents,Sales and Related Occupations,49.15349335,22.10190969,11.86517594,3.74140086,7.358876293,4.086130568
-41-3031,"Securities, Commodities, and Financial Services Sales Agents",Sales and Related Occupations,48.70813367,23.15171194,9.954195479,4.50352075,7.475652551,3.623052953
-41-3041,Travel Agents,Sales and Related Occupations,48.70058877,30.95430872,10.0638961,2.832394224,4.011770529,0.838219199
-41-4011,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",Sales and Related Occupations,46.90049846,29.080808,6.275031762,5.375300705,6.169357996,0
-41-4012,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",Sales and Related Occupations,46.18706621,24.90154682,9.155807099,1.907476619,9.304945485,0.917290181
-41-9011,Demonstrators and Product Promoters,Sales and Related Occupations,46.62158134,18.29900276,15.49775912,2.974624284,9.282910404,0.567284779
-41-9021,Real Estate Brokers,Sales and Related Occupations,47.2171838,23.25249381,9.453077306,3.447205099,10.3464228,0.717984788
-41-9022,Real Estate Sales Agents,Sales and Related Occupations,48.65657004,19.05892089,16.30235862,2.646143553,6.326031887,4.32311509
-41-9031,Sales Engineers,Sales and Related Occupations,48.12764338,22.87328422,10.62574009,7.515146124,5.069706683,2.043766267
-41-9091,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",Sales and Related Occupations,44.55312337,37.33855708,0.064112523,4.296756554,2.853697214,0
-43-1011,First-Line Supervisors of Office and Administrative Support Workers,Office and Administrative Support Occupations,48.88613157,23.36642176,10.1316426,5.233346103,6.812701038,3.342020074
-43-2011,"Switchboard Operators, Including Answering Service",Office and Administrative Support Occupations,52.48870385,29.65897512,11.57443751,0,6.774522094,4.480769135
-43-3011,Bill and Account Collectors,Office and Administrative Support Occupations,52.72588035,23.97056277,11.76575975,2.983673147,7.206929547,6.798955137
-43-3021,Billing and Posting Clerks,Office and Administrative Support Occupations,57.513247,20.4644893,20.2368929,2.135079188,2.801589159,11.87519646
-43-3031,"Bookkeeping, Accounting, and Auditing Clerks",Office and Administrative Support Occupations,57.02865944,17.26198117,20.38702164,2.55445715,0.740993846,16.08420563
-43-3041,Gaming Cage Workers,Office and Administrative Support Occupations,52.35697443,9.641577516,23.85092903,0.332823795,10.86702554,7.664618544
-43-3051,Payroll and Timekeeping Clerks,Office and Administrative Support Occupations,56.8539364,19.17494728,18.55577087,3.021412643,1.685245314,14.4165603
-43-3061,Procurement Clerks,Office and Administrative Support Occupations,51.20687885,25.94263901,9.29103737,3.973602932,5.742608706,6.256990833
-43-3071,Tellers,Office and Administrative Support Occupations,53.43017799,16.94463591,22.60998314,0.623821188,4.878931434,8.372806319
-43-4011,Brokerage Clerks,Office and Administrative Support Occupations,54.1817538,24.95828469,16.0874207,2.616761124,0.879629742,9.63965754
-43-4021,Correspondence Clerks,Office and Administrative Support Occupations,52.4801976,19.31784112,15.22636026,5.44410581,6.182480246,6.309410167
-43-4031,"Court, Municipal, and License Clerks",Office and Administrative Support Occupations,54.5723682,30.64059139,7.729718533,1.018632176,6.673086088,8.510340013
-43-4051,Customer Service Representatives,Office and Administrative Support Occupations,52.20058491,20.06899511,19.19738471,2.418881218,4.734318999,5.781004872
-43-4061,"Eligibility Interviewers, Government Programs",Office and Administrative Support Occupations,51.80496863,24.36356936,12.6704105,3.655806976,5.517962585,5.597219213
-43-4071,File Clerks,Office and Administrative Support Occupations,54.43236245,15.21095292,14.14175745,2.303931609,4.195609049,18.58011141
-43-4081,"Hotel, Motel, and Resort Desk Clerks",Office and Administrative Support Occupations,50.66482549,20.43623221,13.13770688,1.304040419,11.36902153,4.417824449
-43-4111,"Interviewers, Except Eligibility and Loan",Office and Administrative Support Occupations,51.44930203,27.82128613,11.18541404,1.30961716,6.599093329,4.53389137
-43-4121,"Library Assistants, Clerical",Office and Administrative Support Occupations,52.47351301,12.23580529,14.8696619,2.949833805,6.244591657,16.17362035
-43-4131,Loan Interviewers and Clerks,Office and Administrative Support Occupations,52.91482813,20.40258478,15.69774069,1.539951434,7.770170101,7.504381126
-43-4141,New Accounts Clerks,Office and Administrative Support Occupations,50.60453422,26.58415897,11.19293669,4.112343954,4.150596757,4.564497855
-43-4151,Order Clerks,Office and Administrative Support Occupations,53.92570556,17.24536982,18.76888966,1.498009817,7.395989198,9.017447059
-43-4161,"Human Resources Assistants, Except Payroll and Timekeeping",Office and Administrative Support Occupations,53.44259497,25.77737061,13.25097379,2.543821685,3.336898726,8.533530157
-43-4171,Receptionists and Information Clerks,Office and Administrative Support Occupations,52.3886263,33.43777634,6.490836484,2.606150401,3.577516841,6.276346228
-43-4181,Reservation and Transportation Ticket Agents and Travel Clerks,Office and Administrative Support Occupations,50.96222022,20.05837661,14.67427149,2.694565702,9.30577702,4.229229401
-43-5011,Cargo and Freight Agents,Office and Administrative Support Occupations,53.01548727,23.71738749,8.852777969,2.894839568,10.87695656,6.673525684
-43-5021,Couriers and Messengers,Office and Administrative Support Occupations,46.91823274,3.692597452,27.00293114,0.256749705,13.3516586,2.614295844
-43-5031,"Police, Fire, and Ambulance Dispatchers",Office and Administrative Support Occupations,52.19930284,13.63318802,21.34497307,1.229247706,11.10696733,4.88492671
-43-5032,"Dispatchers, Except Police, Fire, and Ambulance",Office and Administrative Support Occupations,53.11484979,18.78789776,14.80006072,5.61076416,5.59183409,8.324293063
-43-5041,"Meter Readers, Utilities",Office and Administrative Support Occupations,47.88516945,6.983672431,25.62129097,0.650657741,12.03600147,2.593546839
-43-5051,Postal Service Clerks,Office and Administrative Support Occupations,49.7131464,5.919774678,24.71860189,0.324343187,13.6855177,5.064908945
-43-5052,Postal Service Mail Carriers,Office and Administrative Support Occupations,47.88951512,1.961278216,28.43758492,0,13.29443995,4.196212036
-43-5053,"Postal Service Mail Sorters, Processors, and Processing Machine Operators",Office and Administrative Support Occupations,51.12369275,2.704088242,26.8872812,0,14.89060911,6.641714194
-43-5061,"Production, Planning, and Expediting Clerks",Office and Administrative Support Occupations,51.98731144,19.63109158,10.79872362,5.416244503,8.965944837,7.175306905
-43-5071,"Shipping, Receiving, and Traffic Clerks",Office and Administrative Support Occupations,48.29410541,9.047448848,24.46818026,0.772027833,10.84440806,3.162040411
-43-5081,Stock Clerks and Order Fillers,Office and Administrative Support Occupations,46.32646745,2.5310656,29.01936143,0,13.3622934,1.413747019
-43-5111,"Weighers, Measurers, Checkers, and Samplers, Recordkeeping",Office and Administrative Support Occupations,52.00426751,11.13731164,22.76593148,3.578357602,8.689648668,5.833018116
-43-6011,Executive Secretaries and Executive Administrative Assistants,Office and Administrative Support Occupations,52.6470383,30.07081803,7.9507718,3.641308716,2.633398865,8.350740888
-43-6012,Legal Secretaries,Office and Administrative Support Occupations,54.5085476,28.83463873,7.668748391,2.909303886,1.234473324,13.86138327
-43-6013,Medical Secretaries,Office and Administrative Support Occupations,51.68599528,24.03430247,5.082820051,0.372788182,15.72742653,6.468658051
-43-6014,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",Office and Administrative Support Occupations,53.35626192,31.58538915,7.468704426,3.267395945,1.353182537,9.681589863
-43-9011,Computer Operators,Office and Administrative Support Occupations,52.51066811,18.40166999,16.79373291,5.012675479,4.782490784,7.520098946
-43-9021,Data Entry Keyers,Office and Administrative Support Occupations,56.18478175,12.27204415,30.58269317,1.306540016,2.522570825,9.50093359
-43-9022,Word Processors and Typists,Office and Administrative Support Occupations,54.62639234,23.60056884,17.39356937,1.598345813,2.742889983,9.291018339
-43-9031,Desktop Publishers,Office and Administrative Support Occupations,53.54200046,25.86833384,6.878929704,1.087272499,5.818360842,13.88910357
-43-9041,Insurance Claims and Policy Processing Clerks,Office and Administrative Support Occupations,57.15747785,26.33696501,12.33650894,1.954559562,2.210800641,14.3186437
-43-9051,"Mail Clerks and Mail Machine Operators, Except Postal Service",Office and Administrative Support Occupations,51.74948196,3.882967513,35.01010004,0,9.420327692,3.436086715
-43-9061,"Office Clerks, General",Office and Administrative Support Occupations,56.81008705,29.17529927,14.96345774,0,3.315610524,9.355719514
-43-9071,"Office Machine Operators, Except Computer",Office and Administrative Support Occupations,51.22000367,17.62306931,17.46136887,1.784644687,10.21041979,4.140501019
-43-9081,Proofreaders and Copy Markers,Office and Administrative Support Occupations,51.66711993,25.29745114,10.83764319,5.441451926,1.797954264,8.292619405
-43-9111,Statistical Assistants,Office and Administrative Support Occupations,52.97237581,16.09488721,21.66196337,7.851657043,2.156211972,5.207656211
-45-1011,"First-Line Supervisors of Farming, Fishing, and Forestry Workers","Farming, Fishing, and Forestry Occupations",47.913076,13.0609873,22.05808341,3.08756994,8.466405567,1.240029778
-45-2011,Agricultural Inspectors,"Farming, Fishing, and Forestry Occupations",48.0125186,11.3200339,26.03350938,2.465521577,6.466190275,1.727263459
-45-2021,Animal Breeders,"Farming, Fishing, and Forestry Occupations",45.93386032,12.77515082,21.45103228,3.161645591,8.184989564,0.361042067
-45-2041,"Graders and Sorters, Agricultural Products","Farming, Fishing, and Forestry Occupations",49.45634742,0,36.68520328,0,11.75183297,1.01931116
-45-2092,"Farmworkers and Laborers, Crop, Nursery, and Greenhouse","Farming, Fishing, and Forestry Occupations",47.17838505,2.728533398,31.14785723,0,13.30199442,0
-45-4011,Forest and Conservation Workers,"Farming, Fishing, and Forestry Occupations",47.4379024,12.99189178,20.90739632,3.224639314,9.523645858,0.790329131
-45-4022,Logging Equipment Operators,"Farming, Fishing, and Forestry Occupations",48.94662703,5.621953375,33.51446414,0.028652913,9.776703014,0.004853588
-45-4023,Log Graders and Scalers,"Farming, Fishing, and Forestry Occupations",48.22808002,14.81910024,21.12996396,2.109475247,8.027357084,2.142183502
-47-1011,First-Line Supervisors of Construction Trades and Extraction Workers,Construction and Extraction Occupations,47.50802642,15.30431555,19.24379254,2.704881292,9.218724323,1.036312713
-47-2011,Boilermakers,Construction and Extraction Occupations,47.5345229,10.6488631,23.74639057,2.583278821,9.860479397,0.695511005
-47-2021,Brickmasons and Blockmasons,Construction and Extraction Occupations,45.49147394,7.015742303,20.73203404,0.12985205,17.47597485,0.137870705
-47-2031,Carpenters,Construction and Extraction Occupations,46.27583674,9.886276074,21.47156852,0.946364341,13.21661091,0.755016893
-47-2041,Carpet Installers,Construction and Extraction Occupations,45.42748721,5.579164923,23.46721381,0.527603488,14.03238961,1.821115384
-47-2044,Tile and Marble Setters,Construction and Extraction Occupations,46.00990776,9.351812966,20.2901706,1.067319695,13.54921154,1.751392961
-47-2051,Cement Masons and Concrete Finishers,Construction and Extraction Occupations,46.82376282,3.009653281,28.62709941,0.122493954,15.05855098,0.005965187
-47-2053,Terrazzo Workers and Finishers,Construction and Extraction Occupations,46.89348952,5.672792189,24.32517908,0.280661083,16.50868586,0.106171299
-47-2061,Construction Laborers,Construction and Extraction Occupations,46.60499134,3.82604038,27.8777551,0,14.63751075,0.263685119
-47-2071,"Paving, Surfacing, and Tamping Equipment Operators",Construction and Extraction Occupations,47.90913764,7.08197547,29.22667346,1.293021407,10.10677706,0.200690244
-47-2072,Pile-Driver Operators,Construction and Extraction Occupations,48.31340972,5.753345328,29.50812419,0.539617393,11.51953745,0.992785361
-47-2073,Operating Engineers and Other Construction Equipment Operators,Construction and Extraction Occupations,49.10919565,5.680529775,32.65997166,0,9.552259711,1.216434512
-47-2081,Drywall and Ceiling Tile Installers,Construction and Extraction Occupations,46.88809096,9.763282231,20.78814034,1.43804508,13.17763075,1.720992559
-47-2082,Tapers,Construction and Extraction Occupations,45.93823245,8.212889527,22.64542615,0.368079413,14.71183736,0
-47-2111,Electricians,Construction and Extraction Occupations,47.82993969,6.993855576,27.17613251,0.809780158,11.64467591,1.205495536
-47-2121,Glaziers,Construction and Extraction Occupations,46.36936924,3.060796848,26.56572989,0,15.91990066,0.82294184
-47-2131,"Insulation Workers, Floor, Ceiling, and Wall",Construction and Extraction Occupations,45.93045482,2.710984616,27.15352439,0,16.02799092,0.037954897
-47-2141,"Painters, Construction and Maintenance",Construction and Extraction Occupations,45.38391834,3.658232263,25.25175051,0.028246023,16.27116029,0.174529259
-47-2151,Pipelayers,Construction and Extraction Occupations,47.5987393,8.269270382,26.6937145,0.479410168,12.15634425,0
-47-2152,"Plumbers, Pipefitters, and Steamfitters",Construction and Extraction Occupations,46.99123528,10.3024777,22.71237073,2.235755773,10.12982971,1.610801375
-47-2161,Plasterers and Stucco Masons,Construction and Extraction Occupations,46.95011134,10.4712196,19.5193018,3.253887953,12.24976242,1.455939568
-47-2171,Reinforcing Iron and Rebar Workers,Construction and Extraction Occupations,46.67321273,6.12234006,24.42540227,0.186376247,15.28930475,0.649789394
-47-2181,Roofers,Construction and Extraction Occupations,46.87406606,6.946329848,22.26074795,1.482967571,15.00056789,1.183452796
-47-2211,Sheet Metal Workers,Construction and Extraction Occupations,46.477915,7.151113835,22.73866237,0,15.75134679,0.836792005
-47-2221,Structural Iron and Steel Workers,Construction and Extraction Occupations,47.14261604,8.228024869,25.34375814,1.291626843,11.3670312,0.912174995
-47-3011,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",Construction and Extraction Occupations,46.8008912,5.565951496,26.17387924,0.462793478,14.59826699,0
-47-3012,Helpers--Carpenters,Construction and Extraction Occupations,46.46154809,5.99405964,26.82120064,0.250534439,13.39575338,0
-47-3013,Helpers--Electricians,Construction and Extraction Occupations,46.43066206,6.719351934,23.91256205,1.126948312,13.47723025,1.194569513
-47-3015,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",Construction and Extraction Occupations,46.5364038,9.132207178,25.31327292,1.539523426,10.48988106,0.061519223
-47-4011,Construction and Building Inspectors,Construction and Extraction Occupations,48.21949567,10.45976206,25.80240044,3.244349506,6.908216857,1.804766809
-47-4041,Hazardous Materials Removal Workers,Construction and Extraction Occupations,48.27707818,10.49699434,23.72815361,1.74500696,10.43222349,1.874699779
-47-4051,Highway Maintenance Workers,Construction and Extraction Occupations,46.99532185,6.567660816,28.79611096,0.224520388,11.16835969,0.23867
-47-4061,Rail-Track Laying and Maintenance Equipment Operators,Construction and Extraction Occupations,47.5888315,6.335421421,25.67353336,1.277103599,13.79201515,0.510757968
-47-4071,Septic Tank Servicers and Sewer Pipe Cleaners,Construction and Extraction Occupations,47.34805315,7.31074753,27.56699021,0.906403244,10.99177598,0.572136178
-47-5013,"Service Unit Operators, Oil, Gas, and Mining",Construction and Extraction Occupations,48.62699306,7.086663621,27.48028965,0.852477079,11.84070385,1.366858863
-47-5021,"Earth Drillers, Except Oil and Gas",Construction and Extraction Occupations,48.10878636,5.871049446,30.75830511,0.63268153,10.84675027,0
-47-5041,Continuous Mining Machine Operators,Construction and Extraction Occupations,48.72811935,6.292138386,26.48403492,2.182650364,12.48151432,1.287781351
-47-5061,"Roof Bolters, Mining",Construction and Extraction Occupations,48.34393705,4.617306732,28.44290056,0.504409151,13.33491941,1.444401198
-47-5071,"Roustabouts, Oil and Gas",Construction and Extraction Occupations,47.3782804,7.047305154,27.08035117,0.514349132,11.93133594,0.804939004
-47-5081,Helpers--Extraction Workers,Construction and Extraction Occupations,47.91474781,6.549291172,27.88116271,0.687134826,12.21454678,0.582612317
-49-1011,"First-Line Supervisors of Mechanics, Installers, and Repairers","Installation, Maintenance, and Repair Occupations",48.44215928,15.73288563,17.88794587,2.837123266,10.07701738,1.907187142
-49-2011,"Computer, Automated Teller, and Office Machine Repairers","Installation, Maintenance, and Repair Occupations",48.74208607,21.88235895,16.63052047,5.149335688,3.227200013,1.852670952
-49-2021,"Radio, Cellular, and Tower Equipment Installers and Repairers","Installation, Maintenance, and Repair Occupations",48.88912109,21.26037994,17.3483879,4.840588068,3.273986086,2.165779094
-49-2022,"Telecommunications Equipment Installers and Repairers, Except Line Installers","Installation, Maintenance, and Repair Occupations",47.51027016,11.7582928,23.16868857,2.8230413,8.508866428,1.251381054
-49-2091,Avionics Technicians,"Installation, Maintenance, and Repair Occupations",50.49387419,19.46501418,18.06573263,4.228882012,4.713724146,4.020521225
-49-2092,"Electric Motor, Power Tool, and Related Repairers","Installation, Maintenance, and Repair Occupations",48.20284552,10.22059267,23.17762889,2.166242122,11.86903101,0.769350829
-49-2094,"Electrical and Electronics Repairers, Commercial and Industrial Equipment","Installation, Maintenance, and Repair Occupations",48.33269623,14.80536785,19.8977076,2.576724504,8.82302843,2.229867842
-49-2095,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay","Installation, Maintenance, and Repair Occupations",48.47962923,14.8001759,20.72310092,3.452902016,7.820872272,1.682578121
-49-2096,"Electronic Equipment Installers and Repairers, Motor Vehicles","Installation, Maintenance, and Repair Occupations",47.72078166,14.14588447,20.63047989,2.465074879,8.199850296,2.27949212
-49-2098,Security and Fire Alarm Systems Installers,"Installation, Maintenance, and Repair Occupations",47.4215181,13.96523999,23.59138004,2.676765459,5.951771481,1.236361132
-49-3011,Aircraft Mechanics and Service Technicians,"Installation, Maintenance, and Repair Occupations",48.98564684,10.5555618,26.5024912,1.373737038,7.770501548,2.78335526
-49-3021,Automotive Body and Related Repairers,"Installation, Maintenance, and Repair Occupations",47.73782838,4.212124323,23.1435649,0.618843132,17.19660547,2.566690551
-49-3022,Automotive Glass Installers and Repairers,"Installation, Maintenance, and Repair Occupations",46.96751398,10.4791625,22.33145039,1.775187794,10.76229284,1.619420453
-49-3023,Automotive Service Technicians and Mechanics,"Installation, Maintenance, and Repair Occupations",48.18607086,9.746589773,25.50181556,2.944133263,7.966628211,2.026904052
-49-3031,Bus and Truck Mechanics and Diesel Engine Specialists,"Installation, Maintenance, and Repair Occupations",47.19132178,5.885957785,27.50059294,0.19607306,11.91749231,1.691205684
-49-3041,Farm Equipment Mechanics and Service Technicians,"Installation, Maintenance, and Repair Occupations",47.90008125,10.14155308,25.50781608,1.549982992,9.471081664,1.22964743
-49-3042,"Mobile Heavy Equipment Mechanics, Except Engines","Installation, Maintenance, and Repair Occupations",48.29604478,9.051597154,26.22554169,1.47235674,8.655540578,2.89100862
-49-3051,Motorboat Mechanics and Service Technicians,"Installation, Maintenance, and Repair Occupations",47.92126327,9.703807541,27.27947513,2.208465621,7.605841851,1.123673126
-49-3052,Motorcycle Mechanics,"Installation, Maintenance, and Repair Occupations",47.21157133,14.47451034,23.6718315,1.831780271,6.715242887,0.518206335
-49-3053,Outdoor Power Equipment and Other Small Engine Mechanics,"Installation, Maintenance, and Repair Occupations",47.77497591,10.92398867,25.37915059,2.046073223,9.306349922,0.119413508
-49-3091,Bicycle Repairers,"Installation, Maintenance, and Repair Occupations",47.26273739,19.00906195,16.232034,2.671256875,8.058566631,1.291817938
-49-3092,Recreational Vehicle Service Technicians,"Installation, Maintenance, and Repair Occupations",47.17643746,7.771964525,27.30245852,0.437669135,10.05570648,1.608638796
-49-3093,Tire Repairers and Changers,"Installation, Maintenance, and Repair Occupations",47.20308046,6.481506108,23.97405615,0.204619322,14.97289701,1.570001866
-49-9011,Mechanical Door Repairers,"Installation, Maintenance, and Repair Occupations",46.53499189,10.2216983,24.20420029,0.670657155,10.20480971,1.233626434
-49-9012,"Control and Valve Installers and Repairers, Except Mechanical Door","Installation, Maintenance, and Repair Occupations",47.72378644,10.66356294,24.09292765,1.790212709,8.937215591,2.239867555
-49-9021,"Heating, Air Conditioning, and Refrigeration Mechanics and Installers","Installation, Maintenance, and Repair Occupations",46.87769788,11.03237973,22.90356842,2.606373595,9.155675848,1.179700281
-49-9031,Home Appliance Repairers,"Installation, Maintenance, and Repair Occupations",46.91518023,16.6818538,21.59830056,1.478383196,6.097556307,1.059086367
-49-9041,Industrial Machinery Mechanics,"Installation, Maintenance, and Repair Occupations",48.28872399,8.149795939,25.57742617,1.302560577,11.64516251,1.613778786
-49-9043,"Maintenance Workers, Machinery","Installation, Maintenance, and Repair Occupations",48.22357768,10.11235548,24.82497886,1.155413904,11.01134894,1.119480491
-49-9044,Millwrights,"Installation, Maintenance, and Repair Occupations",47.66082681,7.485968741,25.05266004,0.619160819,11.842574,2.660463211
-49-9051,Electrical Power-Line Installers and Repairers,"Installation, Maintenance, and Repair Occupations",47.64592813,8.195912669,22.1300069,1.067043347,13.98265858,2.270306637
-49-9052,Telecommunications Line Installers and Repairers,"Installation, Maintenance, and Repair Occupations",47.24490316,9.658812226,25.60833254,1.00468778,10.26684538,0.706225242
-49-9061,Camera and Photographic Equipment Repairers,"Installation, Maintenance, and Repair Occupations",49.63556787,25.16513939,16.19223095,5.374853434,0.651074158,2.252269944
-49-9062,Medical Equipment Repairers,"Installation, Maintenance, and Repair Occupations",49.19259852,14.75992377,19.8870251,4.492691339,5.687194407,4.365763906
-49-9063,Musical Instrument Repairers and Tuners,"Installation, Maintenance, and Repair Occupations",48.43109819,15.69874851,21.18254196,2.666984325,7.213515409,1.669307974
-49-9064,Watch Repairers,"Installation, Maintenance, and Repair Occupations",49.62823386,22.46732739,14.71548209,4.985667464,2.34136636,5.118390558
-49-9071,"Maintenance and Repair Workers, General","Installation, Maintenance, and Repair Occupations",47.31457414,9.725708885,23.63433997,1.012627526,11.40866847,1.53322929
-49-9091,"Coin, Vending, and Amusement Machine Servicers and Repairers","Installation, Maintenance, and Repair Occupations",47.40054822,11.68890379,27.96413417,1.304534902,6.359759397,0.083215969
-49-9092,Commercial Divers,"Installation, Maintenance, and Repair Occupations",47.76262663,10.91898816,23.4360972,1.653430087,10.09744978,1.656661405
-49-9094,Locksmiths and Safe Repairers,"Installation, Maintenance, and Repair Occupations",46.96760255,14.68082322,23.6123972,2.121218628,6.168473565,0.384689939
-49-9098,"Helpers--Installation, Maintenance, and Repair Workers","Installation, Maintenance, and Repair Occupations",47.64545846,6.87244598,25.78378327,1.16090448,12.19559938,1.632725341
-51-1011,First-Line Supervisors of Production and Operating Workers,Production Occupations,49.05110268,19.23287346,11.1790714,4.417401968,11.9222538,2.299502054
-51-2011,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",Production Occupations,48.64271066,5.566703472,25.15208107,0.112166441,15.13793127,2.673828411
-51-2021,"Coil Winders, Tapers, and Finishers",Production Occupations,51.09889178,4.616718676,29.31382889,0,13.24500099,3.923343222
-51-2031,Engine and Other Machine Assemblers,Production Occupations,49.25090668,8.595339011,26.04963207,0.135682088,11.59654136,2.87371215
-51-2041,Structural Metal Fabricators and Fitters,Production Occupations,47.77593185,10.32052487,22.72523197,0.199341006,14.09983853,0.430995472
-51-3011,Bakers,Production Occupations,48.21532585,15.99474555,16.88330121,2.614787652,11.68608031,1.036411128
-51-3021,Butchers and Meat Cutters,Production Occupations,48.32242115,5.456330896,21.52432965,0.673798019,19.3671289,1.30083369
-51-3022,"Meat, Poultry, and Fish Cutters and Trimmers",Production Occupations,49.13715267,1.779936147,27.39127146,0,19.96594506,0
-51-3023,Slaughterers and Meat Packers,Production Occupations,49.35395078,9.856733562,23.62447506,0.66797458,13.55147415,1.65329343
-51-3091,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",Production Occupations,49.98957232,7.853166969,26.16509038,1.22643737,13.4196111,1.325266498
-51-3092,Food Batchmakers,Production Occupations,51.02440347,4.438819751,31.50932947,0,11.75910072,3.317153525
-51-3093,Food Cooking Machine Operators and Tenders,Production Occupations,50.75173111,11.32896515,23.3980632,2.008496848,10.26615661,3.750049299
-51-4011,"Computer-Controlled Machine Tool Operators, Metal and Plastic",Production Occupations,51.19770569,7.417686782,28.64751856,0.628694539,10.91545866,3.588347142
-51-4012,"Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic",Production Occupations,51.99934594,11.75406571,21.81445941,2.2875338,12.01952841,4.123758614
-51-4021,"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,48.99523857,5.9758058,28.45644015,0.253991546,14.15295065,0.156050416
-51-4022,"Forging Machine Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,50.81513164,11.063634,28.08887206,1.599922177,9.364851342,0.697852065
-51-4023,"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,49.73921905,8.829309876,25.68817827,2.131509484,10.87349417,2.21672725
-51-4031,"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,50.3552176,8.175907614,27.84612642,0.236494003,12.70112105,1.395568517
-51-4032,"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,50.096486,10.94528999,25.47227067,1.011431151,11.2695904,1.397903786
-51-4033,"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,50.60155889,7.057275524,28.4546091,0.817898638,11.84550573,2.426269893
-51-4034,"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,50.55241546,9.228119474,25.10256729,0.234904188,13.10390454,2.882919964
-51-4035,"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,51.49384397,13.11381204,25.15904891,1.21955567,9.698544369,2.302882981
-51-4041,Machinists,Production Occupations,50.15697222,6.456173947,29.39275807,0.212391292,12.2889761,1.806672813
-51-4051,Metal-Refining Furnace Operators and Tenders,Production Occupations,48.74408535,4.535391583,27.83869766,0.910250747,14.43973329,1.020012076
-51-4052,"Pourers and Casters, Metal",Production Occupations,49.05146461,6.00397805,27.10930865,0.492157203,14.09765438,1.348366323
-51-4061,"Model Makers, Metal and Plastic",Production Occupations,49.81028894,10.71257347,23.37150275,1.373328248,13.38495973,0.967924746
-51-4062,"Patternmakers, Metal and Plastic",Production Occupations,49.77621278,11.5587711,22.94240806,0.789721617,12.420913,2.06439901
-51-4071,Foundry Mold and Coremakers,Production Occupations,48.98580322,5.354902387,24.43850295,0.962769991,16.61194612,1.617681769
-51-4072,"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,49.96388838,6.810949307,29.11714309,0.611870359,12.9614128,0.462512824
-51-4081,"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,49.45398849,12.75336017,22.84031978,2.319711966,10.72941354,0.811183043
-51-4111,Tool and Die Makers,Production Occupations,49.30626627,10.45074205,19.61471709,0.52763734,15.53184472,3.181325068
-51-4121,"Welders, Cutters, Solderers, and Brazers",Production Occupations,48.82460271,8.274015241,25.26288006,0,14.6395754,0.648132013
-51-4122,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",Production Occupations,50.62552677,4.84418373,30.01893748,0,13.89480311,1.867602444
-51-4191,"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,49.471475,5.042297814,28.34937182,1.056039461,13.6901023,1.333663606
-51-4192,"Layout Workers, Metal and Plastic",Production Occupations,48.30610217,8.016436324,25.15877239,0.584770185,13.78310077,0.763022507
-51-4193,"Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic",Production Occupations,49.13977403,3.235214179,26.53648298,0,19.36807687,0
-51-4194,"Tool Grinders, Filers, and Sharpeners",Production Occupations,49.55313157,10.97925814,27.95381379,1.421745816,8.575459698,0.622854127
-51-5111,Prepress Technicians and Workers,Production Occupations,53.0237578,23.56648581,12.72787576,4.985849497,3.622747225,8.120799512
-51-6011,Laundry and Dry-Cleaning Workers,Production Occupations,49.4278217,4.760265837,20.08748036,0.066724481,21.97850957,2.534841449
-51-6021,"Pressers, Textile, Garment, and Related Materials",Production Occupations,48.89140186,0.028605976,30.68267921,0.180181151,16.21863149,1.781304032
-51-6031,Sewing Machine Operators,Production Occupations,52.13199017,9.214014779,33.79555492,0,6.475065756,2.647354711
-51-6092,Fabric and Apparel Patternmakers,Production Occupations,50.87640268,15.48749405,20.11375733,2.676823306,6.627886377,5.970441614
-51-6093,Upholsterers,Production Occupations,47.43348159,6.159344143,29.05944507,0.036153654,11.41023467,0.768304053
-51-7011,Cabinetmakers and Bench Carpenters,Production Occupations,48.73960886,6.694002078,25.8333957,0.305115173,14.09892378,1.808172129
-51-7021,Furniture Finishers,Production Occupations,48.00528153,6.729053525,23.34369553,0,15.53871062,2.393821851
-51-7041,"Sawing Machine Setters, Operators, and Tenders, Wood",Production Occupations,49.90313002,6.127135567,28.10182068,0,13.96016404,1.714009736
-51-7042,"Woodworking Machine Setters, Operators, and Tenders, Except Sawing",Production Occupations,49.70269459,4.695148898,29.66282392,0.035565927,13.86078653,1.448369312
-51-8011,Nuclear Power Reactor Operators,Production Occupations,51.39745175,8.853953125,25.66439684,2.923910764,9.77685663,4.178334388
-51-8012,Power Distributors and Dispatchers,Production Occupations,50.69988575,16.10795867,18.95285851,5.94497245,5.216920074,4.477176045
-51-8013,Power Plant Operators,Production Occupations,49.2679506,10.36609782,26.85855793,2.242176452,9.128566515,0.672551882
-51-8021,Stationary Engineers and Boiler Operators,Production Occupations,48.92559684,12.69731868,23.71317588,2.330999595,8.994446376,1.189656318
-51-8031,Water and Wastewater Treatment Plant and System Operators,Production Occupations,48.34438243,7.053420531,27.91885502,1.976062742,9.613921076,1.782123064
-51-8091,Chemical Plant and System Operators,Production Occupations,50.4429054,6.571694586,30.26199793,1.999918534,8.774573271,2.834721086
-51-9011,Chemical Equipment Operators and Tenders,Production Occupations,49.61216726,9.651534961,27.18680969,1.863913131,9.632681093,1.27722838
-51-9012,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",Production Occupations,49.18735148,5.627608586,29.72307823,0.244965663,11.82445235,1.767246647
-51-9021,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",Production Occupations,49.05004252,9.020574556,26.76782187,1.077737341,11.60129062,0.582618132
-51-9022,"Grinding and Polishing Workers, Hand",Production Occupations,48.77585188,12.16239435,23.45152668,1.026946063,11.8052744,0.329710391
-51-9023,"Mixing and Blending Machine Setters, Operators, and Tenders",Production Occupations,49.16475763,7.530138939,27.75007666,0.99400647,12.1364363,0.75409927
-51-9032,"Cutting and Slicing Machine Setters, Operators, and Tenders",Production Occupations,50.28913235,10.71104838,25.0407796,2.189689846,9.289475995,3.058138531
-51-9041,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",Production Occupations,50.34845436,6.056525926,30.2644154,0.227202407,12.53532213,1.264988504
-51-9051,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",Production Occupations,49.46934155,3.451445923,25.00220915,0,19.66875464,1.346931835
-51-9061,"Inspectors, Testers, Sorters, Samplers, and Weighers",Production Occupations,51.99961862,11.19821796,32.04989064,0.333015153,7.29246528,1.126029594
-51-9081,Dental Laboratory Technicians,Production Occupations,50.72632102,12.93119982,18.42813491,4.044007775,10.57228155,4.750696965
-51-9082,Medical Appliance Technicians,Production Occupations,48.24923161,15.46671205,17.91027076,3.065972198,9.330016299,2.476260304
-51-9083,Ophthalmic Laboratory Technicians,Production Occupations,51.10791704,11.50271767,23.30400341,2.113063711,9.08485994,5.103272308
-51-9111,Packaging and Filling Machine Operators and Tenders,Production Occupations,49.47048391,5.642205683,27.61153778,1.516197136,12.255678,2.44486531
-51-9121,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",Production Occupations,49.13239273,7.536193305,28.25362124,0.0614378,12.2140348,1.067105593
-51-9122,"Painters, Transportation Equipment",Production Occupations,47.03641845,7.574390461,23.53600871,0.233252798,14.97390153,0.718864951
-51-9191,Adhesive Bonding Machine Operators and Tenders,Production Occupations,48.97259784,8.144945236,25.08256009,1.639320859,12.7533838,1.352387856
-51-9192,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",Production Occupations,47.72714466,3.900105082,23.29943972,0.125593607,19.19783841,1.204167838
-51-9193,Cooling and Freezing Equipment Operators and Tenders,Production Occupations,49.83363889,9.762137591,25.47128582,1.115144921,10.98493658,2.500133982
-51-9194,Etchers and Engravers,Production Occupations,51.52150135,16.78733588,22.58772043,3.689593556,3.394484662,5.062366822
-51-9195,"Molders, Shapers, and Casters, Except Metal and Plastic",Production Occupations,48.17733727,7.831369937,26.90033495,0.09662501,13.15505642,0.193950952
-51-9196,"Paper Goods Machine Setters, Operators, and Tenders",Production Occupations,49.96808087,9.014886304,26.93372857,1.342610847,11.28490909,1.391946053
-51-9198,Helpers--Production Workers,Production Occupations,47.78760772,4.008819082,24.89012614,0,16.99162472,1.897037781
-53-1011,Aircraft Cargo Handling Supervisors,Transportation and Material Moving Occupations,48.50418648,11.91276072,21.37967096,2.647348372,10.92497817,1.639428259
-53-2011,"Airline Pilots, Copilots, and Flight Engineers",Transportation and Material Moving Occupations,49.97906239,7.789044023,27.68775381,3.470753625,7.86097063,3.170540303
-53-2012,Commercial Pilots,Transportation and Material Moving Occupations,49.75909251,4.984235068,32.25565784,2.657779736,6.482110584,3.379309275
-53-2021,Air Traffic Controllers,Transportation and Material Moving Occupations,51.00435928,11.05715351,24.84073853,4.312479059,5.388280795,5.405707389
-53-2022,Airfield Operations Specialists,Transportation and Material Moving Occupations,49.91939448,14.94679549,22.76610954,3.103554523,6.407109829,2.695825102
-53-2031,Flight Attendants,Transportation and Material Moving Occupations,47.06500403,9.290183366,19.61754111,0.899579645,16.60371522,0.653984682
-53-3011,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians",Transportation and Material Moving Occupations,46.90660141,7.399671175,26.81747149,0,12.40042993,0.289028803
-53-3021,"Bus Drivers, Transit and Intercity",Transportation and Material Moving Occupations,49.65214639,4.461489392,32.43806458,0.314511631,8.887210311,3.550870481
-53-3022,"Bus Drivers, School or Special Client",Transportation and Material Moving Occupations,48.49121547,4.899199451,33.01840638,0,10.23602975,0.33757988
-53-3031,Driver/Sales Workers,Transportation and Material Moving Occupations,47.55438354,5.123559173,32.89596836,0.708262633,8.51999238,0.306600993
-53-3032,Heavy and Tractor-Trailer Truck Drivers,Transportation and Material Moving Occupations,48.35102504,5.211705751,33.93302853,0.169202903,8.081323861,0.955763996
-53-3033,Light Truck or Delivery Services Drivers,Transportation and Material Moving Occupations,47.42334294,3.798102536,30.20400213,0.140338487,11.45376514,1.827134647
-53-3041,Taxi Drivers and Chauffeurs,Transportation and Material Moving Occupations,48.22059865,5.217907492,31.90895366,0.397394662,8.250239461,2.44610338
-53-4011,Locomotive Engineers,Transportation and Material Moving Occupations,50.31953445,2.32825136,35.88022837,0.229940755,9.712795108,2.168318848
-53-4031,Railroad Conductors and Yardmasters,Transportation and Material Moving Occupations,48.89626259,4.648128577,29.4944453,0.411164879,12.43742058,1.90510326
-53-5011,Sailors and Marine Oilers,Transportation and Material Moving Occupations,47.5838605,4.834347424,28.13359183,0.025187299,14.01948534,0.571248606
-53-5021,"Captains, Mates, and Pilots of Water Vessels",Transportation and Material Moving Occupations,48.68148551,7.710401649,27.81359799,1.265915211,10.53080866,1.360762003
-53-5031,Ship Engineers,Transportation and Material Moving Occupations,48.63886846,9.922347607,26.00411411,1.28366927,9.990315935,1.438421531
-53-6021,Parking Lot Attendants,Transportation and Material Moving Occupations,47.07619495,5.738736164,26.2816084,0.071879537,14.9353066,0.048664257
-53-6031,Automotive and Watercraft Service Attendants,Transportation and Material Moving Occupations,47.92191582,7.049770274,25.24147947,0,14.9262831,0.704382971
-53-6041,Traffic Technicians,Transportation and Material Moving Occupations,49.3393189,18.37555795,19.60564778,4.266114747,6.735894132,0.356104294
-53-6051,Transportation Inspectors,Transportation and Material Moving Occupations,48.75567792,10.7451449,26.47478571,3.087040439,6.188995272,2.259711606
-53-6061,"Transportation Attendants, Except Flight Attendants",Transportation and Material Moving Occupations,47.68193226,9.997722359,25.10141606,0.489649679,10.64813596,1.445008196
-53-7011,Conveyor Operators and Tenders,Transportation and Material Moving Occupations,48.97578619,4.947315975,27.98181433,1.296248973,13.53234153,1.218065387
-53-7021,Crane and Tower Operators,Transportation and Material Moving Occupations,49.54547399,6.512036986,32.00095372,0.82432722,8.73005971,1.478096361
-53-7032,Excavating and Loading Machine and Dragline Operators,Transportation and Material Moving Occupations,48.73878668,4.934065357,34.94931526,0,8.550575869,0.304830192
-53-7051,Industrial Truck and Tractor Operators,Transportation and Material Moving Occupations,48.47342538,1.395668205,34.70163702,0.116993263,10.9742072,1.284919695
-53-7061,Cleaners of Vehicles and Equipment,Transportation and Material Moving Occupations,46.5939313,4.036315821,27.52584576,0,14.6424006,0.389369121
-53-7062,"Laborers and Freight, Stock, and Material Movers, Hand",Transportation and Material Moving Occupations,47.50038617,5.999543422,28.63174509,0.32756698,11.57749868,0.964031992
-53-7063,Machine Feeders and Offbearers,Transportation and Material Moving Occupations,49.76901957,2.99176303,31.9940772,0.192091311,14.53072809,0.060359939
-53-7064,"Packers and Packagers, Hand",Transportation and Material Moving Occupations,47.39586705,1.304209299,30.84952722,0,15.24213054,0
-53-7071,Gas Compressor and Gas Pumping Station Operators,Transportation and Material Moving Occupations,49.05088978,9.528437808,26.58569819,2.930972315,8.78295455,1.222826913
-53-7081,Refuse and Recyclable Material Collectors,Transportation and Material Moving Occupations,47.57155642,2.329673408,32.48002026,0,12.59130763,0.170555125
+,Job Code,Job Title,Race with the Machine,Race against the Machine,Race ahead of the Machine,Running a Different Race
+0,00-0000,TOTAL AVERAGE,0.09271207667159469,0.2364559099113744,0.052123424779837634,0.10497712714307793
+1,11-1011,Chief Executives,0.13397008086379197,0.12848313849897935,0.10524677737248472,0.10928766844579564
+2,11-1021,General and Operations Managers,0.13224410558194166,0.1161554718384141,0.08095016289957449,0.14559075878273686
+3,11-2011,Advertising and Promotions Managers,0.1694789723252558,0.130308794612495,0.08093618225527086,0.09449947451551605
+4,11-2021,Marketing Managers,0.1823536326377158,0.09165195450750786,0.1124058471044688,0.08927563546752046
+5,11-2022,Sales Managers,0.17526012264475627,0.07968988269424768,0.11129354724855016,0.09900936777545088
+6,11-2031,Public Relations and Fundraising Managers,0.19936683386229048,0.09898604852329693,0.09149481088724756,0.07638528452597525
+7,11-3011,Administrative Services Managers,0.21276041120165323,0.078868415582922,0.04669091098749034,0.14349132448648272
+8,11-3021,Computer and Information Systems Managers,0.12762328351233077,0.16733153172640666,0.08989532181563914,0.10175672133237931
+9,11-3031,Financial Managers,0.15722839857843146,0.1782406330941651,0.07910347040882956,0.08176852721108205
+10,11-3051,Industrial Production Managers,0.07438061026017166,0.16381031418131525,0.07479890940524246,0.17459955170916824
+11,11-3061,Purchasing Managers,0.10958235545795782,0.19301054044118784,0.064347954576368,0.12416787070582117
+12,11-3071,"Transportation, Storage, and Distribution Managers",0.15068724494459673,0.12061778654246741,0.05263483475547949,0.16338995367991607
+13,11-3111,Compensation and Benefits Managers,0.18122804462387015,0.12283477757693943,0.09106969694646883,0.09947376214835121
+14,11-3131,Training and Development Managers,0.16422199053170738,0.06324774497785307,0.12470974290606696,0.11167730582524261
+15,11-9021,Construction Managers,0.09475903499305498,0.19430959849724905,0.06376695687818021,0.13217997810133875
+16,11-9031,"Education Administrators, Preschool and Childcare Center/Program",0.14260407983930445,0.08133341952787974,0.08230409709996733,0.15262087537958946
+17,11-9032,"Education Administrators, Elementary and Secondary School",0.15590949424354375,0.0812592486321715,0.09725472443202289,0.13543596328922294
+18,11-9033,"Education Administrators, Postsecondary",0.15510470937386717,0.09153508247578947,0.11210709131099407,0.11231048526002638
+19,11-9041,Architectural and Engineering Managers,0.12647510546926571,0.16552660387142387,0.08575312923044383,0.10857444804246688
+20,11-9051,Food Service Managers,0.09012889115351069,0.1544288401592464,0.0454293387507065,0.18439550525732534
+21,11-9061,Funeral Service Managers,0.10252519812606589,0.18299579717148223,0.02915820761278245,0.16443834744440133
+22,11-9071,Gaming Managers,0.1289298516345943,0.11953647284584629,0.06837331496588217,0.16452264882680018
+23,11-9081,Lodging Managers,0.1866653961477429,0.08943384697635667,0.0837351999509829,0.10961286223925645
+24,11-9111,Medical and Health Services Managers,0.13825350062903474,0.10882014684624526,0.08750619376972121,0.14382873932741044
+25,11-9121,Natural Sciences Managers,0.157547300976419,0.15243160855810203,0.0775769433098435,0.09853105446541469
+26,11-9131,Postmasters and Mail Superintendents,0.12793738983263808,0.12988443795965515,0.06837198458107313,0.15849385705066316
+27,11-9141,"Property, Real Estate, and Community Association Managers",0.1887106589329864,0.10585480403114478,0.03667282174978137,0.1551545409995987
+28,11-9151,Social and Community Service Managers,0.17685632960462716,0.09894018864493846,0.09806101328326325,0.09720465024088348
+29,11-9161,Emergency Management Directors,0.1578641450673091,0.13470264350848976,0.08325597452749448,0.10392146644602218
+30,13-1031,"Claims Adjusters, Examiners, and Investigators",0.21863745339937246,0.19001857271819517,0.03568292092987589,0.06639595212147344
+31,13-1032,"Insurance Appraisers, Auto Damage",0.17615253529132874,0.17755479698997573,0.05193857244160159,0.0759290510466346
+32,13-1041,Compliance Officers,0.13165133802910467,0.2495420312945108,0.03895181772976275,0.07297822389756119
+33,13-1051,Cost Estimators,0.13608838061930145,0.23291900443238067,0.08032709186390219,0.06451612770546665
+34,13-1071,Human Resources Specialists,0.24132678069201188,0.07690665814021054,0.05508492947240631,0.10431059725010862
+35,13-1081,Logisticians,0.11294882667179765,0.13075588240890326,0.12471891602498189,0.11324435126616501
+36,13-1111,Management Analysts,0.13688782250938103,0.18066218302356313,0.11302798043877513,0.0580453857601593
+37,13-1121,"Meeting, Convention, and Event Planners",0.1981130413981687,0.11525522773888382,0.06494117031586127,0.10199470112719877
+38,13-1141,"Compensation, Benefits, and Job Analysis Specialists",0.20514657948461182,0.22410313408967417,0.049268478057391395,0.04194627737312846
+39,13-1151,Training and Development Specialists,0.16820269906965804,0.08037755144303642,0.12370439624515414,0.09735760304225391
+40,13-1161,Market Research Analysts and Marketing Specialists,0.24957806869555546,0.1794548260225969,0.042404059326907516,0.031560658271516384
+41,13-2011,Accountants and Auditors,0.13995230726558716,0.22943874080108512,0.08025400211734994,0.06861993808180823
+42,13-2021,Appraisers and Assessors of Real Estate,0.13500870660517578,0.31609576517002586,0.022168331731677843,0.041475044730986926
+43,13-2031,Budget Analysts,0.1593538117274937,0.2668587080051501,0.07105099281304694,0.0461487171959024
+44,13-2041,Credit Analysts,0.2006181635577646,0.2744269940223929,0.051117078708480916,0.013426575801509622
+45,13-2051,Financial Analysts,0.14681500604817657,0.1625934925815946,0.12867847701904758,0.056877347794091385
+46,13-2052,Personal Financial Advisors,0.17803013526499728,0.17756625672132287,0.07994062899513873,0.05277623003156411
+47,13-2053,Insurance Underwriters,0.17961804712189228,0.2654024045736296,0.04549833215940334,0.023771000864232884
+48,13-2061,Financial Examiners,0.11252648791808267,0.2184342542936781,0.08845603221053672,0.07810739715403901
+49,13-2071,Credit Counselors,0.15843392423543085,0.2102351045634624,0.0642087235420044,0.06236005767957924
+50,13-2072,Loan Officers,0.22969609803383453,0.15279626464331442,0.03815067438393593,0.07467332899180551
+51,13-2081,"Tax Examiners and Collectors, and Revenue Agents",0.16078675784507984,0.3078040918657084,0.0392083530383015,0.02236568302196073
+52,13-2082,Tax Preparers,0.18997196738609573,0.24460031703498536,0.061782610939229064,0.032565689285373865
+53,15-1111,Computer and Information Research Scientists,0.1080052487486368,0.18704680333391954,0.1551553069762128,0.04269773562524212
+54,15-1121,Computer Systems Analysts,0.11535160146800527,0.22197979556757091,0.15540946480714318,0.012152684644927008
+55,15-1131,Computer Programmers,0.14191227453190464,0.20731097203875876,0.14077856150706555,0.02292239617302428
+56,15-1132,"Software Developers, Applications",0.13859707810174524,0.19233016081501023,0.15247077113114205,0.02224812480027918
+57,15-1133,"Software Developers, Systems Software",0.08722576625826012,0.24357968412861775,0.15354530913726763,0.025113046265552077
+58,15-1141,Database Administrators,0.16579862630201972,0.25349255409716204,0.10092202876913559,0.01840928319604578
+59,15-1142,Network and Computer Systems Administrators,0.10071760075256284,0.2965998673995812,0.10466315607071881,0.017996394208002614
+60,15-1151,Computer User Support Specialists,0.15674937431656136,0.271203113502571,0.056051867731909184,0.03362684118031263
+61,15-2011,Actuaries,0.11726085738818237,0.2588174111038664,0.10344331047977437,0.03152605344770656
+62,15-2021,Mathematicians,0.11987154458267119,0.2285370955263601,0.1510066654749584,0.002188341873108531
+63,15-2031,Operations Research Analysts,0.1152529642249621,0.20570482152779718,0.17331783521954314,0.007200009098794104
+64,15-2041,Statisticians,0.12455919777268555,0.29688789801499843,0.08176822099567613,0.015631479287722464
+65,17-1011,"Architects, Except Landscape and Naval",0.15293055712993453,0.170116955016535,0.09498579271133376,0.06695193805021891
+66,17-1012,Landscape Architects,0.10775810954148339,0.19833603353004453,0.0816426556327732,0.09265462010940945
+67,17-1021,Cartographers and Photogrammetrists,0.07468196977485726,0.3985594261153972,0.057710599710177155,0.007337805697022724
+68,17-1022,Surveyors,0.0666692279289353,0.28310610190933927,0.03838934226250626,0.10647853361638922
+69,17-2011,Aerospace Engineers,0.10896418126757842,0.20742542594599997,0.13775513627658334,0.03397769194547996
+70,17-2021,Agricultural Engineers,0.07456173920802808,0.24386832167486214,0.10625819686314403,0.06272051650647467
+71,17-2031,Biomedical Engineers,0.07099988557830002,0.24259444126130625,0.08721861615327978,0.08629262703543106
+72,17-2041,Chemical Engineers,0.08434315394335509,0.2561523035532414,0.11160788629075062,0.0490069256078593
+73,17-2051,Civil Engineers,0.08018897188415335,0.26129425128987993,0.0788252420220056,0.07712849935288629
+74,17-2061,Computer Hardware Engineers,0.15253670282661008,0.14448758496295813,0.14657173593105335,0.05270471230775567
+75,17-2071,Electrical Engineers,0.09260360159225736,0.21536439094807636,0.1606739247360267,0.025197687381500865
+76,17-2072,"Electronics Engineers, Except Computer",0.09492596682256056,0.23855605959861592,0.12090563006382199,0.043905734783095424
+77,17-2081,Environmental Engineers,0.10148074864615919,0.2891572937657588,0.07116255935251385,0.04499899370161249
+78,17-2111,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",0.11252857843226036,0.20493480732172023,0.0946054751134572,0.07148551778392895
+79,17-2112,Industrial Engineers,0.10846603681070982,0.237545846362463,0.0707458183962732,0.08450354325849606
+80,17-2121,Marine Engineers and Naval Architects,0.0842866231803997,0.2570259264932729,0.09874244123754708,0.04797918095475399
+81,17-2131,Materials Engineers,0.11153686026614093,0.2445647194505427,0.08563343426416456,0.0567298302574811
+82,17-2141,Mechanical Engineers,0.08803917844437034,0.2511808307783381,0.10840202622627734,0.049563287510664786
+83,17-2151,"Mining and Geological Engineers, Including Mining Safety Engineers",0.09309927932417678,0.21974549985946357,0.07501612267862148,0.10169814401712102
+84,17-2161,Nuclear Engineers,0.10084627468310498,0.23081652491881774,0.09631218997478644,0.07146189954442976
+85,17-2171,Petroleum Engineers,0.08617556334368134,0.2339996682390455,0.09893667454235743,0.07338953411977174
+86,17-3011,Architectural and Civil Drafters,0.12278030892622348,0.32835281105618824,0.04973216875019655,0.026855139823150354
+87,17-3012,Electrical and Electronics Drafters,0.1673861498193168,0.23830708352076585,0.09684925431543803,0.015340398041920496
+88,17-3013,Mechanical Drafters,0.09903600799458918,0.3345116018500043,0.07112726350626805,0.017568811889684195
+89,17-3021,Aerospace Engineering and Operations Technicians,0.07574314006354606,0.25361161473314253,0.09255026125991975,0.0729367656403889
+90,17-3022,Civil Engineering Technicians,0.0771660089865808,0.3442707936513632,0.055016734429215425,0.031348110279194916
+91,17-3023,Electrical and Electronic Engineering Technicians,0.09381394027259136,0.3242778543641144,0.04656427490146388,0.054909082269954924
+92,17-3024,Electro-Mechanical Technicians,0.009603665216154642,0.36267614757635785,0.03374033044370971,0.10209812911887234
+93,17-3025,Environmental Engineering Technicians,0.05393226079317801,0.3466261406236817,0.012468385529759696,0.08212910375009484
+94,17-3026,Industrial Engineering Technicians,0.07405356383609489,0.2275151171589735,0.0791974343728141,0.12362458405978442
+95,17-3027,Mechanical Engineering Technicians,0.05725130879193279,0.29606294612455236,0.0597710904929145,0.08345821338815484
+96,17-3031,Surveying and Mapping Technicians,0.04500478561442257,0.40864397948591547,0.02971704648273248,0.04928564090653764
+97,19-1011,Animal Scientists,0.10510501411145065,0.22358340628047435,0.10596089572379323,0.0486560851673187
+98,19-1012,Food Scientists and Technologists,0.08121580080959265,0.26415923692571064,0.09528063179006173,0.06052904694030336
+99,19-1013,Soil and Plant Scientists,0.08663100260374555,0.2409304702613076,0.0880326579834438,0.06356331281245499
+100,19-1021,Biochemists and Biophysicists,0.07642521614096039,0.2963963459246357,0.08753776913178152,0.03795197532912965
+101,19-1022,Microbiologists,0.06437329224328917,0.2526792645663093,0.07981386035809218,0.09829285076289239
+102,19-1023,Zoologists and Wildlife Biologists,0.12829911236854147,0.21122609366777503,0.07344990231035396,0.06408370539242719
+103,19-1031,Conservation Scientists,0.11800801711108674,0.22468092015660796,0.0577660580534424,0.07143443382055467
+104,19-1032,Foresters,0.09912865979119297,0.21426183075475344,0.07068940069775644,0.09408115887181091
+105,19-1041,Epidemiologists,0.12950860139444645,0.21298203303456162,0.10802858164921503,0.04170927864106482
+106,19-1042,"Medical Scientists, Except Epidemiologists",0.12765988350984403,0.16668113749696103,0.10254322909136343,0.0855482801463069
+107,19-2011,Astronomers,0.10876688794287383,0.24917447133384685,0.11754304997495935,0.0218399607249524
+108,19-2021,Atmospheric and Space Scientists,0.1638386321742492,0.23995812119083743,0.08444453250947705,0.02515046737875483
+109,19-2031,Chemists,0.07241709073846474,0.24283609197220885,0.09117683845308898,0.09216636486088015
+110,19-2032,Materials Scientists,0.10007745377920152,0.22497339384556336,0.0998016852947897,0.06800905116691236
+111,19-2041,"Environmental Scientists and Specialists, Including Health",0.09404440839298958,0.303315342404524,0.06463119941853748,0.04142552030067148
+112,19-2042,"Geoscientists, Except Hydrologists and Geographers",0.134304947135031,0.2618550593697057,0.07933898699045473,0.0232388600200209
+113,19-2043,Hydrologists,0.11297908895961081,0.2153620674156028,0.09416520287525931,0.06138221380619872
+114,19-3011,Economists,0.17182578743186078,0.19849539122606003,0.10677252283418343,0.02114348836995443
+115,19-3022,Survey Researchers,0.1753680717330455,0.19436242708656987,0.0715654728338828,0.05208356321359757
+116,19-3031,"Clinical, Counseling, and School Psychologists",0.1918419792656259,0.11480086482200941,0.08016786865272167,0.07843452124053542
+117,19-3032,Industrial-Organizational Psychologists,0.15326511374592325,0.1710944894355172,0.08636773811431028,0.0704944604259881
+118,19-3041,Sociologists,0.14916611419469222,0.14989581173076924,0.13084277834801714,0.04300237625145558
+119,19-3051,Urban and Regional Planners,0.17477704886663675,0.17586317799837628,0.06655256488440871,0.06871315183806971
+120,19-3091,Anthropologists and Archeologists,0.11996654355568817,0.19758529488431317,0.10424135539967852,0.05479097143916177
+121,19-3092,Geographers,0.11486056547211419,0.23653759654482226,0.1079599030769187,0.03805164243071375
+122,19-3093,Historians,0.14540066985814143,0.199163255492707,0.024582503093611742,0.13454070330857806
+123,19-3094,Political Scientists,0.16287727811971656,0.14357893825492074,0.11967771463995035,0.043698664500140164
+124,19-4011,Agricultural and Food Science Technicians,0.0531103817646402,0.35361998781271337,0.033621792564515876,0.08420354409735693
+125,19-4021,Biological Technicians,0.0480387250909933,0.36036346653188867,0.023156254025269093,0.0854515822782744
+126,19-4031,Chemical Technicians,0.056036788111174116,0.37503665408186015,0.04123784200894294,0.05947146183348093
+127,19-4051,Nuclear Technicians,0.02800309387911702,0.2928420537608679,0.022124487021825512,0.15761007187579346
+128,19-4061,Social Science Research Assistants,0.17789045545676765,0.2026482745102282,0.10990176087585066,0.014873101577017215
+129,19-4091,"Environmental Science and Protection Technicians, Including Health",0.043658894077848745,0.3473652868471233,0.03385028836085114,0.07229439892745186
+130,19-4092,Forensic Science Technicians,0.09483173810433085,0.3302647111824588,0.031407680881875816,0.03763414771548874
+131,19-4093,Forest and Conservation Technicians,0.04259923288012081,0.2839416009845491,0.02212340225455151,0.11619523837378369
+132,21-1012,"Educational, Guidance, School, and Vocational Counselors",0.22315838059873355,0.05358514003921808,0.07606666794710348,0.10996048114020912
+133,21-1013,Marriage and Family Therapists,0.1459912562509621,0.1416410029472468,0.09233643138179978,0.08853749341541126
+134,21-1015,Rehabilitation Counselors,0.1505962234019464,0.07192766436069933,0.06027391508930385,0.18602664850994657
+135,21-1021,"Child, Family, and School Social Workers",0.2248037280652293,0.07460023775938063,0.04759412878452465,0.1210499697749479
+136,21-1022,Healthcare Social Workers,0.16415543252129844,0.1008717848374112,0.0636842789065149,0.14574882532043149
+137,21-1023,Mental Health and Substance Abuse Social Workers,0.1879187401997039,0.07128252620039172,0.0667296512900172,0.14301121373702005
+138,21-1091,Health Educators,0.17616002718351825,0.12041711652526031,0.09500451966487142,0.07611540261393461
+139,21-1092,Probation Officers and Correctional Treatment Specialists,0.15003975278140713,0.12416553402294402,0.06585854270394015,0.13159429047426108
+140,21-1093,Social and Human Service Assistants,0.12979034184033894,0.12289298158253034,0.05162042068704317,0.16857721131274533
+141,21-2011,Clergy,0.14627824581995288,0.10722110334252578,0.10030751027333995,0.10907427157575564
+142,21-2021,"Directors, Religious Activities and Education",0.16273640572328105,0.032982240888974154,0.08206346020914151,0.17233967202167333
+143,23-1011,Lawyers,0.15773514197208016,0.15711563677698145,0.0964168919530305,0.06609874996224789
+144,23-1012,Judicial Law Clerks,0.19747928480773796,0.16487056093683733,0.08029615721334293,0.05855139752182028
+145,23-1021,"Administrative Law Judges, Adjudicators, and Hearing Officers",0.1661439844822755,0.22443133167216323,0.06419576698703681,0.04370695477103244
+146,23-1022,"Arbitrators, Mediators, and Conciliators",0.2020707749861682,0.08843741827767332,0.08966928831126093,0.08640816536661258
+147,23-1023,"Judges, Magistrate Judges, and Magistrates",0.1666523705264113,0.14542377594464892,0.06411307626622412,0.10403194635720749
+148,23-2011,Paralegals and Legal Assistants,0.2147407651420229,0.23810871715521614,0.04772751192399512,0.01924775077975057
+149,23-2091,Court Reporters,0.15687611947580488,0.323707030227043,0.05082161650196648,0.008256296114305759
+150,23-2093,"Title Examiners, Abstractors, and Searchers",0.2083271666680484,0.22012446589103918,0.05649598474788554,0.03901641500073902
+151,25-1011,"Business Teachers, Postsecondary",0.17323359779269396,0.09680891303774974,0.1424251620864144,0.0490759954192796
+152,25-1021,"Computer Science Teachers, Postsecondary",0.15701036541768223,0.1171909866617948,0.15587982341716733,0.04435128735576193
+153,25-1022,"Mathematical Science Teachers, Postsecondary",0.1322824828797791,0.15461506986676612,0.13819781214981666,0.04685019991607632
+154,25-1031,"Architecture Teachers, Postsecondary",0.14745263465431147,0.0878060734454822,0.15772874210412824,0.06249046918277523
+155,25-1032,"Engineering Teachers, Postsecondary",0.11851484959666922,0.14713426614092784,0.14886300168140956,0.05970128799977484
+156,25-1041,"Agricultural Sciences Teachers, Postsecondary",0.14947288087710137,0.11484161509990615,0.12215133496753636,0.07484585939664909
+157,25-1042,"Biological Science Teachers, Postsecondary",0.14502775349095315,0.11704868754239037,0.14392314699525627,0.05134050355401888
+158,25-1043,"Forestry and Conservation Science Teachers, Postsecondary",0.13864668152068238,0.12227616725439505,0.1344351289122779,0.06868124492306699
+159,25-1051,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",0.14789361635792006,0.14988167999637908,0.1159918067939935,0.06175296378936167
+160,25-1052,"Chemistry Teachers, Postsecondary",0.11711423409517263,0.14854240351874798,0.11566685119540228,0.08600187858884539
+161,25-1053,"Environmental Science Teachers, Postsecondary",0.13770840316137267,0.13010285508160777,0.13172399076848434,0.06636992353019969
+162,25-1054,"Physics Teachers, Postsecondary",0.15340609029873783,0.12508068165124964,0.13930516918630753,0.05244324896288577
+163,25-1061,"Anthropology and Archeology Teachers, Postsecondary",0.14100575360252596,0.12429840004189643,0.14021029015329894,0.056481076976512876
+164,25-1062,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary",0.16591562669868928,0.09958294119071562,0.13573157936708277,0.060706233476153025
+165,25-1063,"Economics Teachers, Postsecondary",0.13223994388296756,0.16966578688541548,0.1309941793849455,0.03935598602256615
+166,25-1064,"Geography Teachers, Postsecondary",0.17147885591167877,0.09471754912710051,0.143705459555092,0.048154861022038156
+167,25-1065,"Political Science Teachers, Postsecondary",0.17486281972621676,0.08896291058652309,0.13818177693134145,0.0550070520560985
+168,25-1066,"Psychology Teachers, Postsecondary",0.16358662569567822,0.10280684263779262,0.13886408259230607,0.0492579835385953
+169,25-1067,"Sociology Teachers, Postsecondary",0.1755115225372657,0.08099901753246191,0.13418972456052838,0.06445841101202446
+170,25-1071,"Health Specialties Teachers, Postsecondary",0.14835025892763115,0.1299995208142924,0.11073770129715425,0.07494998539750919
+171,25-1072,"Nursing Instructors and Teachers, Postsecondary",0.13998865931989685,0.11874425213097464,0.1027429074021714,0.10378031240943103
+172,25-1081,"Education Teachers, Postsecondary",0.17131855023814668,0.07943201167770647,0.13356794357200866,0.07349772439887173
+173,25-1082,"Library Science Teachers, Postsecondary",0.1530371925849014,0.10437341577076291,0.16537678614210036,0.041495530255541514
+174,25-1111,"Criminal Justice and Law Enforcement Teachers, Postsecondary",0.15394868182999016,0.10615456134592498,0.13802213054244505,0.05900022146396691
+175,25-1112,"Law Teachers, Postsecondary",0.18329112703512884,0.09014979216251004,0.1242206917774745,0.06214138958393645
+176,25-1113,"Social Work Teachers, Postsecondary",0.18322966706627986,0.06587068804369019,0.13668125770554673,0.07271160974524746
+177,25-1121,"Art, Drama, and Music Teachers, Postsecondary",0.176050072237945,0.028821645382956496,0.15427325677369275,0.0867965190381091
+178,25-1122,"Communications Teachers, Postsecondary",0.1838686838906447,0.06382329875475526,0.13143721376388673,0.07618412366902116
+179,25-1123,"English Language and Literature Teachers, Postsecondary",0.17580642355636678,0.06785636464386818,0.13860658516570168,0.07101727798237126
+180,25-1124,"Foreign Language and Literature Teachers, Postsecondary",0.1965725539876052,0.0448521681395615,0.13988601419809163,0.07374075276878422
+181,25-1125,"History Teachers, Postsecondary",0.1786519434707199,0.08492588575567094,0.14777351052731064,0.043539790415648705
+182,25-1126,"Philosophy and Religion Teachers, Postsecondary",0.17554224800625468,0.06616807623826523,0.13851999918291522,0.07003535313169917
+183,25-1191,Graduate Teaching Assistants,0.15573553014068692,0.07810611624894682,0.20630052848620634,0.013718240108927372
+184,25-1192,"Home Economics Teachers, Postsecondary",0.16853159226658254,0.07929708236264926,0.13087632802881016,0.0767064692205979
+185,25-1193,"Recreation and Fitness Studies Teachers, Postsecondary",0.15487594356418963,0.05763624979551218,0.1273545497718789,0.10837505403004427
+186,25-1194,"Vocational Education Teachers, Postsecondary",0.15771018400074197,0.08147012188474292,0.1127375988525393,0.0996595175910145
+187,25-2011,"Preschool Teachers, Except Special Education",0.08684524129788784,0.10366629123250737,0.08976145643395211,0.1624225726924038
+188,25-2012,"Kindergarten Teachers, Except Special Education",0.1168958116374795,0.1300037452243208,0.10587389832747665,0.1065080111384039
+189,25-2021,"Elementary School Teachers, Except Special Education",0.12638275771021037,0.12548693528332427,0.10281088292227314,0.10626315036977155
+190,25-2022,"Middle School Teachers, Except Special and Career/Technical Education",0.12599845277739707,0.11007798995767092,0.1037233010118715,0.12170014147215383
+191,25-2023,"Career/Technical  Education Teachers, Middle School",0.10162087491241885,0.11700142821998215,0.10335588026372744,0.13594806066807735
+192,25-2031,"Secondary School Teachers, Except Special and Career/Technical Education",0.1395893897650859,0.09302969783429207,0.1241488490310094,0.10042755772442297
+193,25-2032,"Career/Technical Education Teachers, Secondary School",0.10828785976177896,0.12703790488027109,0.09463798339235413,0.13362405412639566
+194,25-2053,"Special Education Teachers, Middle School",0.12962957960407065,0.11561867600252136,0.08752359818060157,0.13299549337165126
+195,25-2054,"Special Education Teachers, Secondary School",0.15315431692009518,0.08262397537129013,0.09599001004164133,0.12849613601762594
+196,25-3011,Adult Basic and Secondary Education and Literacy Teachers and Instructors,0.1504006800644433,0.07546112426087775,0.131722572730583,0.08875330411481355
+197,25-3021,Self-Enrichment Education Teachers,0.11760591259674702,0.053768216357347624,0.13847161795652851,0.11403533971828883
+198,25-4011,Archivists,0.1692235308660422,0.2279482387411449,0.0789087050870824,0.031929793956826144
+199,25-4012,Curators,0.10573113664412023,0.19365859271345903,0.09377955803812596,0.07442095328173454
+200,25-4013,Museum Technicians and Conservators,0.03958557807843,0.2780234148828195,0.0951547946572045,0.049047817813998446
+201,25-4021,Librarians,0.15525589050520178,0.1666324439540642,0.08800490793339885,0.07669644607935605
+202,25-4031,Library Technicians,0.21739586098661945,0.20094202420375415,0.03797237704809952,0.06093465667333476
+203,25-9011,Audio-Visual and Multimedia Collections Specialists,0.08633697366050105,0.20067018136426054,0.12784749108764334,0.05630073174705346
+204,25-9021,Farm and Home Management Advisors,0.15099145681254983,0.13757388720058183,0.10312646197365913,0.07080957531203524
+205,25-9031,Instructional Coordinators,0.13714344830653336,0.12205392951016268,0.11070864274665526,0.10093671621140338
+206,25-9041,Teacher Assistants,0.10147056359805323,0.054554152322270316,0.07711592926569526,0.2173608057789603
+207,27-1011,Art Directors,0.13708146318516606,0.11713650672816495,0.11784854877137044,0.10188427923900799
+208,27-1012,Craft Artists,0.04550331428191848,0.25625666468993585,0.07389141958654538,0.09735529508180506
+209,27-1013,"Fine Artists, Including Painters, Sculptors, and Illustrators",0.03285042814513834,0.22138468892434968,0.11504843286531832,0.08542282112377048
+210,27-1014,Multimedia Artists and Animators,0.14426581578713443,0.2031809616714144,0.13073145777679715,0.018494129898878386
+211,27-1021,Commercial and Industrial Designers,0.09553250609268996,0.279728685537007,0.10395945176461852,0.026261476754652395
+212,27-1023,Floral Designers,0.11268549093092511,0.18797788041189362,0.0724455342542934,0.0915870497507589
+213,27-1024,Graphic Designers,0.15921783255164368,0.17543738256669142,0.12659608949290355,0.02258784277830353
+214,27-1025,Interior Designers,0.14207787149285303,0.1844749794855242,0.0940315490421792,0.046554801846929963
+215,27-1026,Merchandise Displayers and Window Trimmers,0.034415237292261085,0.2464721530697705,0.027433453738544448,0.15259891615732118
+216,27-1027,Set and Exhibit Designers,0.08096151166578439,0.22358160948690078,0.06758418512897812,0.0993311650789443
+217,27-2011,Actors,0.17958711371005942,0.056096095823900224,0.15732158454039552,0.05106492104320357
+218,27-2012,Producers and Directors,0.1538879478935843,0.14259680522051466,0.07983445443232118,0.10162783719976073
+219,27-2021,Athletes and Sports Competitors,0.044549206324762246,0.14595763078218335,0.051871245505495066,0.2108498262803887
+220,27-2022,Coaches and Scouts,0.12119763463010842,0.10076608742670685,0.08151830679566535,0.15036044211306904
+221,27-2023,"Umpires, Referees, and Other Sports Officials",0.010233053669974287,0.2514051443246672,0.04874318682140823,0.16657084315503276
+222,27-2031,Dancers,0.04051676024782425,0.1478832211290355,0.046070011303296396,0.2064159495234032
+223,27-2032,Choreographers,0.08313512114525065,0.09373645131296406,0.08354130801151394,0.18631787126113875
+224,27-2041,Music Directors and Composers,0.11306525532901508,0.13533598050444715,0.1476032170461299,0.059710617793305026
+225,27-2042,Musicians and Singers,0.10082478236374985,0.20176869511421563,0.11887346652610926,0.054437801622585595
+226,27-3011,Radio and Television Announcers,0.21839656998292944,0.13155685700095524,0.1049744824437406,0.018888015145931258
+227,27-3012,Public Address System and Other Announcers,0.11858697560505069,0.25737905690731583,0.061342083239144626,0.028153773285993375
+228,27-3021,Broadcast News Analysts,0.1728694247032636,0.20093488354261785,0.07509059419388772,0.04098989478420674
+229,27-3022,Reporters and Correspondents,0.20946642437970114,0.1759887685079224,0.06842484269149186,0.03075962828314751
+230,27-3031,Public Relations Specialists,0.2366028249254021,0.10322894728686388,0.09311296826198606,0.04602821038254963
+231,27-3041,Editors,0.17470366277104044,0.2072388756864499,0.0798886368645837,0.03763418791305677
+232,27-3042,Technical Writers,0.18880403506512522,0.19229643976068014,0.09633404656078962,0.03719235195147721
+233,27-3043,Writers and Authors,0.2167078662292314,0.11382303491898615,0.13579329039939037,0.008839044497336315
+234,27-3091,Interpreters and Translators,0.18476330240374453,0.24794633939082467,0.025391536071873753,0.04623620095474833
+235,27-4011,Audio and Video Equipment Technicians,0.04227201972753291,0.33807036404681695,0.04733590135707558,0.06689099150319537
+236,27-4012,Broadcast Technicians,0.050574342531642474,0.3984048098235301,0.0374467501678679,0.03639738760426792
+237,27-4014,Sound Engineering Technicians,0.04873606690465182,0.3347905317332451,0.06197216004543571,0.049889281530926255
+238,27-4021,Photographers,0.09445957902882787,0.24733036686735038,0.061708591790716416,0.07893551743670804
+239,27-4031,"Camera Operators, Television, Video, and Motion Picture",0.03533035873065986,0.35087416899322954,0.03135021687509337,0.0665344874398235
+240,27-4032,Film and Video Editors,0.0955530591473994,0.28349025397424854,0.06931678335951687,0.055602915130152086
+241,29-1011,Chiropractors,0.10622217817188037,0.19185309660812624,0.051651900362081615,0.13103589060030668
+242,29-1021,"Dentists, General",0.07513764425139764,0.21451769895010298,0.05394942618247417,0.1363433380587778
+243,29-1022,Oral and Maxillofacial Surgeons,0.08086881238684382,0.23627239455248264,0.06560635042863978,0.09647837484542737
+244,29-1023,Orthodontists,0.11680889166996795,0.16202133469755664,0.06559911785397533,0.13039448427072717
+245,29-1024,Prosthodontists,0.09335768281242937,0.1472754090480362,0.06198983331359378,0.17229714539436214
+246,29-1031,Dietitians and Nutritionists,0.14483166442515788,0.2036691835818763,0.07362127247870175,0.051880111197386475
+247,29-1041,Optometrists,0.07979252576682049,0.2667467944156513,0.028454851843587408,0.12163570670230339
+248,29-1051,Pharmacists,0.12533645483447015,0.2585950628938351,0.02182314992745474,0.09696082217171267
+249,29-1061,Anesthesiologists,0.07317229073487758,0.23713274179402372,0.0658997786493181,0.11236172424457674
+250,29-1062,Family and General Practitioners,0.13668673057853137,0.15734395265302517,0.0698453084307434,0.10498920492141452
+251,29-1063,"Internists, General",0.11917269500293562,0.17764977815933347,0.07914796019202083,0.0990170434509907
+252,29-1064,Obstetricians and Gynecologists,0.1049237778165513,0.20157174558898103,0.07175112803219649,0.09865380791351513
+253,29-1065,"Pediatricians, General",0.13602204632270465,0.1751182020262091,0.06966622314489315,0.09108745513283535
+254,29-1066,Psychiatrists,0.14754824234059735,0.1457831341467084,0.07712181759454756,0.10738772011433964
+255,29-1067,Surgeons,0.0851384553197568,0.22686121512619095,0.07599657049982995,0.0933159171811237
+256,29-1071,Physician Assistants,0.11044058951228444,0.2116848965420197,0.05275350406696374,0.11220350590033941
+257,29-1081,Podiatrists,0.10148751406209106,0.1926455672951357,0.06679242043142927,0.11566851712968858
+258,29-1122,Occupational Therapists,0.11145094273770045,0.18054524013184223,0.06544495578361166,0.11036304602115163
+259,29-1123,Physical Therapists,0.0982554205509972,0.19080868780610716,0.05070624762546693,0.12783965743646053
+260,29-1124,Radiation Therapists,0.046958238930614044,0.3052108699057401,0.01574053029874465,0.13808515581661351
+261,29-1125,Recreational Therapists,0.11573977279608447,0.10338390673841855,0.06095897771624223,0.17858692779884067
+262,29-1126,Respiratory Therapists,0.09732967991928676,0.2192982403254706,0.032992944326282136,0.13415803273601568
+263,29-1127,Speech-Language Pathologists,0.13500538455537747,0.21014228141683838,0.09407163705255484,0.04182665297169256
+264,29-1131,Veterinarians,0.09017504607571854,0.20435972519283835,0.047812461021234966,0.1333841391240372
+265,29-1141,Registered Nurses,0.07949250373462914,0.21426045621630518,0.02640043870809699,0.16540832364254696
+266,29-1181,Audiologists,0.1558284312339134,0.18988907478589243,0.07078740745356465,0.060245126999070836
+267,29-2021,Dental Hygienists,0.09373330029701486,0.22606626911289057,0.013656758364892538,0.1447724233453776
+268,29-2031,Cardiovascular Technologists and Technicians,0.07006191774554611,0.24461086671480584,0.01690710624368872,0.16435830339502622
+269,29-2032,Diagnostic Medical Sonographers,0.06570933781109728,0.3160126736744797,0.00860998777572512,0.10809814966256012
+270,29-2033,Nuclear Medicine Technologists,0.058410046709143945,0.19672176341956613,0.020666361478632267,0.2173224586549311
+271,29-2034,Radiologic Technologists,0.06175848465012594,0.2256761147138811,0.0015252058661403326,0.19576598818590557
+272,29-2041,Emergency Medical Technicians and Paramedics,0.0257696176195807,0.2702749446023423,0.013202855416922128,0.16502900230151563
+273,29-2051,Dietetic Technicians,0.028863292068214537,0.23543704958250994,0.02909763315084984,0.1960165824470533
+274,29-2052,Pharmacy Technicians,0.1781501861511511,0.21658130467793196,0.03486355486498443,0.07941191517632572
+275,29-2053,Psychiatric Technicians,0.07307684405509397,0.1562652653133763,0.04234013710111581,0.1906453622174994
+276,29-2054,Respiratory Therapy Technicians,0.08944255629902748,0.19662437438530161,0.07530814591847118,0.1165365346022297
+277,29-2055,Surgical Technologists,0.0233101354999527,0.2548368638577006,0.013675196525765022,0.19514162252415052
+278,29-2056,Veterinary Technologists and Technicians,0.08377212434000605,0.18531427922059632,0.023890591930511275,0.18389836930251882
+279,29-2061,Licensed Practical and Licensed Vocational Nurses,0.07192346676637427,0.20734027855298165,0.018899410291909752,0.18182138360640354
+280,29-2071,Medical Records and Health Information Technicians,0.17427882618190996,0.24825647480926463,0.03965865080788941,0.07643641898559891
+281,29-2081,"Opticians, Dispensing",0.17972789197197575,0.17634288279303342,0.014053366636129926,0.10325439483784124
+282,29-2091,Orthotists and Prosthetists,0.09785743966046279,0.16193808280233135,0.09672042355994663,0.11199466745159749
+283,29-9011,Occupational Health and Safety Specialists,0.09916383686883004,0.20558237256639023,0.08192947979003358,0.09243585908585565
+284,29-9012,Occupational Health and Safety Technicians,0.10179314424712227,0.1963732131354628,0.07440485221638879,0.0998303715128458
+285,29-9091,Athletic Trainers,0.1076108048745655,0.13619009824964862,0.07245737743738767,0.13970522352215478
+286,31-1011,Home Health Aides,0.03136344139230869,0.19200070675037822,0.00192767213288032,0.22991507445207746
+287,31-1013,Psychiatric Aides,0.13354743705679284,0.10451603829380343,0.030525880198225216,0.20124654635022463
+288,31-2011,Occupational Therapy Assistants,0.07371034790832706,0.18236374767903374,0.050472882711492965,0.15952315488491842
+289,31-2012,Occupational Therapy Aides,0.08145734413868924,0.13570024633492792,0.012160246766297702,0.22913071074292524
+290,31-2021,Physical Therapist Assistants,0.0688072996088127,0.18719520758690433,0.03498568207983754,0.17213312851415968
+291,31-2022,Physical Therapist Aides,0.04925818540718886,0.16618483173434032,0.0,0.23726947795123537
+292,31-9011,Massage Therapists,0.09736000016365726,0.15320776105949171,0.025535705920729238,0.17014286440532952
+293,31-9091,Dental Assistants,0.1060432758121287,0.20675225835879626,0.024517338773313573,0.14212572530979795
+294,31-9092,Medical Assistants,0.11786154765453605,0.20459346078451826,0.015262572068945135,0.15336345351008937
+295,31-9093,Medical Equipment Preparers,0.029868915331282504,0.28549072241932427,0.03407719790862089,0.14630745184792163
+296,31-9094,Medical Transcriptionists,0.1784083670787595,0.3833395720270417,0.005321367145691323,0.0
+297,31-9095,Pharmacy Aides,0.1772508577974312,0.13333664888475658,0.034002819605362375,0.1398372095822935
+298,31-9096,Veterinary Assistants and Laboratory Animal Caretakers,0.032448471907351055,0.23831008129429226,0.0011226036750353974,0.2025410248906173
+299,33-1011,First-Line Supervisors of Correctional Officers,0.08372675608078514,0.16471330876017468,0.04340023957015128,0.18386632955144894
+300,33-1012,First-Line Supervisors of Police and Detectives,0.0915726639977932,0.18407915516899992,0.055198199469225835,0.14739643034467825
+301,33-1021,First-Line Supervisors of Fire Fighting and Prevention Workers,0.05835601554034699,0.22639663474482166,0.04645965487910117,0.14104961075254377
+302,33-2011,Firefighters,0.03407251549120877,0.25071211413782707,0.032651562297825815,0.15015252309137908
+303,33-2021,Fire Inspectors and Investigators,0.08629623504468997,0.22476521961187731,0.05916443121639754,0.10590735074455021
+304,33-2022,Forest Fire Inspectors and Prevention Specialists,0.10154103435197201,0.23364183653523302,0.07370348785163325,0.06519062460202045
+305,33-3011,Bailiffs,0.08247401413019384,0.14816334262862735,0.01261148994422879,0.22760595362136782
+306,33-3012,Correctional Officers and Jailers,0.0641246040440081,0.19563770264375632,0.005738431208805114,0.21344540245125923
+307,33-3021,Detectives and Criminal Investigators,0.09188083659794752,0.25006196438933126,0.037303073105591056,0.10567736217323115
+308,33-3031,Fish and Game Wardens,0.08071479596040819,0.24764167312840854,0.023780074487020623,0.11358197404100862
+309,33-3041,Parking Enforcement Workers,0.05240239660051285,0.26139497495933733,0.005586273580224759,0.1577209064142792
+310,33-3051,Police and Sheriff's Patrol Officers,0.0692336258480461,0.23197246499825808,0.022461764218250115,0.15439350175206912
+311,33-3052,Transit and Railroad Police,0.06366463360110236,0.2398934455591326,0.027907898551539648,0.13879695275906054
+312,33-9011,Animal Control Workers,0.08417061332471626,0.23233565133365536,0.01451290087244984,0.13681774656040235
+313,33-9021,Private Detectives and Investigators,0.13437790197257102,0.2299868019567933,0.057517491472619274,0.06880488858924927
+314,33-9031,Gaming Surveillance Officers and Gaming Investigators,0.082176268853946,0.2446589188442553,0.04456322368077979,0.13684460587641978
+315,33-9032,Security Guards,0.052351725939225595,0.20381935567201626,0.002852068422521543,0.2158946176902142
+316,33-9091,Crossing Guards,0.03212381294143159,0.21397608226458617,0.008224537189208169,0.21666703136620896
+317,33-9092,"Lifeguards, Ski Patrol, and Other Recreational Protective Service",0.04181847834946388,0.20629850840756928,0.0299966495930354,0.18732046240842742
+318,35-1011,Chefs and Head Cooks,0.049484927599659986,0.2167020342625835,0.041915551581477355,0.17208308747164053
+319,35-1012,First-Line Supervisors of Food Preparation and Serving Workers,0.12155155946503995,0.13274100284369975,0.014543182280722383,0.2103540680866774
+320,35-2011,"Cooks, Fast Food",0.024989984474386766,0.15996331255570673,0.04253994952178858,0.24973001927313576
+321,35-2012,"Cooks, Institution and Cafeteria",0.019174250559704172,0.2607279980601362,0.0022055928837074685,0.2103212721980406
+322,35-2013,"Cooks, Private Household",0.08172700825158905,0.19499581296819374,0.059328581568941996,0.12667248804898146
+323,35-2014,"Cooks, Restaurant",0.007916797662721525,0.2753280575717161,0.008126051601898547,0.1960290940385094
+324,35-2015,"Cooks, Short Order",0.07868164056569418,0.25932777314974,0.024564441465681163,0.1181182407321748
+325,35-2021,Food Preparation Workers,0.030635719593298874,0.22864357239547406,0.01645079597502527,0.19503796104489646
+326,35-3011,Bartenders,0.13783640241304618,0.12364940847043099,0.03473535904237801,0.16605466018844908
+327,35-3021,"Combined Food Preparation and Serving Workers, Including Fast Food",0.08385891317841598,0.14346792004572853,0.0,0.23945622778298437
+328,35-3022,"Counter Attendants, Cafeteria, Food Concession, and Coffee Shop",0.10544054380740006,0.08921979263599143,0.001941713642760423,0.2597763318048982
+329,35-3031,Waiters and Waitresses,0.11799565051953756,0.1127549018421796,0.01875388878593616,0.2086557121102091
+330,35-3041,"Food Servers, Nonrestaurant",0.0708043576249169,0.17466909958455112,0.00624936259489808,0.2232553282230381
+331,35-9011,Dining Room and Cafeteria Attendants and Bartender Helpers,0.035190215013980786,0.1794689299548403,0.0,0.23744692979236495
+332,35-9021,Dishwashers,0.0001555737501606753,0.31716112859656187,0.012688683193963133,0.15732837115499787
+333,35-9031,"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",0.20598926207608226,0.033064641076521475,0.0011935691836423598,0.2260026699344221
+334,37-1011,First-Line Supervisors of Housekeeping and Janitorial Workers,0.09488919255185385,0.11911782104257108,0.040736757116664996,0.2221016867353124
+335,37-1012,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",0.05903861904375372,0.21843835517591406,0.05820015642102907,0.1344401681407741
+336,37-2011,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0017542399586576445,0.2864448188263541,0.0,0.16830402763703778
+337,37-2012,Maids and Housekeeping Cleaners,0.0,0.2133861646628768,0.0,0.24859749842956386
+338,37-2021,Pest Control Workers,0.06473863920481293,0.24762623040486637,0.038558802258676694,0.11543306574324336
+339,37-3011,Landscaping and Groundskeeping Workers,0.0,0.3441762761751691,0.00031539150528377054,0.13044056198880757
+340,37-3012,"Pesticide Handlers, Sprayers, and Applicators, Vegetation",0.0254587960015909,0.32988477936277416,0.036717504499074766,0.09693366711952553
+341,37-3013,Tree Trimmers and Pruners,0.013008725897176814,0.3036231815780721,0.00849389574976162,0.14869930127605607
+342,39-1021,First-Line Supervisors of Personal Service Workers,0.12461927183680271,0.10160511179630069,0.0901583916230636,0.1433187379940412
+343,39-2011,Animal Trainers,0.05232464532991825,0.19555141027723946,0.07660429457825915,0.12108509242509002
+344,39-2021,Nonfarm Animal Caretakers,0.03881821757499372,0.239530038746537,0.006876708571293899,0.16701326463334049
+345,39-3011,Gaming Dealers,0.07668432888229873,0.277900365951441,0.01593906581934182,0.12964322093529684
+346,39-3012,Gaming and Sports Book Writers and Runners,0.09557226090186789,0.33050902497736423,0.020245355477472728,0.09029328686646201
+347,39-3031,"Ushers, Lobby Attendants, and Ticket Takers",0.12644144813066793,0.18319896372926406,0.011033370505000167,0.1638048054158603
+348,39-3091,Amusement and Recreation Attendants,0.11689519516851024,0.13546638412979506,0.019266606112481353,0.1942967227657018
+349,39-3092,Costume Attendants,0.06765648991494708,0.1995898320098387,0.019044603423097592,0.1810042500898297
+350,39-3093,"Locker Room, Coatroom, and Dressing Room Attendants",0.11747930864507586,0.15694514345066637,0.005424368620114765,0.17906105168286685
+351,39-4011,Embalmers,0.08641914114841345,0.20512277573506926,0.04495679948762893,0.12983440156892398
+352,39-4021,Funeral Attendants,0.1518045243652321,0.19312244998571393,0.0,0.09270493742785953
+353,39-5011,Barbers,0.08998593699095074,0.19542116948725913,0.040101149829720434,0.13490327049667836
+354,39-5012,"Hairdressers, Hairstylists, and Cosmetologists",0.07951704003464102,0.19473431892821869,0.0701527038241677,0.11772788204633843
+355,39-5091,"Makeup Artists, Theatrical and Performance",0.08906443173585396,0.1860212365857317,0.06689410101375773,0.12364527811450107
+356,39-5092,Manicurists and Pedicurists,0.1571878298677161,0.12632760437306373,0.048114623003929866,0.1401488195915274
+357,39-5094,Skincare Specialists,0.16325311633351464,0.1571489371610493,0.04847160417238799,0.08466371547012361
+358,39-6011,Baggage Porters and Bellhops,0.08432398297955446,0.2163965828645658,0.009687815966704675,0.16038498125468575
+359,39-6012,Concierges,0.22011885018303512,0.08751350618374186,0.04739851294166307,0.11258165859973426
+360,39-9011,Childcare Workers,0.053692276670622215,0.15160776697078132,0.06908005471619047,0.17623735995630713
+361,39-9021,Personal Care Aides,0.13165497927610303,0.0956087174957716,0.030043879973856217,0.18437760613267856
+362,39-9031,Fitness Trainers and Aerobics Instructors,0.08256287686870874,0.09454982503027964,0.07204970267816604,0.1863756698151395
+363,39-9032,Recreation Workers,0.1293702584771223,0.08326112639411817,0.10427187027004631,0.1371547779744955
+364,39-9041,Residential Advisors,0.17169425127518903,0.04490110210041687,0.06439387003413068,0.18709049911778192
+365,41-1011,First-Line Supervisors of Retail Sales Workers,0.10499346590527922,0.11387211049685012,0.05290501553848966,0.19837337693590523
+366,41-1012,First-Line Supervisors of Non-Retail Sales Workers,0.1572608240056117,0.10550358561834995,0.08637751558849002,0.12634097695686722
+367,41-2011,Cashiers,0.06357518415563869,0.30437354165069996,0.011646211777835777,0.12568522781947863
+368,41-2012,Gaming Change Persons and Booth Cashiers,0.07675875789138617,0.28164856008340844,0.0,0.14675782988972702
+369,41-2021,Counter and Rental Clerks,0.12647709509506638,0.10282216416200476,0.04466260739744502,0.2019770945406209
+370,41-2022,Parts Salespersons,0.18803680381737764,0.18991673499655082,0.029482409750385612,0.08376843083328463
+371,41-2031,Retail Salespersons,0.13423986282771244,0.14579502956494117,0.024174571416511338,0.16299687074878771
+372,41-3011,Advertising Sales Agents,0.20790445324937432,0.10971435389016884,0.07705379450192149,0.07667829447957172
+373,41-3021,Insurance Sales Agents,0.20770686923929027,0.15609673527542783,0.07274185892016216,0.051425203474528
+374,41-3031,"Securities, Commodities, and Financial Services Sales Agents",0.2056082560781612,0.13575280960427988,0.07791298795093302,0.06450961782686943
+375,41-3041,Travel Agents,0.28064037778936646,0.10893452221399613,0.05064353614461788,0.04402285635920282
+376,41-4011,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",0.2620304486946178,0.0641498954664436,0.0914528278329031,0.04827661895126728
+377,41-4012,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2366829611894512,0.10677811942854581,0.04233108530158971,0.07438028792118338
+378,41-9011,Demonstrators and Product Promoters,0.17803248579700076,0.15956448051420447,0.04221040022862242,0.08684498561135649
+379,41-9021,Real Estate Brokers,0.19161884155893769,0.10137375923298689,0.05516013560241942,0.12171836388420415
+380,41-9022,Real Estate Sales Agents,0.1769759216211529,0.19790082859139624,0.05417337550654844,0.05429900889416316
+381,41-9031,Sales Engineers,0.14115113555067835,0.14919877125755684,0.1136759233540114,0.07393303136191479
+382,41-9091,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",0.29015779435578687,0.00042127263944662015,0.0865347773311998,0.06604202108560096
+383,43-1011,First-Line Supervisors of Office and Administrative Support Workers,0.1560472015254886,0.12693017041190083,0.07549611069720513,0.12780097951130837
+384,43-2011,"Switchboard Operators, Including Answering Service",0.2977062582425073,0.15639295019873997,0.0,0.06774838472045278
+385,43-3011,Bill and Account Collectors,0.21883862849077973,0.18861552514995553,0.032974100766271004,0.08320723937520177
+386,43-3021,Billing and Posting Clerks,0.20062529804076218,0.32251951604803386,0.017181035551049842,0.03707196461483171
+387,43-3031,"Bookkeeping, Accounting, and Auditing Clerks",0.16196663239950604,0.3591810254807739,0.017777795210334624,0.025633208757627746
+388,43-3041,Gaming Cage Workers,0.07668157797364739,0.3239878410983419,0.006485481014179172,0.11604340356766826
+389,43-3051,Payroll and Timekeeping Clerks,0.1945729568916752,0.32380270645732045,0.025418422130214176,0.018609333008881124
+390,43-3061,Procurement Clerks,0.20933737124355511,0.15829997567714982,0.05033162847102503,0.0903318683997873
+391,43-3071,Tellers,0.1677489115906054,0.3123574923071166,0.006595636692408916,0.044592529086444066
+392,43-4011,Brokerage Clerks,0.2481740923278313,0.25360268388172946,0.0263140408226769,0.009531916810180698
+393,43-4021,Correspondence Clerks,0.18741740641532176,0.21656517866458785,0.062253658991126705,0.05505559713897208
+394,43-4031,"Court, Municipal, and License Clerks",0.3143024899896544,0.15970445382940554,0.0011036964323838819,0.06629650060934297
+395,43-4051,Customer Service Representatives,0.19009701150330274,0.24959217037611853,0.03630912878172153,0.04235033052598787
+396,43-4061,"Eligibility Interviewers, Government Programs",0.246491294935778,0.1814546048528773,0.0325215931262923,0.05478019914760791
+397,43-4071,File Clerks,0.14006224625683963,0.32420118730728253,0.026690258360955163,0.05118092025868503
+398,43-4081,"Hotel, Motel, and Resort Desk Clerks",0.19822956497809452,0.17148806393495147,0.027261838086508866,0.1074330513628268
+399,43-4111,"Interviewers, Except Eligibility and Loan",0.269007166091354,0.15524065327783398,0.01018850791312267,0.07775494014387878
+400,43-4121,"Library Assistants, Clerical",0.13478555438805573,0.3103374164013833,0.024721876024599708,0.054062932141240166
+401,43-4131,Loan Interviewers and Clerks,0.2069051722344517,0.22934069895239767,0.011953127235525211,0.07710793980769973
+402,43-4141,New Accounts Clerks,0.2749540216284535,0.1558490737641522,0.03074711607403814,0.04129415810089076
+403,43-4151,Order Clerks,0.1787848871712031,0.2767478116283687,0.005805930458113662,0.07531001368778267
+404,43-4161,"Human Resources Assistants, Except Payroll and Timekeeping",0.24233312070013385,0.21141014693850005,0.023453947921238717,0.05318953669310662
+405,43-4171,Receptionists and Information Clerks,0.33322475154406295,0.12612798054182625,0.024068915218938162,0.03697176465964769
+406,43-4181,Reservation and Transportation Ticket Agents and Travel Clerks,0.19068546307009765,0.1860480238933843,0.03332175075087887,0.0971850723669136
+407,43-5011,Cargo and Freight Agents,0.24009342836201375,0.16338306160029767,0.03144416502865736,0.0911612305659189
+408,43-5021,Couriers and Messengers,0.024429882474738526,0.3119726716840606,0.0032599566014398914,0.13245052882314856
+409,43-5031,"Police, Fire, and Ambulance Dispatchers",0.12818154120853825,0.26241943264050227,0.015737671300170532,0.11407464388477793
+410,43-5032,"Dispatchers, Except Police, Fire, and Ambulance",0.14435037824064453,0.24395091953759157,0.06844159105011384,0.0712768732066321
+411,43-5041,"Meter Readers, Utilities",0.020161730314724083,0.3283397732431764,0.008177415511744468,0.12499503316649292
+412,43-5051,Postal Service Clerks,0.06358332181426328,0.3106155448151973,0.0006644701713183104,0.12375861907145236
+413,43-5052,Postal Service Mail Carriers,0.020376576183046415,0.3439601313121736,0.0,0.11760991787282311
+414,43-5053,"Postal Service Mail Sorters, Processors, and Processing Machine Operators",0.022776553775489043,0.3590038938415522,0.0,0.13355778276080782
+415,43-5061,"Production, Planning, and Expediting Clerks",0.12898419477005357,0.19282238045636435,0.05745677506077411,0.1376015117933485
+416,43-5071,"Shipping, Receiving, and Traffic Clerks",0.08318949809111667,0.28523848256996054,0.0063100891344698784,0.11010065119990661
+417,43-5081,Stock Clerks and Order Fillers,0.027341282913233556,0.3224966163635551,0.0,0.11753787948909257
+418,43-5111,"Weighers, Measurers, Checkers, and Samplers, Recordkeeping",0.08864127383012013,0.2770633593139096,0.042276831901364414,0.11049526518853259
+419,43-6011,Executive Secretaries and Executive Administrative Assistants,0.2914702858237581,0.16127077269828222,0.03367168096498925,0.03625811442357295
+420,43-6012,Legal Secretaries,0.28799014461257,0.21166619805019388,0.0079981189259785,0.03374235841519034
+421,43-6013,Medical Secretaries,0.24079868767679527,0.11398674596068245,0.00375310005682897,0.1572951058582025
+422,43-6014,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",0.314787298519127,0.16897729412454085,0.02739095170366182,0.01844709701271229
+423,43-9011,Computer Operators,0.15020157247704924,0.2465590746854504,0.05661390021673695,0.06879628340723082
+424,43-9021,Data Entry Keyers,0.12538880978306666,0.3909661734665044,0.019618121862761587,0.022977180642802797
+425,43-9022,Word Processors and Typists,0.23084244945849505,0.26928192585783456,0.02149581426183771,0.021810063433815752
+426,43-9031,Desktop Publishers,0.17717062265021538,0.2848153190978863,0.05910210721397141,0.010170860050092946
+427,43-9041,Insurance Claims and Policy Processing Clerks,0.2652106208172976,0.26091754505320625,0.017288601429717654,0.022169176229605903
+428,43-9051,"Mail Clerks and Mail Machine Operators, Except Postal Service",0.03857466939686931,0.3931111923851648,0.0,0.09069592375333341
+429,43-9061,"Office Clerks, General",0.29234506263788473,0.238106945946297,0.0,0.03296215586260763
+430,43-9071,"Office Machine Operators, Except Computer",0.09103209309781773,0.27241095399086335,0.02492349265472332,0.12495562288846938
+431,43-9081,Proofreaders and Copy Markers,0.22235218961352052,0.18936258113956517,0.057752176444664155,0.04375779457988694
+432,43-9111,Statistical Assistants,0.14260373570914398,0.29042578309094436,0.08079115749082963,0.010694768337823322
+433,45-1011,"First-Line Supervisors of Farming, Fishing, and Forestry Workers",0.033122015420936596,0.2705677368333885,0.046568749489331734,0.1295592334389662
+434,45-2011,Agricultural Inspectors,0.05245204125928263,0.29245232596074183,0.028743829385734568,0.10689982592981573
+435,45-2021,Animal Breeders,0.03826869203101163,0.2533951469735249,0.05887854844943148,0.10962084320365864
+436,45-2041,"Graders and Sorters, Agricultural Products",0.0,0.3794517011471851,0.0,0.11811439543887044
+437,45-2091,Agricultural Equipment Operators,0.011238220068276171,0.36373963025726574,0.02285917969740124,0.08763610693860774
+438,45-2092,"Farmworkers and Laborers, Crop, Nursery, and Greenhouse",0.0,0.34223351971172356,0.0,0.13311525746246994
+439,45-2093,"Farmworkers, Farm, Ranch, and Aquacultural Animals",0.003151956217667661,0.32362534801402726,0.010058559628808781,0.1330077339889438
+440,45-4011,Forest and Conservation Workers,0.031427486697285366,0.25523405169620206,0.05887345072891398,0.12950802830201164
+441,45-4022,Logging Equipment Operators,0.010434728032109403,0.3768085396183465,0.00040198126944699427,0.10507465617180639
+442,45-4023,Log Graders and Scalers,0.058009233798808346,0.2674829342973593,0.025514084524661022,0.13175337587156818
+443,47-1011,Supervisors of Construction and Extraction Workers,0.044089470208834004,0.25726460218845343,0.04312322640976368,0.13086337316887764
+444,47-2011,Boilermakers,0.016722629552868896,0.3151096352254434,0.03756627732515279,0.1082552979483111
+445,47-2021,Brickmasons and Blockmasons,0.011500068975208153,0.267983342444468,0.00904894348220035,0.16918043452388787
+446,47-2031,Carpenters,0.014733500288656748,0.2736643609163941,0.0229623546535222,0.15363820005098464
+447,47-2041,Carpet Installers,0.014863107282459652,0.2868395071739419,0.008514408745143818,0.1469977194696401
+448,47-2044,Tile and Marble Setters,0.01944358215878499,0.267734071924735,0.020200825016472964,0.15480907004592265
+449,47-2051,Cement Masons and Concrete Finishers,0.007089145323868084,0.3156143091391702,0.0013022111436328638,0.14719149154009076
+450,47-2053,Terrazzo Workers and Finishers,0.00515901694286749,0.29152103740800456,0.0057689559145856625,0.17004765793080093
+451,47-2061,Construction Laborers,0.002315614392977121,0.3179216646592362,0.0029750740617625637,0.14622844517022376
+452,47-2071,"Paving, Surfacing, and Tamping Equipment Operators",0.009518663998222847,0.3398687975057506,0.016827049539090765,0.11567719414199645
+453,47-2072,Pile-Driver Operators,0.0071816864620892085,0.3497261106549914,0.014585167104122474,0.11455084203909187
+454,47-2073,Operating Engineers and Other Construction Equipment Operators,0.006198539519821852,0.38328533556089567,0.003454300211354648,0.10122233442956352
+455,47-2081,Drywall and Ceiling Tile Installers,0.017982359064820666,0.284345370909208,0.026213998306462257,0.1423859522936104
+456,47-2082,Tapers,0.0070475416618598,0.3034851586617878,0.02262409939254642,0.12927928402214792
+457,47-2111,Electricians,0.006305238768355363,0.34977252105003837,0.016670371718195392,0.10818146601892548
+458,47-2121,Glaziers,0.003080445953145478,0.30967528628284985,0.0,0.1543348274697464
+459,47-2131,"Insulation Workers, Floor, Ceiling, and Wall",0.0005865899016811248,0.31219653271495895,0.004851716057010284,0.14520201796209206
+460,47-2141,"Painters, Construction and Maintenance",0.004410166286696247,0.29836505883351416,0.0015337864142393025,0.15305890620112192
+461,47-2151,Pipelayers,0.011692274580570233,0.32088378151362185,0.013008691225016352,0.13360131051357094
+462,47-2152,"Plumbers, Pipefitters, and Steamfitters",0.019919311010311646,0.30850567231931336,0.03335830125921277,0.1102337184646662
+463,47-2161,Plasterers and Stucco Masons,0.026472958711097942,0.24752767639222567,0.059186499175297905,0.13754155087576514
+464,47-2171,Reinforcing Iron and Rebar Workers,0.010595673415986087,0.28306230919635755,0.004130677141459872,0.17216391314917276
+465,47-2181,Roofers,0.014838228415713594,0.27345512328640564,0.028720619041668376,0.15435155675856127
+466,47-2211,Sheet Metal Workers,0.001958391830923572,0.292323824995329,0.00954408095332737,0.1640541403166918
+467,47-2221,Structural Iron and Steel Workers,0.01596831162007739,0.30957501593176134,0.022923029344194296,0.12508138074834713
+468,47-3011,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",0.0014581675255638392,0.3091191431531829,0.009060115720454436,0.15194673192390815
+469,47-3012,Helpers--Carpenters,0.0007987981146502295,0.31935593987163025,0.0035305069892238527,0.1439986956680111
+470,47-3013,Helpers--Electricians,0.008336313785354047,0.3144572427780943,0.015606298091988283,0.12886311704850123
+471,47-3015,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",0.010838972580329655,0.3264571261634675,0.02571372871100163,0.10455810992790675
+472,47-4011,Construction and Building Inspectors,0.07668611606445747,0.28882892321291354,0.04127319889643883,0.07562368128434255
+473,47-4031,Fence Erectors,0.009675953593351768,0.3087505233109734,0.0,0.14469527125801446
+474,47-4041,Hazardous Materials Removal Workers,0.022466875150267733,0.3064389236988955,0.02987968601906341,0.12588103523630315
+475,47-4051,Highway Maintenance Workers,0.004777906935730707,0.33550052587438683,0.007422232241313564,0.12527619352763134
+476,47-4061,Rail-Track Laying and Maintenance Equipment Operators,0.006556105068279707,0.3107690926850387,0.02229820386797179,0.13909826986950116
+477,47-4071,Septic Tank Servicers and Sewer Pipe Cleaners,0.016435207947573305,0.3207989773609809,0.02101917971266192,0.11767415429849869
+478,47-5013,"Service Unit Operators, Oil, Gas, and Mining",0.016010906563340824,0.33333905784784085,0.013269450820022424,0.1260458547365933
+479,47-5021,"Earth Drillers, Except Oil and Gas",0.0011091374950060293,0.35475511723030956,0.021996359435730917,0.10603196774045076
+480,47-5041,Continuous Mining Machine Operators,0.007491705863288072,0.3099137414918583,0.03667143738183662,0.13565405913650463
+481,47-5061,"Roof Bolters, Mining",0.001044090650797332,0.33589668052304417,0.01466430531387058,0.1349888118168264
+482,47-5071,"Roustabouts, Oil and Gas",0.003923368347460874,0.33651504353107015,0.01012052534636064,0.12624598061893338
+483,47-5081,Helpers--Extraction Workers,0.006241344430122269,0.33474662948393163,0.009321451736521618,0.13189386191302174
+484,49-1011,"First-Line Supervisors of Mechanics, Installers, and Repairers",0.0619211211371592,0.22651316218914044,0.04607521311247636,0.15019696836706617
+485,49-2011,"Computer, Automated Teller, and Office Machine Repairers",0.08609856427183768,0.2955025455361524,0.08349975626275317,0.022031626356634366
+486,49-2021,"Radio, Cellular, and Tower Equipment Installers and Repairers",0.07115945789765316,0.2921604653863096,0.08269365784265124,0.042708332653046716
+487,49-2022,"Telecommunications Equipment Installers and Repairers, Except Line Installers",0.03509106065269571,0.3114855749772162,0.04656858820267508,0.08369791179406555
+488,49-2091,Avionics Technicians,0.03760335391481294,0.3597725366972235,0.06385548018334457,0.04432215660386462
+489,49-2092,"Electric Motor, Power Tool, and Related Repairers",0.009345546018982033,0.31772986571232853,0.03282743752185997,0.12458860738824626
+490,49-2093,"Electrical and Electronics Installers and Repairers, Transportation Equipment",0.04359625677177609,0.32720545193315004,0.04784983299685669,0.0721366747737789
+491,49-2094,"Electrical and Electronics Repairers, Commercial and Industrial Equipment",0.024481354171891012,0.3349163808828584,0.04200931430791163,0.08475683161344479
+492,49-2095,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",0.03163777920181338,0.31312048508412865,0.04578181809492937,0.0956860312092779
+493,49-2096,"Electronic Equipment Installers and Repairers, Motor Vehicles",0.03432971687882397,0.3019253481186962,0.0498558965278411,0.09232011304342061
+494,49-2098,Security and Fire Alarm Systems Installers,0.03345948879186861,0.3376988999985063,0.047780800154318875,0.057224438539035166
+495,49-3011,Aircraft Mechanics and Service Technicians,0.011522918864522566,0.38405795384297914,0.02051717576604598,0.07608892457716565
+496,49-3021,Automotive Body and Related Repairers,0.0,0.3093450043142919,0.013312938524929006,0.15830542400548317
+497,49-3022,Automotive Glass Installers and Repairers,0.03404637603292225,0.2882331742581214,0.025205207789196438,0.12434861681069362
+498,49-3023,Automotive Service Technicians and Mechanics,0.01862073065631142,0.34804069793500264,0.03738735369628735,0.07967681562705457
+499,49-3031,Bus and Truck Mechanics and Diesel Engine Specialists,0.0,0.36112258409256237,0.003782503418594988,0.11023882963608489
+500,49-3041,Farm Equipment Mechanics and Service Technicians,0.016940304642826358,0.3391798221173221,0.02946662638206139,0.09590586289171342
+501,49-3042,"Mobile Heavy Equipment Mechanics, Except Engines",0.00592604593147374,0.370484003386064,0.02355036922911219,0.08552300902507788
+502,49-3043,Rail Car Repairers,0.0029073929301529026,0.3427126971367419,0.010968581194330298,0.11959977547996226
+503,49-3051,Motorboat Mechanics and Service Technicians,0.007787435238132048,0.35967679372370415,0.029193350426624028,0.08484573401016934
+504,49-3052,Motorcycle Mechanics,0.016494074432170273,0.3428839837259108,0.02278403401975974,0.0924898438602551
+505,49-3053,Outdoor Power Equipment and Other Small Engine Mechanics,0.02981997271006992,0.3339557037502107,0.01706055083458194,0.10010496377801635
+506,49-3091,Bicycle Repairers,0.0653401967392411,0.2790213190324765,0.033081509508972526,0.0967470072888666
+507,49-3092,Recreational Vehicle Service Technicians,0.005495639195845214,0.3621062377997063,0.010905988613378067,0.09657857674431279
+508,49-3093,Tire Repairers and Changers,0.009723495308718405,0.3037125014859,0.013132041712548262,0.1489198899796652
+509,49-9011,Mechanical Door Repairers,0.0240227689933816,0.33221408173823475,0.012766729480915576,0.09918591943021705
+510,49-9012,"Control and Valve Installers and Repairers, Except Mechanical Door",0.02821126336254942,0.3343268137175219,0.02472051048899878,0.09226581691624818
+511,49-9021,"Heating, Air Conditioning, and Refrigeration Mechanics and Installers",0.02164357692311172,0.31298760339706067,0.04267295502469767,0.09371923845791591
+512,49-9031,Home Appliance Repairers,0.05251274673391117,0.30865934203400314,0.029518254917923238,0.08082625319874367
+513,49-9041,Industrial Machinery Mechanics,0.0006207828261890425,0.3427629434697266,0.025023791347665504,0.1174611117737872
+514,49-9043,"Maintenance Workers, Machinery",0.007675804024365676,0.3482708711633373,0.023809692430052543,0.10576834204509976
+515,49-9044,Millwrights,0.0032905424920344588,0.3411749769379848,0.011386877911266087,0.12338209487369946
+516,49-9051,Electrical Power-Line Installers and Repairers,0.015890591312125033,0.29018632835383334,0.019058107979941688,0.15426888338299125
+517,49-9052,Telecommunications Line Installers and Repairers,0.02326351429389279,0.33825485516874937,0.02150956071928723,0.09196430963240203
+518,49-9061,Camera and Photographic Equipment Repairers,0.02733552005632121,0.3680231515866621,0.07336225419448338,0.028389805929942565
+519,49-9062,Medical Equipment Repairers,0.04176439225578999,0.3279491813289993,0.05932549191246922,0.06341991514135037
+520,49-9063,Musical Instrument Repairers and Tuners,0.03571892053307779,0.31795434624465824,0.045840002152695396,0.08585556151992095
+521,49-9064,Watch Repairers,0.0471516195575905,0.3293161846814292,0.06711710659766369,0.053102367198525076
+522,49-9071,"Maintenance and Repair Workers, General",0.005778315147175656,0.33578573369453424,0.018549736649673163,0.1161732761826294
+523,49-9091,"Coin, Vending, and Amusement Machine Servicers and Repairers",0.044339522850734635,0.3391892270074912,0.021675914764963604,0.07138140837503276
+524,49-9092,Commercial Divers,0.036736075792623835,0.29936360385080685,0.02951323649227914,0.11369759346009603
+525,49-9094,Locksmiths and Safe Repairers,0.04770944173590845,0.31551167811237796,0.03063493594889615,0.07737879486960915
+526,49-9098,"Helpers--Installation, Maintenance, and Repair Workers",0.0043900212568035125,0.32683841660908797,0.019325695897637354,0.12856006659116087
+527,51-1011,First-Line Supervisors of Production and Operating Workers,0.07993275886073418,0.16707478010141927,0.07515629030367162,0.16814193370080666
+528,51-2011,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",0.0021945655169845015,0.3308414201757091,0.005390253946226123,0.1510717594993612
+529,51-2021,"Coil Winders, Tapers, and Finishers",0.014609428350536255,0.36582573965823345,0.010628619661189465,0.12393537330931079
+530,51-2031,Engine and Other Machine Assemblers,0.00048637800006192387,0.3673191090889063,0.015775534878877423,0.11226660817325826
+531,51-2041,Structural Metal Fabricators and Fitters,0.011879409885594055,0.3099175910403425,0.01536184529128414,0.1433375299000708
+532,51-3011,Bakers,0.02691261141406707,0.2540398753141191,0.05426235358664061,0.1490454525978589
+533,51-3021,Butchers and Meat Cutters,0.030386846645475998,0.24592350673895524,0.007545024313741179,0.20310469278562432
+534,51-3022,"Meat, Poultry, and Fish Cutters and Trimmers",0.00996240328706737,0.2853395202426769,0.0,0.201203270164378
+535,51-3023,Slaughterers and Meat Packers,0.019851855824975076,0.30352999632018424,0.028379765417338144,0.1448246818596425
+536,51-3091,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",0.018755969509787297,0.3174085379440645,0.016100901765955692,0.15104782248074464
+537,51-3092,Food Batchmakers,0.011142862913464365,0.3900030777417949,0.0,0.11299227573346939
+538,51-3093,Food Cooking Machine Operators and Tenders,0.0208039526414498,0.3255101125977639,0.04458317449014073,0.11903868962656543
+539,51-4011,"Computer-Controlled Machine Tool Operators, Metal and Plastic",0.011663667162043364,0.3798498383138512,0.014235533366476498,0.10873763127388177
+540,51-4012,"Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic",0.036675627882760756,0.319916977167636,0.0418558680636004,0.1221213441624379
+541,51-4021,"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",0.0035575466465034393,0.3390900702555447,0.009514021736700391,0.14146834638153813
+542,51-4022,"Forging Machine Setters, Operators, and Tenders, Metal and Plastic",0.016177003489185784,0.3647090554917002,0.03744958848178505,0.09334189807012484
+543,51-4023,"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",0.01555305556623942,0.32861655332751505,0.035525283241399086,0.1199850176851615
+544,51-4031,"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",0.003144165844000452,0.37071828960004305,0.009804242633602656,0.12389202343262158
+545,51-4032,"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",0.020495856275524083,0.3490073062734296,0.020005214139920617,0.11472457775958968
+546,51-4033,"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",0.010565396221283375,0.3559544450871251,0.014151995157865742,0.1284258866347488
+547,51-4034,"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",0.020262018546535886,0.3559650988304614,0.0028710973987098078,0.13051040432441158
+548,51-4035,"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",0.03515746562907847,0.35773382332360026,0.029129970210455363,0.09554229413376278
+549,51-4041,Machinists,0.00304138024096259,0.37267725289043285,0.006448963278614233,0.12273680463352714
+550,51-4051,Metal-Refining Furnace Operators and Tenders,0.003297762384493148,0.3290827425178636,0.017183670139345977,0.14109126010669767
+551,51-4052,"Pourers and Casters, Metal",0.006591434271475221,0.32501556774599044,0.01768210286104494,0.14491650603117562
+552,51-4061,"Model Makers, Metal and Plastic",0.008616355427328401,0.3309280616650818,0.0242479577958155,0.13744101986526616
+553,51-4062,"Patternmakers, Metal and Plastic",0.013462661429627371,0.34370147439525406,0.026208938824799625,0.11706503160532941
+554,51-4071,Foundry Mold and Coremakers,0.0010048263982993166,0.3059141064455037,0.01756830377056004,0.16946007849484318
+555,51-4072,"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",0.0038430575408080936,0.3509075055390119,0.014728448519322526,0.1337842386749556
+556,51-4081,"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",0.008252925877521354,0.3354715680240744,0.035508631815755094,0.11840870681626882
+557,51-4111,Tool and Die Makers,0.006555339026871234,0.31587259981535465,0.01928416102715882,0.1540933321492765
+558,51-4121,"Welders, Cutters, Solderers, and Brazers",0.0005497363383953292,0.34163039369698955,0.008289418213905591,0.14238218412247816
+559,51-4122,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",0.0,0.3732563248183279,0.0005792231120262803,0.13694256744036493
+560,51-4191,"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",0.005517630672187198,0.3374916940610972,0.020034896357641278,0.1351786197293922
+561,51-4192,"Layout Workers, Metal and Plastic",0.004711181403066524,0.3222593186412014,0.015093212232356833,0.14391235136255046
+562,51-4193,"Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic",0.0,0.31081190852229396,0.0,0.18577541621522192
+563,51-4194,"Tool Grinders, Filers, and Sharpeners",0.013909259581694863,0.3530994653165631,0.018430840947752308,0.11228959557694924
+564,51-5111,Prepress Technician and Workers,0.11171816721323145,0.32229063463626345,0.05523288912502999,0.039462784821281
+565,51-6011,Laundry and Dry-Cleaning Workers,0.006930900912567474,0.2531141082292836,0.017437752566656337,0.22175201639265232
+566,51-6021,"Pressers, Textile, Garment, and Related Materials",0.00033171297832226094,0.33658138267779836,0.0029321864161979015,0.1539760278993824
+567,51-6031,Sewing Machine Operators,0.03221710860855516,0.4262531639211757,0.012741063744418638,0.05380966615864158
+568,51-6062,"Textile Cutting Machine Setters, Operators, and Tenders",0.010181125576200666,0.3661905834948801,0.010915560973515669,0.10121261606128967
+569,51-6064,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",0.014423647998624597,0.3186037801011415,0.014936894935994902,0.15101072512688413
+570,51-6091,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",0.005627877098773462,0.3411985353422421,0.00821803030774938,0.14794933658676301
+571,51-6092,Fabric and Apparel Patternmakers,0.06380730420238727,0.324006763377248,0.06966157508464048,0.04903812880968811
+572,51-6093,Upholsterers,0.006732190535509814,0.35520107526636546,0.009659293881386576,0.10602164928288108
+573,51-7011,Cabinetmakers and Bench Carpenters,0.0,0.33975063779580345,0.005137434338779151,0.14634246209241378
+574,51-7021,Furniture Finishers,8.206008193446999e-05,0.30715869255952155,0.008538666664063612,0.16792903647904012
+575,51-7041,"Sawing Machine Setters, Operators, and Tenders, Wood",0.0,0.356129394230254,0.005527466319142615,0.14199678468908944
+576,51-7042,"Woodworking Machine Setters, Operators, and Tenders, Except Sawing",0.0,0.3607187941805566,0.0005927662550640372,0.13982026968229588
+577,51-8011,Nuclear Power Reactor Operators,0.05318820018151837,0.31998120218045323,0.04720529714085578,0.09365862445864942
+578,51-8012,Power Distributors and Dispatchers,0.07117377523804176,0.26667291727725917,0.09336705092142508,0.07460888472016357
+579,51-8013,Power Plant Operators,0.04970373994083394,0.31023195794645614,0.035941707931037216,0.09834532313611821
+580,51-8021,Stationary Engineers and Boiler Operators,0.02056642303693594,0.3269632474893877,0.048976727717854995,0.09513518687629807
+581,51-8031,Water and Wastewater Treatment Plant and System Operators,0.012478923880302617,0.33709034480930256,0.028961722947821997,0.10754125452386051
+582,51-8091,Chemical Plant and System Operators,0.015075790395667563,0.36137448990699766,0.03733901688751233,0.09241843454789389
+583,51-9011,Chemical Equipment Operators and Tenders,0.025049209378349712,0.3295611681404202,0.03539904542559532,0.10802731470604197
+584,51-9012,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",0.004010970228204077,0.35348327523796963,0.006581557514836363,0.1309686132607936
+585,51-9021,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",0.011550628916287987,0.34362944564548636,0.01611565395565147,0.12214001232449392
+586,51-9022,"Grinding and Polishing Workers, Hand",0.015093358046086849,0.324947856106668,0.014834669066602656,0.13620260790088864
+587,51-9023,"Mixing and Blending Machine Setters, Operators, and Tenders",0.006963150278609895,0.3391717354582676,0.02328530337555535,0.12531406077140234
+588,51-9031,"Cutters and Trimmers, Hand",0.0,0.37394606975216077,0.009129019843449993,0.13669965230923836
+589,51-9032,"Cutting and Slicing Machine Setters, Operators, and Tenders",0.017193797063462322,0.3494546984174287,0.033629189194886965,0.1050675971651263
+590,51-9041,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",0.0,0.36950797982283834,0.0044663968355982235,0.13324361986331892
+591,51-9051,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",0.01656315953725979,0.28563714649064964,0.002863606492966748,0.19380722751772342
+592,51-9061,"Inspectors, Testers, Sorters, Samplers, and Weighers",0.008833501691928581,0.4123054356670875,0.0044213573784493395,0.09645824537125519
+593,51-9081,Dental Laboratory Technicians,0.0436535294255037,0.30190072105971894,0.04450790374401359,0.11812057452407555
+594,51-9082,Medical Appliance Technicians,0.03200624431936735,0.28176178000760294,0.05276427562365237,0.11758562722032276
+595,51-9083,Ophthalmic Laboratory Technicians,0.03788053578862635,0.33177130240294544,0.037447436437855516,0.1057027386996935
+596,51-9111,Packaging and Filling Machine Operators and Tenders,0.007647971572270116,0.34832567665566466,0.018136577787834802,0.12309228097069853
+597,51-9121,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",0.000886355122392698,0.3637294839999885,0.00708185733737824,0.12343112224197882
+598,51-9122,"Painters, Transportation Equipment",0.0035076401455562695,0.3071621200401703,0.0097307255823199,0.15378782908706706
+599,51-9123,"Painting, Coating, and Decorating Workers",0.005700828568096087,0.3694908112175967,0.0032864857727972247,0.12801090471863755
+600,51-9191,Adhesive Bonding Machine Operators and Tenders,0.006944418280081744,0.32583948901404325,0.03888685648329545,0.12123729448970107
+601,51-9192,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",0.008636596748260384,0.2816936489154708,0.00804820793133431,0.18255037929853676
+602,51-9193,Cooling and Freezing Equipment Operators and Tenders,0.01199237417441194,0.3430647299758466,0.02825620702342284,0.11789143721556741
+603,51-9194,Etchers and Engravers,0.02796792707631111,0.35403090663411985,0.09141711224997898,0.04288768468162263
+604,51-9195,"Molders, Shapers, and Casters, Except Metal and Plastic",0.00017012618399661646,0.3470448517829887,0.0065611868787268275,0.13199926550439775
+605,51-9196,"Paper Goods Machine Setters, Operators, and Tenders",0.012508314124456075,0.3579246729973619,0.015055599928348942,0.1179169479043588
+606,51-9198,Helpers--Production Workers,0.0009024554710679632,0.31878578053139905,0.0,0.16268206774570165
+607,53-1011,Aircraft Cargo Handling Supervisors,0.04985139873852852,0.24945470044531448,0.04238112643490906,0.1442129455381179
+608,53-2011,"Airline Pilots, Copilots, and Flight Engineers",0.0426433030552244,0.3160826756409121,0.055153750162284174,0.08589983510319174
+609,53-2012,Commercial Pilots,0.0268806934411451,0.35935838530786424,0.041319962967943026,0.07125547012597368
+610,53-2021,Air Traffic Controllers,0.08365048791961781,0.30058471561586236,0.07121197044737965,0.05204160373962924
+611,53-2022,Airfield Operations Specialists,0.13231688250110402,0.24146320434375373,0.0423269563530681,0.0818336771347194
+612,53-2031,Flight Attendants,0.08105811982638741,0.21262610168306273,0.016408656855940153,0.16239286769027336
+613,53-3011,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians",0.03367740231138769,0.3076844942914153,0.007111033248972792,0.12343584789621846
+614,53-3021,"Bus Drivers, Transit and Intercity",0.030244610320442043,0.36453252542087283,0.0043419313629471925,0.09918819599038078
+615,53-3022,"Bus Drivers, School or Special Client",0.027256221293229115,0.34968819977843385,0.0,0.11003325785851345
+616,53-3031,Driver/Sales Workers,0.04446299430926734,0.33146924260752225,0.007377024648063054,0.09359700472179912
+617,53-3032,Heavy and Tractor-Trailer Truck Drivers,0.016206244666969672,0.38105905467205275,0.0026665795294235585,0.08629368970885912
+618,53-3033,Light Truck or Delivery Services Drivers,0.02545631277766554,0.3312376294845811,0.007914434315210132,0.11221485636468548
+619,53-3041,Taxi Drivers and Chauffeurs,0.03302569375719512,0.3564537931322738,0.004048468047280399,0.09112321344008928
+620,53-4011,Locomotive Engineers,0.00787379311178938,0.39307934081608287,0.002872904224367192,0.10138523045909852
+621,53-4031,Railroad Conductors and Yardmasters,0.03013701595042275,0.3242126878067759,0.0030118573316540937,0.1338729416681143
+622,53-5011,Sailors and Marine Oilers,0.0150538141845992,0.31805186439328614,0.0019243956586935034,0.14339877078618565
+623,53-5021,"Captains, Mates, and Pilots of Water Vessels",0.027286674743038454,0.3185618983210498,0.02317529005437022,0.11937715121457099
+624,53-5031,Ship Engineers,0.00909579500086741,0.3498965324110491,0.02409021983857458,0.1059415751190684
+625,53-6021,Parking Lot Attendants,0.039702501345750874,0.269184573723399,0.001877911964553489,0.16192223114243365
+626,53-6031,Automotive and Watercraft Service Attendants,0.028808757902676445,0.29936321978308256,0.0017562234221173644,0.15251389594418022
+627,53-6041,Traffic Technicians,0.12739640196279525,0.23887220780891638,0.04362609555220733,0.08200549162875312
+628,53-6051,Transportation Inspectors,0.03769076128495467,0.34255799569403306,0.04050171620417696,0.06802672784445246
+629,53-6061,"Transportation Attendants, Except Flight Attendants",0.06573805408443475,0.269560633809746,0.012785300867935494,0.1301471987175259
+630,53-7011,Conveyor Operators and Tenders,0.006296169267672537,0.3215838512742839,0.018292925979776987,0.14670277701108497
+631,53-7021,Crane and Tower Operators,0.018351698265686223,0.3632395145956285,0.019805499329846196,0.0964110423107199
+632,53-7032,Excavating and Loading Machine and Dragline Operators,0.0037970309860406817,0.3867889359800848,0.005339826330706511,0.09438505490208239
+633,53-7051,Industrial Truck and Tractor Operators,0.003360141571454874,0.37294011664300797,0.0013367434964435512,0.11079513946946834
+634,53-7061,Cleaners of Vehicles and Equipment,0.0,0.32321954096930183,0.0,0.14719776973729523
+635,53-7062,"Laborers and Freight, Stock, and Material Movers, Hand",0.015739902718677777,0.33693067393426857,0.0034058967916778043,0.12260104578412757
+636,53-7063,Machine Feeders and Offbearers,0.0,0.353692320747638,0.0025085230039703105,0.14611638363630122
+637,53-7064,"Packers and Packagers, Hand",0.013554388616205632,0.3123785434364362,0.0,0.15217332020493834
+638,53-7071,Gas Compressor and Gas Pumping Station Operators,0.01683564006601701,0.3371832462913369,0.04388600682914133,0.09484170342895715
+639,53-7073,Wellhead Pumpers,0.0053682418512750974,0.3472557983826555,0.025247220538752377,0.1112092780365773
+640,53-7081,Refuse and Recyclable Material Collectors,0.007143700013799693,0.34669585736057956,7.850326222915022e-05,0.12550313917060305
+641,53-7121,"Tank Car, Truck, and Ship Loaders",0.008102248333610517,0.3240027795220708,0.011713825096739662,0.1448781403012463
