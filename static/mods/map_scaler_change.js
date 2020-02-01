@@ -26,7 +26,6 @@ for (var num = 0; num < tilde.cities.length; num++) {
   }  
   ai_average = ai_average+d.ai;
   ai_task_average = ai_task_average+d.ai_task_type;
-  
 }
 
 ai_average = ai_average/tilde.cities.length;
@@ -100,7 +99,7 @@ tilde.map.mark = function() {
   var data = tilde.current_selection;
   tilde.map.markerGroup.clearLayers()
   tilde.marker = L.marker([data.Lat, data.Lng]).addTo(tilde.map.markerGroup)
-  var popup_html = '<h3><b>' + data['Location'] + '</b></h3><p><b>Year</b>: '+data.year+   '<br><b>Employment</b>: ' +data.employment+  '<br><b>Automation Index</b>: ' +round(data.ai*100,2)+'%<br>'+  '<b>Average Automation Index</b>: ' +round(ai_average*100,2)+'%<br><b>'+  data['task_type']+'</b>: '+ +round(data.ai_task_type*100,2) +'%<br>'+ '<b>Average '+  data['task_type']+'</b>: '+ +round(ai_task_average*100,2) +'%</p>';
+  var popup_html = '<h3><b>' + data['Location'] + '</b></h3><p><b>Year</b>: '+data.year+   '<br><b>Employment</b>: ' +data.employment+  '<br><b>Automation Index Change</b>: ' +round(data.ai*100,2)+'%p<br>'+  '<b>Average Automation Index Change</b>: ' +round(ai_average*100,2)+'%p<br><b>'+  data['task_type']+' Change</b>: '+ +round(data.ai_task_type*100,2) +'%p<br>'+ '<b>Average '+  data['task_type']+' Change</b>: '+ +round(ai_task_average*100,2) +'%p</p>';
   tilde.marker.bindPopup(popup_html);
   tilde.marker.openPopup()
 }

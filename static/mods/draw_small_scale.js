@@ -9,13 +9,16 @@ tilde.needleScale = d3.scale.linear().domain([-10,10]).range([0,1])
 tilde.updateNeedle = function() {
 	d3.selectAll('.needle, .needle-center').style('opacity',0)
 	var data = tilde.current_selection;
+
+	data.pct_ai_task_type = data.ai_task_type*100;
+
 	d3.select("#needle")
 		.transition()
 		.duration(500)
 		.style('opacity',1)
-	needle.moveTo(tilde.needleScale(data.ai_task_type))
+	needle.moveTo(tilde.needleScale(data.pct_ai_task_type))
 	d3.select(".chart-filled")
-		.style('fill',tilde.colorScale(data.ai_task_type))
+		.style('fill',tilde.colorScale(data.pct_ai_task_type))
 
 	if (!d3.select("#needle_annotation").node()) {
 		tilde.annotation = d3.select("#sub_wrapper")
@@ -90,7 +93,7 @@ tilde.updateNeedle = function() {
 
 		tilde.target = g
 			.append("text")
-			.text(round(data.ai_task_type,2))
+			.text(round(data.pct_ai_task_type,2))
 			.attr('text-anchor','middle')
 			.style('font-weight','bold')
 
@@ -113,7 +116,7 @@ tilde.updateNeedle = function() {
 			.style('opacity',1)	
 	} else {
 		tilde.target
-			.text(round(data.ai_task_type,2))
+			.text(round(data.pct_ai_task_type,2))
 			.style('opacity',0)
 			.transition()
 			.duration(800)
