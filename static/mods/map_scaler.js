@@ -1,7 +1,31 @@
 tilde.map = L.map('map');
 tilde.map.scrollWheelZoom.disable()
-tilde.employmentDomain = [10000,8500000]
-tilde.ai_riskDomain = [13,16.5,20]
+
+var ai_risk_min = 100
+var ai_risk_max = -100
+
+var employment_min = 1000000
+var employment_max = 0
+
+for (var num = 0; num < tilde.cities.length; num++) {
+  var d = tilde.cities[num];
+  if (d.ai < ai_risk_min){
+    ai_risk_min = d.ai_task_type;
+  }
+  if (d.ai > ai_risk_max){
+    ai_risk_max = d.ai_task_type;
+  }
+  if (d.employment < employment_min){
+    employment_min = d.employment;
+  }
+  if (d.employment > employment_max){
+    employment_max = d.employment;
+  }  
+}
+
+tilde.employmentDomain = [employment_min-10000,employment_max+10000]
+tilde.ai_riskDomain = [ai_risk_min-0.01,(ai_risk_min+ai_risk_max)/2,ai_risk_max+0.01]
+
 tilde.colorRange = ["#FAFAFA","#EB97A8","#DC143C"]
 tilde.radiusScale = d3.scale.linear().domain(tilde.employmentDomain).range([1500,54000])
 tilde.colorScale = d3.scale.linear().domain(tilde.ai_riskDomain).range(tilde.colorRange)

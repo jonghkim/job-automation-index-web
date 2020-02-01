@@ -55,41 +55,16 @@
 	
 	{% if year == "2019" %}
 		<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
-		{% if relation_to_automation == "Running a Different Race" %}
-			<script type="text/javascript" src="{% static 'mods/map_large_scale_19.js' %}"> </script>
-		{% elif relation_to_automation == "Race with the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_large_scale_10.js' %}"> </script>
-		{% elif relation_to_automation == "Race ahead of the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_large_scale_5.js' %}"> </script>
-		{% elif relation_to_automation == "Race against the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_large_scale_13.js' %}"> </script>							
-		{% endif %}	
+		<script type="text/javascript" src="{% static 'mods/map_scaler.js' %}"> </script>							
 	{% endif %}
 	{% if year == "2008" %}
 		<script type="text/javascript" src="{% static 'mods/draw_large_scale.js' %}"></script>
-		{% if relation_to_automation == "Running a Different Race" %}
-			<script type="text/javascript" src="{% static 'mods/map_large_scale_19.js' %}"> </script>
-		{% elif relation_to_automation == "Race with the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_large_scale_10.js' %}"> </script>
-		{% elif relation_to_automation == "Race ahead of the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_large_scale_5.js' %}"> </script>
-		{% elif relation_to_automation == "Race against the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_large_scale_13.js' %}"> </script>						
-		{% endif %}	
+		<script type="text/javascript" src="{% static 'mods/map_scaler.js' %}"> </script>							
 	{% endif %}	
 	{% if year == "2008~2019" %}
 		<script type="text/javascript" src="{% static 'mods/draw_small_scale.js' %}"></script>
-		{% if relation_to_automation == "Running a Different Race" %}
-			<script type="text/javascript" src="{% static 'mods/map_small_scale.js' %}"> </script>
-		{% elif relation_to_automation == "Race with the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_small_scale.js' %}"> </script>
-		{% elif relation_to_automation == "Race ahead of the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_small_scale.js' %}"> </script>
-		{% elif relation_to_automation == "Race against the Machine" %}
-			<script type="text/javascript" src="{% static 'mods/map_small_scale.js' %}"> </script>	
-		{% endif %}			
+		<script type="text/javascript" src="{% static 'mods/map_scaler.js' %}"> </script>							
 	{% endif %}
-
 
 </div>
 
