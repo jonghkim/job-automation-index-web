@@ -25,7 +25,7 @@ class JobAutomationIndexForm(forms.Form):
     #YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', '2008~2018'))
     YEARS = (('2019', '2019'),('2008', '2008'),('2008~2019', 'Change during 2008-2019'))
     
-    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:200px'}))
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))
 
 class SkillMap(forms.Form):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
@@ -48,11 +48,11 @@ class SkillMap(forms.Form):
 
     #YEARS = (('2008_2018', 'Evolution during 2008-2018'),('2018', '2018'),('2008', '2008'))
     YEARS = (('2019', '2019'),('2008', '2008'),('2008_2019', 'Change during 2008-2019'))
-    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:200px'}))
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))
 
 class AutomationRanking(forms.Form):
     YEARS = (('2019', '2019'),('2008', '2008'),('2008~2019', 'Change during 2008-2019'))
-    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:200px'}))        
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))        
 
 class MapForm(forms.Form):
     TYPES = (("Race with the Machine","Race with the Machine"), ("Race against the Machine","Race against the Machine"),
@@ -62,4 +62,4 @@ class MapForm(forms.Form):
 
     YEARS = (('2019', '2019'),('2008', '2008'),('2008~2019', 'Change during 2008-2019'))
     
-    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:200px'}))
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))
