@@ -598,6 +598,13 @@ def automation_index(request):
                     'task_automation':task_automation, 'year': year, 'job':job,
                     'form' : form, 'job_description':job_desc,'code':code})
 
+def skill_dna(request):
+    code = request.GET.get('code', '00-0000')
+    job = request.GET.get('job','TOTAL AVERAGE')
+    year = request.GET.get('year','2019')
+
+    return render(request, 'visualize/skill_dna.html', {'year':year, 'job':job, 'code':code})        
+  
 def skill_map(request):
     if request.method == 'POST':
         form = SkillMap(request.POST) 
