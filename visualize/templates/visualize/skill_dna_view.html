@@ -162,7 +162,7 @@
         ]);
 
         // Configure force layout
-        var force = d3.layout.force();
+        var force = d3.layout.force().gravity(0.04);
 
         queue()
             .defer(d3.json, "/static/data/network/{{ code|safe }}.json")
@@ -439,9 +439,9 @@
             .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", function(d) {
-                    if(d.automation_{{year}}*50 <3){
+                    if(d.automation_{{year}}*100 <3){
                         return minNodeSize;}
-                    else{return d.automation_{{year}}*50}
+                    else{return d.automation_{{year}}*100}
                 })
                 .style("fill", function(d) {return color(d.task_name);})
                 .classed("activeNode", true)
