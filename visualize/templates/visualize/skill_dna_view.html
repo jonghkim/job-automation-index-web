@@ -162,7 +162,7 @@
         ]);
 
         // Configure force layout
-        var force = d3.layout.force().gravity(0.04);
+        var force = d3.layout.force().gravity(0.045);
 
         queue()
             .defer(d3.json, "/static/data/network/{{ code|safe }}.json")
