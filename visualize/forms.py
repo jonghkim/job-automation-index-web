@@ -27,7 +27,7 @@ class JobAutomationIndexForm(forms.Form):
     
     year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))
 
-class SkillMap(forms.Form):
+class SkillDNA(forms.Form):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
     panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Family Code':str})
 

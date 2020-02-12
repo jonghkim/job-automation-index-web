@@ -12,7 +12,7 @@ import base64
 
 from django.http import JsonResponse
 
-from .forms import JobAutomationIndexForm, SkillMap, AutomationRanking, MapForm
+from .forms import JobAutomationIndexForm, SkillDNA, AutomationRanking, MapForm
 
 from django.conf import settings as djangoSettings
 import pandas as pd
@@ -598,30 +598,30 @@ def automation_index(request):
                     'task_automation':task_automation, 'year': year, 'job':job,
                     'form' : form, 'job_description':job_desc,'code':code})
 
-def skill_dna(request):
+def skill_dna_view(request):
     code = request.GET.get('code', '00-0000')
     job = request.GET.get('job','TOTAL AVERAGE')
     year = request.GET.get('year','2019')
 
-    return render(request, 'visualize/skill_dna.html', {'year':year, 'job':job, 'code':code})        
+    return render(request, 'visualize/skill_dna_view.html', {'year':year, 'job':job, 'code':code})        
   
-def skill_map(request):
+def skill_dna(request):
     if request.method == 'POST':
-        form = SkillMap(request.POST) 
+        form = SkillDNA(request.POST) 
         if form.is_valid():
             year = form.cleaned_data['year']
             code = form.cleaned_data['occupation']
             job, code, code_desc = code_description(code)
 
-            return render(request, 'visualize/skill_map.html', {'year':year, 'job':job, 'code':code,
+            return render(request, 'visualize/skill_dna.html', {'year':year, 'job':job, 'code':code,
                     'form': form, 'code_description':code_desc})        
     else:
-        form = SkillMap()
+        form = SkillDNA()
         year = '2019'
         code = '00-0000'
         job, code , code_desc = code_description()        
         
-        return render(request, 'visualize/skill_map.html', {'year':year, 'job':job, 'code':code,
+        return render(request, 'visualize/skill_dna.html', {'year':year, 'job':job, 'code':code,
                 'form': form, 'code_description':code_desc})    
 
 def automation_ranking(request):
