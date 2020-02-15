@@ -104,15 +104,19 @@
             });
         };
 
-        var scaleFactor = 1;
-        var translation = [0,0];
+        var scaleFactor = 0.6;
+        var translation = [250,150];
 
         var minNodeSize = 5;
         var smallCircleSize = 6;
         var largeCircleSize = 9;
 
-        var minWidthPoly1 = 300;
-        var minWidthPoly2 = 355;
+        //var minWidthPoly1 = 300;
+        //var minWidthPoly2 = 355;
+
+        var minWidthPoly1 = 310;
+        var minWidthPoly2 = 360;
+        
         var xMargin = 20;
         var yPosFaculty = 170;
         var yPosEntry = 90;
@@ -162,7 +166,7 @@
         ]);
 
         // Configure force layout
-        var force = d3.layout.force().gravity(0.04);
+        var force = d3.layout.force().gravity(0.015);
 
         queue()
             .defer(d3.json, "/static/data/network/{{ code|safe }}.json")
@@ -439,9 +443,9 @@
             .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", function(d) {
-                    if(d.automation_{{year}}*100 <3){
+                    if(d.automation_{{year}}*75 <3){
                         return minNodeSize;}
-                    else{return d.automation_{{year}}*100}
+                    else{return d.automation_{{year}}*75}
                 })
                 .style("fill", function(d) {return color(d.task_name);})
                 .classed("activeNode", true)
