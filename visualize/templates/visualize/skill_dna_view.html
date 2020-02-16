@@ -130,35 +130,52 @@
 
         // Linear size scale
         // var linearSize = d3.scale.linear().domain([0,1]).range([smallCircleSize, largeCircleSize]);
-        var taskClusterSize = d3.scale.ordinal().domain(["Race with the Machine","Race against the Machine","Race ahead of the Machine","Running a Different Race"]).range([largeCircleSize, largeCircleSize]);
+        var taskClusterSize = d3.scale.ordinal().domain([]).range([largeCircleSize, largeCircleSize]);
 
         // Initialize Ordinal Colour Scale
+
+        
+
         var color = d3.scale.ordinal()
-            .domain(["Interpersonal Task",
+            .domain(["Race with the Machine",
+                        "Interpersonal Task",
                         "Administrative Task and Communication",
+                        "line1",
+                        "Race against the Machine",
                         "Information Processing",
                         "Routine Problem Solving",
                         "Vehicle and Equipment Operation",
                         "Machine Control",
                         "Equipment Maintenance",
                         "General Physical Task",
+                        "line2",
+                        "Race ahead of the Machine",
                         "Systems Thinking",
                         "Creative and Critical Thinking",
+                        "line3",
+                        "Running a Different Race",
                         "Dynamic Physical Task",
                         "Hazardous and Group Task",
                         "Conflict Resolution",
                         "Management and Supervision"])
             .range([
+                "rgba(0, 0, 0, 0)",
                 "#009933", 
                 "#ff0000", 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",
                 "#003366", 
                 "#996633", 
                 "#ff9933", 
                 "#ffcccc", 
                 "#ff66ff", 
                 "#0000cc", 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",
                 "#00ccff", 
                 "#784212", 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",
                 "#F4D03F", 
                 "#C0392B", 
                 "#BB8FCE",
@@ -335,7 +352,7 @@
         // Instructions for clicking on filter
         var instructions = legendContainer.append("text")
             .attr("x", xMargin + 25)
-            .attr("y", 600)
+            .attr("y", 650)
             .style("fill", "#e8941a")
             .text("CLICK TO FILTER");
 
@@ -360,26 +377,33 @@
         var facultyTranslate = 0;
         legendContainer.append("g")
             .attr("class", "legendOrdinal")
-            .attr("transform", "translate("+ (xMargin+10) + ", 220)");
+            .attr("transform", "translate("+ (xMargin+10) + ", 90)");
 
         var legendOrdinal = d3.legend.color()
             .shape("circle")
             .shapePadding(legendTaskPadding)
             .scale(color)
-            .labels(["Interpersonal Task",
+            .labels(["Race with the Machine",
+                        "Interpersonal Task",
                         "Administrative Task and Communication",
+                        "",
+                        "Race against the Machine",
                         "Information Processing",
                         "Routine Problem Solving",
                         "Vehicle and Equipment Operation",
                         "Machine Control",
                         "Equipment Maintenance",
                         "General Physical Task",
+                        "",
+                        "Race ahead of the Machine",
                         "Systems Thinking",
                         "Creative and Critical Thinking",
+                        "",
+                        "Running a Different Race",
                         "Dynamic Physical Task",
                         "Hazardous and Group Task",
                         "Conflict Resolution",
-                        "Management and Supervision",
+                        "Management and Supervision"
                     ]);
 
         var taskLegend = legendContainer.select(".legendOrdinal")
