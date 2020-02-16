@@ -1,4 +1,21 @@
 {% load static %}
+<style>    
+.wrap {
+    width: 400;
+    height: 400;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100% !important;
+    height: 700px !important;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+</style>
+
 <div class="card mb-3">
     <div class="card-header">
         Skill DNA of {{ job }} 
@@ -12,13 +29,14 @@
         (Click a task to zoom-in skill components)
     </div>
     <!-- size of card -->
-    <div class="card-body" style="width:400; height:400;">
-        
+    <div class="card-body wrap">
+
         <!--<iframe src="{% url 'visualize:skill_dna'%}" scrolling="no" width="100%" height="700px" frameborder="0" tabindex="-1" allowfullscreen></iframe>-->
-        <iframe src="/skill_dna_view?year={{year}}&code={{code}}&job={{job}}" scrolling="no" width="100%" height="700px" frameborder="0" tabindex="-1" allowfullscreen></iframe>
+        <iframe src="/skill_dna_view?year={{year}}&code={{code}}&job={{job}}" scrolling="no" width="100%" height="700px" frameborder="0" tabindex="-1" allowfullscreen> 
+        </iframe>
         
     </div>
-    
+
     <div class="card-footer small text-muted">
     The size of each skill is proportional to its importance to an occupation. The darker-red color indicates higher degree of automation.</br></br>
     &middot; Race with the Machine: Interpersonal Task, Administrative Task</br>
