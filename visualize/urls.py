@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^task_level_automation/$', views.task_level_automation, name='task_level_automation'),
     url(r'^skill_dna/$', views.skill_dna, name='skill_dna'),        
     url(r'^skill_dna_view/$', views.skill_dna_view, name='skill_dna_view'),        
+    url(r'^skill_dna_view_mobile/$', views.skill_dna_view_mobile, name='skill_dna_view_mobile'),        
     url(r'^map_automation/$', views.map_automation, name='map_automation'),                
     url(r'^city_level_automation/$', views.city_level_automation, name='city_level_automation'),            
     url(r'^sitemap.xml/$', views.sitemap, name='sitemap'),
