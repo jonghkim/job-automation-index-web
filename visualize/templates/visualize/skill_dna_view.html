@@ -196,12 +196,14 @@
         /*** Configure zoom behaviour ***/
         var zoomer = d3.behavior.zoom()
                         .scaleExtent([0.1,10])
+                        .scale(scaleFactor)
+                        .translate(translation)
                 //allow 10 times zoom in or out
                         .on("zoom",zoom);
                 //define the event handler function
 
-        function zoom(d) {
 
+        function zoom(d) {            
             if (d3.event.sourceEvent && !nodeHighlighted){
                 d3.event.sourceEvent.stopPropagation();
             }
