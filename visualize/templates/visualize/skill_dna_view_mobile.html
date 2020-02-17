@@ -53,10 +53,10 @@
         fill-opacity: 0.6;
     }
     .legendContainer > text {
-        font-size: 30px;
+        font-size: 15px;
     }
     .legendContainer > text:nth-child(2) {
-        font-size: 20px;
+        font-size: 10px;
     }
     .legendContainer {
         padding: 0;
@@ -104,23 +104,20 @@
             });
         };
 
-        var scaleFactor = 0.6;
-        var translation = [0,0];
+        var scaleFactor = 0.12;
+        var translation = [window.innerWidth/3,window.innerWidth/3];
 
-        var minNodeSize = 5;
-        var smallCircleSize = 6;
-        var largeCircleSize = 9;
-
-        //var minWidthPoly1 = 300;
-        //var minWidthPoly2 = 355;
+        var minNodeSize = 2;
+        var smallCircleSize = 2;
+        var largeCircleSize = 4;
 
         var minWidthPoly1 = 0;
         var minWidthPoly2 = 0;
         
         var xMargin = 20;
-        var yPosFaculty = 170;
-        var yPosEntry = 90;
-        var yMargin = 20;
+        var yPosFaculty = 0;
+        var yPosEntry = 0;
+        var yMargin = 0;
         var legendTaskClusterPadding = 10;
         var legendTaskPadding = 5;
 
@@ -130,7 +127,7 @@
 
         // Linear size scale
         // var linearSize = d3.scale.linear().domain([0,1]).range([smallCircleSize, largeCircleSize]);
-        var taskClusterSize = d3.scale.ordinal().domain([]).range([largeCircleSize, largeCircleSize]);
+        var taskClusterSize = d3.scale.ordinal().domain(["Race with the Machine","Race against the Machine","Race ahead of the Machine","Running a Different Race"]).range([largeCircleSize, largeCircleSize]);
 
         // Initialize Ordinal Colour Scale
 
@@ -333,98 +330,6 @@
         var legendContainer = graph.append("g")
                         .attr("class", "legendContainer");
 
-        // Title of visualization
-
-        var vizTitle = legendContainer.append("text")
-            .attr("x", xMargin)
-            .attr("y", 0)
-            .style("fill", "#ffffff")
-            .append("tspan")
-            .attr("x", xMargin)
-            .attr("dy", 0)
-            .attr("y", yMargin)
-            .text("SKILL DNA OF")
-            .append("tspan")
-            .attr("x", xMargin)
-            .attr("dy", "30")
-            .text("{{job}}".toUpperCase());
-
-        // Instructions for clicking on filter
-        var instructions = legendContainer.append("text")
-            .attr("x", xMargin + 25)
-            .attr("y", 650)
-            .style("fill", "#e8941a")
-            .text("CLICK TO FILTER");
-
-        // Create a legend for entry-level programs
-        var entryTranslate = 0;
-        legendContainer.append("g")
-            .attr("class", "legendSize")
-            .attr("transform", "translate("+ (xMargin+10) + ", 70)");
-
-        var legendSize = d3.legend.size()
-            .scale(taskClusterSize)
-            .shape('circle')
-            .shapePadding(legendTaskClusterPadding)
-            .labels(["Race with the Machine","Race against the Machine","Race ahead of the Machine","Running a Different Race"])
-            .cells(4) // Number of objects (circles)
-            .ascending(true);
-
-        var entryLegend = legendContainer.select(".legendSize")
-            .call(legendSize);
-
-        // Create a legend for Faculties
-        var facultyTranslate = 0;
-        legendContainer.append("g")
-            .attr("class", "legendOrdinal")
-            .attr("transform", "translate("+ (xMargin+10) + ", 90)");
-
-        var legendOrdinal = d3.legend.color()
-            .shape("circle")
-            .shapePadding(legendTaskPadding)
-            .scale(color)
-            .labels(["Race with the Machine",
-                        "Interpersonal Task",
-                        "Administrative Task and Communication",
-                        "",
-                        "Race against the Machine",
-                        "Information Processing",
-                        "Routine Problem Solving",
-                        "Vehicle and Equipment Operation",
-                        "Machine Control",
-                        "Equipment Maintenance",
-                        "General Physical Task",
-                        "",
-                        "Race ahead of the Machine",
-                        "Systems Thinking",
-                        "Creative and Critical Thinking",
-                        "",
-                        "Running a Different Race",
-                        "Dynamic Physical Task",
-                        "Hazardous and Group Task",
-                        "Conflict Resolution",
-                        "Management and Supervision"
-                    ]);
-
-        var taskLegend = legendContainer.select(".legendOrdinal")
-            .call(legendOrdinal);
-
-        // Filtering by faculty or entry-level program
-        d3.selectAll("g.cell")
-            .on("click", function(d){
-                if (d3.event.defaultPrevented) return;
-                var self = this;
-                var activeLegends = d3.selectAll("g.cell");
-
-                activeLegends.filter(function (x) {return self != this;})
-                    .classed("active", false); // Set all other faculty filters to false
-
-                pinnedTooltip.style("opacity", 0);
-            //    zoomer.translate([20, 0]);
-
-                searchNode(d, this);
-            });
-
         // Create nodes for each unique source and target.
         var nodesByName = {};
         skill_edges.forEach(function(skill_edge) {
@@ -469,9 +374,9 @@
             .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", function(d) {
-                    if(d.automation_{{year}}*75 <3){
+                    if(d.automation_{{year}}*30 <minNodeSize){
                         return minNodeSize;}
-                    else{return d.automation_{{year}}*75}
+                    else{return d.automation_{{year}}*30}
                 })
                 .style("fill", function(d) {return color(d.task_name);})
                 .classed("activeNode", true)
@@ -596,20 +501,6 @@
             }
             var link = d3.selectAll(".link");
             if (!d3.select(gObject).classed("active")){
-    //                    var xAvg = 0, yAvg = 0;
-    //                    selectedNodes.each(function(d){
-    //                        xAvg += d.x;
-    //                        yAvg += d.y;
-    //                    });
-    //                    xAvg /= selectedNodes[0].length;
-    //                    yAvg /= selectedNodes[0].length;
-    //
-    //                    var xTrans = (window.innerWidth + 355)/2-xAvg;
-    //                    var yTrans = (500)/2-yAvg;
-    //
-    //                    d3.select(".plotting-area")
-    //                        .transition()
-    //                        .attr("transform", "translate("+xTrans+","+yTrans+")");
 
                 selectedNodes
                     .style("stroke-opacity", 1)
@@ -653,13 +544,13 @@
 
         // Update positions of nodes and links
         function tick() {
-            link.attr("x1", function(d) { return translation[0] + scaleFactor*d.source.x + (minWidthPoly1+minWidthPoly2)/4; })
-                .attr("y1", function(d) { return translation[1] + scaleFactor*d.source.y; })
-                .attr("x2", function(d) { return translation[0] + scaleFactor*d.target.x + (minWidthPoly1+minWidthPoly2)/4; })
-                .attr("y2", function(d) { return translation[1] + scaleFactor*d.target.y; });
+            link.attr("x1", function(d) { return translation[0] + scaleFactor*d.source.x })
+                .attr("y1", function(d) { return translation[1] + scaleFactor*d.source.y+ (minWidthPoly1)/4;})
+                .attr("x2", function(d) { return translation[0] + scaleFactor*d.target.x})
+                .attr("y2", function(d) { return translation[1] + scaleFactor*d.target.y+ (minWidthPoly1)/4;});
 
-            node.attr("cx", function(d) { return translation[0] + scaleFactor*d.x + (minWidthPoly1+minWidthPoly2)/4; })
-                .attr("cy", function(d) { return translation[1] + scaleFactor*d.y; });
+            node.attr("cx", function(d) { return translation[0] + scaleFactor*d.x})
+                .attr("cy", function(d) { return translation[1] + scaleFactor*d.y + (minWidthPoly2)/4; ; });
 
         }
 
@@ -670,22 +561,10 @@
         function resize() {
             width = window.innerWidth 
             //       + minWidthPoly2
-                , height = 700;//(window.innerHeight < 500 ? 500 : window.innerHeight);
+                , height =  window.innerHeight; //(width < 700 ? width : 700);//(window.innerHeight < 500 ? 500 : window.innerHeight);
             d3.select("svg").attr("width", width).attr("height", height);
             force.size([width, height]).resume();
 
-            rect.attr("x", minWidthPoly1);
-
-            points ="0,0 " + minWidthPoly1 + ",0 " +minWidthPoly2 + "," + height + " " + "0," + height;
-            polygon
-                .attr("points", points );
-
-            legendContainerHeight = d3.select("g.legendContainer").node().getBoundingClientRect().height;
-
-            legendContainer.attr("transform", "translate(0," + ((height-legendContainerHeight)/2) + ")");
-
-            polygon.moveToFront();
-            legendContainer.moveToFront();
             tick();
         }
     }
