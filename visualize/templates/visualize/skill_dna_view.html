@@ -498,9 +498,9 @@
                         tooltip.transition()
                     .duration(200)
                     .style("opacity", 0.9);
-                        tooltip.html(d.name)
+                        tooltip.html(d.task_name + ": " +d.name)
                     .style("right", "20px")
-                    .style("top", (nodeHighlighted?"65px":"20px"));
+                    .style("top", (nodeHighlighted?"95px":"45px"));
                     }
                 })
                 .on("mouseout", function(d){
@@ -561,9 +561,9 @@
             pinnedTooltip.transition()
                 .duration(200)
                 .style("opacity", 0.9);
-            pinnedTooltip.html(clickedOn.name) // Pin tooltip with name of clicked on node
+            pinnedTooltip.html(clickedOn.task_name + ": " + clickedOn.name) // Pin tooltip with name of clicked on node
                 .style("right", "20px")
-                .style("top", "20px");
+                .style("top", "45px");
             node.each(function(d){ // Allow for clicking back on previous baseNodes
                 d3.select(this).classed("baseNode", false);
             });
