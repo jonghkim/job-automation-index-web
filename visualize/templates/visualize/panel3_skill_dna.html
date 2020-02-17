@@ -42,8 +42,10 @@ $(function() {
             var wrapHeight = $wrap.height();
 
             if (wrapWidth < 400){
-                $wrap.children("iframe").attr('src', "/skill_dna_view_mobile?year={{year}}&code={{code}}&job={{job}}");
-
+                if ($wrap.children("iframe").attr('src') != "/skill_dna_view_mobile?year={{year}}&code={{code}}&job={{job}}"){
+                    $wrap.children("iframe").attr('src', "/skill_dna_view_mobile?year={{year}}&code={{code}}&job={{job}}");
+                }
+                
                 //$wrap.children("iframe").css({"width": "1500px"});  // set scale
 
                 var childWidth = $wrap.children("iframe").width(); // width of child iframe
@@ -58,6 +60,9 @@ $(function() {
 
 
             }else{
+                if ($wrap.children("iframe").attr('src') != "/skill_dna_view?year={{year}}&code={{code}}&job={{job}}"){
+                    $wrap.children("iframe").attr('src', "/skill_dna_view?year={{year}}&code={{code}}&job={{job}}");
+                }                
                 $wrap.children("iframe").css({"width": "100%"});  // set scale
                 $wrap.children("iframe").css({"transform": "scale(1.0)", "transform-origin": "left top" });  // set scale
             }
