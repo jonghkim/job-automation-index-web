@@ -326,12 +326,17 @@
         // Pinned tooltip
         var pinnedTooltip = d3.select("body").append("div")
             .attr("class", "tooltip pinned")
-            .style("opacity", 0);
+            .style("opacity", 0)
+            .style("line-height", '130%')
+            .style("text-align", 'right');
+
 
         // Tooptip in top left corner
         var tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
-            .style("opacity", "0");
+            .style("opacity", "0")
+            .style("line-height", '130%')
+            .style("text-align", 'right');
 
         // Container to hold legend elements
         var legendContainer = graph.append("g")
@@ -498,9 +503,9 @@
                         tooltip.transition()
                     .duration(200)
                     .style("opacity", 0.9);
-                        tooltip.html(d.task_name + ": " +d.name)
+                        tooltip.html(d.task_name + "<br>" +d.name)
                     .style("right", "20px")
-                    .style("top", (nodeHighlighted?"95px":"45px"));
+                    .style("top", (nodeHighlighted?"80px":"15px"));
                     }
                 })
                 .on("mouseout", function(d){
@@ -561,9 +566,9 @@
             pinnedTooltip.transition()
                 .duration(200)
                 .style("opacity", 0.9);
-            pinnedTooltip.html(clickedOn.task_name + ": " + clickedOn.name) // Pin tooltip with name of clicked on node
+            pinnedTooltip.html(clickedOn.task_name + "<br>" + clickedOn.name) // Pin tooltip with name of clicked on node
                 .style("right", "20px")
-                .style("top", "45px");
+                .style("top", "15px");
             node.each(function(d){ // Allow for clicking back on previous baseNodes
                 d3.select(this).classed("baseNode", false);
             });
