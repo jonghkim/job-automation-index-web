@@ -104,7 +104,7 @@
             });
         };
 
-        var scaleFactor = 0.12;
+        var scaleFactor = 0.14;
         var translation = [window.innerWidth/3,window.innerWidth/3];
 
         var minNodeSize = 2;
@@ -180,7 +180,7 @@
         ]);
 
         // Configure force layout
-        var force = d3.layout.force().gravity(0.015);
+        var force = d3.layout.force().gravity(0.013);
 
         queue()
             .defer(d3.json, "/static/data/network/{{ code|safe }}.json")
