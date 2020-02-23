@@ -1,4 +1,7 @@
 {% load static %}
+<link href="{% static 'css/select2.min.css' %}" rel="stylesheet" />
+<script src="{% static 'js/select2.min.js' %}" defer></script>
+
 <div class="card mb-3">
 <div class="card-header">
     Selection
@@ -17,6 +20,8 @@
 </div>
 
 <style>
+form {display:none;}
+
 #id_occupation{
     width: 300px;
 
@@ -34,3 +39,10 @@
     }    
 }
 </style>
+
+<script>
+    $(document).ready(function() {
+        $('.autocomplete').select2();
+        $('form').css("display","inline");  
+    });      
+</script>

@@ -1,4 +1,7 @@
 {% load static %}
+<link href="{% static 'css/select2.min.css' %}" rel="stylesheet" />
+<script src="{% static 'js/select2.min.js' %}" defer></script>
+
 <div class="card mb-3">
 <div class="card-header">
     Selection
@@ -8,11 +11,10 @@
     <form method="POST" class="post-form">
         {%csrf_token%}
         <!--{{form.as_table}}-->
-        
+                
         {% for field in form %}
         <tr><td>{{ field.label_tag }} {{field}}</td></tr> &nbsp;
         {% endfor %}
-
         <!--
             {% for field in form %}
             <tr><td>{{field}}</td></tr>
@@ -21,10 +23,13 @@
         -->
         <button type="submit" class="btn-primary" style="background-color:#13A2DC; border: none !important;">&nbsp;&nbsp; Submit &nbsp;&nbsp;</button>
     </form>
+
 </div>
 </div>
 
 <style>
+form {display:none;}
+
 #id_occupation{
     width: 300px;
 }
@@ -42,3 +47,9 @@
 }
 </style>
 
+<script>
+    $(document).ready(function() {
+        $('.autocomplete').select2();
+        $('form').css("display","inline");  
+    });        
+</script>

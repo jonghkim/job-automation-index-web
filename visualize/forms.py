@@ -20,12 +20,12 @@ class JobAutomationIndexForm(forms.Form):
 
         JOBS = JOBS + (('(SOC '+code+') '+df.iloc[0]['Job Family'], JOB),)
         
-    occupation = forms.ChoiceField(choices=JOBS, widget=forms.Select(attrs={'style': 'width:300px'}))
+    occupation = forms.ChoiceField(choices=JOBS, widget=forms.Select(attrs={'style': 'width:300px', 'class': 'autocomplete'}))
 
     #YEARS = (('2018', '2018'),('2008', '2008'),('2008~2018', '2008~2018'))
     YEARS = (('2019', '2019'),('2008', '2008'),('2008~2019', 'Change during 2008-2019'))
     
-    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px', 'class': 'autocomplete'}))
 
 class SkillDNA(forms.Form):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/jobs.csv'
@@ -44,22 +44,22 @@ class SkillDNA(forms.Form):
             JOB = JOB + ((r['Job Code'], r['Job Title']),)
         JOBS = JOBS + (('(SOC '+code+') '+df.iloc[0]['Job Family'], JOB),)
 
-    occupation = forms.ChoiceField(choices=JOBS, widget=forms.Select(attrs={'style': 'width:300px'}))
+    occupation = forms.ChoiceField(choices=JOBS, widget=forms.Select(attrs={'style': 'width:300px', 'class': 'autocomplete'}))
 
     #YEARS = (('2008_2018', 'Evolution during 2008-2018'),('2018', '2018'),('2008', '2008'))
     YEARS = (('2019', '2019'),('2008', '2008'),('2008_2019', 'Change during 2008-2019'))
-    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px', 'class': 'autocomplete'}))
 
 class AutomationRanking(forms.Form):
     YEARS = (('2019', '2019'),('2008', '2008'),('2008~2019', 'Change during 2008-2019'))
-    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))        
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px', 'class': 'autocomplete'}))        
 
 class MapForm(forms.Form):
     TYPES = (("Race with the Machine","Race with the Machine"), ("Race against the Machine","Race against the Machine"),
              ("Race ahead of the Machine","Race ahead of the Machine"),("Running a Different Race","Running a Different Race")) #("Changing the Course of a Race","Changing the Course of a Race")
 
-    relation_to_automation = forms.ChoiceField(choices=TYPES, widget=forms.Select(attrs={'style': 'width:300px'}))
+    relation_to_automation = forms.ChoiceField(choices=TYPES, widget=forms.Select(attrs={'style': 'width:300px', 'class': 'autocomplete'}))
 
     YEARS = (('2019', '2019'),('2008', '2008'),('2008~2019', 'Change during 2008-2019'))
     
-    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px'}))
+    year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px', 'class': 'autocomplete'}))
