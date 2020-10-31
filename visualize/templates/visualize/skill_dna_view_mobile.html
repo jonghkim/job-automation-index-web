@@ -130,43 +130,40 @@
         var taskClusterSize = d3.scale.ordinal().domain(["Race with the Machine","Race against the Machine","Race ahead of the Machine","Running a Different Race"]).range([largeCircleSize, largeCircleSize]);
 
         // Initialize Ordinal Colour Scale
-
-        
-
         var color = d3.scale.ordinal()
             .domain(["Race with the Machine",
-                        "Interpersonal Task",
-                        "Administrative Task and Communication",
+                        "Communication", 
+                        "Interpersonal Task" ,
+                        "Group Task",
                         "line1",
                         "Race against the Machine",
-                        "Information Processing",
-                        "Routine Problem Solving",
-                        "Vehicle and Equipment Operation",
-                        "Machine Control",
-                        "Equipment Maintenance",
+                        "Routine Problem Solving", 
+                        "Information Processing", 
+                        "Machine Control", 
                         "General Physical Task",
                         "line2",
                         "Race ahead of the Machine",
-                        "Systems Thinking",
+                        "Systems Analysis",
                         "Creative and Critical Thinking",
                         "line3",
                         "Running a Different Race",
                         "Dynamic Physical Task",
-                        "Hazardous and Group Task",
+                        "Equipment Maintenance",
+                        "Vehicle and Equipment Operation",
+                        "Hazardous Task",
                         "Conflict Resolution",
                         "Management and Supervision"])
             .range([
                 "rgba(0, 0, 0, 0)",
                 "#009933", 
                 "#ff0000", 
+                "#0000cc",
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
                 "#003366", 
                 "#996633", 
                 "#ff9933", 
                 "#ffcccc", 
-                "#ff66ff", 
-                "#0000cc", 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
                 "#00ccff", 
@@ -177,6 +174,8 @@
                 "#C0392B", 
                 "#BB8FCE",
                 "#2E86C1", 
+                "#ff66ff", 
+                "#b5b9ff",                 
         ]);
 
         // Configure force layout
@@ -349,16 +348,16 @@
         for (var node in skill_nodes.skill_list){
             nodeAttribute[skill_nodes.skill_list[node].skill_name] = {}
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2019'] = skill_nodes.skill_list[node]['automation_2019'];
-            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2008'] = skill_nodes.skill_list[node]['automation_2008'];
-            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2008_2019'] = skill_nodes.skill_list[node]['automation_2008_2019'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007'] = skill_nodes.skill_list[node]['automation_2007'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007_2019'] = skill_nodes.skill_list[node]['automation_2007_2019'];
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['task_name'] = skill_nodes.skill_list[node]['task_name'];
         }
 
         
         nodes.forEach(function(node){
             node.automation_2019 = nodeAttribute[node.name]['automation_2019'];
-            node.automation_2008 = nodeAttribute[node.name]['automation_2008'];
-            node.automation_2008_2019 = nodeAttribute[node.name]['automation_2008_2019'];
+            node.automation_2007 = nodeAttribute[node.name]['automation_2007'];
+            node.automation_2007_2019 = nodeAttribute[node.name]['automation_2007_2019'];
             node.task_name = nodeAttribute[node.name]['task_name'];
         });
         

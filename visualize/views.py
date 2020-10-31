@@ -45,18 +45,18 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/Panel 1.csv'
     panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Year':str})
 
-    if (year=='2019') or (year=='2008'):
+    if (year=='2019') or (year=='2007'):
         if job=='TOTAL AVERAGE':
             objects = ['Job Automation Index','Annual Wage']
         else:
             objects = ['Job Automation Index', 'Employment','Annual Wage']
-    elif year=='2008~2019':
+    elif year=='2007~2019':
         if job=='TOTAL AVERAGE':
             objects = ['Job Automation Index Change']
         else:
             objects = ['Job Automation Index Change', 'Wage Share Change']
 
-    if (year=='2019') or (year=='2008'):        
+    if (year=='2019') or (year=='2007'):        
         fig, axs = plt.subplots(len(objects), figsize=(7,len(objects)*1.3))
         
         for i, obj in enumerate(objects):
@@ -144,7 +144,7 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
 
         plt.tight_layout()
 
-    elif year=='2008~2019':
+    elif year=='2007~2019':
 
         if len(objects) == 2:
             fig, axs = plt.subplots(len(objects), figsize=(7,2*1.3))
@@ -257,7 +257,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
     csvpath = djangoSettings.STATICFILES_DIRS[0] +'/data/csv/Panel 2.csv'
     panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Year':str})
     
-    if year =='2019' or year=='2008':
+    if year =='2019' or year=='2007':
         """
         labels = np.array(["Operation Monitoring", "System Analysis", "Strategic Thinking","Conflict Resolution", 
                         "Communication", "Managerial Task",  "Clerical Task", "Information Processing", 
@@ -319,7 +319,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
 
             ax = fig.add_subplot(111, polar=True)
 
-            if year =='2019' or year=='2008':
+            if year =='2019' or year=='2007':
                 ax.plot(angles, focal_stats, 'o-', linewidth=2, color='#1f77b4', alpha=0.5)
                 ax.fill(angles, focal_stats, alpha=0.25, facecolor='#1f77b4')
             else:
@@ -347,7 +347,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
         ax_ytick[-1] = '30<'   
         ax.set_yticklabels(ax_ytick)
         
-    elif year=='2008~2019':
+    elif year=='2007~2019':
         """
         labels = np.array(["Hazardous and Group Task","Outdoor Labor","Dynamic Physical Task", "Physical Task",
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
@@ -425,7 +425,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
 
 """
 # Create your views here.
-def draw_task_importance(year='2008~2019', job='TOTAL AVERAGE'):    
+def draw_task_importance(year='2007~2019', job='TOTAL AVERAGE'):    
     #### TASK IMPORTANCE ####    
     csvpath = djangoSettings.STATICFILES_DIRS[0] +'/data/csv/Panel 2.csv'
     panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
@@ -448,7 +448,7 @@ def draw_task_importance(year='2008~2019', job='TOTAL AVERAGE'):
 
         ax = fig.add_subplot(111, polar=True)     
 
-        if year =='2019' or year=='2008':
+        if year =='2019' or year=='2007':
             ax.plot(angles, focal_stats, 'o-', linewidth=2)
             ax.fill(angles, focal_stats, alpha=0.25)
 
@@ -478,7 +478,7 @@ def draw_task_importance(year='2008~2019', job='TOTAL AVERAGE'):
 
         ax = fig.add_subplot(111, polar=True)
 
-        if year =='2019' or year=='2008':
+        if year =='2019' or year=='2007':
             ax.plot(angles, focal_stats, 'o-', linewidth=2)
             ax.fill(angles, focal_stats, alpha=0.25)
         else:
@@ -488,7 +488,7 @@ def draw_task_importance(year='2008~2019', job='TOTAL AVERAGE'):
         ax.grid(True)
         ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
-    if year =='2019' or year=='2008':
+    if year =='2019' or year=='2007':
         ax.set_rorigin(0)
         if max_ytick < 100:
             ax.set_ylim(0,100)
@@ -497,7 +497,7 @@ def draw_task_importance(year='2008~2019', job='TOTAL AVERAGE'):
             ax.set_ylim(0,150)
             ax.set_yticks(np.arange(0,150,10))
 
-    elif year=='2008~2019':
+    elif year=='2007~2019':
         ax.set_rorigin(-60)
         ax.set_ylim(-60,60)
         ax.set_yticks(np.arange(-60,60,10))

@@ -5,10 +5,12 @@ Far Vision,Depth Perception
 "Spend Time Climbing Ladders, Scaffolds, or Poles",Exposed to High Places
 Wrist-Finger Speed,Control Precision
 Written Comprehension,Reading Comprehension
+Written Comprehension,Written Expression
 Number Facility,Mathematical Reasoning
+Electronic Mail,Structured versus Unstructured Work
 Electronic Mail,"Indoors, Environmentally Controlled"
-Electronic Mail,Telephone
 Electronic Mail,Spend Time Sitting
+Electronic Mail,Telephone
 Electronic Mail,Written Expression
 Electronic Mail,Interacting With Computers
 Electronic Mail,Letters and Memos
@@ -18,13 +20,11 @@ Operations Analysis,Technology Design
 Operations Analysis,Systems Evaluation
 In an Open Vehicle or Equipment,Exposed to Whole Body Vibration
 In an Open Vehicle or Equipment,"Operating Vehicles, Mechanized Devices, or Equipment"
+"Guiding, Directing, and Motivating Subordinates",Coaching and Developing Others
 "Guiding, Directing, and Motivating Subordinates",Staffing Organizational Units
 "Guiding, Directing, and Motivating Subordinates",Coordinating the Work and Activities of Others
-"Guiding, Directing, and Motivating Subordinates","Judging the Qualities of Things, Services, or People"
-"Guiding, Directing, and Motivating Subordinates",Coaching and Developing Others
 Exposed to High Places,Extremely Bright or Inadequate Lighting
 Active Learning,Critical Thinking
-Active Learning,Freedom to Make Decisions
 Active Learning,Fluency of Ideas
 Active Learning,Learning Strategies
 Active Learning,Writing
@@ -34,9 +34,11 @@ Perceptual Speed,Flexibility of Closure
 Spatial Orientation,Peripheral Vision
 Consequence of Error,"Inspecting Equipment, Structures, or Material"
 "Inspecting Equipment, Structures, or Material",Controlling Machines and Processes
-Depth Perception,Reaction Time
+"Inspecting Equipment, Structures, or Material","Monitor Processes, Materials, or Surroundings"
+Depth Perception,Response Orientation
 Learning Strategies,Public Speaking
 Learning Strategies,Memorization
+Learning Strategies,Monitoring
 Learning Strategies,Instructing
 Getting Information,Updating and Using Relevant Knowledge
 Installation,Repairing
@@ -50,10 +52,8 @@ Visual Color Discrimination,Quality Control Analysis
 Deal With Physically Aggressive People,Deal With Unpleasant or Angry People
 Deal With Physically Aggressive People,Assisting and Caring for Others
 Systems Analysis,Systems Evaluation
-Written Expression,Reading Comprehension
 Written Expression,Active Listening
 Written Expression,Writing
-Extremely Bright or Inadequate Lighting,"Cramped Work Space, Awkward Positions"
 Extremely Bright or Inadequate Lighting,Glare Sensitivity
 Exposed to Disease or Infections,Physical Proximity
 Exposed to Disease or Infections,Assisting and Caring for Others
@@ -64,7 +64,7 @@ Dynamic Flexibility,Dynamic Strength
 Telephone,Communicating with Persons Outside Organization
 Originality,Thinking Creatively
 Originality,Fluency of Ideas
-Gross Body Equilibrium,Explosive Strength
+Gross Body Equilibrium,Spend Time Keeping or Regaining Balance
 Gross Body Equilibrium,Gross Body Coordination
 Evaluating Information to Determine Compliance with Standards,Making Decisions and Solving Problems
 Operation Monitoring,Hearing Sensitivity
@@ -75,11 +75,9 @@ Systems Evaluation,Provide Consultation and Advice to Others
 Level of Competition,Thinking Creatively
 "Estimating the Quantifiable Characteristics of Products, Events, or Information","Monitor Processes, Materials, or Surroundings"
 Developing and Building Teams,"Communicating with Supervisors, Peers, or Subordinates"
-Developing and Building Teams,Coordination
 Developing and Building Teams,Coordinating the Work and Activities of Others
 Management of Financial Resources,Management of Material Resources
 Speech Recognition,Speech Clarity
-Spend Time Bending or Twisting the Body,Spend Time Keeping or Regaining Balance
 Spend Time Bending or Twisting the Body,Extent Flexibility
 Spend Time Bending or Twisting the Body,"Spend Time Kneeling, Crouching, Stooping, or Crawling"
 Provide Consultation and Advice to Others,Developing Objectives and Strategies
@@ -93,7 +91,7 @@ Equipment Maintenance,Repairing
 Equipment Maintenance,Repairing and Maintaining Mechanical Equipment
 Equipment Maintenance,Troubleshooting
 Auditory Attention,Hearing Sensitivity
-Monitoring,Instructing
+Instructing,Training and Teaching Others
 Manual Dexterity,Multilimb Coordination
 Manual Dexterity,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls"
 Manual Dexterity,Finger Dexterity
@@ -104,7 +102,6 @@ Importance of Being Exact or Accurate,Time Pressure
 Programming,Interacting With Computers
 Mathematical Reasoning,Analyzing Data or Information
 Mathematical Reasoning,Mathematics
-"Monitor Processes, Materials, or Surroundings","Identifying Objects, Actions, and Events"
 Social Perceptiveness,Speech Clarity
 Social Perceptiveness,Persuasion
 Social Perceptiveness,Service Orientation
@@ -114,7 +111,7 @@ Coordinate or Lead Others,Responsibility for Outcomes and Results
 Coordinate or Lead Others,Work With Work Group or Team
 Spend Time Walking and Running,Spend Time Standing
 Operation and Control,Controlling Machines and Processes
-Operation and Control,Rate Control
+Operation and Control,Reaction Time
 Performing Administrative Activities,Letters and Memos
 Time Management,Management of Personnel Resources
 Oral Expression,Oral Comprehension
@@ -125,17 +122,21 @@ Responsible for Others' Health and Safety,"Wear Common Protective or Safety Equi
 Judgment and Decision Making,Complex Problem Solving
 Resolving Conflicts and Negotiating with Others,Negotiation
 Resolving Conflicts and Negotiating with Others,Frequency of Conflict Situations
-Performing for or Working Directly with the Public,Deal With External Customers
+Exposed to Hazardous Equipment,Reaction Time
+Exposed to Hazardous Equipment,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets"
 Spend Time Making Repetitive Motions,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls"
-Writing,Interpreting the Meaning of Information for Others
 Stamina,Speed of Limb Movement
 Stamina,Gross Body Coordination
+Stamina,Explosive Strength
 Stamina,Static Strength
 Equipment Selection,Repairing
+"Spend Time Kneeling, Crouching, Stooping, or Crawling","Cramped Work Space, Awkward Positions"
 Persuasion,Negotiation
 Persuasion,Selling or Influencing Others
+Frequency of Decision Making,Frequency of Conflict Situations
 Frequency of Decision Making,Impact of Decisions on Co-workers or Company Results
 Active Listening,Oral Comprehension
+Exposed to Contaminants,"Sounds, Noise Levels Are Distracting or Uncomfortable"
 Exposed to Contaminants,Exposed to Hazardous Conditions
 Exposed to Contaminants,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets"
 Management of Material Resources,Monitoring and Controlling Resources
@@ -146,16 +147,18 @@ Exposed to Hazardous Conditions,"Wear Specialized Protective or Safety Equipment
 Frequency of Conflict Situations,Deal With Unpleasant or Angry People
 Training and Teaching Others,Coaching and Developing Others
 Making Decisions and Solving Problems,Updating and Using Relevant Knowledge
+Making Decisions and Solving Problems,"Judging the Qualities of Things, Services, or People"
 Making Decisions and Solving Problems,"Identifying Objects, Actions, and Events"
 Response Orientation,Reaction Time
 Science,Inductive Reasoning
 Very Hot or Cold Temperatures,"Outdoors, Exposed to Weather"
-Interpreting the Meaning of Information for Others,Updating and Using Relevant Knowledge
 Interpreting the Meaning of Information for Others,Analyzing Data or Information
+Interpreting the Meaning of Information for Others,Updating and Using Relevant Knowledge
 Deal With External Customers,Service Orientation
-Structured versus Unstructured Work,Pace Determined by Speed of Equipment
-"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",Exposed to Hazardous Equipment
+Deal With External Customers,Performing for or Working Directly with the Public
+Structured versus Unstructured Work,Freedom to Make Decisions
 Time Sharing,Problem Sensitivity
+Analyzing Data or Information,Inductive Reasoning
 Speed of Closure,Flexibility of Closure
 Speed of Closure,Problem Sensitivity
 Face-to-Face Discussions,Work With Work Group or Team
@@ -168,12 +171,9 @@ Deductive Reasoning,Inductive Reasoning
 Deductive Reasoning,Problem Sensitivity
 Staffing Organizational Units,Monitoring and Controlling Resources
 Reaction Time,Rate Control
-Reaction Time,Exposed to Hazardous Equipment
-"Sounds, Noise Levels Are Distracting or Uncomfortable",Exposed to Hazardous Equipment
 Handling and Moving Objects,Performing General Physical Activities
 Rate Control,Pace Determined by Speed of Equipment
 Repairing and Maintaining Mechanical Equipment,Repairing and Maintaining Electronic Equipment
-Problem Sensitivity,Impact of Decisions on Co-workers or Company Results
 Night Vision,Sound Localization
 Extent Flexibility,Static Strength
 Static Strength,Multilimb Coordination

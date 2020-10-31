@@ -1,183 +1,183 @@
-Skill Id,Skill Name,Task,2019 Automation Level,2008 Automation Level,Change during 2008-2019
-4.A.3.b.1,Interacting With Computers,Administrative Task and Communication,0.608170101204322,0.632423424012091,-0.02425332280776893
-2.B.3.e,Programming,Administrative Task and Communication,0.588503255311108,0.560940945867143,0.027562309443964983
-4.C.2.d.1.a,Spend Time Sitting,Administrative Task and Communication,0.572815911288249,0.588515863466811,-0.015699952178561905
-4.A.4.c.1,Performing Administrative Activities,Administrative Task and Communication,0.550240096999138,0.536964576654014,0.013275520345124026
-4.C.1.a.2.j,Letters and Memos,Administrative Task and Communication,0.531585042923248,0.505102710568589,0.02648233235465902
-4.C.2.a.1.a,"Indoors, Environmentally Controlled",Administrative Task and Communication,0.527936154425913,0.545075909515824,-0.017139755089910946
-1.A.1.a.2,Written Comprehension,Administrative Task and Communication,0.516990594356164,0.537304326699265,-0.020313732343100965
-4.C.1.a.2.f,Telephone,Administrative Task and Communication,0.513346756075969,0.480807028121753,0.032539727954216
-2.A.1.a,Reading Comprehension,Administrative Task and Communication,0.502187521773681,0.490861622691107,0.011325899082573976
-4.C.1.a.2.h,Electronic Mail,Administrative Task and Communication,0.491849150609952,0.526335682782177,-0.034486532172225026
-1.A.1.a.1,Oral Comprehension,Administrative Task and Communication,0.488210913144641,0.50089237392638,-0.012681460781738985
-1.A.1.a.4,Written Expression,Administrative Task and Communication,0.483764063223431,0.51263174067223,-0.028867677448799034
-2.A.1.b,Active Listening,Administrative Task and Communication,0.474894039376605,0.454179292433937,0.020714746942668005
-1.A.1.a.3,Oral Expression,Administrative Task and Communication,0.457635769315215,0.468904695137849,-0.011268925822634002
-2.A.1.d,Speaking,Administrative Task and Communication,0.449878067270376,0.395858813181932,0.05401925408844399
-4.A.4.a.3,Communicating with Persons Outside Organization,Administrative Task and Communication,0.446223818235269,0.443633427208716,0.0025903910265530072
-4.C.1.d.2,Deal With Unpleasant or Angry People,Conflict Resolution,0.558359854191715,0.554738236161144,0.003621618030570928
-4.C.1.d.1,Frequency of Conflict Situations,Conflict Resolution,0.540854078540045,0.5204034317217,0.020450646818344964
-4.C.2.c.1.a,Exposed to Radiation,Conflict Resolution,0.519879707023748,0.49082925454365,0.029050452480097966
-4.A.4.a.7,Resolving Conflicts and Negotiating with Others,Conflict Resolution,0.509386854295262,0.452982210960501,0.05640464333476097
-4.C.1.d.3,Deal With Physically Aggressive People,Conflict Resolution,0.483979623306641,0.467303111058559,0.01667651224808203
-2.B.1.d,Negotiation,Conflict Resolution,0.476845387317419,0.44670434631319,0.030141041004228986
-4.C.2.a.3,Physical Proximity,Conflict Resolution,0.432591393257944,0.406134760870411,0.026456632387532986
-4.C.2.c.1.b,Exposed to Disease or Infections,Conflict Resolution,0.431274865052254,0.402904470581615,0.028370394470638993
-4.A.4.a.5,Assisting and Caring for Others,Conflict Resolution,0.427232913575518,0.396936600364038,0.03029631321148002
-2.A.2.d,Monitoring,Creative and Critical Thinking,0.485310102985854,0.447985458129674,0.03732464485617998
-2.A.2.a,Critical Thinking,Creative and Critical Thinking,0.470018684530548,0.435326439529149,0.034692245001399
-4.C.3.c.1,Level of Competition,Creative and Critical Thinking,0.463355333833049,0.471142382297506,-0.0077870484644569915
-1.A.1.d.1,Memorization,Creative and Critical Thinking,0.448598093861787,0.496910572147433,-0.048312478285646
-2.A.2.b,Active Learning,Creative and Critical Thinking,0.419451623027954,0.43218615909418,-0.012734536066225988
-1.A.1.b.1,Fluency of Ideas,Creative and Critical Thinking,0.399844880433699,0.419432465544642,-0.019587585110942995
-2.B.1.e,Instructing,Creative and Critical Thinking,0.388201651454704,0.40989586643563,-0.021694214980925997
-4.C.1.a.2.c,Public Speaking,Creative and Critical Thinking,0.38210147055632,0.393804172467017,-0.011702701910697
-1.A.1.b.2,Originality,Creative and Critical Thinking,0.379642395039213,0.401645688091705,-0.02200329305249199
-2.A.2.c,Learning Strategies,Creative and Critical Thinking,0.374530008497625,0.438616915685437,-0.06408690718781196
-4.C.3.a.4,Freedom to Make Decisions,Creative and Critical Thinking,0.374490011112719,0.418757701742576,-0.04426769062985697
-4.A.2.b.2,Thinking Creatively,Creative and Critical Thinking,0.322617100163821,0.35823724657989,-0.035620146416068976
-4.C.2.d.1.d,Spend Time Walking and Running,Dynamic Physical Task,0.495129812512502,0.476341630266856,0.01878818224564599
-1.A.2.c.3,Speed of Limb Movement,Dynamic Physical Task,0.48149448279575,0.455986664188598,0.02550781860715201
-1.A.3.c.2,Dynamic Flexibility,Dynamic Physical Task,0.450301132779676,0.432292956939228,0.018008175840448004
-1.A.3.a.2,Explosive Strength,Dynamic Physical Task,0.444051088048133,0.414877052815849,0.029174035232283957
-4.C.2.d.1.b,Spend Time Standing,Dynamic Physical Task,0.441730214538926,0.427115285783777,0.014614928755149026
-1.A.3.a.3,Dynamic Strength,Dynamic Physical Task,0.438519689820765,0.40752653849345,0.030993151327315005
-1.A.3.b.1,Stamina,Dynamic Physical Task,0.437376613487163,0.423301396010034,0.014075217477128976
-1.A.3.c.3,Gross Body Coordination,Dynamic Physical Task,0.426952890377346,0.414532193779413,0.01242069659793299
-1.A.3.c.4,Gross Body Equilibrium,Dynamic Physical Task,0.426115831835491,0.413197301837035,0.012918529998455996
-1.A.3.a.4,Trunk Strength,Dynamic Physical Task,0.42418561872853,0.420146215763214,0.004039402965316019
-1.A.1.e.3,Perceptual Speed,Equipment Maintenance,0.628766743478875,0.606896578214036,0.02187016526483898
-2.B.3.g,Operation Monitoring,Equipment Maintenance,0.582206325427133,0.590392908738697,-0.008186583311563966
-2.B.3.m,Quality Control Analysis,Equipment Maintenance,0.539890688976876,0.561942489340293,-0.02205180036341703
-4.A.3.b.5,Repairing and Maintaining Electronic Equipment,Equipment Maintenance,0.534056243518723,0.515788826674599,0.01826741684412403
-1.A.1.g.1,Selective Attention,Equipment Maintenance,0.523511104075215,0.562550193781412,-0.03903908970619707
-1.A.1.e.2,Flexibility of Closure,Equipment Maintenance,0.523071379986386,0.533117373714498,-0.01004599372811199
-1.A.4.b.2,Auditory Attention,Equipment Maintenance,0.52305243318926,0.52173326524808,0.0013191679411800328
-2.B.3.k,Troubleshooting,Equipment Maintenance,0.514229112114315,0.508163313188512,0.0060657989258029454
-2.B.3.j,Equipment Maintenance,Equipment Maintenance,0.512287577973528,0.49842580713054,0.013861770842987953
-4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,Equipment Maintenance,0.506743774189879,0.492690722875311,0.014053051314568021
-2.B.3.l,Repairing,Equipment Maintenance,0.490950151883324,0.476338423908219,0.014611727975105016
-1.A.4.b.1,Hearing Sensitivity,Equipment Maintenance,0.489564497735266,0.490943286656153,-0.0013787889208869974
-4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",Equipment Maintenance,0.487267422256758,0.487204545002237,6.28772545210321e-05
-2.B.3.c,Equipment Selection,Equipment Maintenance,0.469754297162432,0.427603366714516,0.04215093044791601
-1.A.4.a.3,Visual Color Discrimination,Equipment Maintenance,0.462592246537363,0.471117907141622,-0.008525660604258967
-2.B.3.d,Installation,Equipment Maintenance,0.452416376668456,0.453334553128328,-0.0009181764598719666
-1.A.1.f.2,Visualization,Equipment Maintenance,0.422280945051397,0.444197899955046,-0.021916954903648977
-4.C.2.d.1.i,Spend Time Making Repetitive Motions,General Physical Task,0.572622377620256,0.606822196980363,-0.034199819360106964
-4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",General Physical Task,0.529711653409873,0.520471715479844,0.009239937930028974
-1.A.2.a.3,Finger Dexterity,General Physical Task,0.513600656794249,0.5133704169062,0.00023023988804904416
-1.A.2.a.2,Manual Dexterity,General Physical Task,0.485295436892191,0.478502740240543,0.006792696651648
-4.A.3.a.2,Handling and Moving Objects,General Physical Task,0.470047642625061,0.456742946537541,0.013304696087519996
-1.A.2.b.2,Multilimb Coordination,General Physical Task,0.457353224033274,0.435804203022943,0.021549021010331015
-4.C.2.d.1.h,Spend Time Bending or Twisting the Body,General Physical Task,0.451319458404011,0.458559205376447,-0.007239746972436012
-1.A.3.a.1,Static Strength,General Physical Task,0.445203297428812,0.438565992296083,0.006637305132728977
-1.A.3.c.1,Extent Flexibility,General Physical Task,0.438996219550016,0.42560209812095,0.013394121429065986
-4.A.3.a.1,Performing General Physical Activities,General Physical Task,0.436070021637,0.415125433141444,0.02094458849555597
-4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,General Physical Task,0.419312357768001,0.409619480663683,0.009692877104318043
-4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling",General Physical Task,0.412287151839955,0.406025821489186,0.006261330350769034
-4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",Hazardous and Group Task,0.559747405563968,0.575770785192988,-0.016023379629020007
-4.C.1.b.1.e,Work With Work Group or Team,Hazardous and Group Task,0.550847746892065,0.541744181147256,0.009103565744808972
-1.A.2.c.1,Reaction Time,Hazardous and Group Task,0.540661862698134,0.521093851001778,0.019568011696356025
-4.C.1.c.2,Responsibility for Outcomes and Results,Hazardous and Group Task,0.539453747714385,0.551150980557696,-0.011697232843310923
-4.C.2.c.1.e,Exposed to Hazardous Equipment,Hazardous and Group Task,0.519761722693856,0.507906436214912,0.01185528647894396
-4.C.2.b.1.d,Exposed to Contaminants,Hazardous and Group Task,0.502382717330451,0.498821316247058,0.0035614010833930343
-4.C.1.c.1,Responsible for Others' Health and Safety,Hazardous and Group Task,0.501373557519087,0.473011668587611,0.028361888931475954
-4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",Hazardous and Group Task,0.501367290287758,0.470251512011313,0.03111577827644496
-4.C.1.b.1.g,Coordinate or Lead Others,Hazardous and Group Task,0.491122551538106,0.490639133475848,0.0004834180622580453
-4.C.2.c.1.d,Exposed to Hazardous Conditions,Hazardous and Group Task,0.490041198153747,0.491752812414476,-0.0017116142607289664
-4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",Hazardous and Group Task,0.483602940317535,0.452840960680116,0.030761979637419
-1.A.4.a.6,Depth Perception,Hazardous and Group Task,0.480473305697954,0.467422292816364,0.013051012881589996
-4.C.1.a.2.l,Face-to-Face Discussions,Hazardous and Group Task,0.476410143869606,0.483374485486572,-0.006964341616966019
-4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings",Hazardous and Group Task,0.466832897280948,0.461010375990339,0.005822521290609006
-1.A.4.a.2,Far Vision,Hazardous and Group Task,0.42928076212738,0.464206928115344,-0.034926165987964
-4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,Information Processing,0.623949602309176,0.569722427172142,0.0542271751370339
-4.A.2.a.2,Processing Information,Information Processing,0.599769046781379,0.626121908767856,-0.026352861986477016
-1.A.1.c.2,Number Facility,Information Processing,0.59383227460431,0.582126657405754,0.011705617198556006
-1.A.1.c.1,Mathematical Reasoning,Information Processing,0.590200586435222,0.589420016487177,0.0007805699480449846
-2.A.1.e,Mathematics,Information Processing,0.584075669361987,0.555263283589648,0.02881238577233891
-4.A.1.a.2,"Monitor Processes, Materials, or Surroundings",Information Processing,0.556102839667474,0.519003528734942,0.03709931093253194
-4.A.3.b.6,Documenting/Recording Information,Information Processing,0.546638174721553,0.545139880050981,0.0014982946705719424
-4.A.1.a.1,Getting Information,Information Processing,0.537047705982493,0.53277233108468,0.0042753748978129336
-4.A.2.a.4,Analyzing Data or Information,Information Processing,0.527997428097532,0.53436041475246,-0.00636298665492796
-4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",Information Processing,0.521304432152494,0.493216121770973,0.028088310381520987
-4.A.1.b.1,"Identifying Objects, Actions, and Events",Information Processing,0.483666655595491,0.488777496667534,-0.005110841072043015
-4.A.2.b.1,Making Decisions and Solving Problems,Information Processing,0.482518594563501,0.447790035350637,0.034728559212863996
-2.A.1.c,Writing,Information Processing,0.475920851727999,0.470631461709235,0.005289390018763995
-4.A.4.a.1,Interpreting the Meaning of Information for Others,Information Processing,0.45596412913501,0.462466893330194,-0.006502764195183974
-4.A.2.b.3,Updating and Using Relevant Knowledge,Information Processing,0.450582170633967,0.454072274112347,-0.0034901034783800244
-4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",Interpersonal Task,0.564304137921505,0.560741603346254,0.0035625345752510196
-2.B.5.a,Time Management,Interpersonal Task,0.489070173690078,0.416219553256517,0.072850620433561
-4.A.4.b.2,Developing and Building Teams,Interpersonal Task,0.488628002918963,0.451520856864259,0.037107146054704
-1.A.4.b.4,Speech Recognition,Interpersonal Task,0.488577772780409,0.501868332183658,-0.013290559403249025
-2.B.5.d,Management of Personnel Resources,Interpersonal Task,0.488555388785654,0.439272513368344,0.049282875417310024
-4.C.1.a.4,Contact With Others,Interpersonal Task,0.484409294436179,0.494539635064017,-0.010130340627837964
-2.B.1.b,Coordination,Interpersonal Task,0.462462835258302,0.411841507462868,0.05062132779543399
-4.C.1.b.1.f,Deal With External Customers,Interpersonal Task,0.459293119014452,0.458649530620251,0.0006435883942010334
-4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,Interpersonal Task,0.455545958496296,0.442915482894086,0.012630475602209978
-2.B.1.c,Persuasion,Interpersonal Task,0.455320344467255,0.412695998556109,0.042624345911146
-4.A.4.a.6,Selling or Influencing Others,Interpersonal Task,0.451913760407101,0.420473267435542,0.03144049297155904
-1.A.4.b.5,Speech Clarity,Interpersonal Task,0.451488985908163,0.466085089430365,-0.014596103522201975
-2.B.1.f,Service Orientation,Interpersonal Task,0.435795305729748,0.478819610246052,-0.04302430451630401
-2.B.1.a,Social Perceptiveness,Interpersonal Task,0.432813644528181,0.403363433123081,0.029450211405100013
-4.A.4.a.8,Performing for or Working Directly with the Public,Interpersonal Task,0.414836921246758,0.399040217881672,0.015796703365085984
-4.C.3.d.3,Pace Determined by Speed of Equipment,Machine Control,0.687556000216215,0.695336392710252,-0.007780392494037058
-4.C.3.b.8,Structured versus Unstructured Work,Machine Control,0.592529884533951,0.553519216820996,0.039010667712954916
-4.C.3.a.1,Consequence of Error,Machine Control,0.581571389901401,0.536034493093627,0.04553689680777395
-4.A.3.a.3,Controlling Machines and Processes,Machine Control,0.574020725309824,0.548192287274615,0.025828438035208956
-1.A.2.b.4,Rate Control,Machine Control,0.570760152357352,0.549835628998429,0.02092452335892303
-2.B.3.h,Operation and Control,Machine Control,0.565053359335656,0.610140616928289,-0.04508725759263299
-1.A.2.c.2,Wrist-Finger Speed,Machine Control,0.535377194176445,0.546190149094106,-0.010812954917660988
-1.A.2.b.1,Control Precision,Machine Control,0.534596511162792,0.514125265594795,0.020471245567997065
-4.A.1.b.2,"Inspecting Equipment, Structures, or Material",Machine Control,0.521511640792581,0.47467822333738,0.04683341745520103
-1.A.2.a.1,Arm-Hand Steadiness,Machine Control,0.483732807623968,0.465032973365456,0.01869983425851196
-2.B.5.b,Management of Financial Resources,Management and Supervision,0.525472744949822,0.443212546504136,0.082260198445686
-4.A.4.c.2,Staffing Organizational Units,Management and Supervision,0.495224829394542,0.471377581476061,0.023847247918480974
-4.A.4.c.3,Monitoring and Controlling Resources,Management and Supervision,0.484274697397865,0.45611336978755,0.02816132761031498
-4.A.4.b.1,Coordinating the Work and Activities of Others,Management and Supervision,0.479325833456041,0.460944322825162,0.018381510630879005
-2.B.5.c,Management of Material Resources,Management and Supervision,0.468685260337789,0.420059146485809,0.04862611385198001
-4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",Management and Supervision,0.462123760830654,0.439083983664616,0.023039777166038
-4.A.2.a.1,"Judging the Qualities of Things, Services, or People",Management and Supervision,0.437913459726468,0.417452293074549,0.020461166651918994
-4.A.4.b.5,Coaching and Developing Others,Management and Supervision,0.428155998396745,0.410076049200521,0.01807994919622402
-4.A.4.b.3,Training and Teaching Others,Management and Supervision,0.417981473287903,0.404849120699868,0.013132352588035023
-4.C.3.b.7,Importance of Repeating Same Tasks,Routine Problem Solving,0.744779456063239,0.758524163146567,-0.013744707083327978
-4.C.3.b.4,Importance of Being Exact or Accurate,Routine Problem Solving,0.658729602298494,0.658185114051348,0.0005444882471459245
-4.C.3.d.1,Time Pressure,Routine Problem Solving,0.592142188931468,0.595300163550177,-0.0031579746187090363
-4.C.3.a.2.a,Impact of Decisions on Co-workers or Company Results,Routine Problem Solving,0.541938949952567,0.498595468089841,0.04334348186272596
-4.C.3.a.2.b,Frequency of Decision Making,Routine Problem Solving,0.539677506532765,0.518869049627671,0.02080845690509403
-1.A.1.b.6,Information Ordering,Routine Problem Solving,0.533915154580739,0.578877702831408,-0.04496254825066903
-1.A.1.e.1,Speed of Closure,Routine Problem Solving,0.52181077742147,0.513844750234823,0.007966027186646962
-1.A.4.a.1,Near Vision,Routine Problem Solving,0.514013939887797,0.57128154575512,-0.057267605867323046
-1.A.1.b.7,Category Flexibility,Routine Problem Solving,0.505235026590964,0.533611837259502,-0.028376810668538033
-1.A.1.b.3,Problem Sensitivity,Routine Problem Solving,0.498480370262017,0.493418067617139,0.005062302644878003
-1.A.1.g.2,Time Sharing,Routine Problem Solving,0.473016422470584,0.492789952648347,-0.01977353017776301
-1.A.1.b.4,Deductive Reasoning,Routine Problem Solving,0.471311915923046,0.489641452936767,-0.018329537013720976
-1.A.1.b.5,Inductive Reasoning,Routine Problem Solving,0.455397816195687,0.465026714275113,-0.009628898079426018
-2.A.1.f,Science,Routine Problem Solving,0.439853344461574,0.386663472836361,0.05318987162521299
-2.B.4.g,Systems Analysis,Systems Thinking,0.493504235274167,0.545826867314466,-0.052322632040298966
-2.B.4.h,Systems Evaluation,Systems Thinking,0.471397978152156,0.548594491208526,-0.07719651305636999
-2.B.3.a,Operations Analysis,Systems Thinking,0.466418948097692,0.50519224669958,-0.03877329860188794
-2.B.4.e,Judgment and Decision Making,Systems Thinking,0.466274084075912,0.441205994755817,0.025068089320094966
-4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",Systems Thinking,0.464105771269651,0.47341516215974,-0.009309390890088975
-4.A.4.b.6,Provide Consultation and Advice to Others,Systems Thinking,0.452410918382114,0.429232031545976,0.023178886836138002
-2.B.2.i,Complex Problem Solving,Systems Thinking,0.449748354240316,0.448796267959103,0.000952086281213016
-2.B.3.b,Technology Design,Systems Thinking,0.445365958440096,0.483841120715394,-0.03847516227529796
-4.A.2.b.5,Scheduling Work and Activities,Systems Thinking,0.402996867500847,0.418337527078429,-0.015340659577581961
-4.A.2.b.4,Developing Objectives and Strategies,Systems Thinking,0.390144970151823,0.407273662570978,-0.017128692419155045
-4.C.2.b.1.b,Very Hot or Cold Temperatures,Vehicle and Equipment Operation,0.513357220211073,0.488048845455619,0.025308374755454
-1.A.4.a.4,Night Vision,Vehicle and Equipment Operation,0.510835934109064,0.467874668121945,0.042961265987119024
-1.A.2.b.3,Response Orientation,Vehicle and Equipment Operation,0.508647777982045,0.495027236196045,0.013620541785999973
-4.C.2.c.1.c,Exposed to High Places,Vehicle and Equipment Operation,0.499290661551561,0.484598849238213,0.014691812313347985
-1.A.4.a.5,Peripheral Vision,Vehicle and Equipment Operation,0.498935229737543,0.463886608671659,0.03504862106588402
-4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",Vehicle and Equipment Operation,0.49618190239506,0.468269213541845,0.027912688853215017
-4.C.2.a.1.e,In an Open Vehicle or Equipment,Vehicle and Equipment Operation,0.49605860226079,0.486848263864518,0.009210338396272
-1.A.4.a.7,Glare Sensitivity,Vehicle and Equipment Operation,0.493509663128595,0.471268652340235,0.022241010788359994
-1.A.4.b.3,Sound Localization,Vehicle and Equipment Operation,0.490292563300538,0.4681226886049,0.022169874695638025
-1.A.1.f.1,Spatial Orientation,Vehicle and Equipment Operation,0.489691020122217,0.469230342038578,0.020460678083638995
-4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",Vehicle and Equipment Operation,0.489418065250009,0.472600677459134,0.01681738779087505
-4.C.2.b.1.f,Exposed to Whole Body Vibration,Vehicle and Equipment Operation,0.480484406235064,0.453116159040053,0.02736824719501102
-4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,Vehicle and Equipment Operation,0.47219713282464,0.468450088463844,0.0037470443607959814
-4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles",Vehicle and Equipment Operation,0.459888228462507,0.447733107527477,0.012155120935029962
-4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",Vehicle and Equipment Operation,0.447541778228999,0.449804660737734,-0.00226288250873502
-4.C.2.a.1.c,"Outdoors, Exposed to Weather",Vehicle and Equipment Operation,0.437941074507881,0.42439025449181,0.013550820016070997
-4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,Vehicle and Equipment Operation,0.437726910088716,0.434173200173981,0.003553709914735026
-4.C.2.a.1.d,"Outdoors, Under Cover",Vehicle and Equipment Operation,0.423597017602976,0.432631988629428,-0.009034971026451954
+Skill Id,Skill Name,Task,2019 Automation Level,2007 Automation Level,Change during 2007-2019
+2.A.2.b,Active Learning,Creative and Critical Thinking,0.410292314255206,0.426174905989092,-0.01588259173388601
+1.A.2.c.2,Wrist-Finger Speed,Machine Control,0.546389936017079,0.548566245515652,-0.002176309498573059
+1.A.1.c.2,Number Facility,Information Processing,0.586414630673911,0.576459708253506,0.009954922420404966
+4.C.1.a.2.h,Electronic Mail,Communication,0.487913611880281,0.521616382561558,-0.03370277068127697
+4.C.2.a.1.e,In an Open Vehicle or Equipment,Vehicle and Equipment Operation,0.49055145808413,0.483999058712512,0.006552399371618001
+4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",Management and Supervision,0.447351404910932,0.437057591129307,0.010293813781625027
+4.C.2.c.1.c,Exposed to High Places,Vehicle and Equipment Operation,0.505673422187991,0.487172607884307,0.018500814303684054
+4.A.1.b.2,"Inspecting Equipment, Structures, or Material",Machine Control,0.532932850631321,0.486357050667609,0.04657579996371203
+1.A.4.a.6,Depth Perception,Vehicle and Equipment Operation,0.492618436084833,0.474552191419756,0.018066244665077003
+4.C.1.d.3,Deal With Physically Aggressive People,Conflict Resolution,0.470448950915807,0.469566985833901,0.0008819650819060221
+1.A.1.a.4,Written Expression,Communication,0.47284352336918,0.508666919130722,-0.03582339576154203
+4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,Vehicle and Equipment Operation,0.479674455297287,0.471296364423875,0.008378090873411959
+4.C.2.c.1.b,Exposed to Disease or Infections,Conflict Resolution,0.439633552534324,0.407843803575655,0.03178974895866904
+2.B.3.g,Operation Monitoring,Routine Problem Solving,0.596147119778706,0.602883974137367,-0.006736854358661004
+4.C.3.c.1,Level of Competition,Creative and Critical Thinking,0.460042799518362,0.469838483050289,-0.009795683531927002
+4.C.2.d.1.h,Spend Time Bending or Twisting the Body,General Physical Task,0.463752127663962,0.462599878288164,0.001152249375797998
+4.A.4.b.6,Provide Consultation and Advice to Others,Systems Analysis,0.431386123305694,0.425689567522032,0.005696555783661961
+4.A.4.a.3,Communicating with Persons Outside Organization,Communication,0.432461800844423,0.439848402220377,-0.007386601375954038
+1.A.2.b.1,Control Precision,Machine Control,0.550097116407543,0.522863123296878,0.02723399311066499
+1.A.4.b.2,Auditory Attention,Routine Problem Solving,0.53341629691513,0.528705957635048,0.004710339280082021
+1.A.1.b.1,Fluency of Ideas,Creative and Critical Thinking,0.393660427655524,0.412238352506293,-0.01857792485076898
+1.A.2.a.2,Manual Dexterity,General Physical Task,0.503399667611279,0.482982045038084,0.02041762257319496
+2.B.3.e,Programming,Communication,0.58875422781385,0.561772975647971,0.02698125216587899
+4.A.1.a.2,"Monitor Processes, Materials, or Surroundings",Machine Control,0.553287853042865,0.523822128517168,0.029465724525696957
+2.B.1.a,Social Perceptiveness,Interpersonal Task,0.417846735875154,0.395938577870954,0.021908158004199985
+4.C.2.d.1.d,Spend Time Walking and Running,Dynamic Physical Task,0.502385503117651,0.482589035403154,0.019796467714496946
+2.B.5.a,Time Management,Interpersonal Task,0.482416543473792,0.412983716472572,0.06943282700122
+2.B.4.e,Judgment and Decision Making,Systems Analysis,0.451628191005767,0.445399454647303,0.006228736358463993
+2.A.2.d,Monitoring,Creative and Critical Thinking,0.473531240750543,0.448540359631698,0.024990881118844954
+1.A.3.b.1,Stamina,Dynamic Physical Task,0.445180900167513,0.428979791697405,0.016201108470107972
+2.B.3.c,Equipment Selection,Equipment Maintenance,0.481593116624859,0.429209737264419,0.05238337936043996
+2.B.4.h,Systems Evaluation,Systems Analysis,0.46016905045105,0.547334648678503,-0.08716559822745301
+4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling",General Physical Task,0.420565047084476,0.40956725602047,0.010997791064006002
+4.A.3.b.1,Interacting With Computers,Communication,0.60337908901336,0.628886998792404,-0.025507909779043936
+1.A.1.d.1,Memorization,Creative and Critical Thinking,0.441071347354098,0.488337943343945,-0.047266595989847004
+4.C.2.b.1.d,Exposed to Contaminants,Hazardous Task,0.512495175322187,0.503072791220878,0.009422384101309023
+4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",Vehicle and Equipment Operation,0.491325547077626,0.46642336655995,0.02490218051767601
+2.B.2.i,Complex Problem Solving,Systems Analysis,0.440699961565345,0.445661308668802,-0.00496134710345697
+4.A.2.b.3,Updating and Using Relevant Knowledge,Information Processing,0.442434865583906,0.450890319618057,-0.008455454034150989
+4.C.2.c.1.d,Exposed to Hazardous Conditions,Hazardous Task,0.498493995352751,0.496750154763401,0.0017438405893500097
+4.C.1.d.1,Frequency of Conflict Situations,Conflict Resolution,0.529112610976579,0.517813092336422,0.011299518640156991
+1.A.2.c.3,Speed of Limb Movement,Dynamic Physical Task,0.49516400377751,0.464539528949326,0.030624474828184034
+4.A.4.b.3,Training and Teaching Others,Management and Supervision,0.415301556599659,0.404075915707054,0.011225640892605027
+4.A.2.b.1,Making Decisions and Solving Problems,Information Processing,0.369225128065332,0.434157305949726,-0.06493217788439404
+4.C.3.b.7,Importance of Repeating Same Tasks,Routine Problem Solving,0.754262032380391,0.762777037007011,-0.008515004626620026
+4.A.4.a.1,Interpreting the Meaning of Information for Others,Information Processing,0.438285450979859,0.451985299217598,-0.01369984823773901
+4.A.4.a.5,Assisting and Caring for Others,Conflict Resolution,0.424557863453374,0.398252901784158,0.026304961669215976
+4.A.2.b.2,Thinking Creatively,Creative and Critical Thinking,0.312978520817212,0.348246934650481,-0.03526841383326901
+4.A.2.a.1,"Judging the Qualities of Things, Services, or People",Information Processing,0.422858030067284,0.419810101233335,0.0030479288339489985
+4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",Machine Control,0.514874339587453,0.496141706226687,0.01873263336076597
+1.A.1.g.2,Time Sharing,Routine Problem Solving,0.468299682406626,0.491286559269759,-0.022986876863133
+4.C.2.d.1.a,Spend Time Sitting,Communication,0.56337916607779,0.584617349777112,-0.021238183699321955
+4.A.2.a.4,Analyzing Data or Information,Information Processing,0.518240715295898,0.529274004720415,-0.011033289424516979
+4.C.2.d.1.b,Spend Time Standing,Dynamic Physical Task,0.448518175002713,0.432724572371822,0.015793602630891024
+1.A.1.e.1,Speed of Closure,Routine Problem Solving,0.515296142621596,0.508482858289252,0.006813284332343961
+4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",Management and Supervision,0.554846118509962,0.559084115182075,-0.004237996672112998
+1.A.1.b.6,Information Ordering,Routine Problem Solving,0.524519033252734,0.571735401154161,-0.047216367901427025
+1.A.1.b.4,Deductive Reasoning,Routine Problem Solving,0.45753665214538,0.487694615696549,-0.03015796355116901
+2.B.3.b,Technology Design,Systems Analysis,0.447770358043513,0.487463255494193,-0.03969289745068
+1.A.1.g.1,Selective Attention,Routine Problem Solving,0.526896397175291,0.560854840166684,-0.033958442991392945
+1.A.3.a.2,Explosive Strength,Dynamic Physical Task,0.439684545679422,0.412931999272178,0.026752546407244004
+1.A.2.c.1,Reaction Time,Hazardous Task,0.550781431241863,0.529910590353684,0.02087084088817892
+1.A.3.c.3,Gross Body Coordination,Dynamic Physical Task,0.434848048312131,0.420967788610137,0.013880259701993969
+2.B.3.m,Quality Control Analysis,Equipment Maintenance,0.556506597489893,0.568935599742145,-0.012429002252252075
+4.A.4.c.3,Monitoring and Controlling Resources,Management and Supervision,0.475409463460526,0.452881320276296,0.022528143184229965
+1.A.1.b.3,Problem Sensitivity,Routine Problem Solving,0.487546334639845,0.49343138988501,-0.005885055245165027
+1.A.4.a.4,Night Vision,Vehicle and Equipment Operation,0.519054425658837,0.475587041776749,0.043467383882087984
+1.A.4.b.1,Hearing Sensitivity,Routine Problem Solving,0.50326842360787,0.4980269227169,0.00524150089097003
+2.B.3.l,Repairing,Equipment Maintenance,0.502164210193,0.484542358470548,0.017621851722451953
+2.B.1.f,Service Orientation,Interpersonal Task,0.428222213932352,0.474979189089143,-0.046756975156791
+4.C.1.a.2.c,Public Speaking,Creative and Critical Thinking,0.367368257212057,0.385604708032309,-0.018236450820251993
+4.C.3.d.1,Time Pressure,Routine Problem Solving,0.591098295001716,0.597312022767611,-0.006213727765895016
+4.C.1.b.1.g,Coordinate or Lead Others,Group Task,0.484687146220643,0.479546467605971,0.00514067861467199
+4.A.3.b.5,Repairing and Maintaining Electronic Equipment,Equipment Maintenance,0.541593890807668,0.524134024256348,0.017459866551319925
+4.A.2.b.5,Scheduling Work and Activities,Systems Analysis,0.385424065538703,0.414173873108476,-0.028749807569772967
+4.C.2.c.1.e,Exposed to Hazardous Equipment,Hazardous Task,0.52126403005108,0.510941339033196,0.010322691017883967
+1.A.2.b.2,Multilimb Coordination,General Physical Task,0.468474489856582,0.4424847767193,0.025989713137282044
+4.A.2.b.4,Developing Objectives and Strategies,Systems Analysis,0.367761960185257,0.403707771746562,-0.03594581156130505
+4.A.3.a.3,Controlling Machines and Processes,Machine Control,0.582704076091999,0.558875849524462,0.023828226567537025
+4.C.2.a.1.c,"Outdoors, Exposed to Weather",Vehicle and Equipment Operation,0.437969678237555,0.425155239586354,0.012814438651201021
+4.A.3.a.1,Performing General Physical Activities,General Physical Task,0.4429352485114,0.423375006336534,0.01956024217486596
+4.C.1.d.2,Deal With Unpleasant or Angry People,Conflict Resolution,0.55113050992696,0.556845312691825,-0.0057148027648650235
+4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,Interpersonal Task,0.437665482000984,0.436338739363617,0.0013267426373669844
+4.C.1.a.2.j,Letters and Memos,Communication,0.523134684483333,0.502959609541032,0.020175074942300975
+4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,Equipment Maintenance,0.513676366704996,0.500444451480076,0.013231915224919955
+4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",Systems Analysis,0.450263873452878,0.465290949279778,-0.015027075826899994
+1.A.1.f.2,Visualization,Equipment Maintenance,0.436047487698418,0.44183585970289,-0.00578837200447202
+1.A.4.a.2,Far Vision,Vehicle and Equipment Operation,0.43796451248377,0.464599391705132,-0.026634879221361984
+4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles",Vehicle and Equipment Operation,0.464473690751749,0.447817194275302,0.016656496476447014
+1.A.1.a.2,Written Comprehension,Communication,0.505452315918679,0.531126864219008,-0.025674548300329003
+4.A.4.a.7,Resolving Conflicts and Negotiating with Others,Conflict Resolution,0.487189728523921,0.451594866466142,0.03559486205777901
+2.B.3.a,Operations Analysis,Systems Analysis,0.454917470081253,0.506278184804937,-0.05136071472368403
+1.A.1.e.3,Perceptual Speed,Routine Problem Solving,0.630001912320342,0.605869382887726,0.024132529432616012
+1.A.1.f.1,Spatial Orientation,Vehicle and Equipment Operation,0.493225205639497,0.47071483719407,0.02251036844542703
+4.C.3.a.1,Consequence of Error,Machine Control,0.584771820105623,0.545425727350211,0.03934609275541201
+2.A.2.c,Learning Strategies,Creative and Critical Thinking,0.466414886119986,0.446639118456738,0.01977576766324801
+4.A.1.a.1,Getting Information,Information Processing,0.519285656489963,0.52123488046376,-0.001949223973796932
+2.B.3.d,Installation,Equipment Maintenance,0.461968163229038,0.457400480483744,0.0045676827452940105
+4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",Vehicle and Equipment Operation,0.496964083115684,0.473627832111509,0.023336251004175024
+4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings",Hazardous Task,0.471534877613225,0.466776384735015,0.004758492878210008
+1.A.4.a.5,Peripheral Vision,Vehicle and Equipment Operation,0.504717063678242,0.468425804117889,0.036291259560353006
+4.C.2.a.1.a,"Indoors, Environmentally Controlled",Communication,0.533444201109925,0.548305872197517,-0.014861671087592065
+2.B.4.g,Systems Analysis,Systems Analysis,0.484073832326165,0.547120994613154,-0.06304716228698898
+2.A.1.c,Writing,Creative and Critical Thinking,0.461902965834952,0.467849141728451,-0.005946175893498995
+1.A.3.c.2,Dynamic Flexibility,Dynamic Physical Task,0.455049850934648,0.431416287840014,0.02363356309463399
+1.A.3.c.4,Gross Body Equilibrium,Dynamic Physical Task,0.431387541819728,0.416522125878659,0.014865415941068993
+4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,Information Processing,0.606119494518354,0.572140937063771,0.033978557454583
+4.C.1.a.2.f,Telephone,Communication,0.511300490548073,0.479944632877261,0.031355857670812004
+2.B.3.j,Equipment Maintenance,Equipment Maintenance,0.523422336228755,0.512222308848694,0.011200027380060984
+4.A.4.b.2,Developing and Building Teams,Management and Supervision,0.474392798647642,0.450018221199479,0.024374577448163015
+2.B.5.b,Management of Financial Resources,Management and Supervision,0.518447959660373,0.438282671234792,0.08016528842558107
+1.A.4.a.1,Near Vision,Routine Problem Solving,0.519485592130912,0.569935289284994,-0.050449697154081985
+4.C.2.b.1.b,Very Hot or Cold Temperatures,Vehicle and Equipment Operation,0.515003529804047,0.487669847430425,0.027333682373621937
+4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,Vehicle and Equipment Operation,0.437998125605971,0.433649723672475,0.0043484019334960045
+4.A.2.a.2,Processing Information,Information Processing,0.592028836967701,0.620605183609707,-0.028576346642005923
+2.A.1.d,Speaking,Communication,0.43531259690725,0.389066963876634,0.04624563303061602
+2.A.1.b,Active Listening,Communication,0.459248341186218,0.44760046426139,0.011647876924827993
+4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",General Physical Task,0.549518818583096,0.525410582193223,0.024108236389873028
+4.C.1.a.4,Contact With Others,Interpersonal Task,0.473591510844088,0.49110917081854,-0.017517659974451982
+4.C.3.b.4,Importance of Being Exact or Accurate,Routine Problem Solving,0.672703872514604,0.659228071549827,0.013475800964776963
+1.A.1.c.1,Mathematical Reasoning,Information Processing,0.578338437962931,0.583094238263581,-0.004755800300649926
+4.C.3.a.4,Freedom to Make Decisions,Communication,0.377660021023073,0.415720761454387,-0.03806074043131402
+1.A.4.a.7,Glare Sensitivity,Vehicle and Equipment Operation,0.500533135361875,0.477680085215015,0.022853050146860066
+2.B.3.h,Operation and Control,Machine Control,0.577666687613546,0.62011070052164,-0.042444012908093964
+4.A.4.c.1,Performing Administrative Activities,Communication,0.532804523287746,0.536180117092253,-0.0033755938045070266
+1.A.1.a.3,Oral Expression,Communication,0.444651772057867,0.464667812841038,-0.020016040783170985
+1.A.3.a.3,Dynamic Strength,Dynamic Physical Task,0.449377736608942,0.412690103296511,0.03668763331243097
+2.B.3.k,Troubleshooting,Equipment Maintenance,0.531836848448876,0.520336339085282,0.011500509363594036
+4.C.1.c.1,Responsible for Others' Health and Safety,Hazardous Task,0.501103402528511,0.475922093109916,0.025181309418595033
+1.A.2.a.1,Arm-Hand Steadiness,Machine Control,0.503621187789045,0.471442566909403,0.03217862087964196
+4.C.2.d.1.i,Spend Time Making Repetitive Motions,General Physical Task,0.585982678513056,0.609648829180219,-0.023666150667163044
+1.A.3.a.4,Trunk Strength,Dynamic Physical Task,0.435681564489432,0.423942975295768,0.011738589193663995
+1.A.1.b.2,Originality,Creative and Critical Thinking,0.372961404565984,0.393727159157432,-0.020765754591448027
+4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,Dynamic Physical Task,0.422980686373522,0.410138931556338,0.01284175481718397
+2.B.1.c,Persuasion,Interpersonal Task,0.441969282002336,0.406555671692485,0.03541361030985096
+4.C.3.a.2.b,Frequency of Decision Making,Conflict Resolution,0.533781327646742,0.523500534867269,0.010280792779473025
+2.B.1.e,Instructing,Management and Supervision,0.377997181237401,0.411816529304757,-0.03381934806735598
+2.B.5.c,Management of Material Resources,Management and Supervision,0.471804326409142,0.422735530342184,0.04906879606695802
+2.A.1.a,Reading Comprehension,Communication,0.488055178622174,0.48537618713676,0.0026789914854140062
+4.C.2.a.3,Physical Proximity,Conflict Resolution,0.430157612135417,0.402960345133488,0.027197267001928982
+1.A.1.a.1,Oral Comprehension,Communication,0.471215849452242,0.495502136497418,-0.02428628704517599
+4.C.2.a.1.d,"Outdoors, Under Cover",Vehicle and Equipment Operation,0.425138232047482,0.43016135178597,-0.005023119738487958
+4.A.3.a.2,Handling and Moving Objects,General Physical Task,0.47893211593851,0.464151917605141,0.014780198333368966
+1.A.2.b.3,Response Orientation,Vehicle and Equipment Operation,0.517238516400603,0.503612716631118,0.01362579976948508
+2.A.1.f,Science,Information Processing,0.439211765976472,0.389013993997032,0.050197771979439976
+4.A.1.b.1,"Identifying Objects, Actions, and Events",Information Processing,0.469387103863491,0.48875979298737,-0.019372689123879017
+4.C.1.b.1.f,Deal With External Customers,Interpersonal Task,0.457566287705448,0.452493597212951,0.0050726904924969785
+4.C.3.b.8,Structured versus Unstructured Work,Communication,0.406477963333741,0.440253748590811,-0.033775785257070035
+4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",Hazardous Task,0.507818636247922,0.478151975002895,0.029666661245026982
+4.A.4.b.5,Coaching and Developing Others,Management and Supervision,0.41575119911695,0.406428273877336,0.009322925239614033
+1.A.1.e.2,Flexibility of Closure,Routine Problem Solving,0.527283165536958,0.53252071574377,-0.005237550206812047
+4.C.1.a.2.l,Face-to-Face Discussions,Group Task,0.467520887570702,0.472782178289527,-0.005261290718825029
+2.B.1.b,Coordination,Interpersonal Task,0.448524795465574,0.407754941317858,0.040769854147716
+1.A.4.b.5,Speech Clarity,Interpersonal Task,0.434127670446313,0.463874260543559,-0.029746590097246006
+4.A.4.c.2,Staffing Organizational Units,Management and Supervision,0.482755897783789,0.470238373383802,0.012517524399987046
+4.C.1.b.1.e,Work With Work Group or Team,Group Task,0.545690888535063,0.532809262517104,0.012881626017958947
+4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",Hazardous Task,0.564327083406969,0.580085501517488,-0.015758418110518924
+2.A.1.e,Mathematics,Information Processing,0.574723478013781,0.55506520318855,0.01965827482523097
+2.B.5.d,Management of Personnel Resources,Interpersonal Task,0.472967152439484,0.43830828915099,0.03465886328849399
+1.A.2.b.4,Rate Control,Hazardous Task,0.579049680000433,0.558739980045737,0.020309699954696003
+4.A.4.b.1,Coordinating the Work and Activities of Others,Management and Supervision,0.45991996674927,0.457102556384199,0.0028174103650709936
+4.C.2.c.1.a,Exposed to Radiation,Conflict Resolution,0.527831679084824,0.494784563830391,0.03304711525443299
+1.A.4.a.3,Visual Color Discrimination,Equipment Maintenance,0.483501899967154,0.47579325129609,0.007708648671063967
+1.A.3.c.1,Extent Flexibility,General Physical Task,0.448492947402493,0.430928759823939,0.01756418757855399
+4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",Hazardous Task,0.486443217752424,0.452105108349351,0.03433810940307297
+1.A.4.b.4,Speech Recognition,Interpersonal Task,0.470114002325893,0.496493267992995,-0.02637926566710197
+1.A.1.b.5,Inductive Reasoning,Information Processing,0.44288616081494,0.462394743258511,-0.01950858244357101
+4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",Equipment Maintenance,0.487821448212051,0.489439292046802,-0.0016178438347509982
+1.A.3.a.1,Static Strength,General Physical Task,0.451289245113306,0.442496226446749,0.008793018666556962
+4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",General Physical Task,0.456974849243611,0.452030881976611,0.004943967266999971
+4.A.4.a.8,Performing for or Working Directly with the Public,Interpersonal Task,0.402569388991909,0.398162265727113,0.004407123264796031
+1.A.1.b.7,Category Flexibility,Routine Problem Solving,0.494769576354231,0.527073802370497,-0.032304226016265924
+2.B.1.d,Negotiation,Conflict Resolution,0.459038122020016,0.445418896618092,0.013619225401924007
+4.C.2.b.1.f,Exposed to Whole Body Vibration,Vehicle and Equipment Operation,0.472539309998309,0.451428962848859,0.021110347149450037
+4.C.1.c.2,Responsibility for Outcomes and Results,Group Task,0.533713681824681,0.542677421708153,-0.008963739883471988
+2.A.2.a,Critical Thinking,Creative and Critical Thinking,0.4578748665443,0.43096981646524,0.026905050079059967
+4.A.3.b.6,Documenting/Recording Information,Information Processing,0.540868169642748,0.543254213469408,-0.002386043826660078
+4.C.3.d.3,Pace Determined by Speed of Equipment,Hazardous Task,0.69318530098403,0.699896907349093,-0.006711606365063072
+4.C.3.a.2.a,Impact of Decisions on Co-workers or Company Results,Conflict Resolution,0.534621072611964,0.501767700792304,0.03285337181965997
+1.A.4.b.3,Sound Localization,Vehicle and Equipment Operation,0.501656390252738,0.47395244622026,0.027703944032478
+4.A.4.a.6,Selling or Influencing Others,Interpersonal Task,0.435431826472765,0.417427767546065,0.01800405892670004
+1.A.2.a.3,Finger Dexterity,General Physical Task,0.526508874671767,0.515289472825048,0.01121940184671899

@@ -13,32 +13,32 @@
         <p style="text-align: right;">-	Peter Drucker</p>
 Anxiety about automation is prevalent in this era of rapid technological advances especially in artificial intelligence, machine learning, and robotics. Although there have been doom-laden prophecies about new technology and automation replacing human tasks and wiping out a large number of jobs at least since the Industrial Revolution two centuries ago, recent technological advances in performing sophisticated and complex tasks differentiate the 21st century from previous ones.</br></br>
 
-Given that technology directly affects the demand for specific skills, instead of acting on whole occupations, the impacts of automation technology vary widely according to task types. Thus, it is important to understand the types of tasks that are more, or less, susceptible to technological advances; as Peter Drucker stated, “proper measurement of information will lead to advances in effectiveness and performance of management.” To this end, we initiated this research project to empirically explore the evolution of task automation during 2008-2019.</br></br>
+Given that technology directly affects the demand for specific skills, instead of acting on whole occupations, the impacts of automation technology vary widely according to task types. Thus, it is important to understand the types of tasks that are more, or less, susceptible to technological advances; as Peter Drucker stated, “proper measurement of information will lead to advances in effectiveness and performance of management.” To this end, we initiated this research project to empirically explore the evolution of task automation during 2007-2019.</br></br>
 
 For a data-driven exploration of the race between human tasks (man) and automation technology (machine), we introduce a network-based methodology that reveals the latent task types across occupations. We then measure the task-level degree of automation and evaluate task complementarity, or substitutability, with the demands for occupations in which such a task is performed. As a result, we classify the revealed task types into distinct categories according to their relations to automation technology and labor demands in the 21st century.</br></br>
 
 <img src="{% static 'img/task_taxanomy.jpg' %}" class="img-fluid"></br></br>
 
 <ul>
-<li> Race with the Machine: Tasks that have experienced in the increase in degree of automation but complemented labor demands during 2008-2019 </li>
-<li> Race against the Machine: Tasks that have experienced in the increase in degree of automation and substituted labor demands during 2008-2019 </li>
-<li> Race ahead of the Machine: Tasks that have experienced in the decrease in degree of automation and complemented labor demands during 2008-2019 </li>
-<li> Running a Different Race: Tasks that are seemingly unrelated to labor demands during 2008-2019, regardless of changes in degree of automation </li>
+<li> Race with the Machine: Tasks that have experienced in the increase in degree of automation but complemented labor demands during 2007-2019 </li>
+<li> Race against the Machine: Tasks that have experienced in the increase in degree of automation and substituted labor demands during 2007-2019 </li>
+<li> Race ahead of the Machine: Tasks that have experienced in the decrease in degree of automation and complemented labor demands during 2007-2019 </li>
+<li> Running a Different Race: Tasks that are seemingly unrelated to labor demands during 2007-2019, regardless of changes in degree of automation </li>
 </ul>
 
 Based on our analysis, we provide this online system to encourage further research and policy discussions on the societal challenge of automation and the future of work. This tool provides the task-level susceptibility to automation across occupations and cities in the United States. The task-level decomposition of automation level will provide a more granular understanding of how technical advances and automation affect occupations and our communities.</br></br>
 This system consists of five functions, the first three of which are at occupation level and the last two at city level:</br></br>
 <p style="text-align: left;">
     &nbsp; (1)	<a href="{% url 'visualize:automation_index'%}">Job Automation Index </a></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize an occupation’s relations to automation during 2008-2019</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize an occupation’s relations to automation during 2007-2019</br>
     &nbsp; (2)	<a href="{% url 'visualize:task_level_automation'%}">Task-Level Automation </a></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all occupations by task-level susceptibility to automation during 2008-2019</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all occupations by task-level susceptibility to automation during 2007-2019</br>
     &nbsp; (3)	<a href="{% url 'visualize:skill_dna'%}">Skill DNA of Jobs</a></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize an occupation’s skill requirements and skill-level susceptibility to automation during 2008-2019</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize an occupation’s skill requirements and skill-level susceptibility to automation during 2007-2019</br>
     &nbsp; (4)	<a href="{% url 'visualize:map_automation'%}">Automation Map (U.S. Cities)</a></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize a city’s relations to automation in the United States during 2008-2019</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize a city’s relations to automation in the United States during 2007-2019</br>
     &nbsp; (5)	<a href="{% url 'visualize:city_level_automation'%}">City-Level Automation</a></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all U.S. cities by task-level susceptibility to automation during 2008-2019</br>    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all U.S. cities by task-level susceptibility to automation during 2007-2019</br>    
 </p>
 
 The entire source code is publicly accessible to encourage reproducibility at [<a href="https://github.com/jonghkim/job-automation-index">GitHub Link</a>]. Please see our research paper for detailed descriptions behind the job automation index. </br></br>

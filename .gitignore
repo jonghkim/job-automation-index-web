@@ -5,3 +5,5 @@ db.sqlite3
 .DS_Store
 __*
 notebook/.ipynb_checkpoints/*
+static/data/csv/backup/*
+static/data/xlsx/backup/*

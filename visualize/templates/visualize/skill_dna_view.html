@@ -142,48 +142,46 @@
 
         var color = d3.scale.ordinal()
             .domain(["Race with the Machine",
-                        "Interpersonal Task",
-                        "Administrative Task and Communication",
+                        "Communication", "Interpersonal Task" ,"Group Task",
                         "line1",
                         "Race against the Machine",
-                        "Information Processing",
-                        "Routine Problem Solving",
-                        "Vehicle and Equipment Operation",
-                        "Machine Control",
-                        "General Physical Task",
+                        "Routine Problem Solving", "Information Processing", 
+                        "Machine Control", "General Physical Task",
                         "line2",
                         "Race ahead of the Machine",
-                        "Systems Thinking",
+                        "Systems Analysis",
                         "Creative and Critical Thinking",
                         "line3",
                         "Running a Different Race",
-                        "Equipment Maintenance",
                         "Dynamic Physical Task",
-                        "Hazardous and Group Task",
+                        "Equipment Maintenance",
+                        "Vehicle and Equipment Operation",
+                        "Hazardous Task",
                         "Conflict Resolution",
                         "Management and Supervision"])
             .range([
                 "rgba(0, 0, 0, 0)",
                 "#009933", 
                 "#ff0000", 
+                "#0000cc",
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
                 "#003366", 
                 "#996633", 
-                "#ff9933",  
-                "#784212", 
-                "#0000cc", 
+                "#ff9933", 
+                "#ffcccc", 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
                 "#00ccff", 
-                "#ff66ff", 
+                "#784212", 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
-                "#fe7f9c",
                 "#F4D03F", 
                 "#C0392B", 
                 "#BB8FCE",
                 "#2E86C1", 
+                "#ff66ff", 
+                "#b5b9ff",                  
         ]);
 
         // Configure force layout
@@ -394,26 +392,23 @@
             .shapePadding(legendTaskPadding)
             .scale(color)
             .labels(["Race with the Machine",
-                        "Interpersonal Task",
-                        "Administrative Task and Communication",
+                        "Communication", "Interpersonal Task" ,"Group Task",
                         "",
                         "Race against the Machine",
-                        "Information Processing",
-                        "Routine Problem Solving",
-                        "Vehicle and Equipment Operation",
-                        "Machine Control",
-                        "General Physical Task",
+                        "Routine Problem Solving", "Information Processing", 
+                        "Machine Control", "General Physical Task",                        
                         "",
                         "Race ahead of the Machine",
-                        "Systems Thinking",
+                        "Systems Analysis",
                         "Creative and Critical Thinking",
                         "",
                         "Running a Different Race",
-                        "Equipment Maintenance",
                         "Dynamic Physical Task",
-                        "Hazardous and Group Task",
+                        "Equipment Maintenance",
+                        "Vehicle and Equipment Operation",
+                        "Hazardous Task",
                         "Conflict Resolution",
-                        "Management and Supervision"
+                        "Management and Supervision"                    
                     ]);
 
         var taskLegend = legendContainer.select(".legendOrdinal")
@@ -466,16 +461,16 @@
         for (var node in skill_nodes.skill_list){
             nodeAttribute[skill_nodes.skill_list[node].skill_name] = {}
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2019'] = skill_nodes.skill_list[node]['automation_2019'];
-            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2008'] = skill_nodes.skill_list[node]['automation_2008'];
-            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2008_2019'] = skill_nodes.skill_list[node]['automation_2008_2019'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007'] = skill_nodes.skill_list[node]['automation_2007'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007_2019'] = skill_nodes.skill_list[node]['automation_2007_2019'];
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['task_name'] = skill_nodes.skill_list[node]['task_name'];
         }
 
         
         nodes.forEach(function(node){
             node.automation_2019 = nodeAttribute[node.name]['automation_2019'];
-            node.automation_2008 = nodeAttribute[node.name]['automation_2008'];
-            node.automation_2008_2019 = nodeAttribute[node.name]['automation_2008_2019'];
+            node.automation_2007 = nodeAttribute[node.name]['automation_2007'];
+            node.automation_2007_2019 = nodeAttribute[node.name]['automation_2007_2019'];
             node.task_name = nodeAttribute[node.name]['task_name'];
         });
         
