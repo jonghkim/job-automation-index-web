@@ -344,7 +344,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
         ax_ytick = ax.get_yticks().tolist() 
         #ax_ytick[-1] = '>70'
         #if lim_range == True:
-        ax_ytick[-1] = '30<'   
+        ax_ytick[-1] = '30+'   
         ax.set_yticklabels(ax_ytick)
         
     elif year=='2007~2019':
@@ -642,39 +642,39 @@ def automation_ranking(request):
         year = '2019'
         return render(request, 'visualize/automation_ranking.html', {'year':year, 'form' : form})
 
-def task_level_automation(request):
+def job_automation(request):
     if request.method == 'POST':
         form = AutomationRanking(request.POST) 
         if form.is_valid():
             year = form.cleaned_data['year']
-            return render(request, 'visualize/task_level_automation.html',{'year':year, 'form': form})      
+            return render(request, 'visualize/job_automation.html',{'year':year, 'form': form})      
     else:
         form = AutomationRanking()
         year = '2019'
-        return render(request, 'visualize/task_level_automation.html', {'year':year, 'form' : form})
+        return render(request, 'visualize/job_automation.html', {'year':year, 'form' : form})
         
-def map_automation(request):
+def automation_map(request):
     if request.method == 'POST':
         form = MapForm(request.POST) 
         if form.is_valid():
             relation_to_automation = form.cleaned_data['relation_to_automation']
             year = form.cleaned_data['year']
-            return render(request, 'visualize/map_automation.html',{'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
+            return render(request, 'visualize/automation_map.html',{'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
     else:
         form = MapForm()
         relation_to_automation = u'Race with the Machine'
         year = '2019'
-        return render(request, 'visualize/map_automation.html', {'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
+        return render(request, 'visualize/automation_map.html', {'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
          
 
-def city_level_automation(request):
+def city_automation(request):
     if request.method == 'POST':
         form = AutomationRanking(request.POST) 
         if form.is_valid():
             year = form.cleaned_data['year']
-            return render(request, 'visualize/city_level_automation.html',{'year':year, 'form': form})      
+            return render(request, 'visualize/city_automation.html',{'year':year, 'form': form})      
     else:
         form = AutomationRanking()
         year = '2019'
-        return render(request, 'visualize/city_level_automation.html', {'year':year, 'form' : form})
+        return render(request, 'visualize/city_automation.html', {'year':year, 'form' : form})
                 

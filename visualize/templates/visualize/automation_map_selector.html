@@ -1,5 +1,4 @@
 {% load static %}
-
 <link href="{% static 'css/select2.min.css' %}" rel="stylesheet" />
 <script src="{% static 'js/select2.min.js' %}" defer></script>
 
@@ -17,8 +16,7 @@
         <tr><td>{{ field.label_tag }} {{field}}</td></tr> &nbsp;
         {% endfor %}
 
-        <!--
-        
+        <!--        
             {% for field in form %}
             <tr><td>{{field}}</td></tr>
             {% endfor %}
@@ -28,21 +26,26 @@
     </form>
 </div>
 <div class="card-footer small text-muted">
-    &middot; Race with the Machine: Tasks that have experienced in the increase in degree of automation but complemented labor demands during 2007-2019 </br>
-    &middot; Race against the Machine: Tasks that have experienced in the increase in degree of automation and substituted labor demands during 2007-2019 </br>
-    &middot; Race ahead of the Machine: Tasks that have experienced in the decrease in degree of automation and complemented labor demands during 2007-2019 </br>
-    &middot; Running a Different Race: Tasks that are seemingly unrelated to labor demands during 2007-2019, regardless of changes in degree of automation </br>
+    &middot; Race with the Machine: Tasks have already been highly automated or have experienced in the increase in automation level, but the labor demand for the tasks has increased from 2007 to 2019 </br>
+    &middot; Race against the Machine: Tasks have already been highly automated or have experienced in the increase in automation level, and the labor demand for the tasks has decreased from 2007 to 2019 </br>
+    &middot; Race ahead of the Machine: Tasks have experienced in the decrease in automation level, and the labor demand for the tasks has increased from 2007 to 2019 </br>
+    &middot; Running a Different Race: Tasks have experienced in the increase in degree of automation, but the labor demand for the tasks has remained stable during 2007-2019 </br>
 </div>
 </div>
 
 <style>
 form {display:none;}
-    
+#id_relation_to_automation{
+    width: 300px;
+}
 #id_year{
     width: 250px;
 
 }
 @media only screen and (max-width: 750px) {
+    #id_relation_to_automation {
+        width: 30vw !important;
+    }
     #id_year {
         width: 30vw !important;
     }    
@@ -62,10 +65,9 @@ form {display:none;}
 }  
 </style>
 
-
 <script>
     $(document).ready(function() {
         $('.autocomplete').select2();
         $('form').css("display","inline");  
-    }); 
+    });        
 </script>
