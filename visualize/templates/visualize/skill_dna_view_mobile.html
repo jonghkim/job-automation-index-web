@@ -130,6 +130,141 @@
         var taskClusterSize = d3.scale.ordinal().domain(["Race with the Machine","Race against the Machine","Race ahead of the Machine","Running a Different Race"]).range([largeCircleSize, largeCircleSize]);
 
         // Initialize Ordinal Colour Scale
+
+function get_rank(task_name, year){
+            if (task_name=="Communication"){
+                if(year=='2019'){
+                    return 9;
+                } else if(year=='2007'){
+                    return 10;
+                } else if(year=='20072019'){
+                    return 4;
+                }
+            } else if (task_name=="Interpersonal Task"){
+                if(year=='2019'){
+                    return 3;
+                } else if(year=='2007'){
+                    return 3;
+                } else if(year=='20072019'){
+                    return 7;
+                }                
+            } else if (task_name=="Group Task"){
+                if(year=='2019'){
+                    return 11;
+                } else if(year=='2007'){
+                    return 11;
+                } else if(year=='20072019'){
+                    return 5;
+                }                
+            } else if (task_name=="Routine Problem Solving"){
+                if(year=='2019'){
+                    return 15;
+                } else if(year=='2007'){
+                    return 15;
+                } else if(year=='20072019'){
+                    return 3;
+                }                
+            } else if (task_name=="Information Processing"){
+                if(year=='2019'){
+                    return 12;
+                } else if(year=='2007'){
+                    return 12;
+                } else if(year=='20072019'){
+                    return 6;
+                }                
+            } else if (task_name=="Machine Control"){
+                if(year=='2019'){
+                    return 14;
+                } else if(year=='2007'){
+                    return 14;
+                } else if(year=='20072019'){
+                    return 13;
+                }                
+            } else if (task_name=="General Physical Task"){
+                if(year=='2019'){
+                    return 6;
+                } else if(year=='2007'){
+                    return 8;
+                } else if(year=='20072019'){
+                    return 9;
+                }                
+            } else if (task_name=="Systems Analysis"){
+                if(year=='2019'){
+                    return 2;
+                } else if(year=='2007'){
+                    return 6;
+                } else if(year=='20072019'){
+                    return 1;
+                }                
+            } else if (task_name=="Creative and Critical Thinking"){
+                if(year=='2019'){
+                    return 1;
+                } else if(year=='2007'){
+                    return 1;
+                } else if(year=='20072019'){
+                    return 2;
+                }                
+            } else if (task_name=="Dynamic Physical Task"){
+                if(year=='2019'){
+                    return 4;
+                } else if(year=='2007'){
+                    return 2;
+                } else if(year=='20072019'){
+                    return 15;
+                }                
+            } else if (task_name=="Equipment Maintenance"){
+                if(year=='2019'){
+                    return 10;
+                } else if(year=='2007'){
+                    return 9;
+                } else if(year=='20072019'){
+                    return 8;
+                }                
+            } else if (task_name=="Vehicle and Equipment Operation"){
+                if(year=='2019'){
+                    return 7;
+                } else if(year=='2007'){
+                    return 5;
+                } else if(year=='20072019'){
+                    return 11;
+                }                
+            } else if (task_name=="Hazardous Task"){
+                if(year=='2019'){
+                    return 13;
+                } else if(year=='2007'){
+                    return 13;
+                } else if(year=='20072019'){
+                    return 10;
+                }                
+            } else if (task_name=="Conflict Resolution"){
+                if(year=='2019'){
+                    return 8;
+                } else if(year=='2007'){
+                    return 7;
+                } else if(year=='20072019'){
+                    return 14;
+                }                
+            } else if (task_name=="Management and Supervision"){
+                if(year=='2019'){
+                    return 5;
+                } else if(year=='2007'){
+                    return 4;
+                } else if(year=='20072019'){
+                    return 12;
+                }                
+            } else {
+                return 0;
+            }
+        }
+
+        function color_scaler(rank){
+            ai_rank_domain = [0,0.5,1.0];
+            rank_color_range = ["#FAE1E1","#EB97A8","#DC143C"];
+            rank_color_scale = d3.scale.linear().domain(ai_rank_domain).range(rank_color_range);
+            return rank_color_scale(rank);
+        }
+        
+        // Initialize Ordinal Colour Scale
         var color = d3.scale.ordinal()
             .domain(["Race with the Machine",
                         "Communication", 
@@ -155,28 +290,28 @@
                         "Management and Supervision"])
             .range([
                 "rgba(0, 0, 0, 0)",
-                "#009933", 
-                "#ff0000", 
-                "#0000cc",
+                color_scaler(get_rank("Communication",{{year}})/15), 
+                color_scaler(get_rank("Interpersonal Task",{{year}})/15), 
+                color_scaler(get_rank("Group Task",{{year}})/15), 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
-                "#003366", 
-                "#996633", 
-                "#ff9933", 
-                "#ffcccc", 
+                color_scaler(get_rank("Routine Problem Solving",{{year}})/15), 
+                color_scaler(get_rank("Information Processing",{{year}})/15), 
+                color_scaler(get_rank("Machine Control",{{year}})/15), 
+                color_scaler(get_rank("General Physical Task",{{year}})/15), 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
-                "#00ccff", 
-                "#784212", 
+                color_scaler(get_rank("Systems Analysis",{{year}})/15), 
+                color_scaler(get_rank("Creative and Critical Thinking",{{year}})/15), 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
-                "#F4D03F", 
-                "#C0392B", 
-                "#BB8FCE",
-                "#2E86C1", 
-                "#ff66ff", 
-                "#b5b9ff",                 
-        ]);
+                color_scaler(get_rank("Dynamic Physical Task",{{year}})/15), 
+                color_scaler(get_rank("Equipment Maintenance",{{year}})/15), 
+                color_scaler(get_rank("Vehicle and Equipment Operation",{{year}})/15), 
+                color_scaler(get_rank("Hazardous Task",{{year}})/15), 
+                color_scaler(get_rank("Conflict Resolution",{{year}})/15), 
+                color_scaler(get_rank("Management and Supervision",{{year}})/15), 
+        ]);   
 
         // Configure force layout
         var force = d3.layout.force().gravity(0.013);
@@ -377,7 +512,8 @@
                         return minNodeSize;}
                     else{return d.automation_{{year}}*30}
                 })
-                .style("fill", function(d) {return color(d.task_name);})
+                //.style("fill", function(d) {return color(d.task_name);})
+                .style("fill", function(d) {return color_scaler(get_rank(d.task_name,{{year}})/15);})
                 .classed("activeNode", true)
                 .on("mouseover", function(d){
                     if(d3.select(this).classed("activeNode") && !d3.select(this).classed("baseNode")){
