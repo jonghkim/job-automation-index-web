@@ -55,7 +55,8 @@ num_city = tilde.cities.length;
 tilde.employmentDomain = [employment_min-10000,employment_max+10000]
 tilde.ai_riskDomain = [ai_risk_min-0.01,(ai_risk_min+ai_risk_max)/2,ai_risk_max+0.01]
 
-tilde.colorRange = ["#FAE1E1","#EB97A8","#DC143C"]
+
+tilde.colorRange = ["#F7B2B2","#EB97A8","#DC143C"] //#FAE1E1
 tilde.radiusScale = d3.scale.linear().domain(tilde.employmentDomain).range([1500,54000])
 tilde.colorScale = d3.scale.linear().domain(tilde.ai_riskDomain).range(tilde.colorRange)
 tilde.token = 'pk.eyJ1Ijoiam9uZ2hvIiwiYSI6ImNqNXVwNDVxMzBvYW8yeWtmeWlpb3pmb28ifQ.Eei6uDn--hcmZ6M3ZNXjGg'
