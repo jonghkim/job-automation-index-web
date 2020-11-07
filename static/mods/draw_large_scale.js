@@ -3,8 +3,11 @@ tilde.notices = {}
 //tilde.colors = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"] //["#951F24","#F2E3E4"]
 //tilde.risks = [1,.89,.75,.45,.2,0] //[1,0]
 
-tilde.ai_rank_domain = [1,0.8,0.6,0.4,0.2,0]
-tilde.rank_color_range = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"]
+//tilde.ai_rank_domain = [1,0.8,0.6,0.4,0.2,0]
+//tilde.rank_color_range = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"]
+tilde.ai_rank_domain = [0,0.5,1.0]
+tilde.rank_color_range = ["#FAE1E1","#EB97A8","#DC143C"]
+
 tilde.rank_color_scale = d3.scale.linear().domain(tilde.ai_rank_domain).range(tilde.rank_color_range)
 
 //tilde.colors = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"] //["#951F24","#F2E3E4"]
@@ -39,10 +42,10 @@ tilde.updateNeedle = function() {
 		.transition()
 		.duration(500)
 		.style('opacity',1)
-	needle.moveTo(tilde.needleScale(ai_task_rank_pct))
+	needle.moveTo(tilde.needleScale(100-ai_task_rank_pct))
 
 	d3.select(".chart-filled")
-		.style('fill',tilde.rank_color_scale(ai_task_rank_pct/100))
+		.style('fill',tilde.rank_color_scale(1-ai_task_rank_pct/100))
 
 	if (!d3.select("#needle_annotation").node()) {
 		tilde.annotation = d3.select("#sub_wrapper")
