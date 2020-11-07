@@ -41,9 +41,6 @@ tilde.updateNeedle = function() {
 		.style('opacity',1)
 	needle.moveTo(tilde.needleScale(ai_task_rank_pct))
 
-	console.log(ai_task_rank_pct/100);
-	console.log(tilde.rank_color_scale(ai_task_rank_pct/100));
-
 	d3.select(".chart-filled")
 		.style('fill',tilde.rank_color_scale(ai_task_rank_pct/100))
 
