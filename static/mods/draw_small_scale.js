@@ -1,24 +1,44 @@
 tilde.notices = {}
 
-tilde.colors = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"] //["#951F24","#F2E3E4"]
-tilde.risks = [1,.89,.75,.45,.2,0] //[1,0]
+//tilde.colors = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"] //["#951F24","#F2E3E4"]
+//tilde.risks = [1,.8,.6,.4,.2,0] //[1,0]
+
+tilde.ai_rank_domain = [1,0.8,0.6,0.4,0.2,0]
+tilde.rank_color_range = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"]
+tilde.rank_color_scale = d3.scale.linear().domain(tilde.ai_rank_domain).range(tilde.rank_color_range)
 
 //tilde.needleScale = d3.scale.linear().domain([0.502,0.731438356]).range([0,1])
-tilde.needleScale = d3.scale.linear().domain([-10,10]).range([0,1])
+tilde.needleScale = d3.scale.linear().domain([0,100]).range([0,1])
+
+function get_ai_task_rank_percent(data){
+	var num_city = 0;
+	num_city = tilde.cities.length;
+
+	var ai_task_rank = 1
+  
+	for (var num = 0; num < tilde.cities.length; num++) {
+	  var d = tilde.cities[num];
+	
+		if (data.ai_task_type < d.ai_task_type) {
+		  ai_task_rank = ai_task_rank + 1;
+		}
+	}
+	return Math.round(ai_task_rank/num_city*100);
+  }  
 
 tilde.updateNeedle = function() {
 	d3.selectAll('.needle, .needle-center').style('opacity',0)
 	var data = tilde.current_selection;
 
-	data.pct_ai_task_type = data.ai_task_type*100;
+	var ai_task_rank_pct = get_ai_task_rank_percent(data);
 
 	d3.select("#needle")
 		.transition()
 		.duration(500)
 		.style('opacity',1)
-	needle.moveTo(tilde.needleScale(data.pct_ai_task_type))
+	needle.moveTo(tilde.needleScale(ai_task_rank_pct))
 	d3.select(".chart-filled")
-		.style('fill',tilde.colorScale(data.pct_ai_task_type))
+		.style('fill',tilde.rank_color_scale(ai_task_rank_pct/100))
 
 	if (!d3.select("#needle_annotation").node()) {
 		tilde.annotation = d3.select("#sub_wrapper")
@@ -93,7 +113,7 @@ tilde.updateNeedle = function() {
 
 		tilde.target = g
 			.append("text")
-			.text(round(data.pct_ai_task_type,2))
+			.text('Top '.concat(String(round(ai_task_rank_pct,2)),'%'))
 			.attr('text-anchor','middle')
 			.style('font-weight','bold')
 
@@ -116,7 +136,7 @@ tilde.updateNeedle = function() {
 			.style('opacity',1)	
 	} else {
 		tilde.target
-			.text(round(data.pct_ai_task_type,2))
+			.text('Top '.concat(String(round(ai_task_rank_pct,2)),'%'))
 			.style('opacity',0)
 			.transition()
 			.duration(800)
