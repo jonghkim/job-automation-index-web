@@ -1,9 +1,6 @@
 tilde.map = L.map('map');
 tilde.map.scrollWheelZoom.disable()
 
-var ai_risk_min = 100
-var ai_risk_max = -100
-
 var employment_min = 1000000
 var employment_max = 0
 
@@ -35,12 +32,6 @@ function get_ai_task_rank(data){
 
 for (var num = 0; num < tilde.cities.length; num++) {
   var d = tilde.cities[num];
-  if (d.ai < ai_risk_min){
-    ai_risk_min = d.ai_task_type;
-  }
-  if (d.ai > ai_risk_max){
-    ai_risk_max = d.ai_task_type;
-  }
   if (d.employment < employment_min){
     employment_min = d.employment;
   }
@@ -53,11 +44,13 @@ var num_city = 0
 num_city = tilde.cities.length;
 
 tilde.employmentDomain = [employment_min-10000,employment_max+10000]
-tilde.ai_riskDomain = [ai_risk_min-0.01,(ai_risk_min+ai_risk_max)/2,ai_risk_max+0.01]
-
-tilde.colorRange = ["#F7B2B2","#EB97A8","#DC143C"]
 tilde.radiusScale = d3.scale.linear().domain(tilde.employmentDomain).range([1500,54000])
-tilde.colorScale = d3.scale.linear().domain(tilde.ai_riskDomain).range(tilde.colorRange)
+
+tilde.ai_rank_domain = [0,0.5,1.0]
+tilde.rank_color_range = ["#FAE1E1","#EB97A8","#DC143C"]
+
+tilde.rank_color_scale = d3.scale.linear().domain(tilde.ai_rank_domain).range(tilde.rank_color_range)
+
 tilde.token = 'pk.eyJ1Ijoiam9uZ2hvIiwiYSI6ImNqNXVwNDVxMzBvYW8yeWtmeWlpb3pmb28ifQ.Eei6uDn--hcmZ6M3ZNXjGg'
 
 tilde.map.circleGroup = L.featureGroup().addTo(tilde.map);
@@ -81,9 +74,9 @@ for (var num = 0; num < tilde.cities.length; num++) {
   var place_long = d["Lng"];
 
   var circle = L.circle([place_lat, place_long], {
-      color: tilde.colorScale(d.ai_task_type),
-      stroke: true,
-      fillOpacity:.95,
+      color: tilde.rank_color_scale(1-get_ai_task_rank(d)/num_city),
+      stroke: false,
+      fillOpacity:1,
       data: d,
       radius: 314*Math.sqrt(tilde.radiusScale(d.e))
   }).addTo(tilde.map.circleGroup)
