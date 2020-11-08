@@ -6,7 +6,7 @@ tilde.notices = {}
 //tilde.ai_rank_domain = [1,0.8,0.6,0.4,0.2,0]
 //tilde.rank_color_range = ["#951F24","#C62026","#DD5524","#EF8F1E","#F2E74A","#A0F582"]
 tilde.ai_rank_domain = [0,0.5,1.0]
-tilde.rank_color_range = ["#FAE1E1","#EB97A8","#DC143C"]
+tilde.rank_color_range = ["#FFF0F0","#EB97A8","#DC143C"]
 
 tilde.rank_color_scale = d3.scale.linear().domain(tilde.ai_rank_domain).range(tilde.rank_color_range)
 

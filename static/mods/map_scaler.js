@@ -47,7 +47,7 @@ tilde.employmentDomain = [employment_min-10000,employment_max+10000]
 tilde.radiusScale = d3.scale.linear().domain(tilde.employmentDomain).range([1500,54000])
 
 tilde.ai_rank_domain = [0,0.5,1.0]
-tilde.rank_color_range = ["#FAE1E1","#EB97A8","#DC143C"]
+tilde.rank_color_range = ["#FFF0F0","#EB97A8","#DC143C"]
 
 tilde.rank_color_scale = d3.scale.linear().domain(tilde.ai_rank_domain).range(tilde.rank_color_range)
 
