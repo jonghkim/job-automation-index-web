@@ -111,7 +111,8 @@
         var scaleFactor = 0.6;
         var translation = [250,135];
 
-        var minNodeSize = 3.5;
+        var minNodeSize = 5;
+        var midNodeSize = 7;
         var maxNodeSize = 15;
 
         var smallCircleSize = 6;
@@ -461,6 +462,7 @@
 
         var minAutomation = 100;
         var maxAutomation = 0;
+        var midAutomation = 0;
         
         for (var node in skill_nodes.skill_list){
             nodeAttribute[skill_nodes.skill_list[node].skill_name] = {}
@@ -476,6 +478,8 @@
                 maxAutomation = skill_nodes.skill_list[node]['automation_2019'];
             }
         }
+
+        midAutomation = (minAutomation + maxAutomation)/2;
 
         
         nodes.forEach(function(node){
@@ -497,7 +501,12 @@
             .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", function(d) {
-                    return d.automation_{{year}}/(maxAutomation-minAutomation)*(maxNodeSize-minNodeSize) + minNodeSize;
+                    if(d.automation_{{year}} < midAutomation){
+                        return d.automation_{{year}}/(midAutomation-minAutomation)*(midNodeSize-minNodeSize) + minNodeSize;
+                    } else{
+                        return d.automation_{{year}}/(maxAutomation-minAutomation)*(maxNodeSize-minNodeSize) + minNodeSize;
+                    }
+
                     /*
                     if(d.automation_{{year}}*75 <minNodeSize){
                         return minNodeSize;}
