@@ -112,7 +112,7 @@
         var translation = [250,135];
 
         var minNodeSize = 3.5;
-        var midNodeSize = 7;
+        var midNodeSize = 10;
         var maxNodeSize = 23;
 
         var smallCircleSize = 6;
@@ -479,8 +479,7 @@
             }
         }
 
-        midAutomation = (minAutomation + maxAutomation)/2;
-
+        midAutomation = (minAutomation + maxAutomation)*5/9;
         
         nodes.forEach(function(node){
             node.automation_2019 = nodeAttribute[node.name]['automation_2019'];
