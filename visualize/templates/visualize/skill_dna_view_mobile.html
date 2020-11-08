@@ -379,12 +379,14 @@
             .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", function(d) {
-                    return d.automation_{{year}}/(maxAutomation-minAutomation)*(maxNodeSize-minNodeSize) + minNodeSize;
-                    /*
+                    //return d.automation_{{year}}/(maxAutomation-minAutomation)*(maxNodeSize-minNodeSize) + minNodeSize;
+                    
                     if(d.automation_{{year}}*30 <minNodeSize){
                         return minNodeSize;}
+                    else if(d.automation_{{year}}*30 >maxNodeSize){
+                        return maxNodeSize;
+                    }
                     else{return d.automation_{{year}}*30}
-                    */
                 })
                 .style("fill", function(d) {return color(d.task_name);})
                 .classed("activeNode", true)
