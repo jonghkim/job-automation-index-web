@@ -112,6 +112,8 @@
         var translation = [250,135];
 
         var minNodeSize = 5;
+        var maxNodeSize = 25;
+
         var smallCircleSize = 6;
         var largeCircleSize = 9;
 
@@ -485,8 +487,10 @@
             .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", function(d) {
-                    if(d.automation_{{year}}*75 <3){
+                    if(d.automation_{{year}}*75 <minNodeSize){
                         return minNodeSize;}
+                    else if(d.automation_{{year}}*75 >maxNodeSize){
+                        return maxNodeSize;}
                     else{return d.automation_{{year}}*75}
                 })
                 .style("fill", function(d) {return color(d.task_name);})
