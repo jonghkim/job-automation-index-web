@@ -107,7 +107,9 @@
         var scaleFactor = 0.14;
         var translation = [window.innerWidth/3,window.innerWidth/3];
 
-        var minNodeSize = 2;
+        var minNodeSize = 1;
+        var maxNodeSize = 5;        
+
         var smallCircleSize = 2;
         var largeCircleSize = 4;
 
@@ -340,12 +342,21 @@
         
         var nodeAttribute = {};
         
+        var minAutomation = 100;
+        var maxAutomation = 0;
+
         for (var node in skill_nodes.skill_list){
             nodeAttribute[skill_nodes.skill_list[node].skill_name] = {}
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2019'] = skill_nodes.skill_list[node]['automation_2019'];
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007'] = skill_nodes.skill_list[node]['automation_2007'];
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007_2019'] = skill_nodes.skill_list[node]['automation_2007_2019'];
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['task_name'] = skill_nodes.skill_list[node]['task_name'];
+            if (minAutomation > skill_nodes.skill_list[node]['automation_2019']){
+                minAutomation = skill_nodes.skill_list[node]['automation_2019'];
+            }
+            if (maxAutomation < skill_nodes.skill_list[node]['automation_2019']){
+                maxAutomation = skill_nodes.skill_list[node]['automation_2019'];
+            }
         }
 
         
@@ -368,9 +379,12 @@
             .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", function(d) {
+                    return d.automation_{{year}}/(maxAutomation-minAutomation)*(maxNodeSize-minNodeSize) + minNodeSize;
+                    /*
                     if(d.automation_{{year}}*30 <minNodeSize){
                         return minNodeSize;}
                     else{return d.automation_{{year}}*30}
+                    */
                 })
                 .style("fill", function(d) {return color(d.task_name);})
                 .classed("activeNode", true)

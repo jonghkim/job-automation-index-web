@@ -111,8 +111,8 @@
         var scaleFactor = 0.6;
         var translation = [250,135];
 
-        var minNodeSize = 5;
-        var maxNodeSize = 25;
+        var minNodeSize = 4;
+        var maxNodeSize = 15;
 
         var smallCircleSize = 6;
         var largeCircleSize = 9;
@@ -458,6 +458,9 @@
         var nodes = d3.values(nodesByName);
         
         var nodeAttribute = {};
+
+        var minAutomation = 100;
+        var maxAutomation = 0;
         
         for (var node in skill_nodes.skill_list){
             nodeAttribute[skill_nodes.skill_list[node].skill_name] = {}
@@ -465,6 +468,13 @@
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007'] = skill_nodes.skill_list[node]['automation_2007'];
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007_2019'] = skill_nodes.skill_list[node]['automation_2007_2019'];
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['task_name'] = skill_nodes.skill_list[node]['task_name'];
+
+            if (minAutomation > skill_nodes.skill_list[node]['automation_2019']){
+                minAutomation = skill_nodes.skill_list[node]['automation_2019'];
+            }
+            if (maxAutomation < skill_nodes.skill_list[node]['automation_2019']){
+                maxAutomation = skill_nodes.skill_list[node]['automation_2019'];
+            }
         }
 
         
@@ -487,11 +497,14 @@
             .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", function(d) {
+                    return d.automation_{{year}}/(maxAutomation-minAutomation)*(maxNodeSize-minNodeSize) + minNodeSize;
+                    /*
                     if(d.automation_{{year}}*75 <minNodeSize){
                         return minNodeSize;}
                     else if(d.automation_{{year}}*75 >maxNodeSize){
                         return maxNodeSize;}
                     else{return d.automation_{{year}}*75}
+                    */
                 })
                 .style("fill", function(d) {return color(d.task_name);})
                 .classed("activeNode", true)
