@@ -139,14 +139,14 @@
         var taskClusterSize = d3.scale.ordinal().domain([]).range([largeCircleSize, largeCircleSize]);
 
         // Initialize Ordinal Colour Scale
-        
+   
         var color = d3.scale.ordinal()
             .domain(["Race with the Machine",
                         "Communication", "Interpersonal Task" ,"Group Task",
                         "line1",
                         "Race against the Machine",
                         "Routine Problem Solving", "Information Processing", 
-                        "Machine Control", "General Physical Task",
+                        "General Physical Task", "Machine Control", "Hazardous Task",
                         "line2",
                         "Race ahead of the Machine",
                         "Systems Analysis",
@@ -156,7 +156,6 @@
                         "Dynamic Physical Task",
                         "Equipment Maintenance",
                         "Vehicle and Equipment Operation",
-                        "Hazardous Task",
                         "Conflict Resolution",
                         "Management and Supervision"])
             .range([
@@ -170,6 +169,7 @@
                 "#996633", 
                 "#ff9933", 
                 "#ffcccc", 
+                "#2E86C1",
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
                 "#00ccff", 
@@ -179,7 +179,6 @@
                 "#F4D03F", 
                 "#C0392B", 
                 "#BB8FCE",
-                "#2E86C1", 
                 "#ff66ff", 
                 "#b5b9ff",                  
         ]);
@@ -397,7 +396,7 @@
                         "",
                         "Race against the Machine",
                         "Routine Problem Solving", "Information Processing", 
-                        "Machine Control", "General Physical Task",                        
+                        "General Physical Task", "Machine Control", "Hazardous Task",                       
                         "",
                         "Race ahead of the Machine",
                         "Systems Analysis",
@@ -407,7 +406,6 @@
                         "Dynamic Physical Task",
                         "Equipment Maintenance",
                         "Vehicle and Equipment Operation",
-                        "Hazardous Task",
                         "Conflict Resolution",
                         "Management and Supervision"                    
                     ]);
