@@ -22,8 +22,8 @@ class JobAutomationIndexForm(forms.Form):
         
     occupation = forms.ChoiceField(choices=JOBS, widget=forms.Select(attrs={'style': 'width:300px', 'class': 'autocomplete'}))
 
-    #YEARS = (('2018', '2018'),('2007', '2007'),('2007~2018', '2007~2018'))
-    YEARS = (('2019', '2019'),('2007', '2007'),('2007~2019', 'Change during 2007-2019'))
+    #YEARS = (('2018', '2018'),('2008', '2008'),('2007~2018', '2007~2018'))
+    YEARS = (('2020', '2020'),('2008', '2008'),('2008~2020', 'Change from 2008 to 2020'))
     
     year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px', 'class': 'autocomplete'}))
 
@@ -46,12 +46,12 @@ class SkillDNA(forms.Form):
 
     occupation = forms.ChoiceField(choices=JOBS, widget=forms.Select(attrs={'style': 'width:300px', 'class': 'autocomplete'}))
 
-    #YEARS = (('2007_2018', 'Evolution during 2007-2018'),('2018', '2018'),('2007', '2007'))
-    YEARS = (('2019', '2019'),('2007', '2007'),('2007_2019', 'Change during 2007-2019'))
+    #YEARS = (('2007_2018', 'Evolution during 2007-2018'),('2018', '2018'),('2008', '2008'))
+    YEARS = (('2020', '2020'),('2008', '2008'),('2008_2020', 'Change from 2008 to 2020'))
     year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px', 'class': 'autocomplete'}))
 
 class AutomationRanking(forms.Form):
-    YEARS = (('2019', '2019'),('2007', '2007'),('2007~2019', 'Change during 2007-2019'))
+    YEARS = (('2020', '2020'),('2008', '2008'),('2008~2020', 'Change from 2008 to 2020'))
     year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px', 'class': 'autocomplete'}))        
 
 class MapForm(forms.Form):
@@ -60,6 +60,6 @@ class MapForm(forms.Form):
 
     relation_to_automation = forms.ChoiceField(choices=TYPES, widget=forms.Select(attrs={'style': 'width:300px', 'class': 'autocomplete'}))
 
-    YEARS = (('2019', '2019'),('2007', '2007'),('2007~2019', 'Change during 2007-2019'))
+    YEARS = (('2020', '2020'),('2008', '2008'),('2008~2020', 'Change from 2008 to 2020'))
     
     year = forms.ChoiceField(choices=YEARS, widget=forms.Select(attrs={'style': 'width:250px', 'class': 'autocomplete'}))

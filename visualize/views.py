@@ -40,20 +40,20 @@ def percentileofscore(a, score, kind='rank'):
     else:
         raise ValueError("kind can only be 'rank', 'strict', 'weak' or 'mean'")
 
-def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
+def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
     #### TASK AUTOMATION ####
     csvpath = djangoSettings.STATICFILES_DIRS[0]+'/data/csv/Panel 1.csv'
     #panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Year':str})
     panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
 
-    if (year=='2019') or (year=='2007'):
+    if (year=='2020') or (year=='2008'):
         if job=='TOTAL AVERAGE':
             objects = ['Race with the Machine', 'Race against the Machine',
                        'Race ahead of the Machine', 'Running a Different Race', 'Annual Wage']
         else:
             objects = ['Race with the Machine', 'Race against the Machine',
                        'Race ahead of the Machine', 'Running a Different Race', 'Employment','Annual Wage']
-    elif year=='2007~2019':
+    elif year=='2008~2020':
         if job=='TOTAL AVERAGE':
             objects = ['Race with the Machine Change', 'Race against the Machine Change',
                        'Race ahead of the Machine Change', 'Running a Different Race Change']
@@ -61,7 +61,7 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
             objects = ['Race with the Machine Change', 'Race against the Machine Change',
                        'Race ahead of the Machine Change', 'Running a Different Race Change', 'Wage Share Change']
 
-    if (year=='2019') or (year=='2007'):        
+    if (year=='2020') or (year=='2008'):        
         fig, axs = plt.subplots(len(objects), figsize=(7,len(objects)*1.3))
         
         for i, obj in enumerate(objects):
@@ -154,7 +154,7 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
 
         plt.tight_layout()
 
-    elif year=='2007~2019':
+    elif year=='2008~2020':
 
         if len(objects) == 2:
             fig, axs = plt.subplots(len(objects), figsize=(7,2*1.3))
@@ -274,13 +274,13 @@ def draw_task_automation(year='2019', job='TOTAL AVERAGE'):
     return task_automation
 
 # Create your views here.
-def draw_task_importance(year='2019', job='TOTAL AVERAGE'):    
+def draw_task_importance(year='2020', job='TOTAL AVERAGE'):    
     #### TASK IMPORTANCE ####    
     csvpath = djangoSettings.STATICFILES_DIRS[0] +'/data/csv/Panel 2.csv'
     #panel_df = pd.read_csv(csvpath, encoding='ISO-8859-1', dtype={'Year':str})
     panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
     
-    if year =='2019' or year=='2007':
+    if year =='2020' or year=='2008':
         """
         labels = np.array(["Operation Monitoring", "System Analysis", "Strategic Thinking","Conflict Resolution", 
                         "Communication", "Managerial Task",  "Clerical Task", "Information Processing", 
@@ -342,7 +342,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
 
             ax = fig.add_subplot(111, polar=True)
 
-            if year =='2019' or year=='2007':
+            if year =='2020' or year=='2008':
                 ax.plot(angles, focal_stats, 'o-', linewidth=2, color='#1f77b4', alpha=0.5)
                 ax.fill(angles, focal_stats, alpha=0.25, facecolor='#1f77b4')
             else:
@@ -370,7 +370,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
         ax_ytick[-1] = '30+'   
         ax.set_yticklabels(ax_ytick)
         
-    elif year=='2007~2019':
+    elif year=='2008~2020':
         """
         labels = np.array(["Hazardous and Group Task","Outdoor Labor","Dynamic Physical Task", "Physical Task",
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
@@ -448,7 +448,7 @@ def draw_task_importance(year='2019', job='TOTAL AVERAGE'):
 
 """
 # Create your views here.
-def draw_task_importance(year='2007~2019', job='TOTAL AVERAGE'):    
+def draw_task_importance(year='2008~2020', job='TOTAL AVERAGE'):    
     #### TASK IMPORTANCE ####    
     csvpath = djangoSettings.STATICFILES_DIRS[0] +'/data/csv/Panel 2.csv'
     panel_df = pd.read_csv(csvpath, encoding='utf-8', dtype={'Year':str})
@@ -471,7 +471,7 @@ def draw_task_importance(year='2007~2019', job='TOTAL AVERAGE'):
 
         ax = fig.add_subplot(111, polar=True)     
 
-        if year =='2019' or year=='2007':
+        if year =='2020' or year=='2008':
             ax.plot(angles, focal_stats, 'o-', linewidth=2)
             ax.fill(angles, focal_stats, alpha=0.25)
 
@@ -501,7 +501,7 @@ def draw_task_importance(year='2007~2019', job='TOTAL AVERAGE'):
 
         ax = fig.add_subplot(111, polar=True)
 
-        if year =='2019' or year=='2007':
+        if year =='2020' or year=='2008':
             ax.plot(angles, focal_stats, 'o-', linewidth=2)
             ax.fill(angles, focal_stats, alpha=0.25)
         else:
@@ -511,7 +511,7 @@ def draw_task_importance(year='2007~2019', job='TOTAL AVERAGE'):
         ax.grid(True)
         ax.legend(['TOTAL AVERAGE'], loc='upper center', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=1)
 
-    if year =='2019' or year=='2007':
+    if year =='2020' or year=='2008':
         ax.set_rorigin(0)
         if max_ytick < 100:
             ax.set_ylim(0,100)
@@ -520,7 +520,7 @@ def draw_task_importance(year='2007~2019', job='TOTAL AVERAGE'):
             ax.set_ylim(0,150)
             ax.set_yticks(np.arange(0,150,10))
 
-    elif year=='2007~2019':
+    elif year=='2008~2020':
         ax.set_rorigin(-60)
         ax.set_ylim(-60,60)
         ax.set_yticks(np.arange(-60,60,10))
@@ -587,7 +587,7 @@ def index(request):
         task_automation = draw_task_automation()
         code, job_desc = job_description()
 
-        year='2019'
+        year='2020'
         job='TOTAL AVERAGE'
 
         return render(request, 'visualize/index.html',{'task_importance':task_importance, 
@@ -616,7 +616,7 @@ def automation_index(request):
         task_automation = draw_task_automation()
         code, job_desc = job_description()
 
-        year='2019'
+        year='2020'
         job='TOTAL AVERAGE'
 
         return render(request, 'visualize/automation_index.html',{'task_importance':task_importance, 
@@ -626,14 +626,14 @@ def automation_index(request):
 def skill_dna_view(request):
     code = request.GET.get('code', '00-0000')
     job = request.GET.get('job','TOTAL AVERAGE')
-    year = request.GET.get('year','2019')
+    year = request.GET.get('year','2020')
 
     return render(request, 'visualize/skill_dna_view.html', {'year':year, 'job':job, 'code':code})        
 
 def skill_dna_view_mobile(request):
     code = request.GET.get('code', '00-0000')
     job = request.GET.get('job','TOTAL AVERAGE')
-    year = request.GET.get('year','2019')
+    year = request.GET.get('year','2020')
 
     return render(request, 'visualize/skill_dna_view_mobile.html', {'year':year, 'job':job, 'code':code})        
   
@@ -649,7 +649,7 @@ def skill_dna(request):
                     'form': form, 'code_description':code_desc})        
     else:
         form = SkillDNA()
-        year = '2019'
+        year = '2020'
         code = '00-0000'
         job, code , code_desc = code_description()        
         
@@ -664,7 +664,7 @@ def automation_ranking(request):
             return render(request, 'visualize/automation_ranking.html',{'year':year, 'form': form})      
     else:
         form = AutomationRanking()
-        year = '2019'
+        year = '2020'
         return render(request, 'visualize/automation_ranking.html', {'year':year, 'form' : form})
 
 def job_automation(request):
@@ -675,7 +675,7 @@ def job_automation(request):
             return render(request, 'visualize/job_automation.html',{'year':year, 'form': form})      
     else:
         form = AutomationRanking()
-        year = '2019'
+        year = '2020'
         return render(request, 'visualize/job_automation.html', {'year':year, 'form' : form})
         
 def automation_map(request):
@@ -688,7 +688,7 @@ def automation_map(request):
     else:
         form = MapForm()
         relation_to_automation = u'Race with the Machine'
-        year = '2019'
+        year = '2020'
         return render(request, 'visualize/automation_map.html', {'relation_to_automation':relation_to_automation, 'year':year,'form': form})      
          
 
@@ -700,6 +700,6 @@ def city_automation(request):
             return render(request, 'visualize/city_automation.html',{'year':year, 'form': form})      
     else:
         form = AutomationRanking()
-        year = '2019'
+        year = '2020'
         return render(request, 'visualize/city_automation.html', {'year':year, 'form' : form})
                 

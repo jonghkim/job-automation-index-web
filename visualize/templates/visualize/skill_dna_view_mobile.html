@@ -133,30 +133,24 @@
 
         var color = d3.scale.ordinal()
             .domain(["Race with the Machine",
-                        "Communication", "Interpersonal Task" ,"Group Task",
+                        "Interpersonal Task", "Group Task", "Conflict Resolution", "Management and Supervision",
                         "line1",
                         "Race against the Machine",
-                        "Routine Problem Solving", "Information Processing", 
-                        "General Physical Task", "Machine Control", "Hazardous Task",
+                        "Routine Problem Solving", "Information Processing", "General Physical Task", "Dynamic Physical Task",
                         "line2",
                         "Race ahead of the Machine",
-                        "Systems Analysis",
-                        "Creative and Critical Thinking",
+                        "Communication","Systems Analysis","Creative and Critical Thinking",
                         "line3",
                         "Running a Different Race",
-                        "Dynamic Physical Task",
-                        "Equipment Maintenance",
-                        "Vehicle and Equipment Operation",
-                        "Conflict Resolution",
-                        "Management and Supervision"])
+                        "Equipment Maintenance", "Vehicle and Equipment Operation","Machine Control","Hazardous Task"])
             .range([
                 "rgba(0, 0, 0, 0)",
                 "#009933", 
                 "#ff0000", 
                 "#0000cc",
-                "rgba(0, 0, 0, 0)",
-                "rgba(0, 0, 0, 0)",
                 "#003366", 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",
                 "#996633", 
                 "#ffcccc", 
                 "#ff9933",
@@ -165,9 +159,9 @@
                 "rgba(0, 0, 0, 0)",
                 "#00ccff", 
                 "#784212", 
+                "#F4D03F",                 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
-                "#F4D03F", 
                 "#C0392B", 
                 "#BB8FCE",
                 "#ff66ff", 
@@ -346,23 +340,23 @@
 
         for (var node in skill_nodes.skill_list){
             nodeAttribute[skill_nodes.skill_list[node].skill_name] = {}
-            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2019'] = skill_nodes.skill_list[node]['automation_2019'];
-            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007'] = skill_nodes.skill_list[node]['automation_2007'];
-            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2007_2019'] = skill_nodes.skill_list[node]['automation_2007_2019'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2020'] = skill_nodes.skill_list[node]['automation_2020'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2008'] = skill_nodes.skill_list[node]['automation_2008'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2008_2020'] = skill_nodes.skill_list[node]['automation_2008_2020'];
             nodeAttribute[skill_nodes.skill_list[node].skill_name]['task_name'] = skill_nodes.skill_list[node]['task_name'];
-            if (minAutomation > skill_nodes.skill_list[node]['automation_2019']){
-                minAutomation = skill_nodes.skill_list[node]['automation_2019'];
+            if (minAutomation > skill_nodes.skill_list[node]['automation_2020']){
+                minAutomation = skill_nodes.skill_list[node]['automation_2020'];
             }
-            if (maxAutomation < skill_nodes.skill_list[node]['automation_2019']){
-                maxAutomation = skill_nodes.skill_list[node]['automation_2019'];
+            if (maxAutomation < skill_nodes.skill_list[node]['automation_2020']){
+                maxAutomation = skill_nodes.skill_list[node]['automation_2020'];
             }
         }
 
         
         nodes.forEach(function(node){
-            node.automation_2019 = nodeAttribute[node.name]['automation_2019'];
-            node.automation_2007 = nodeAttribute[node.name]['automation_2007'];
-            node.automation_2007_2019 = nodeAttribute[node.name]['automation_2007_2019'];
+            node.automation_2020 = nodeAttribute[node.name]['automation_2020'];
+            node.automation_2008 = nodeAttribute[node.name]['automation_2008'];
+            node.automation_2008_2020 = nodeAttribute[node.name]['automation_2008_2020'];
             node.task_name = nodeAttribute[node.name]['task_name'];
         });
         
