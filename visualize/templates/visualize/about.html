@@ -11,11 +11,10 @@
     <h5 style="text-align: center;"><strong><em>A Data-Driven Exploration of the Race between Man and Machine</em></strong></h5> </br>
         <p style="text-align: right;">“If you can’t measure it, you can’t manage it.” </p>
         <p style="text-align: right;">-	Peter Drucker</p>
-Anxiety about automation is prevalent in this era of rapid technological advances especially in artificial intelligence, machine learning, and robotics. Although there have been doom-laden prophecies about new technology and automation replacing human tasks and wiping out a large number of jobs at least since the Industrial Revolution two centuries ago, recent technological advances in performing sophisticated and complex tasks differentiate the 21st century from previous ones.</br></br>
 
-Given that technology directly affects the demand for specific skills and tasks, instead of acting on whole occupations, the impacts of automation technology vary widely by task types. Thus, it is imperative to examine the types of tasks that are more, or less, susceptible to technological advances; as Peter Drucker stated, “proper measurement of information will lead to advances in effectiveness and performance of management.” To this end, we initiated this research project to empirically explore the evolution of task automation during 2008-2020.</br></br>
+Anxiety about automation is prevalent in this era of rapid technological advances, especially in artificial intelligence, machine learning, and robotics. Accordingly, how human labor compete or cooperate with the machine (often illustrated as the “race between man and machine”) has attracted a great deal of attention among the public, policymakers, and researchers. While there have been doom-laden prophecies about new technology and automation replacing human tasks at least since the Industrial Revolution, recent technological advances in performing sophisticated and complex tasks—enabled by a combinatorial innovation of new techniques and algorithms, advances in computational power, and exponential increase in data—differentiate the 21st century from previous ones.</br></br>
 
-For a data-driven exploration of the race between human tasks (man) and automation technology (machine), we propose a network-based methodology that reveals the latent task types across occupations. We then measure the task-level degree of automation and evaluate task complementarity, or substitutability, with the demand for occupations in which such a task is performed. The following figure shows the revealed skill network and task types (clusters of skills).</br></br>
+However, the oft-overlooked reality is that not all kinds of jobs and tasks are wiped out by technological advances. Rather, technology can replace some human tasks, but can also augment some human intelligence and complement specific types of tasks in ways that lead to higher demand for occupations in which those tasks are performed. Moreover, task content of occupations as well as automation technology have evolved over time, which calls for measuring and tracking the dynamics of task automation in a systematic manner. To this end, we propose a data-driven approach to reveal endogenous task types performed by representative occupations and quantitatively measure their degree of automation. The following figure shows the revealed skill network and task types (clusters of related skills).</br></br>
 
 <img src="{% static 'img/Skill DNA.png' %}" class="img-fluid">
 
@@ -23,22 +22,20 @@ As consistent with prior studies, it reveals the inverted-U shaped relationship 
 
 <img src="{% static 'img/Automation and Education_2021v1.png' %}" class="img-fluid"></br></br>
 
-To examine the dynamics of technical advances and labor demand in the 21st century, the revealed task types are classified into distinct categories according to the changes in degree of automation and labor demand during 2008-2020. </br></br>
+Based on changes in degree of automation and employment share during 2008–2020, task types are classified into four distinct categories: (i) race against the machine, (ii) race with the machine, (iii) race ahead of the machine, and (iv) running a different race. </br></br>
 
 <img src="{% static 'img/Job Automation Index_2021v1.png' %}" class="img-fluid">
 
-<div class="small text-muted">The point size is proportional to the degree of automation in 2019. The blue (black) dots represent statistically (in)significant change in the labor demand.</div></br></br>
+<div class="small text-muted">The point size is proportional to the degree of automation in 2020. </div></br></br>
 
 <ul>
-<li> Race with the Machine: Tasks have already been highly automated or have experienced in the increase in automation level, while the labor demand for the tasks has increased from 2008 to 2020 </li>
-<li> Race against the Machine: Tasks have already been highly automated or have experienced in the increase in automation level, while the labor demand for the tasks has decreased from 2008 to 2020 </li>
-<li> Race ahead of the Machine: Tasks have experienced in the decrease in automation level, while the labor demand for the tasks has increased from 2008 to 2020 </li>
-<li> Running a Different Race: Tasks have experienced in the increase in degree of automation, while the labor demand for the tasks has remained stable during 2008-2020 </li>
+<li> Race against the Machine: Tasks have already been highly automated or have experienced an increase in automation level, while the employment share for the tasks has decreased from 2008 to 2020 </li>
+<li> Race with the Machine: Tasks have experienced an increase in automation level, while the employment share for the tasks has increased from 2008 to 2020 </li>
+<li> Race ahead of the Machine: Tasks have experienced a decrease in automation level, while the employment share for the tasks has increased from 2008 to 2020 </li>
+<li> Running a Different Race: Tasks have experienced an increase in the degree of automation, while the employment share for the tasks has remained relatively stable during 2008–2020 </li>
 </ul>
 
-
-Based on our analysis, we provide the online system of job automation index that illustrates the task-level susceptibility to automation across occupations and cities in the United States. The task-level decomposition of automation level will provide a more granular understanding of how technical advances and automation affect occupations and communities, which informs further research and policy discussions on the societal challenges of automation and the future of work.</br></br>
-This system consists of five functions, the first three of which are at occupation level and the last two at city level:</br></br>
+To facilitate discussion and communications on the impacts of automation, we developed this website for the automation indexes, which is comprised of five functions: </br></br>
 <p style="text-align: left;">
     &nbsp; (1)	<a href="{% url 'visualize:automation_index'%}">Job Automation Index </a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demonstrate an occupation’s job automation index</br>
@@ -48,7 +45,7 @@ This system consists of five functions, the first three of which are at occupati
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all occupations by task-level job automation index</br>
     &nbsp; (4)	<a href="{% url 'visualize:automation_map'%}">Automation Map (U.S. Cities)</a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize a city’s relations to automation in the United States</br>
-    &nbsp; (5)	<a href="{% url 'visualize:city_automation'%}">City Automation Index</a></br>
+    &nbsp; (5)	<a href="{% url 'visualize:city_automation'%}">Task-Level City Automation</a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all U.S. cities by task-level city automation index</br>    
 </p>
 

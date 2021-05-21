@@ -48,17 +48,17 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
 
     if (year=='2020') or (year=='2008'):
         if job=='TOTAL AVERAGE':
-            objects = ['Race with the Machine', 'Race against the Machine',
+            objects = ['Race against the Machine', 'Race with the Machine', 
                        'Race ahead of the Machine', 'Running a Different Race', 'Annual Wage']
         else:
-            objects = ['Race with the Machine', 'Race against the Machine',
+            objects = ['Race against the Machine', 'Race with the Machine', 
                        'Race ahead of the Machine', 'Running a Different Race', 'Employment','Annual Wage']
     elif year=='2008~2020':
         if job=='TOTAL AVERAGE':
-            objects = ['Race with the Machine Change', 'Race against the Machine Change',
+            objects = ['Race against the Machine Change', 'Race with the Machine Change', 
                        'Race ahead of the Machine Change', 'Running a Different Race Change']
         else:
-            objects = ['Race with the Machine Change', 'Race against the Machine Change',
+            objects = ['Race against the Machine Change', 'Race with the Machine Change', 
                        'Race ahead of the Machine Change', 'Running a Different Race Change', 'Wage Share Change']
 
     if (year=='2020') or (year=='2008'):        
@@ -288,7 +288,7 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                         "Equipment Operation", "Equipment Maintenance"])                    
         """
         labels = np.array(["Race with the Machine",	"Race against the Machine",
-                            "Race ahead of the Machine", "Running a Different Race"]) # "Changing the Course of a Race"
+                            "Running a Different Race", "Race ahead of the Machine"]) # "Changing the Course of a Race"
 
         lim_range = False
         if job != 'TOTAL AVERAGE':
@@ -376,8 +376,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
                          "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
         """
-        labels = np.array(["Running a Different Race", 
-                            "Race ahead of the Machine", "Race against the Machine",
+        labels = np.array(["Race ahead of the Machine", "Running a Different Race", 
+                            "Race against the Machine",
                             "Race with the Machine"])          # "Changing the Course of a Race", 
 
         lim_range = False

@@ -129,14 +129,14 @@
 
         // Linear size scale
         // var linearSize = d3.scale.linear().domain([0,1]).range([smallCircleSize, largeCircleSize]);
-        var taskClusterSize = d3.scale.ordinal().domain(["Race with the Machine","Race against the Machine","Race ahead of the Machine","Running a Different Race"]).range([largeCircleSize, largeCircleSize]);
+        var taskClusterSize = d3.scale.ordinal().domain(["Race against the Machine","Race with the Machine","Race ahead of the Machine","Running a Different Race"]).range([largeCircleSize, largeCircleSize]);
 
         var color = d3.scale.ordinal()
-            .domain(["Race with the Machine",
-                        "Interpersonal Task", "Group Task", "Conflict Resolution", "Management and Supervision",
-                        "line1",
-                        "Race against the Machine",
+            .domain(["Race against the Machine",
                         "Routine Problem Solving", "Information Processing", "General Physical Task", "Dynamic Physical Task",
+                        "line1",
+                        "Race with the Machine",
+                        "Interpersonal Task", "Group Task", "Conflict Resolution", "Management and Supervision",
                         "line2",
                         "Race ahead of the Machine",
                         "Communication","Systems Analysis","Creative and Critical Thinking",
@@ -145,20 +145,20 @@
                         "Equipment Maintenance", "Vehicle and Equipment Operation","Machine Control","Hazardous Task"])
             .range([
                 "rgba(0, 0, 0, 0)",
-                "#009933", 
-                "#ff0000", 
-                "#0000cc",
-                "#003366", 
-                "rgba(0, 0, 0, 0)",
-                "rgba(0, 0, 0, 0)",
                 "#996633", 
                 "#ffcccc", 
                 "#ff9933",
                 "#2E86C1", 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
+                "#009933", 
+                "#ff0000", 
+                "#0000cc",
+                "#003366",                 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",
                 "#00ccff", 
-                "#784212", 
+                "#00FF00", 
                 "#F4D03F",                 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
