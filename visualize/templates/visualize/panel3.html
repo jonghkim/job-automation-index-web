@@ -79,7 +79,7 @@ var pack = d3.pack()
     .padding(6);
 
 //d3.json("/static/zoomable/flare.json", function(error, root) {
-d3.json("/static/data/network/{{ code|safe }}.json", function(error, root) {    
+d3.json("/static/data/network_tmp/{{ code|safe }}.json", function(error, root) {    
   if (error) throw error;
   //console.log(root);
   root = d3.hierarchy(root)

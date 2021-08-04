@@ -25,7 +25,7 @@ SECRET_KEY = '5a*0#rbe@_6ox%s5tkv$lf57ztm2+z#!tdl(qrc=p5e!ah&6+w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jobautomation.pythonanywhere.com',
+ALLOWED_HOSTS = ['0.0.0.0', 'jobautomation.pythonanywhere.com',
              '.pythonanywhere.com', '.googleapis.com',
              'www.jobautomation.pythonanywhere.com','localhost', '127.0.0.1', 
              '.jobautomationindex.com', 'www.jobautomationindex.com']

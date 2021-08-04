@@ -172,9 +172,9 @@
         var force = d3.layout.force().gravity(0.013);
 
         queue()
-            .defer(d3.json, "/static/data/network/{{ code|safe }}.json")
-            .defer(d3.csv, "/static/data/network_csv/skill_edges.csv")
-            .defer(d3.csv, "/static/data/network_csv/task_cluster.csv")
+            .defer(d3.json, "/static/data/network_tmp/{{ code|safe }}.json")
+            .defer(d3.csv, "/static/data/network_csv/skill_edges_tmp.csv")
+            .defer(d3.csv, "/static/data/network_csv/task_cluster_2008.csv")
             .await(ready);
 
     function ready(error, skill_nodes, skill_edges, task_clusters){
