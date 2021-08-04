@@ -181,7 +181,7 @@
         var force = d3.layout.force().gravity(0.015);
 
         queue()
-            .defer(d3.json, "/static/data/network/{{ code|safe }}.json")
+            .defer(d3.json, "/static/data/network_2008/{{ code|safe }}.json")
             .defer(d3.csv, "/static/data/network_csv/skill_edges_2008.csv")
             .defer(d3.csv, "/static/data/network_csv/task_cluster.csv")
             .await(ready);
