@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^job_automation/$', views.job_automation, name='job_automation'),
     url(r'^skill_dna/$', views.skill_dna, name='skill_dna'),        
     url(r'^skill_dna_view/$', views.skill_dna_view, name='skill_dna_view'),        
+    url(r'^skill_dna_view_2008/$', views.skill_dna_view_2008, name='skill_dna_view_2008'),        
     url(r'^skill_dna_view_mobile/$', views.skill_dna_view_mobile, name='skill_dna_view_mobile'),        
     url(r'^automation_map/$', views.automation_map, name='automation_map'),                
     url(r'^city_automation/$', views.city_automation, name='city_automation'),            

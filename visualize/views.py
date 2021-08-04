@@ -637,6 +637,13 @@ def skill_dna_view_mobile(request):
 
     return render(request, 'visualize/skill_dna_view_mobile.html', {'year':year, 'job':job, 'code':code})        
   
+def skill_dna_view_2008(request):
+    code = request.GET.get('code', '00-0000')
+    job = request.GET.get('job','TOTAL AVERAGE')
+    year = request.GET.get('year','2020')
+
+    return render(request, 'visualize/skill_dna_view_2008.html', {'year':year, 'job':job, 'code':code})        
+
 def skill_dna(request):
     if request.method == 'POST':
         form = SkillDNA(request.POST) 
