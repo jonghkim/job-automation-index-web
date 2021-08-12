@@ -351,10 +351,11 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
 
             ax.set_thetagrids(angles * 180/np.pi, labels, fontsize=11)
             ax.set_theta_zero_location("N")
-            ax.grid(True)
+            ax.grid(True)            
             ax.yaxis.grid(False)
             ax.legend(['TOTAL AVERAGE'+' (%)'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
 
+        ax.set_rlabel_position(135)
         ax.set_rorigin(0)
         """
         if max_ytick < 70:
