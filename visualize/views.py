@@ -355,7 +355,7 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
             ax.yaxis.grid(False)
             ax.legend(['TOTAL AVERAGE'+' (%)'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
 
-        ax.set_rlabel_position(135)
+        ax.set_rlabel_position(240)
         ax.set_rorigin(0)
         """
         if max_ytick < 70:
