@@ -140,18 +140,22 @@
 
         // Initialize Ordinal Colour Scale
    
+
         var color = d3.scale.ordinal()
-            .domain([   "Race against the Machine",
-                        "Routine Problem Solving", "Information Processing", "General Physical Task", "Dynamic Physical Task",
+            .domain([   'Race with the Machine', 
+                        'Interpersonal Task', 'Group Task', 'Conflict Resolution', 'Management and Supervision',
                         "line1",
-                        "Race with the Machine",
-                        "Interpersonal Task", "Group Task", "Conflict Resolution", "Management and Supervision",
+                        'Race ahead of the Machine', 
+                        'Communication', 'Systems Analysis', 'Creative and Critical Thinking',
                         "line2",
-                        "Race ahead of the Machine",
-                        "Communication","Systems Analysis","Creative and Critical Thinking",
+                        'Changing the Course of the Race', 
+                        'Routine Problem Solving', 'Information Processing',
                         "line3",
-                        "Running a Different Race",
-                        "Equipment Maintenance", "Vehicle and Equipment Operation","Machine Control","Hazardous Task"])
+                        'Race against the Machine', 
+                        'General Physical Task', 'Dynamic Physical Task',
+                        "line4",
+                        'Running a Different Race', 
+                        'Equipment Maintenance',  'Vehicle and Equipment Operation', 'Machine Control', 'Hazardous Task'])
             .range([
                 "rgba(0, 0, 0, 0)",
                 "#996633", 
@@ -163,11 +167,13 @@
                 "#009933", 
                 "#ff0000", 
                 "#0000cc",
-                "#003366", 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
                 "#00ccff", 
                 "#e05109", 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",                
+                "#003366",                 
                 "#e6b802",                 
                 "rgba(0, 0, 0, 0)",
                 "rgba(0, 0, 0, 0)",
@@ -343,7 +349,7 @@
             .attr("x", xMargin)
             .attr("dy", 0)
             .attr("y", yMargin)
-            .text("SKILL DNA OF")
+            .text("SKILL NETWORK OF")
             .append("tspan")
             .attr("x", xMargin)
             .attr("dy", "30")
@@ -366,7 +372,8 @@
             .scale(taskClusterSize)
             .shape('circle')
             .shapePadding(legendTaskClusterPadding)
-            .labels(["Race against the Machine","Race with the Machine","Race ahead of the Machine","Running a Different Race"])
+            .labels(['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+                                                      'Race against the Machine', 'Running a Different Race'])
             .cells(4) // Number of objects (circles)
             .ascending(true);
 
@@ -386,17 +393,16 @@
             .shapePadding(legendTaskPadding)
             .scale(color)
             .labels([
-                        "Race against the Machine",
-                        "Routine Problem Solving", "Information Processing", "General Physical Task", "Dynamic Physical Task",                     
+                        'Race with the Machine', 'Interpersonal Task', 'Group Task', 'Conflict Resolution', 'Management and Supervision',
                         "",
-                        "Race with the Machine",
-                        "Interpersonal Task", "Group Task", "Conflict Resolution", "Management and Supervision",
+                        'Race ahead of the Machine', 'Communication', 'Systems Analysis', 'Creative and Critical Thinking',
                         "",
-                        "Race ahead of the Machine",
-                        "Communication","Systems Analysis","Creative and Critical Thinking",
+                        'Changing the Course of the Race', 'Routine Problem Solving', 'Information Processing',
                         "",
-                        "Running a Different Race",
-                        "Equipment Maintenance", "Vehicle and Equipment Operation","Machine Control","Hazardous Task"                  
+                        'Race against the Machine', 'General Physical Task', 'Dynamic Physical Task',
+                        "",
+                        'Running a Different Race', 'Equipment Maintenance',  'Vehicle and Equipment Operation', 'Machine Control', 'Hazardous Task'                 
+
                     ]);        
 
         var taskLegend = legendContainer.select(".legendOrdinal")
@@ -406,7 +412,7 @@
             .attr("text-decoration", function(d) {
                 //console.log(d.labels);
 
-                if (d == "Race with the Machine" || d == "Race against the Machine" || d == "Race ahead of the Machine" || d == "Running a Different Race"){
+                if (d == "Race with the Machine" || d == "Changing the Course of the Race" || d == "Race against the Machine" || d == "Race ahead of the Machine" || d == "Running a Different Race"){
                     return "underline";
                 }else{
                     return "none";

@@ -1,11 +1,9 @@
 task_cluster,task_name
+Changing the Course of the Race,Routine Problem Solving
+Changing the Course of the Race,Information Processing
 Race ahead of the Machine,Communication
 Race ahead of the Machine,Systems Analysis
 Race ahead of the Machine,Creative and Critical Thinking
-Race against the Machine,Routine Problem Solving
-Race against the Machine,Information Processing
-Race against the Machine,General Physical Task
-Race against the Machine,Dynamic Physical Task
 Running a Different Race,Equipment Maintenance
 Running a Different Race,Vehicle and Equipment Operation
 Running a Different Race,Machine Control
@@ -14,3 +12,5 @@ Race with the Machine,Interpersonal Task
 Race with the Machine,Group Task
 Race with the Machine,Conflict Resolution
 Race with the Machine,Management and Supervision
+Race against the Machine,General Physical Task
+Race against the Machine,Dynamic Physical Task

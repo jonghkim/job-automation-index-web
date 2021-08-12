@@ -48,24 +48,24 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
 
     if (year=='2020') or (year=='2008'):
         if job=='TOTAL AVERAGE':
-            objects = ['Race against the Machine', 'Race with the Machine', 
-                       'Race ahead of the Machine', 'Running a Different Race', 'Annual Wage']
+            objects = ['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+                       'Race against the Machine', 'Running a Different Race', 'Annual Wage']
         else:
-            objects = ['Race against the Machine', 'Race with the Machine', 
-                       'Race ahead of the Machine', 'Running a Different Race', 'Employment','Annual Wage']
+            objects = ['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+                       'Race against the Machine', 'Running a Different Race', 'Employment','Annual Wage']
     elif year=='2008~2020':
         if job=='TOTAL AVERAGE':
-            objects = ['Race against the Machine Change', 'Race with the Machine Change', 
-                       'Race ahead of the Machine Change', 'Running a Different Race Change']
+            objects = ['Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
+                       'Race against the Machine Change', 'Running a Different Race Change', ]
         else:
-            objects = ['Race against the Machine Change', 'Race with the Machine Change', 
-                       'Race ahead of the Machine Change', 'Running a Different Race Change', 'Wage Share Change']
+            objects = ['Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
+                       'Race against the Machine Change', 'Running a Different Race Change', 'Wage Share Change']
 
     if (year=='2020') or (year=='2008'):        
         fig, axs = plt.subplots(len(objects), figsize=(7,len(objects)*1.3))
         
         for i, obj in enumerate(objects):
-            if ((obj =='Job Automation Index') or (obj =='Race with the Machine') or 
+            if ((obj =='Job Automation Index') or (obj =='Race with the Machine') or (obj =='Changing the Course of the Race') or 
                 (obj =='Race against the Machine') or (obj =='Race ahead of the Machine') or (obj =='Running a Different Race')):
 
                 val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
@@ -160,7 +160,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
             fig, axs = plt.subplots(len(objects), figsize=(7,2*1.3))
             
             for i, obj in enumerate(objects):
-                if ((obj =='Job Automation Index Change') or (obj =='Race with the Machine Change') or 
+                if ((obj =='Job Automation Index Change') or (obj =='Race with the Machine Change') or (obj =='Changing the Course of the Race Change') or 
                     (obj =='Race against the Machine Change') or (obj =='Race ahead of the Machine Change') or (obj =='Running a Different Race Change')):
 
                     val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
@@ -224,7 +224,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
             
             ax.barh(0, val, align='center', alpha=0.5)
 
-            if ((objects[0] =='Job Automation Index') or (objects[0] =='Race with the Machine') or 
+            if ((objects[0] =='Job Automation Index') or (objects[0] =='Race with the Machine') or (objects[0] =='Changing the Course of the Race') or 
                 (objects[0] =='Race against the Machine') or (objects[0] =='Race ahead of the Machine') or (objects[0] =='Running a Different Race')):
                 
                 #ax.set_xlim(40, 60)
@@ -235,7 +235,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
 
                 ax.set_title(objects[0]+' (%)')
 
-            elif ((objects[0] =='Job Automation Index Change') or (objects[0] =='Race with the Machine Change') or 
+            elif ((objects[0] =='Job Automation Index Change') or (objects[0] =='Race with the Machine Change') or (objects[0] =='Changing the Course of the Race Change') or 
                   (objects[0] =='Race against the Machine Change') or (objects[0] =='Race ahead of the Machine Change') or (objects[0] =='Running a Different Race Change')):
 
                 ax.set_xlim(-17,17)
@@ -287,8 +287,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                         "Hazardous and Group Task", "Outdoor Labor", "Dynamic Physical Task", "Physical Task", 
                         "Equipment Operation", "Equipment Maintenance"])                    
         """
-        labels = np.array(["Race with the Machine",	"Race against the Machine",
-                            "Running a Different Race", "Race ahead of the Machine"]) # "Changing the Course of a Race"
+        labels = np.array(['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+                                                      'Race against the Machine', 'Running a Different Race']) # "Changing the Course of a Race"
 
         lim_range = False
         if job != 'TOTAL AVERAGE':
@@ -376,9 +376,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
                          "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
         """
-        labels = np.array(["Race ahead of the Machine", "Running a Different Race", 
-                            "Race against the Machine",
-                            "Race with the Machine"])          # "Changing the Course of a Race", 
+        labels = np.array(['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+                                                      'Race against the Machine', 'Running a Different Race'])          # "Changing the Course of a Race", 
 
         lim_range = False
         if job != 'TOTAL AVERAGE':

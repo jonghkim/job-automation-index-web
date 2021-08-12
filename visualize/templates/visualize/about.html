@@ -8,15 +8,15 @@
 </div>
 
 <div class="card-body" style="text-align: justify;">
-    <h5 style="text-align: center;"><strong><em>A Data-Driven Exploration of the Race between Man and Machine</em></strong></h5> </br>
+    <h5 style="text-align: center;"><strong><em>A Data-Driven Exploration of the Race between Human Labor and Machines</em></strong></h5> </br>
         <p style="text-align: right;">“If you can’t measure it, you can’t manage it.” </p>
         <p style="text-align: right;">-	Peter Drucker</p>
 
-Anxiety about automation is prevalent in this era of rapid technological advances, especially in artificial intelligence, machine learning, and robotics. Accordingly, how human labor compete or cooperate with the machine (often illustrated as the “race between man and machine”) has attracted a great deal of attention among the public, policymakers, and researchers. While there have been doom-laden prophecies about new technology and automation replacing human tasks at least since the Industrial Revolution, recent technological advances in performing sophisticated and complex tasks—enabled by a combinatorial innovation of new techniques and algorithms, advances in computational power, and exponential increase in data—differentiate the 21st century from previous ones.</br></br>
+Anxiety about automation is prevalent in this era of rapid technological advances, especially in artificial intelligence, machine learning, and robotics. Accordingly, how human labor compete or cooperate with the machine (often illustrated as the “race between human labor and machines”) has attracted a great deal of attention among the public, policymakers, and researchers. While there have been doom-laden prophecies about new technology and automation replacing human tasks at least since the Industrial Revolution, recent technological advances in performing sophisticated and complex tasks—enabled by a combinatorial innovation of new techniques and algorithms, advances in computational power, and exponential increase in data—differentiate the 21st century from previous ones.</br></br>
 
 However, the oft-overlooked reality is that not all kinds of jobs and tasks are wiped out by technological advances. Rather, technology can replace some human tasks, but can also augment some human intelligence and complement specific types of tasks in ways that lead to higher demand for occupations in which those tasks are performed. Moreover, task content of occupations as well as automation technology have evolved over time, which calls for measuring and tracking the dynamics of task automation in a systematic manner. To this end, we propose a data-driven approach to reveal endogenous task types performed by representative occupations and quantitatively measure their degree of automation. The following figure shows the revealed skill network and task types (clusters of related skills).</br></br>
 
-<img src="{% static 'img/Skill DNA.png' %}" class="img-fluid">
+<img src="{% static 'img/Skill Network.png' %}" class="img-fluid">
 
 As consistent with prior studies, it reveals the inverted-U shaped relationship between degree of automation and required level of education at the task level. </br></br>
 
@@ -24,7 +24,7 @@ As consistent with prior studies, it reveals the inverted-U shaped relationship 
 
 Based on changes in degree of automation and employment share during 2008–2020, task types are classified into four distinct categories: (i) race against the machine, (ii) race with the machine, (iii) race ahead of the machine, and (iv) running a different race. </br></br>
 
-<img src="{% static 'img/Job Automation Index_2021v1.png' %}" class="img-fluid">
+<img src="{% static 'img/Job Automation Index_2021v2.png' %}" class="img-fluid">
 
 <div class="small text-muted">The point size is proportional to the degree of automation in 2020. </div></br></br>
 
@@ -39,7 +39,7 @@ To facilitate discussion and communications on the impacts of automation, we dev
 <p style="text-align: left;">
     &nbsp; (1)	<a href="{% url 'visualize:automation_index'%}">Job Automation Index </a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demonstrate an occupation’s job automation index</br>
-    &nbsp; (2)	<a href="{% url 'visualize:skill_dna'%}">Skill DNA of Jobs</a></br>
+    &nbsp; (2)	<a href="{% url 'visualize:skill_dna'%}">Skill Network of Jobs</a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize an occupation’s skill requirements and relations to automation</br>    
     &nbsp; (3)	<a href="{% url 'visualize:job_automation'%}">Task-Level Job Automation </a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all occupations by task-level job automation index</br>
