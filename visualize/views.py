@@ -287,8 +287,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                         "Hazardous and Group Task", "Outdoor Labor", "Dynamic Physical Task", "Physical Task", 
                         "Equipment Operation", "Equipment Maintenance"])                    
         """
-        labels = np.array(['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
-                                                      'Race against the Machine', 'Running a Different Race']) # "Changing the Course of a Race"
+        labels = np.array(['Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine', ]) 
+        # "Changing the Course of a Race"
 
         lim_range = False
         if job != 'TOTAL AVERAGE':
@@ -376,8 +376,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
                          "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
         """
-        labels = np.array(['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
-                                                      'Race against the Machine', 'Running a Different Race'])          # "Changing the Course of a Race", 
+        labels = np.array(['Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine'])     
+        # "Changing the Course of a Race", 
 
         lim_range = False
         if job != 'TOTAL AVERAGE':
