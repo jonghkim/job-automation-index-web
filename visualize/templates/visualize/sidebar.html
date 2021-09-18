@@ -20,7 +20,6 @@
     <a class="dropdown-item" href="{% url 'visualize:automation_index'%}">
         <i class="fas fa-fw fa-chart-line" style="color:black"></i>
         Job Automation Index
-        </a>
     </a>
     
     <!--
@@ -33,13 +32,11 @@
     <a class="dropdown-item" href="{% url 'visualize:skill_dna'%}">
         <i class="fas fa-fw fa-dna" style="color:black"></i>
         Skill Network
-        </a>
     </a>
     
     <a class="dropdown-item" href="{% url 'visualize:job_automation'%}">
         <i class="fas fa-fw fa-table" style="color:black"></i>
         Task-Level Job Automation
-        </a>
     </a>
     
 </div>
@@ -54,40 +51,41 @@
     <a class="dropdown-item" href="{% url 'visualize:automation_map'%}">
         <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
         Automation Map (U.S. Cities)
-        </a>
     </a>
     
     <a class="dropdown-item" href="{% url 'visualize:city_automation'%}">
         <i class="fas fa-fw fa-table" style="color:black"></i>
         Task-Level City Automation
-        </a>
     </a>
     
 </div>
 </li>
 
-<li id="info_nav" class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="sidebar-span-dark">Further Information</span>
+<li id="geo_nav" class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sidebar-span-dark">Further Information</span>
+</a>
+        
+<div id="info_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
+
+    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3924789" class="dropdown-item">
+        <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
+        Paper
+    </a>        
+    
+    <a href="https://github.com/jonghkim/job-automation-index" class="dropdown-item">
+        <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
+        GitHub
     </a>
-    <div id="info_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3924789" class="dropdown-item">
-            <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
-            Paper
-            </a>
-        </a>        
-        <a href="https://github.com/jonghkim/job-automation-index" class="dropdown-item">
-            <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
-            GitHub
-            </a>
-        </a>
-        <a href="{% url 'visualize:contact'%}" class="dropdown-item">
+
+    <!--
+    <a href="{% url 'visualize:contact'%}" class="dropdown-item">
             <i class="fas fa-fw fa-globe-americas" style="color:black"></i>            
             Contact
-            </a>
-        </a>
+    </a>
+    -->
 
-    </div>
+</div>
 </li>
 
 </ul>
