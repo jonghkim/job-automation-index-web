@@ -1,4 +1,3 @@
-
 {% load static %}
 <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
@@ -13,7 +12,7 @@
 
 <li id="anatomy_nav" class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sidebar-span-dark">Job Automation Index</span>
+    <span class="sidebar-span-dark">Anatomy of Automation</span>
 </a>
 <div id="anatomy_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
 
@@ -21,70 +20,35 @@
         <i class="fas fa-fw fa-chart-line" style="color:black"></i>
         Job Automation Index
     </a>
-    
-    <!--
     <a class="dropdown-item" href="{% url 'visualize:automation_ranking'%}">
         <i class="fas fa-fw fa-chart-bar" style="color:black"></i>
         Job Automation Ranking
-        </a>
     </a>
-    -->
-    <a class="dropdown-item" href="{% url 'visualize:skill_dna'%}">
-        <i class="fas fa-fw fa-dna" style="color:black"></i>
-        Skill Network
-    </a>
-    
-    <a class="dropdown-item" href="{% url 'visualize:job_automation'%}">
+    <a class="dropdown-item" href="{% url 'visualize:task_level_automation'%}">
         <i class="fas fa-fw fa-table" style="color:black"></i>
-        Task-Level Job Automation
+        Task-Level Automation
     </a>
-    
+    <a class="dropdown-item" href="{% url 'visualize:skill_map'%}">
+        <i class="fas fa-fw fa-network-wired" style="color:black"></i>
+        Skill DNA of a Job
+    </a>    
 </div>
 </li>
 
 <li id="geo_nav" class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sidebar-span-dark">City Automation Index</span>
+    <span class="sidebar-span-dark">Geography of Automation</span>
 </a>
 <div id="geo_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
 
-    <a class="dropdown-item" href="{% url 'visualize:automation_map'%}">
+    <a class="dropdown-item" href="{% url 'visualize:map_automation'%}">
         <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
-        Automation Map (U.S. Cities)
+        Map of Automation (U.S. Cities)
     </a>
-    
-    <a class="dropdown-item" href="{% url 'visualize:city_automation'%}">
+    <a class="dropdown-item" href="{% url 'visualize:city_level_automation'%}">
         <i class="fas fa-fw fa-table" style="color:black"></i>
-        Task-Level City Automation
+        City-Level Automation
     </a>
-    
-</div>
-</li>
-
-<li id="info_nav" class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sidebar-span-dark">Further Information</span>
-</a>
-        
-<div id="info_menu" class="dropdown-menu" aria-labelledby="pagesDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 56px, 0px);">
-
-    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3924789" class="dropdown-item">
-        <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
-        Paper
-    </a>        
-    
-    <a href="https://github.com/jonghkim/job-automation-index" class="dropdown-item">
-        <i class="fas fa-fw fa-globe-americas" style="color:black"></i>
-        GitHub
-    </a>
-    </a>
-    <!--
-    <a href="{% url 'visualize:contact'%}" class="dropdown-item">
-            <i class="fas fa-fw fa-globe-americas" style="color:black"></i>            
-            Contact
-    </a>
-    -->
-
 </div>
 </li>
 
@@ -101,6 +65,7 @@
         color: #13A2DC;
     }    
 </style>
+
 
 <style>
 #about{
@@ -154,18 +119,19 @@
 <script>
 
 if ($(window).width() > 750) {
-   var element = document.getElementById('anatomy_nav');
-   element.classList.add('show');
-   var element = document.getElementById('anatomy_menu');
-   element.classList.add('show');
-   var element = document.getElementById('geo_nav');
-   element.classList.add('show');
-   var element = document.getElementById('geo_menu');
-   element.classList.add('show');
-   var element = document.getElementById('info_nav');
-   element.classList.add('show');
-   var element = document.getElementById('info_menu');
-   element.classList.add('show');  
+    var element = document.getElementById('anatomy_nav');
+    element.classList.add('show');
+    var element = document.getElementById('anatomy_menu');
+    element.classList.add('show');
+    var element = document.getElementById('geo_nav');
+    element.classList.add('show');
+    var element = document.getElementById('geo_menu');
+    element.classList.add('show');
+    var element = document.getElementById('info_nav');
+    element.classList.add('show');
+    var element = document.getElementById('info_menu');
+    element.classList.add('show');  
 }
+        
 
 </script>
