@@ -8,3 +8,4 @@ __*
 notebook/.ipynb_checkpoints/*
 static/data/csv/backup/*
 static/data/xlsx/backup/*
+.vscode/*
