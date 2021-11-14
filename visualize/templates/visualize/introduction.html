@@ -21,12 +21,15 @@
         <div class="card-body">
             Visualize an occupation’s skill requirements and skill-level susceptibility to automation during 2008-2020
 
+            <div style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 62.5%; background-size: cover; background-image: url(&quot;https://drive.google.com/uc?export=view&id=1jgP254rIqB5hbrk7z0vpLs_E6bMTnYZP&quot;);"></div>
+
+            <!--
             <div style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; width: 100%;">
               <div id="iframe_wrapper" class="card-body" style="width: 100% overflow: hidden;">        
                 <iframe id="iframe_page" src="http://www.jobautomationindex.com/skill_dna_view_mobile/" scrolling="no" width="100%" frameborder="0" tabindex="-1" allowfullscreen> </iframe>
              </div>
             </div>
-
+            -->
         </div>
       </div>
   </div>
@@ -63,38 +66,6 @@
     background-color: RoyalBlue;
 }
 </style>
-
-
-<script>
-  //https://stackoverflow.com/questions/35814138/dynamic-scaling-of-iframe-contents-as-frame-changes
-  
-  $(function() {
-      $("#iframe_wrapper").each(function() {
-          var $wrap = $(this);
-          function iframeScaler(){
-  
-              var wrapWidth = $wrap.width(); // width of the wrapper
-              var wrapHeight = $wrap.height();
-
-              var childWidth = $wrap.children("iframe").width(); // width of child iframe
-              var childHeight = $wrap.children("iframe").height(); // child height
-              var wScale = wrapWidth / childWidth;
-              var hScale = wrapHeight / childHeight;
-              var scale = Math.min(wScale,hScale);  // get the lowest ratio
-              $wrap.children("iframe").css({"transform": "scale("+scale+")", "transform-origin": "left top" });  // set scale
-              
-              $wrap.children("iframe").css({"height": childWidth});  // set scale
-              $wrap.css({"height": childWidth}); // set scale
- 
-          };
-          
-          $(window).on("resize", iframeScaler);
-          $(document).ready( iframeScaler);
-      });
-  });
-  
-  </script>
-
   
 <!--Anxiety about automation is prevalent in this era of rapid technological advances, especially in artificial intelligence, machine learning, and robotics. Accordingly, how human labor compete or cooperate with the machine (often illustrated as the “race between human labor and machines”) has attracted a great deal of attention among the public, policymakers, and researchers. A full picture of automation and the future of work requires an understanding of not only technological change—to what extent a human task is automated—but also labor demand for occupations performing a task. Based on a data-driven approach, this project explores which tasks are more or less susceptible to automation in the past decade, with respect to (i) changes in degree of automation and (ii) changes in employment. As part of the project, this website provides the task-level automation indexes for representative occupations and U.S. cities during 2008-2020.<br><br>-->
 <!--
