@@ -43,7 +43,7 @@ $(function() {
             var wrapWidth = $wrap.width(); // width of the wrapper
             var wrapHeight = $wrap.height();
 
-            if (wrapWidth < 400){
+            if (wrapWidth < 600){
                 if ($wrap.children("iframe").attr('src') != "/skill_dna_view_mobile?year={{year}}&code={{code}}&job={{job}}"){
                     $wrap.children("iframe").attr('src', "/skill_dna_view_mobile?year={{year}}&code={{code}}&job={{job}}");
                 }
