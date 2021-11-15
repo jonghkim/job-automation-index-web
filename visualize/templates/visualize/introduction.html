@@ -62,8 +62,8 @@
 
 .square-container {
   display: grid;
-  /*grid-template-columns: repeat(2, minmax(300px, 1fr));*/
-  grid-template-columns: repeat(auto-fill, minmax(2, 1fr)) ;
+  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-columns: repeat(auto-fill, minmax(23vw, 1fr)) ;*/
   gap: 1rem;
   margin: 1rem;
 }  
@@ -85,6 +85,7 @@
               }
               else{
                 $wrap.css({"grid-template-columns": "repeat(2, 1fr)"}); // set scale
+
               }
           };
 
