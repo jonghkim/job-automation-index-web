@@ -10,18 +10,18 @@
         <a href="/about/" class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">About</h6>
         </a>
-          <div class="card-body">
+          <div class="card-body card-event" onclick="location.href='/about/';" >
               Learn more about the research project
-              <div onclick="location.href='/about/';" style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 65%; background-size: cover; background-image: {% static 'img/automation.png' %};"></div>
+              <div style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 65%; background-size: cover; background-image: {% static 'img/automation.png' %};"></div>
           </div>
       </div>
       <div class="card shadow mb-4">
         <a href="/skill_dna/" class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Skill Network</h6>
         </a>
-        <div class="card-body">
+        <div class="card-body card-event" onclick="location.href='/skill_dna/';" >
             Visualize an occupation’s skill requirements and skill-level susceptibility to automation
-            <div onclick="location.href='/skill_dna/';" style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 65%; background-size: cover; background-image: url(&quot;https://drive.google.com/uc?export=view&id=1jgP254rIqB5hbrk7z0vpLs_E6bMTnYZP&quot;);"></div>
+            <div style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 65%; background-size: cover; background-image: url(&quot;https://drive.google.com/uc?export=view&id=1jgP254rIqB5hbrk7z0vpLs_E6bMTnYZP&quot;);"></div>
 
             <!--
             <div style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; width: 100%;">
@@ -39,9 +39,9 @@
       <a href="/automation_index/" class="card-header py-3">
           <h6 class="m-0 font-weight-bold text-primary">Job Automation Index</h6>
       </a>
-      <div class="card-body">
+      <div class="card-body card-event" onclick="location.href='/automation_index/';" >
           Visualize an occupation’s relations to automation
-          <div onclick="location.href='/automation_index/';" style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 65%; background-size: cover; background-image: url(&quot;https://drive.google.com/uc?export=view&id=14FM9K_Ufz1GMrUByIXohAqJQDk10rKB2&quot;);"></div>
+          <div style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 65%; background-size: cover; background-image: url(&quot;https://drive.google.com/uc?export=view&id=14FM9K_Ufz1GMrUByIXohAqJQDk10rKB2&quot;);"></div>
       </div>
     </div>
   
@@ -49,9 +49,9 @@
       <a href="/automation_map/" class="card-header py-3">
           <h6 class="m-0 font-weight-bold text-primary">Automation Map (U.S. Cities)</h6>
       </a>
-      <div class="card-body">
+      <div class="card-body card-event" onclick="location.href='/automation_map/';" >
           Visualize a city’s relations to automation in the United States
-          <div onclick="location.href='/automation_map/';" style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 65%; background-size: cover; background-image: url(&quot;https://drive.google.com/uc?export=view&id=1sXSlkUBLqCEnrNOJ_TgixxIH1Lorr7X-&quot;);"></div>
+          <div style="border: 1px solid rgb(232, 232, 232); border-radius: 4px; box-sizing: border-box; background-position: center; width: 100%; padding-top: 65%; background-size: cover; background-image: url(&quot;https://drive.google.com/uc?export=view&id=1sXSlkUBLqCEnrNOJ_TgixxIH1Lorr7X-&quot;);"></div>
       </div>
     </div>
   </div>
@@ -65,6 +65,9 @@
 /* Darker background on mouse-over */
 .btn:hover {
     background-color: RoyalBlue;
+}
+.card-event:hover{
+    background-color:yellow;
 }
 </style>
   
