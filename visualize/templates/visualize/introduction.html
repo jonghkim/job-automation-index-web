@@ -63,7 +63,7 @@
 .square-container {
   display: grid;
   /*grid-template-columns: repeat(2, minmax(300px, 1fr));*/
-  grid-template-columns: repeat(auto-fill, minmax(23vw, 1fr)) ;
+  grid-template-columns: repeat(auto-fill, minmax(2, 1fr)) ;
   gap: 1rem;
   margin: 1rem;
 }  
@@ -83,8 +83,12 @@
               if (wrapWidth < 400){
                   $wrap.css({"grid-template-columns": "repeat(1, 1fr)"}); // set scale
               }
+              else{
+                $wrap.css({"grid-template-columns": "repeat(2, 1fr)"}); // set scale
+              }
           };
-          
+
+          $(window).on("resize", squareScaler);
           $(document).ready(squareScaler);
       });
   });
