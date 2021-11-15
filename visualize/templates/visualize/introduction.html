@@ -60,23 +60,12 @@
     background-color:yellow;
 }
 
-@media (min-width: 400px) {
-  .square-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 1rem;
-  }  
-}
-
-@media (max-width: 400px) {
-  .square-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 1rem;
-  }
-}
+.square-container {
+  display: grid;
+  grid-template-columns: repeat(minmax(1, 2), 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}  
 
 </style>
   
