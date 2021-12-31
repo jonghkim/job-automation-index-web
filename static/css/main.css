@@ -1,6 +1,6 @@
 #map {
     width:100%;
-    height:600px;
+    height:750px;
 }
 #tilde_notice {
     padding-top: 1vw;
@@ -17,7 +17,7 @@
 }
 
 .needle-wrapper {
-    height:600px;
+    height:750px;
     position:relative;
 }
 .chart-gauge{

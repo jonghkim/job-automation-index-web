@@ -30,6 +30,20 @@ function get_ai_task_rank(data){
   return ai_task_rank;  
 }  
 
+function get_task_type_rank(data, task_type){
+  var task_rank = 1
+
+  for (var num = 0; num < tilde.cities.length; num++) {
+    var d = tilde.cities[num];
+  
+      if (data[task_type] < d[task_type]) {
+        task_rank = task_rank + 1;
+      }
+  }
+
+ return task_rank; 
+}
+
 for (var num = 0; num < tilde.cities.length; num++) {
   var d = tilde.cities[num];
   if (d.employment < employment_min){
@@ -39,6 +53,7 @@ for (var num = 0; num < tilde.cities.length; num++) {
     employment_max = d.employment;
   }  
 }
+
 
 var num_city = 0
 num_city = tilde.cities.length;
@@ -113,7 +128,16 @@ tilde.map.mark = function() {
   var data = tilde.current_selection;
   tilde.map.markerGroup.clearLayers()
   tilde.marker = L.marker([data.Lat, data.Lng]).addTo(tilde.map.markerGroup)
-  var popup_html = '<h3><b>' + data['Location'] + '</b></h3><p><b>Year</b>: '+data.year+   '<br><b>Employment</b>: ' +data.employment+  '<br><b>Automation Index</b>: ' +round(data.ai*100,2)+'% (' +get_ai_rank(data)+ '/'+num_city+')<br><b>'+  data['task_type']+'</b>: '+ +round(data.ai_task_type*100,2) +'% ('+ get_ai_task_rank(data) +'/'+ num_city + ')</p>';  
+  var popup_html = '<h3><b>' + data['Location'] + '</b></h3><p><b>Year</b>: '+data.year+   '<br><b>Employment</b>: ' +data.employment+  
+                    '<br><b>Automation Index</b>: ' +round(data.ai*100,2)+'% (' +get_ai_rank(data)+ '/'+num_city+')<br>'+  
+                    '<b>Race with the Machine</b>: ' + round(data.race_with*100,2) +'% ('+ get_task_type_rank(data, 'race_with') +'/'+ num_city + ')<br>' +
+                    '<b>Race ahead of the Machine</b>: ' + round(data.race_ahead*100,2) +'% ('+ get_task_type_rank(data, 'race_ahead') +'/'+ num_city + ')<br>' +
+                    '<b>Changing the Course of the Race</b>: ' + round(data.change*100,2) +'% ('+ get_task_type_rank(data, 'change') +'/'+ num_city + ')<br>' +
+                    '<b>Race against the Machine</b>: ' + round(data.race_against*100,2) +'% ('+ get_task_type_rank(data, 'race_against') +'/'+ num_city + ')<br>' +
+                    '<b>Running a Different Race</b>: ' + round(data.different*100,2) +'% ('+ get_task_type_rank(data, 'different') +'/'+ num_city + ')</p>';
+
+  popup_html = popup_html.replace("<b>"+data['task_type'], "<b style=\"color: #DC143C;\">"+data['task_type']);
+
   tilde.marker.bindPopup(popup_html);
   tilde.marker.openPopup()
 }
