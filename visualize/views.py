@@ -393,19 +393,19 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
             focal_stats = focal_stats*100
 
-            lim_range = True if max(focal_stats.max()) > 10 else lim_range
-            lim_range = True if min(focal_stats.min()) < -10 else lim_range
-            focal_stats[focal_stats>10] = 10
-            focal_stats[focal_stats<-10] = -10
+            lim_range = True if max(focal_stats.max()) > 8 else lim_range
+            lim_range = True if min(focal_stats.min()) < -8 else lim_range
+            focal_stats[focal_stats>8] = 8
+            focal_stats[focal_stats<-8] = -8
 
             max_xtick = max(focal_stats.iloc[0].tolist())
 
             total_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']=='TOTAL AVERAGE')][labels]
             total_stats = total_stats*100
-            lim_range = True if max(total_stats.max()) > 10 else lim_range
-            lim_range = True if min(total_stats.min()) < -10 else lim_range            
-            total_stats[total_stats>10] = 10
-            total_stats[total_stats<-10] = -10
+            lim_range = True if max(total_stats.max()) > 8 else lim_range
+            lim_range = True if min(total_stats.min()) < -8 else lim_range            
+            total_stats[total_stats>8] = 8
+            total_stats[total_stats<-8] = -8
 
             barh_df = focal_stats.append(total_stats)
             barh_df.index = [job,'TOTAL AVERAGE']
@@ -422,10 +422,10 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
 
             focal_stats.index=['TOTAL_AVERAGE']
             focal_stats = focal_stats.T
-            lim_range = True if max(focal_stats.max()) > 10 else lim_range
-            lim_range = True if min(focal_stats.min()) < -10 else lim_range     
-            focal_stats[focal_stats>10] = 10
-            focal_stats[focal_stats<-10] = -10
+            lim_range = True if max(focal_stats.max()) > 8 else lim_range
+            lim_range = True if min(focal_stats.min()) < -8 else lim_range     
+            focal_stats[focal_stats>8] = 8
+            focal_stats[focal_stats<-8] = -8
 
             ax = focal_stats.plot.barh(figsize=(8, 4), fontsize=10,  color=['#1f77b4'], alpha=0.5)
             ax.legend(['TOTAL AVERAGE'+' (%p)'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
@@ -434,12 +434,12 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
             ax.set_xlim(-5,5)
             ax.set_xticks(np.arange(-5,6,1))
         else:
-            ax.set_xlim(-10,10)
-            ax.set_xticks(np.arange(-10,11,2))
+            ax.set_xlim(-8,8)
+            ax.set_xticks(np.arange(-8,9,2))
             ax_xtick = ax.get_xticks().tolist() 
             #if lim_range == True:
-            ax_xtick[0] = '<-10'
-            ax_xtick[-1] = '10<'
+            ax_xtick[0] = '<-8'
+            ax_xtick[-1] = '8<'
             ax.set_xticklabels(ax_xtick)            
 
     plt.tight_layout()
