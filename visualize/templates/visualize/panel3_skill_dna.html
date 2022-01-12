@@ -15,8 +15,8 @@
     </div>
     <!-- size of card -->
     <div id="iframe_wrapper" class="card-body" style="width: 400; height: 400; overflow: hidden;">        
-        <iframe id="iframe_page" src="/skill_dna_view?year={{year}}&code={{code}}&job={{job}}" scrolling="no" width="100%" height="700px" frameborder="0" tabindex="-1" allowfullscreen> </iframe>
-        <!--<iframe src="{% url 'visualize:skill_dna'%}" scrolling="no" width="100%" height="700px" frameborder="0" tabindex="-1" allowfullscreen></iframe>-->
+        <iframe id="iframe_page" src="/skill_network_view?year={{year}}&code={{code}}&job={{job}}" scrolling="no" width="100%" height="700px" frameborder="0" tabindex="-1" allowfullscreen> </iframe>
+        <!--<iframe src="{% url 'visualize:skill_network'%}" scrolling="no" width="100%" height="700px" frameborder="0" tabindex="-1" allowfullscreen></iframe>-->
 
     </div>
 
@@ -44,8 +44,8 @@ $(function() {
             var wrapHeight = $wrap.height();
 
             if (wrapWidth < 500){
-                if ($wrap.children("iframe").attr('src') != "/skill_dna_view_mobile?year={{year}}&code={{code}}&job={{job}}"){
-                    $wrap.children("iframe").attr('src', "/skill_dna_view_mobile?year={{year}}&code={{code}}&job={{job}}");
+                if ($wrap.children("iframe").attr('src') != "/skill_network_view_mobile?year={{year}}&code={{code}}&job={{job}}"){
+                    $wrap.children("iframe").attr('src', "/skill_network_view_mobile?year={{year}}&code={{code}}&job={{job}}");
                 }
                 
                 //$wrap.children("iframe").css({"width": "1500px"});  // set scale
@@ -62,8 +62,8 @@ $(function() {
 
 
             }else{
-                if ($wrap.children("iframe").attr('src') != "/skill_dna_view?year={{year}}&code={{code}}&job={{job}}"){
-                    $wrap.children("iframe").attr('src', "/skill_dna_view?year={{year}}&code={{code}}&job={{job}}");
+                if ($wrap.children("iframe").attr('src') != "/skill_network_view?year={{year}}&code={{code}}&job={{job}}"){
+                    $wrap.children("iframe").attr('src', "/skill_network_view?year={{year}}&code={{code}}&job={{job}}");
                 }                
                 $wrap.children("iframe").css({"width": "100%"});  // set scale
                 $wrap.children("iframe").css({"height": "730px"});  // set scale

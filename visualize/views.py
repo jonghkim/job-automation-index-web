@@ -631,28 +631,28 @@ def automation_index(request):
                     'task_automation':task_automation, 'year': year, 'job':job,
                     'form' : form, 'job_description':job_desc,'code':code})
 
-def skill_dna_view(request):
+def skill_network_view(request):
     code = request.GET.get('code', '00-0000')
     job = request.GET.get('job','TOTAL AVERAGE')
     year = request.GET.get('year','2020')
 
-    return render(request, 'visualize/skill_dna_view.html', {'year':year, 'job':job, 'code':code})        
+    return render(request, 'visualize/skill_network_view.html', {'year':year, 'job':job, 'code':code})        
 
-def skill_dna_view_mobile(request):
+def skill_network_view_mobile(request):
     code = request.GET.get('code', '00-0000')
     job = request.GET.get('job','TOTAL AVERAGE')
     year = request.GET.get('year','2020')
 
-    return render(request, 'visualize/skill_dna_view_mobile.html', {'year':year, 'job':job, 'code':code})        
+    return render(request, 'visualize/skill_network_view_mobile.html', {'year':year, 'job':job, 'code':code})        
   
-def skill_dna_view_2008(request):
+def skill_network_view_2008(request):
     code = request.GET.get('code', '00-0000')
     job = request.GET.get('job','TOTAL AVERAGE')
     year = request.GET.get('year','2020')
 
-    return render(request, 'visualize/skill_dna_view_2008.html', {'year':year, 'job':job, 'code':code})        
+    return render(request, 'visualize/skill_network_view_2008.html', {'year':year, 'job':job, 'code':code})        
 
-def skill_dna(request):
+def skill_network(request):
     if request.method == 'POST':
         form = SkillDNA(request.POST) 
         if form.is_valid():
@@ -660,7 +660,7 @@ def skill_dna(request):
             code = form.cleaned_data['occupation']
             job, code, code_desc = code_description(code)
 
-            return render(request, 'visualize/skill_dna.html', {'year':year, 'job':job, 'code':code,
+            return render(request, 'visualize/skill_network.html', {'year':year, 'job':job, 'code':code,
                     'form': form, 'code_description':code_desc})        
     else:
         form = SkillDNA()
@@ -668,7 +668,7 @@ def skill_dna(request):
         code = '00-0000'
         job, code , code_desc = code_description()        
         
-        return render(request, 'visualize/skill_dna.html', {'year':year, 'job':job, 'code':code,
+        return render(request, 'visualize/skill_network.html', {'year':year, 'job':job, 'code':code,
                 'form': form, 'code_description':code_desc})    
 
 def automation_ranking(request):
