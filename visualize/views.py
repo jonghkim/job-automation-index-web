@@ -48,7 +48,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
 
     if (year=='2020') or (year=='2008'):
         if job=='TOTAL AVERAGE':
-            objects = ['Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+            objects = ['Employment', 'Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
                        'Race against the Machine', 'Running a Different Race']
         else:
             objects = ['Employment', 'Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
@@ -58,7 +58,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
             objects = ['Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
                        'Race against the Machine Change', 'Running a Different Race Change', ]
         else:
-            objects = ['Wage Share Change', 'Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
+            objects = ['Employment Share Change', 'Wage Share Change', 'Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
                        'Race against the Machine Change', 'Running a Different Race Change']
 
     if (year=='2020') or (year=='2008'):        
@@ -119,7 +119,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
                 plt.setp(axs[i].get_xticklabels(), rotation=30)
                 
                 if job=='TOTAL AVERAGE':
-                    axs[i].text(0.9, 0.5, '${}'.format(int(val)), horizontalalignment='left',
+                    axs[i].text(0.3, 0.5, 'Average Wage across All Jobs: ${:,}'.format(int(val)), horizontalalignment='left',
                                 verticalalignment='center', transform=axs[i].transAxes)
                 else:                
                     axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
@@ -129,6 +129,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
 
             elif obj == 'Employment':
                 val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
+    
                 percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
                 #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
                 #percentile = percentileofscore(arr, val)
@@ -144,15 +145,15 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
                 #axs[i].set_xlim(0, 5000000)
                 #axs[i].set_xlim(1, 5*1e6)
                 axs[i].set_xlim(10**2, 10**7)
-                #axs[i].set_xlim(100, 1000000)
-                
+                #axs[i].set_xlim(100, 1000000)                
+
                 #axs[i].set_xticklabels([format(label, ',.0f') for label in [100,1000,10000,100000,1000000,10000000,50000000]])
                 axs[i].set_xticks([label for label in [100,1000,10000,100000,1000000,10000000,50000000]])
                 #axs[i].get_xaxis().set_major_formatter(ticker.ScalarFormatter())
                 axs[i].get_xaxis().set_major_formatter(ticker.FormatStrFormatter("%d"))
 
                 plt.setp(axs[i].get_xticklabels(), rotation=30)
-
+                
                 axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
                             verticalalignment='center', transform=axs[i].transAxes)
                 #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
@@ -385,7 +386,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
                          "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
         """
-        labels = np.array(['Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine'])     
+        labels = np.array(['Employment Share Change', 'Wage Share Change',
+                            'Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine'])     
         # "Changing the Course of a Race", 
 
         lim_range = False
