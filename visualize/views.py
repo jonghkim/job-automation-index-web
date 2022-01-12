@@ -48,7 +48,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
 
     if (year=='2020') or (year=='2008'):
         if job=='TOTAL AVERAGE':
-            objects = ['Employment', 'Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+            objects = ['Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
                        'Race against the Machine', 'Running a Different Race']
         else:
             objects = ['Employment', 'Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
@@ -58,8 +58,8 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
             objects = ['Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
                        'Race against the Machine Change', 'Running a Different Race Change', ]
         else:
-            objects = ['Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
-                       'Race against the Machine Change', 'Running a Different Race Change', 'Wage Share Change']
+            objects = ['Wage Share Change', 'Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
+                       'Race against the Machine Change', 'Running a Different Race Change']
 
     if (year=='2020') or (year=='2008'):        
         fig, axs = plt.subplots(len(objects), figsize=(7,len(objects)*1.3))
@@ -92,34 +92,41 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
                 #            verticalalignment='center', transform=axs[i].transAxes)
 
             elif obj =='Annual Wage':
-                val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
-                percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
-                #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
-                #percentile = percentileofscore(arr, val)
-                
-                axs[i].barh(0, val, align='center', alpha=0.5)
-                #axs[i].barh(0, np.log2(val), align='center', alpha=0.5)
+                if job=='TOTAL AVERAGE':
+                    val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
 
-                #axs[i].set_xscale('log')
-                axs[i].set_xscale('log', basex=2)
+                    axs[i].text(0.5, 0.5, 'Annual Wage: {}'.format(val), horizontalalignment='left',
+                                verticalalignment='center')
+                    
+                else:
+                    val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
+                    percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
+                    #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
+                    #percentile = percentileofscore(arr, val)
+                    
+                    axs[i].barh(0, val, align='center', alpha=0.5)
+                    #axs[i].barh(0, np.log2(val), align='center', alpha=0.5)
 
-                axs[i].set_title(obj+' ($)')
-                axs[i].set_yticklabels([])
+                    #axs[i].set_xscale('log')
+                    axs[i].set_xscale('log', basex=2)
 
-                #axs[i].set_xlim(0, 300000)
-                #axs[i].set_xlim(1, 3*1e5)
-                axs[i].set_xlim(2**13, 2**18)
+                    axs[i].set_title(obj+' ($)')
+                    axs[i].set_yticklabels([])
 
-                #axs[i].set_xticklabels([format(label, ',.0f') for label in [10000,50000,100000,150000,200000,250000,300000]])
-                axs[i].set_xticks([label for label in [10000,50000,100000,150000,200000,250000,300000]])
-                axs[i].get_xaxis().set_major_formatter(ticker.ScalarFormatter())
+                    #axs[i].set_xlim(0, 300000)
+                    #axs[i].set_xlim(1, 3*1e5)
+                    axs[i].set_xlim(2**13, 2**18)
 
-                plt.setp(axs[i].get_xticklabels(), rotation=30)
-                
-                axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
-                            verticalalignment='center', transform=axs[i].transAxes)
-                #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
-                #            verticalalignment='center', transform=axs[i].transAxes)
+                    #axs[i].set_xticklabels([format(label, ',.0f') for label in [10000,50000,100000,150000,200000,250000,300000]])
+                    axs[i].set_xticks([label for label in [10000,50000,100000,150000,200000,250000,300000]])
+                    axs[i].get_xaxis().set_major_formatter(ticker.ScalarFormatter())
+
+                    plt.setp(axs[i].get_xticklabels(), rotation=30)
+                    
+                    axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
+                                verticalalignment='center', transform=axs[i].transAxes)
+                    #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
+                    #            verticalalignment='center', transform=axs[i].transAxes)
 
             elif obj == 'Employment':
                 val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
