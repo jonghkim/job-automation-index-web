@@ -12,51 +12,54 @@
         <p style="text-align: right;">“If you can’t measure it, you can’t manage it.” </p>
         <p style="text-align: right;">-	Peter Drucker</p>
 
-Anxiety about automation is prevalent in this era of rapid technological advances, especially in artificial intelligence, machine learning, and robotics. Accordingly, how human labor compete or cooperate with the machine (often illustrated as the “race between human labor and machines”) has attracted a great deal of attention among the public, policymakers, and researchers. While there have been doom-laden prophecies about new technology and automation replacing human tasks at least since the Industrial Revolution, recent technological advances in performing sophisticated and complex tasks—enabled by a combinatorial innovation of new techniques and algorithms, advances in computational power, and exponential increase in data—differentiate the 21st century from previous ones.</br></br>
-
-However, the oft-overlooked reality is that not all kinds of jobs and tasks are wiped out by technological advances. Rather, technology can replace some human tasks, but can also augment some human intelligence and complement specific types of tasks in ways that lead to higher demand for occupations in which those tasks are performed. Moreover, task content of occupations as well as automation technology have evolved over time, which calls for measuring and tracking the dynamics of task automation in a systematic manner. To this end, we propose a data-driven approach to reveal endogenous task types performed by representative occupations and quantitatively measure their degree of automation. The following figure shows the revealed skill network and task types (clusters of related skills).</br></br>
+Anxiety about automation is prevalent in this era of rapid technological advances, especially in artificial intelligence, machine learning, and robotics. Accordingly, how human labor competes, or cooperates, with the machine in performing a range of tasks (what we term the “<b>race between human labor and machines</b>”) has attracted a great deal of attention among the public, policymakers, and researchers.
+</br></br>
+While there have been doom-laden prophecies about new technology and automation replacing human tasks at least since the Industrial Revolution, recent technological advances in executing sophisticated and complex tasks—enabled by a combinatorial innovation of new techniques and algorithms, advances in computational power, and exponential increase in data—differentiate the 21st century from previous ones. However, the oft-overlooked reality is that technology directly affects the demand for specific skills or tasks, instead of acting on occupations as a whole, and not all types of tasks are displaced by technology. Rather, technology can substitute for some human tasks, but can also augment human intelligence and complement specific types of tasks in ways that lead to higher demand for occupations in which those tasks are performed. The tension between automation and augmentation has been discussed in research and industry alike. Thus, a full picture of automation and the future of work requires a task-level, rather than occupation-level, understanding of not only technological change—to what extent a human task is automated—but also labor demand for occupations performing a task in recent years. To this end, we propose a data-driven methodology to scrutinize which tasks have been more, or less, susceptible to automation during 2008-2020, with respect to (i) changes in degree of automation and (ii) changes in employment.
+</br></br>
+By representing occupational skill requirements as a network, we reveal 15 endogenous task types which are clusters of related skills required to a similar extent by occupations, as shown below.
 
 <img src="{% static 'img/Skill_Network.png' %}" class="img-fluid">
 
-As consistent with prior studies, it reveals the inverted-U shaped relationship between degree of automation and required level of education at the task level. </br></br>
-
-<img src="{% static 'img/Automation and Education_2021v1.png' %}" class="img-fluid"></br></br>
-
-Based on changes in degree of automation and employment share during 2008–2020, task types are classified into four distinct categories: (i) race against the machine, (ii) race with the machine, (iii) race ahead of the machine, and (iv) running a different race. </br></br>
+We then measure each task’s degree of automation in 2008 and 2020, respectively. Based on changes in degree of automation and employment share from 2008 to 2020, the task types are classified into five distinct categories, which illustrates the race between human labor and machines, as shown below.
+</br></br>
 
 <img src="{% static 'img/Job Automation Index_2021v2.png' %}" class="img-fluid">
 
-<div class="small text-muted">The point size is proportional to the degree of automation in 2020. </div></br></br>
+<div class="small text-muted">Note that the point size is proportional to the degree of automation in 2020. </div></br></br>
 
 <ul>
-<li>Race with the Machine: Tasks have experienced an increase in automation level, while the employment share for the tasks has increased from 2008 to 2020</li>
-<li>Race ahead of the Machine: Tasks have experienced a decrease in automation level, while the employment share for the tasks has increased from 2008 to 2020</li>
-<li>Changing the Course of the Race: Tasks have experienced a decrease in automation level, while they were already highly automated and the employment share for the tasks has decreased from 2008 to 2020</li>
-<li>Race against the Machine: Tasks have experienced an increase in automation level, while the employment share for the tasks has decreased from 2008 to 2020</li>
-<li>Running a Different Race: Tasks have experienced an increase in the degree of automation, while the employment share for the tasks has remained relatively stable during 2008–2020</li>
+    <li><b>Race with the Machine</b>: Tasks have experienced an increase in automation level, while the employment share for the tasks has increased from 2008 to 2020</li>
+    <li><b>Race ahead of the Machine</b>: Tasks have experienced a decrease in automation level, while the employment share for the tasks has increased from 2008 to 2020</li>
+    <li><b>Changing the Course of the Race</b>: Tasks were already highly automated in 2020, but have experienced a decrease in automation level, while the employment share for the tasks has decreased from 2008 to 2020</li>
+    <li><b>Race against the Machine</b>: Tasks have experienced an increase in automation level, while the employment share for the tasks has decreased from 2008 to 2020</li>
+    <li><b>Running a Different Race</b>: Tasks have experienced an increase in automation level, while the employment share for the tasks has remained relatively stable during 2008–2020</li>
 </ul>
 
-To facilitate discussion and communications on the impacts of automation, we developed this website for the automation indexes, which is comprised of five functions: </br></br>
+Based on an occupation’s task content and a city’s occupational composition, we construct a task-level job automation index for representative occupations and a task-level city automation index for U.S. cities. The proposed automation indexes are found to be significantly correlated with occupational characteristics (e.g., suitability for machine learning, telework and offshoring) and regional characteristics for innovation capacity. The findings highlight that task-level automation indexes provide a granular understanding of how automation affects occupations and communities.
+</br></br>
+
+Based on our analysis, we develop a website for the automation indexes to facilitate discussion and communications on the impacts of automation: www.jobautomationindex.com. The website offers an interactive interface for the task-level degree of automation across occupations and U.S. cities for the following menus:
+</br></br>
+
 <p style="text-align: left;">
     &nbsp; (1)	<a href="{% url 'visualize:automation_index'%}">Job Automation Index </a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demonstrate an occupation’s job automation index</br>
     &nbsp; (2)	<a href="{% url 'visualize:skill_dna'%}">Skill Network</a></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize an occupation’s skill requirements and relations to automation</br>    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize an occupation’s skill requirements and degree of automation</br>    
     &nbsp; (3)	<a href="{% url 'visualize:job_automation'%}">Task-Level Job Automation </a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all occupations by task-level job automation index</br>
     &nbsp; (4)	<a href="{% url 'visualize:automation_map'%}">Automation Map (U.S. Cities)</a></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize a city’s relations to automation in the United States</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualize a city’s degree of automation in the United States</br>
     &nbsp; (5)	<a href="{% url 'visualize:city_automation'%}">Task-Level City Automation</a></br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sort all U.S. cities by task-level city automation index</br>    
 </p>
 
-<!--
-The entire source code is publicly accessible to encourage reproducibility at [<a href="https://github.com/jonghkim/job-automation-index">GitHub Link</a>]. 
+The entire source code is publicly accessible to encourage reproducibility at <a href="https://github.com/jonghkim/job-automation-index">GitHub Link</a>. 
 
-Please see our research paper for detailed descriptions behind the job automation index. </br></br>
+Please see <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3924789">our research paper</a> for detailed descriptions behind the job automation index. 
 
-We hope our research and this online system can encourage further research and policy discussions on the societal challenge of automation and the future of work. We welcome any comments and feedback [<a href="{% url 'visualize:contact'%}">Contact</a>].</br></br>
--->
+We welcome any comments and feedback on the research project and the website for job automation index.</br></br>
+
 </div>
 </div>
 {% endblock %}
