@@ -48,11 +48,11 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
 
     if (year=='2020') or (year=='2008'):
         if job=='TOTAL AVERAGE':
-            objects = ['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
-                       'Race against the Machine', 'Running a Different Race', 'Annual Wage']
+            objects = ['Employment', 'Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+                       'Race against the Machine', 'Running a Different Race']
         else:
-            objects = ['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
-                       'Race against the Machine', 'Running a Different Race', 'Employment','Annual Wage']
+            objects = ['Employment', 'Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+                       'Race against the Machine', 'Running a Different Race']
     elif year=='2008~2020':
         if job=='TOTAL AVERAGE':
             objects = ['Race with the Machine Change', 'Race ahead of the Machine Change', 'Changing the Course of the Race Change',
