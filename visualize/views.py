@@ -48,7 +48,7 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
 
     if (year=='2020') or (year=='2008'):
         if job=='TOTAL AVERAGE':
-            objects = ['Employment', 'Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+            objects = ['Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
                        'Race against the Machine', 'Running a Different Race']
         else:
             objects = ['Employment', 'Annual Wage', 'Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
@@ -386,8 +386,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
                          "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
         """
-        labels = np.array(['Employment Share Change', 'Wage Share Change',
-                            'Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine'])     
+        labels = np.array(['Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine',
+                            'Wage Share Change', 'Employment Share Change', ])     
         # "Changing the Course of a Race", 
 
         lim_range = False
