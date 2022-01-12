@@ -95,8 +95,10 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
                 if job=='TOTAL AVERAGE':
                     val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
 
-                    axs[i].text(0.5, 0.5, 'Annual Wage: {}'.format(val), horizontalalignment='left',
-                                verticalalignment='center')
+                    axs[i].text(0.5, 0.5, 'Annual Wage: ${}'.format(int(val)), horizontalalignment='left',
+                                verticalalignment='center', transform=axs[i].transAxes)
+                    axs[i].set_yticklabels([])
+                    axs[i].set_xticks([])
                     
                 else:
                     val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
