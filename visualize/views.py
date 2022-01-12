@@ -92,44 +92,40 @@ def draw_task_automation(year='2020', job='TOTAL AVERAGE'):
                 #            verticalalignment='center', transform=axs[i].transAxes)
 
             elif obj =='Annual Wage':
+
+                val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
+                percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
+                #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
+                #percentile = percentileofscore(arr, val)
+                
+
+                axs[i].barh(0, val, align='center', alpha=0.5)
+                #axs[i].barh(0, np.log2(val), align='center', alpha=0.5)
+
+                #axs[i].set_xscale('log')
+                axs[i].set_xscale('log', basex=2)
+
+                axs[i].set_title(obj+' ($)')
+                axs[i].set_yticklabels([])
+
+                #axs[i].set_xlim(0, 300000)
+                #axs[i].set_xlim(1, 3*1e5)
+                axs[i].set_xlim(2**13, 2**18)
+
+                #axs[i].set_xticklabels([format(label, ',.0f') for label in [10000,50000,100000,150000,200000,250000,300000]])
+                axs[i].set_xticks([label for label in [10000,50000,100000,150000,200000,250000,300000]])
+                axs[i].get_xaxis().set_major_formatter(ticker.ScalarFormatter())
+
+                plt.setp(axs[i].get_xticklabels(), rotation=30)
+                
                 if job=='TOTAL AVERAGE':
-                    val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
-
-                    axs[i].text(0, 0.5, 'Annual Wage: ${}'.format(int(val)), horizontalalignment='left',
+                    axs[i].text(0.9, 0.5, '${}'.format(int(val)), horizontalalignment='left',
                                 verticalalignment='center', transform=axs[i].transAxes)
-                    axs[i].set_yticklabels([])
-                    axs[i].set_xticks([])
-                    axs[i].axis("off")
-                    
-                else:
-                    val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
-                    percentile = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj+' Percentile'].iloc[0]
-                    #arr = panel_df[(panel_df['Year']==year)][obj].tolist()
-                    #percentile = percentileofscore(arr, val)
-                    
-                    axs[i].barh(0, val, align='center', alpha=0.5)
-                    #axs[i].barh(0, np.log2(val), align='center', alpha=0.5)
-
-                    #axs[i].set_xscale('log')
-                    axs[i].set_xscale('log', basex=2)
-
-                    axs[i].set_title(obj+' ($)')
-                    axs[i].set_yticklabels([])
-
-                    #axs[i].set_xlim(0, 300000)
-                    #axs[i].set_xlim(1, 3*1e5)
-                    axs[i].set_xlim(2**13, 2**18)
-
-                    #axs[i].set_xticklabels([format(label, ',.0f') for label in [10000,50000,100000,150000,200000,250000,300000]])
-                    axs[i].set_xticks([label for label in [10000,50000,100000,150000,200000,250000,300000]])
-                    axs[i].get_xaxis().set_major_formatter(ticker.ScalarFormatter())
-
-                    plt.setp(axs[i].get_xticklabels(), rotation=30)
-                    
+                else:                
                     axs[i].text(0.9, 0.5, percentile, horizontalalignment='center',
-                                verticalalignment='center', transform=axs[i].transAxes)
-                    #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
-                    #            verticalalignment='center', transform=axs[i].transAxes)
+                            verticalalignment='center', transform=axs[i].transAxes)
+                #axs[i].text(0.9, 0.5, 'Top '+str(int(round(percentile/5.0)*5.0))+' %', horizontalalignment='center',
+                #            verticalalignment='center', transform=axs[i].transAxes)
 
             elif obj == 'Employment':
                 val = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][obj].iloc[0].tolist()
