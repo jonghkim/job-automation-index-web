@@ -386,15 +386,18 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                          "Equipment Operation", "Equipment Maintenance", "Operation Monitoring", "System Analysis", "Strategic Thinking", 
                          "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
         """
-        labels = np.array(['Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine',
-                            'Employment Share Change', ])     
+        labels = np.array(['Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine'])     
         # "Changing the Course of a Race", 
 
-        lim_range = False
+        
         if job != 'TOTAL AVERAGE':
+            # Automation
+            fig, (ax, ax2) = plt.subplots(nrows=2, figsize=(8, 5), gridspec_kw={'height_ratios': [8, 1]})
+
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
             focal_stats = focal_stats*100
 
+            lim_range = False
             lim_range = True if max(focal_stats.max()) > 8 else lim_range
             lim_range = True if min(focal_stats.min()) < -8 else lim_range
             focal_stats[focal_stats>8] = 8
@@ -410,12 +413,33 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
             total_stats[total_stats<-8] = -8
 
             barh_df = focal_stats.append(total_stats)
-            barh_df.index = [job,'TOTAL AVERAGE']
+            barh_df.index = [job+ ' (%p)','TOTAL AVERAGE (%p)']
 
             barh_df = barh_df.T
 
-            ax=barh_df.plot.barh(figsize=(8, 4), fontsize=10, color=['#db3f3f','#1f77b4'], alpha=0.5)
-            ax.legend([job+' (%p)','TOTAL AVERAGE'+' (%p)'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
+            barh_df.plot.barh(fontsize=10, color=['#db3f3f','#1f77b4'], alpha=0.5,ax=ax)
+            
+            
+            # Employment
+            employment_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][['Employment Share Change']]
+            employment_stats = employment_stats*100
+
+            lim_range = False
+            lim_range = True if max(employment_stats.max()) > 0.5 else lim_range
+            lim_range = True if min(focal_stats.min()) < -0.5 else lim_range
+            employment_stats[employment_stats>0.5] = 0.5
+            employment_stats[employment_stats<-0.5] = -0.5
+
+            max_xtick = max(employment_stats.iloc[0].tolist())       
+
+            #employment_df = employment_stats.T
+            employment_df = employment_stats.T
+            employment_df.columns = [job+ ' (%p)']
+
+            print(employment_df)
+            employment_df.plot.barh(fontsize=10, color=['#db3f3f'], alpha=0.5,ax=ax2)
+            #ax2.legend(['Employment Share Change'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
+            #ax2.legend([job+' (%p)','TOTAL AVERAGE'+' (%p)'], loc='lower center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
 
         elif job == 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
@@ -424,6 +448,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
 
             focal_stats.index=['TOTAL_AVERAGE']
             focal_stats = focal_stats.T
+
+            lim_range = False
             lim_range = True if max(focal_stats.max()) > 8 else lim_range
             lim_range = True if min(focal_stats.min()) < -8 else lim_range     
             focal_stats[focal_stats>8] = 8
@@ -443,6 +469,14 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
             ax_xtick[0] = '<-8'
             ax_xtick[-1] = '8<'
             ax.set_xticklabels(ax_xtick)            
+
+            ax2.set_xlim(-0.5,0.5)
+            ax2.set_xticks([-0.5,-0.3,-0.1, 0.1, 0.3, 0.5])
+            ax2_xtick = ax2.get_xticks().tolist() 
+            #if lim_range == True:
+            ax2_xtick[0] = '<-0.5'
+            ax2_xtick[-1] = '0.5<'
+            ax2.set_xticklabels(ax2_xtick)            
 
     plt.tight_layout()
 
