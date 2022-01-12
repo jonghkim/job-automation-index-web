@@ -387,7 +387,7 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
                          "Conflict Resolution", "Communication", "Managerial Task", "Clerical Task", "Information Processing"])                    
         """
         labels = np.array(['Race with the Machine', 'Running a Different Race', 'Race against the Machine', 'Changing the Course of the Race', 'Race ahead of the Machine',
-                            'Wage Share Change', 'Employment Share Change', ])     
+                            'Employment Share Change', ])     
         # "Changing the Course of a Race", 
 
         lim_range = False
