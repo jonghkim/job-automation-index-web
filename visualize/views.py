@@ -392,8 +392,8 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
         
         if job != 'TOTAL AVERAGE':
             # Automation
-            fig, (ax, ax2) = plt.subplots(nrows=2, figsize=(8, 5), gridspec_kw={'height_ratios': [8, 1]})
-
+            fig, (ax, ax2) = plt.subplots(nrows=2, figsize=(8, 5), gridspec_kw={'height_ratios': [10, 1]})
+            
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
             focal_stats = focal_stats*100
 
@@ -416,10 +416,9 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
             barh_df.index = [job+ ' (%p)','TOTAL AVERAGE (%p)']
 
             barh_df = barh_df.T
-
+            
             barh_df.plot.barh(fontsize=10, color=['#db3f3f','#1f77b4'], alpha=0.5,ax=ax)
-            
-            
+
             # Employment
             employment_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][['Employment Share Change']]
             employment_stats = employment_stats*100
@@ -436,10 +435,18 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
             employment_df = employment_stats.T
             employment_df.columns = [job+ ' (%p)']
 
-            print(employment_df)
             employment_df.plot.barh(fontsize=10, color=['#db3f3f'], alpha=0.5,ax=ax2)
             #ax2.legend(['Employment Share Change'], loc='upper center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
             #ax2.legend([job+' (%p)','TOTAL AVERAGE'+' (%p)'], loc='lower center', bbox_to_anchor=(0.5, -0.08), shadow=True, ncol=1)
+
+            #ax2.legend([job+' (%p)', 'TOTAL AVERAGE'+' (%p)'], loc='lower center', bbox_to_anchor=(0.5, -1), shadow=True, ncol=1)
+            ax.get_legend().remove()
+            ax2.get_legend().remove()
+
+            handles, labels = ax.get_legend_handles_labels()
+            #fig.legend(handles, [job+' (%p)', 'TOTAL AVERAGE'+' (%p)'], loc='lower center', bbox_to_anchor=(0.63, -0.02), shadow=True, ncol=2)
+            fig.legend(handles, [job+' (%p)', 'TOTAL AVERAGE'+' (%p)'], loc='lower center', bbox_to_anchor=(0.63, -0.01), shadow=True, ncol=2)
+            #fig.subplots_adjust(bottom=0.2)
 
         elif job == 'TOTAL AVERAGE':
             focal_stats = panel_df[(panel_df['Year']==year)&(panel_df['Job Title']==job)][labels]
@@ -481,7 +488,7 @@ def draw_task_importance(year='2020', job='TOTAL AVERAGE'):
     plt.tight_layout()
 
     buffer = BytesIO()
-    plt.savefig(buffer, format='png')
+    plt.savefig(buffer, format='png', bbox_inches='tight', pad_inches=0.2)
     buffer.seek(0)
     image_png = buffer.getvalue()
     buffer.close()
