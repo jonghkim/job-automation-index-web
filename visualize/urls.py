@@ -14,6 +14,9 @@ urlpatterns = [
     url(r'^skill_network_view/$', views.skill_network_view, name='skill_network_view'),        
     url(r'^skill_network_view_2008/$', views.skill_network_view_2008, name='skill_network_view_2008'),        
     url(r'^skill_network_view_mobile/$', views.skill_network_view_mobile, name='skill_network_view_mobile'),        
+
+    url(r'^skill_network_view_network_only/$', views.skill_network_view_network_only, name='skill_network_view_network_only'),        
+
     url(r'^automation_map/$', views.automation_map, name='automation_map'),                
     url(r'^city_automation/$', views.city_automation, name='city_automation'),            
     url(r'^sitemap.xml/$', views.sitemap, name='sitemap'),

@@ -681,6 +681,13 @@ def skill_network_view(request):
 
     return render(request, 'visualize/skill_network_view.html', {'year':year, 'job':job, 'code':code})        
 
+def skill_network_view_network_only(request):
+    code = request.GET.get('code', '00-0000')
+    job = request.GET.get('job','TOTAL AVERAGE')
+    year = request.GET.get('year','2020')
+
+    return render(request, 'visualize/skill_network_view_network_only.html', {'year':year, 'job':job, 'code':code})        
+
 def skill_network_view_mobile(request):
     code = request.GET.get('code', '00-0000')
     job = request.GET.get('job','TOTAL AVERAGE')

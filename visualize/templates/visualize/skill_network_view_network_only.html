@@ -1,0 +1,710 @@
+{% load static %}
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    .link {
+        stroke: #999;
+        stroke-opacity: 0.6;
+    }
+
+    .node {
+        stroke: #fff;
+        stroke-width: 1.5px;
+    }
+
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        line-height: 1;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+        pointer-events: none;
+    }
+    div.pinned {
+        color: #e8941a;
+    }
+    g {
+    }
+    g.cell {
+        cursor: pointer;
+    }
+    g.cell:hover {
+        fill-opacity: 0.4;
+    }
+    g.cell.active:hover {
+        fill-opacity: 1;
+    }
+    g.cell text {
+        fill: white;
+        -moz-user-select: none;
+       -khtml-user-select: none;
+       -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        /*text-decoration: underline;*/
+    }
+    g.cell.active text{
+        fill: #e8941a;
+    }
+    .legendSize circle {
+/*        stroke: white;*/
+        fill: #999;
+        fill-opacity: 0.6;
+    }
+    .legendContainer > text {
+        font-size: 30px;
+    }
+    .legendContainer > text:nth-child(2) {
+        font-size: 20px;
+    }
+    .legendContainer {
+        padding: 0;
+    }
+
+    .activeNode {
+        cursor: pointer;
+    }
+    .baseNode {
+        stroke: #e8941a;
+        stroke-width: 3px;
+    }
+    body {
+        margin:0;
+    }
+    polygon {
+        fill: black;
+/*        fill: #1e252b;*/
+    }
+    svg {
+        fill: white;
+    }
+
+
+</style>
+</head><body>
+    <script src="/static/libs/d3.v3.min.js"></script>
+    <script src="/static/libs/d3-legend.min.js"></script>
+    <script src="/static/libs/queue.v1.min.js"></script>
+    <script>
+        // Function for moving nodes to front
+        d3.selection.prototype.moveToFront = function() {
+            return this.each(function(){
+            this.parentNode.appendChild(this);
+            });
+        };
+
+        // Function for moving to back
+        d3.selection.prototype.moveToBack = function() {
+            return this.each(function() {
+                var firstChild = this.parentNode.firstChild;
+                if (firstChild) {
+                    this.parentNode.insertBefore(this, firstChild);
+                }
+            });
+        };
+
+        var scaleFactor = 0.6;
+        var translation = [250,135];
+
+        var minNodeSize = 3.5;
+        var maxNodeSize = 27;
+
+        var smallCircleSize = 6;
+        var largeCircleSize = 9;
+
+        //var minWidthPoly1 = 300;
+        //var minWidthPoly2 = 355;
+
+        var minWidthPoly1 = 320;
+        var minWidthPoly2 = 360;
+        
+        var xMargin = 20;
+        var yPosFaculty = 170;
+        var yPosEntry = 90;
+        var yMargin = 20;
+        var legendTaskClusterPadding = 10;
+        var legendTaskPadding = 5;
+
+
+        var height = 0;
+        var width = 0;
+
+        // Linear size scale
+        // var linearSize = d3.scale.linear().domain([0,1]).range([smallCircleSize, largeCircleSize]);
+        var taskClusterSize = d3.scale.ordinal().domain([]).range([largeCircleSize, largeCircleSize]);
+
+        // Initialize Ordinal Colour Scale
+
+        var color = d3.scale.ordinal()
+            .domain([   'Race with the Machine', 
+                        'Interpersonal Task', 'Group Task', 'Conflict Resolution', 'Management and Supervision',
+                        "line1",
+                        'Race ahead of the Machine', 
+                        'Communication', 'Systems Analysis', 'Creative and Critical Thinking',
+                        "line2",
+                        'Changing the Course of the Race', 
+                        'Routine Problem Solving', 'Information Processing',
+                        "line3",
+                        'Race against the Machine', 
+                        'General Physical Task', 'Dynamic Physical Task',
+                        "line4",
+                        'Running a Different Race', 
+                        'Equipment Maintenance',  'Vehicle and Equipment Operation', 'Machine Control', 'Hazardous Task'])
+            .range([
+                "rgba(0, 0, 0, 0)",
+                "#996633", 
+                "#fc8888", 
+                "#ff9933",
+                "#2E86C1",                 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",
+                "#009933", 
+                "#ff0000", 
+                "#0000cc",
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",
+                "#00ccff", 
+                "#e05109", 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",                
+                "#003366",                 
+                "#e6b802",                 
+                "rgba(0, 0, 0, 0)",
+                "rgba(0, 0, 0, 0)",
+                "#C0392B", 
+                "#BB8FCE",
+                "#ff66ff", 
+                "#666eff",                          
+        ]);
+
+        // Configure force layout
+        var force = d3.layout.force().gravity(0.015);
+
+        queue()
+            .defer(d3.json, "/static/data/network/{{ code|safe }}.json")
+            .defer(d3.csv, "/static/data/network_csv/skill_edges.csv")
+            .defer(d3.csv, "/static/data/network_csv/task_cluster.csv")
+            .await(ready);
+
+    function ready(error, skill_nodes, skill_edges, task_clusters){
+        if (error) throw error;
+        // The 'lookup' variable refers to data from the Program-Faculty-Lookup.txt file
+        // The 'links' variable refers to data from the 3-year-program-transfer.txt file
+
+        // Set up Program/Faculty lookup table
+        var lookupTable = {};
+        task_clusters.forEach(function(task_cluster) {
+            lookupTable[task_cluster.task_name] = task_cluster.task_cluster;
+        });
+
+        var allShowing = true;
+        var clusterSelected = false;
+        var nodeHighlighted = false;
+        var timeout;
+
+        var mousePos = [0,0];
+        var newMousePos = [0,0];
+
+        /*** Configure zoom behaviour ***/
+        var zoomer = d3.behavior.zoom()
+                        .scaleExtent([0.1,10])
+                        .scale(scaleFactor)
+                        .translate(translation)
+                //allow 10 times zoom in or out
+                        .on("zoom",zoom);
+                //define the event handler function
+
+
+        function zoom(d) {            
+            if (d3.event.sourceEvent && !nodeHighlighted){
+                d3.event.sourceEvent.stopPropagation();
+            }
+            scaleFactor = d3.event.scale;
+            translation = d3.event.translate;
+            tick(); //update positions
+        }
+
+        /*** Configure drag behaviour ***/
+        var isDrag = false;
+        var drag = d3.behavior.drag()
+            .origin(function(d) { return d; }) //center of circle
+            .on("dragstart", dragstarted)
+            .on("drag", dragged)
+            .on("dragend", dragended);
+
+        var getMousePos;
+
+        function dragstarted(d){
+
+            if(d3.select(this).classed("activeNode")){
+                getMousePos = d3.mouse(vis.node());
+                mousePos[0] = getMousePos[0];
+                mousePos[1] = getMousePos[1];
+                d3.select(this).moveToFront();
+                d3.event.sourceEvent.stopPropagation();
+                d3.select(this).classed("dragging", true);
+                force.stop(); //stop ticks while dragging
+                isDrag = true;
+            }
+        }
+        function dragged(d){
+            if(d3.select(this).classed("activeNode")){
+                if (d.fixed) return; //root is fixed
+
+                //get mouse coordinates relative to the visualization
+                //coordinate system:
+                var mouse = d3.mouse(vis.node());
+                d.x = (mouse[0] - translation[0])/scaleFactor;
+                d.y = (mouse[1] - translation[1])/scaleFactor;
+                tick();//re-position this node and any links
+            }
+        }
+        function dragended(d){
+            if(d3.select(this).classed("activeNode")){
+                getMousePos = d3.mouse(vis.node());
+                newMousePos[0] = getMousePos[0];
+                newMousePos[1] = getMousePos[1];
+                var shortDrag = Math.abs(newMousePos[0] - mousePos[0]) < 5 && Math.abs(newMousePos[1] - mousePos[1]) < 5;
+                if(shortDrag){ // Short drag means click
+                    connectedNodes(d, allShowing || clusterSelected, this); // else highlight connected nodes
+                }
+
+                d3.select(this).classed("dragging", false);
+                if(!shortDrag){force.resume();} // Resume force layout only if not a short drag
+                isDrag = false;
+            }
+        }
+
+        //Initialize SVG
+        var graph = d3.select("body").append("svg")
+            .append("g")
+            .attr("class", "graph")
+            .on("mousedown", function(){
+                mousePos = d3.mouse(this);
+                if(mousePos[0] < minWidthPoly1 && mousePos[1] < height) d3.event.stopImmediatePropagation(); //Only clicks no drag or pan on menu area
+            })
+            .call(zoomer);
+        graph.append("rect")
+            .attr("width", "100%")
+            .attr("height", "100%")
+            .attr("fill", "white")
+            .attr("class", "background")
+            .attr("fill-opacity", 0.9);
+
+        // Funky shape as background for legend
+        var points = "";
+        //var polygon = graph.append("polygon")
+        //                .attr("opacity", 0.8)
+        //                .style("pointer-events","all");
+
+        // Rectangle to catch mouse events for zoom
+        var rect = graph.append("rect")
+            .attr("width", "100%")
+            .attr("height", "100%")
+            .style("margin", "0 auto")
+            .style("fill", "none")
+            .style("pointer-events", "all")
+            .style("cursor", "move")
+            .on("click", function(){
+                if (d3.event.defaultPrevented) return;
+                showAllNodes();
+            });
+
+        // Create a group that will hold all content to be zoomed
+        var vis = graph.append("svg:g")
+            .attr("class", "plotting-area");
+
+        // Pinned tooltip
+        var pinnedTooltip = d3.select("body").append("div")
+            .attr("class", "tooltip pinned")
+            .style("opacity", 0)
+            .style("line-height", '130%')
+            .style("text-align", 'right');
+
+
+        // Tooptip in top left corner
+        var tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", "0")
+            .style("line-height", '130%')
+            .style("text-align", 'right');
+
+        // Container to hold legend elements
+        var legendContainer = graph.append("g")
+                        .attr("class", "legendContainer");
+
+        // Title of visualization
+        
+
+        // Instructions for clicking on filter
+        //var instructions = legendContainer.append("text")
+        //    .attr("x", xMargin + 25)
+        //    .attr("y", 700)
+        //    .style("fill", "#e8941a")
+        //    .text("CLICK TO FILTER");
+
+        // Create a legend for entry-level programs
+        var entryTranslate = 0;
+        legendContainer.append("g")
+            .attr("class", "legendSize")
+            .attr("transform", "translate("+ (xMargin+10) + ", 70)");
+
+        var legendSize = d3.legend.size()
+            .scale(taskClusterSize)
+            .shape('circle')
+            .shapePadding(legendTaskClusterPadding)
+            .labels(['Race with the Machine', 'Race ahead of the Machine', 'Changing the Course of the Race',
+                                                      'Race against the Machine', 'Running a Different Race'])
+            .cells(4) // Number of objects (circles)
+            .ascending(true);
+
+        var entryLegend = legendContainer.select(".legendSize")
+            .call(legendSize);
+
+        // Create a legend for Faculties
+        var facultyTranslate = 0;
+        legendContainer.append("g")
+            .attr("class", "legendOrdinal")
+            .attr("transform", "translate("+ (xMargin+10) + ", 90)");
+        
+        
+
+        var legendOrdinal = d3.legend.color()
+            .shape("circle")
+            .shapePadding(legendTaskPadding)
+            .scale(color)
+            .labels([
+                        'Race with the Machine', 'Interpersonal Task', 'Group Task', 'Conflict Resolution', 'Management and Supervision',
+                        "",
+                        'Race ahead of the Machine', 'Communication', 'Systems Analysis', 'Creative and Critical Thinking',
+                        "",
+                        'Changing the Course of the Race', 'Routine Problem Solving', 'Information Processing',
+                        "",
+                        'Race against the Machine', 'General Physical Task', 'Dynamic Physical Task',
+                        "",
+                        'Running a Different Race', 'Equipment Maintenance',  'Vehicle and Equipment Operation', 'Machine Control', 'Hazardous Task'                                 
+                    ]);        
+
+        //var taskLegend = legendContainer.select(".legendOrdinal")
+        //    .call(legendOrdinal);
+        
+        d3.selectAll("g.cell")
+            .attr("text-decoration", function(d) {
+                //console.log(d.labels);
+
+                if (d == "Race with the Machine" || d == "Changing the Course of the Race" || d == "Race against the Machine" || d == "Race ahead of the Machine" || d == "Running a Different Race"){
+                    return "underline";
+                }else{
+                    return "none";
+                }
+                    
+            })
+
+        // Filtering by faculty or entry-level program
+        d3.selectAll("g.cell")
+            .on("click", function(d){
+                if (d3.event.defaultPrevented) return;
+                var self = this;
+                var activeLegends = d3.selectAll("g.cell");
+
+                activeLegends.filter(function (x) {return self != this;})
+                    .classed("active", false); // Set all other faculty filters to false
+
+                pinnedTooltip.style("opacity", 0);
+            //    zoomer.translate([20, 0]);
+
+                searchNode(d, this);
+            });
+
+        // Create nodes for each unique source and target.
+        var nodesByName = {};
+        skill_edges.forEach(function(skill_edge) {
+            skill_edge.source = nodeByName(skill_edge.source);
+            skill_edge.target = nodeByName(skill_edge.target);
+        });
+        
+        function nodeByName(name) {
+            return nodesByName[name] || (nodesByName[name] = {name: name});
+        }
+
+        // Extract the array of nodes from the map by name.
+        var nodes = d3.values(nodesByName);
+        
+        var nodeAttribute = {};
+
+        var minAutomation = 100;
+        var maxAutomation = 0;
+        
+        for (var node in skill_nodes.skill_list){
+            nodeAttribute[skill_nodes.skill_list[node].skill_name] = {}
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2020'] = skill_nodes.skill_list[node]['automation_2020'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2008'] = skill_nodes.skill_list[node]['automation_2008'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['automation_2008_2020'] = skill_nodes.skill_list[node]['automation_2008_2020'];
+            nodeAttribute[skill_nodes.skill_list[node].skill_name]['task_name'] = skill_nodes.skill_list[node]['task_name'];
+
+            if (minAutomation > skill_nodes.skill_list[node]['automation_2020']){
+                minAutomation = skill_nodes.skill_list[node]['automation_2020'];
+            }
+            if (maxAutomation < skill_nodes.skill_list[node]['automation_2020']){
+                maxAutomation = skill_nodes.skill_list[node]['automation_2020'];
+            }
+        }
+
+        
+        nodes.forEach(function(node){
+            node.automation_2020 = nodeAttribute[node.name]['automation_2020'];
+            node.automation_2008 = nodeAttribute[node.name]['automation_2008'];
+            node.automation_2008_2020 = nodeAttribute[node.name]['automation_2008_2020'];
+            node.task_name = nodeAttribute[node.name]['task_name'];
+        });
+        
+        // Create the link lines.
+        var link = vis.selectAll(".link")
+                .data(skill_edges)
+            .enter().append("line")
+                .attr("class", "link");
+        
+        // Create the node circles.
+        var node = vis.selectAll(".node")
+                .data(nodes)
+            .enter().append("circle")
+                .attr("class", "node")
+                .attr("r", function(d) {
+                    if ("{{job}}" == "TOTAL AVERAGE"){
+                        return d.automation_{{year}}*75
+                    } else {
+                        return d.automation_{{year}}/(maxAutomation-minAutomation)*(maxNodeSize-minNodeSize) + minNodeSize;
+                    }
+                    /*
+                    if(d.automation_{{year}}*75 <minNodeSize){
+                        return minNodeSize;}
+                    else if(d.automation_{{year}}*75 >maxNodeSize){
+                        return maxNodeSize;}
+                    else{return d.automation_{{year}}*75}
+                    */
+                })
+                .style("fill", function(d) {return color(d.task_name);})
+                .classed("activeNode", true)
+                .on("mouseover", function(d){
+                    if(d3.select(this).classed("activeNode") && !d3.select(this).classed("baseNode")){
+                        force.stop();
+                        tooltip.transition()
+                    .duration(200)
+                    .style("opacity", 0.9);
+                        tooltip.html(d.task_name + "<br>" +d.name)
+                    .style("right", "20px")
+                    .style("top", (nodeHighlighted?"80px":"15px"));
+                    }
+                })
+                .on("mouseout", function(d){
+                    if(!isDrag && !nodeHighlighted){
+                        force.resume();
+                    }
+                    tooltip.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                })
+                .call(drag);
+
+        // Start the force layout.
+        force
+                .nodes(nodes)
+                .links(skill_edges)
+                .linkDistance(40)
+        //      .linkStrength(0.08)
+                .on("tick", function(){tick();})
+                .start();
+
+        graph
+            .on("mouseleave", function(){
+                force.stop();
+            })
+            .on("mouseenter", function(){
+                force.resume();
+            });
+
+        /* Configure highlighting of connected nodes */
+        var toggle = 0;
+
+        //Create an array logging what is connected to what
+        var linkedByIndex = {};
+        for (i = 0; i < nodes.length; i++) {
+            linkedByIndex[i + "," + i] = 1;
+        };
+        skill_edges.forEach(function (d) {
+            linkedByIndex[d.source.index + "," + d.target.index] = 1;
+
+        });
+
+        //This function looks up whether a pair are neighbours
+        function neighboring(a, b) {
+            return linkedByIndex[a.index + "," + b.index];
+        }
+
+        // Change opacity to highlight connected nodes
+        function connectedNodes(clickedOn, firstClick, nodeClicked) {
+            nodeHighlighted = true;
+            d3.selectAll("g.cell").classed("active", false); // Clear faculty/entry filters
+            if (d3.select(nodeClicked).classed("baseNode")){ // Base node was clicked, show all
+                showAllNodes();
+                return;
+            }
+            force.stop(); // Stop moving
+            tooltip.style("opacity", 0); // Clear unpinned tooltip (because it is the same as the pinned)
+            pinnedTooltip.transition()
+                .duration(200)
+                .style("opacity", 0.9);
+            pinnedTooltip.html(clickedOn.task_name + "<br>" + clickedOn.name) // Pin tooltip with name of clicked on node
+                .style("right", "20px")
+                .style("top", "15px");
+            node.each(function(d){ // Allow for clicking back on previous baseNodes
+                d3.select(this).classed("baseNode", false);
+            });
+            d3.select(nodeClicked).classed("baseNode", true);
+            node.classed("activeNode", function(o){
+                return neighboring(clickedOn, o) | neighboring(o, clickedOn) ? true : false;
+            })
+            node.style("stroke-opacity", function (o) {
+                return (neighboring(clickedOn, o) | neighboring(o, clickedOn)) ? 1 : 0.1;
+            });
+            node.style("fill-opacity", function (o) {
+                return (neighboring(clickedOn, o) | neighboring(o, clickedOn)) ? 1 : 0.1;
+            });
+            link.style("stroke-opacity", function (o) {
+                return clickedOn.index==o.source.index | clickedOn.index==o.target.index ? 0.6 : 0.1;
+            });
+            d3.select("activeNode").moveToFront(); // Brings activeNode nodes to front
+            allShowing = false;
+            clusterSelected = false;
+        }
+        
+        function searchNode(searchVal, gObject) {
+            
+            nodeHighlighted = false;
+            var searchNode = d3.selectAll(".node");
+            
+            var notSelectedNodes = searchNode.filter(function (d, i){
+                return d.task_name != searchVal
+            });
+
+            var selectedNodes = searchNode.filter(function (d, i){
+                return d.task_name == searchVal
+            });
+
+            if(searchVal == "Race with the Machine" || searchVal == "Changing the Course of the Race" || searchVal == "Race against the Machine" || searchVal == "Race ahead of the Machine" || searchVal == "Running a Different Race"){
+                var running_a_different_race;
+                var race_ahead_of_the_machine;
+                var race_against_the_machine;
+                var race_with_the_machine;
+                
+                selectedNodes = searchNode.filter(function(d){
+                    return lookupTable[d.task_name] == searchVal;
+                });
+                notSelectedNodes = searchNode.filter(function(d){
+                    return lookupTable[d.task_name] != searchVal;
+                });
+            }
+            var link = d3.selectAll(".link");
+            if (!d3.select(gObject).classed("active")){
+    //                    var xAvg = 0, yAvg = 0;
+    //                    selectedNodes.each(function(d){
+    //                        xAvg += d.x;
+    //                        yAvg += d.y;
+    //                    });
+    //                    xAvg /= selectedNodes[0].length;
+    //                    yAvg /= selectedNodes[0].length;
+    //
+    //                    var xTrans = (window.innerWidth + 355)/2-xAvg;
+    //                    var yTrans = (500)/2-yAvg;
+    //
+    //                    d3.select(".plotting-area")
+    //                        .transition()
+    //                        .attr("transform", "translate("+xTrans+","+yTrans+")");
+
+                selectedNodes
+                    .style("stroke-opacity", 1)
+                    .style("fill-opacity", 1)
+                    .classed("activeNode", true);
+                notSelectedNodes
+                    .style("stroke-opacity", 0.1)
+                    .style("fill-opacity", 0.1)
+                    .classed("activeNode", false);
+
+                link.style("stroke-opacity", 0.1);
+                d3.select(gObject).classed("active", true);
+                clusterSelected = true;
+                allShowing = false;
+            }
+            else {
+                d3.select(gObject).classed("active", false);
+                showAllNodes();
+
+            }
+        }
+
+        // Show all nodes on click in empty space
+        function showAllNodes(){
+            if(d3.event.stopPropagation){d3.event.stopPropagation();}
+            force.resume();
+            //Put them back to opacity=1
+            node
+                .style("stroke-opacity", 1)
+                .style("fill-opacity", 1)
+                .classed("activeNode", true)
+                .classed("clickedNode", false)
+                .classed("baseNode", false);
+            link.style("stroke-opacity", 0.6);
+            d3.selectAll("g.cell").classed("active", false); // Clear faculty/entry filters
+            allShowing = true;
+            clusterSelected = false;
+            nodeHighlighted = false;
+            pinnedTooltip.style("opacity", 0);
+        }
+
+        // Update positions of nodes and links
+        function tick() {
+            link.attr("x1", function(d) { return translation[0] + scaleFactor*d.source.x + (minWidthPoly1+minWidthPoly2)/4; })
+                .attr("y1", function(d) { return translation[1] + scaleFactor*d.source.y; })
+                .attr("x2", function(d) { return translation[0] + scaleFactor*d.target.x + (minWidthPoly1+minWidthPoly2)/4; })
+                .attr("y2", function(d) { return translation[1] + scaleFactor*d.target.y; });
+
+            node.attr("cx", function(d) { return translation[0] + scaleFactor*d.x + (minWidthPoly1+minWidthPoly2)/4; })
+                .attr("cy", function(d) { return translation[1] + scaleFactor*d.y; });
+
+        }
+
+
+        resize();
+        d3.select(window).on("resize", resize);
+
+        function resize() {
+            width = window.innerWidth 
+            //       + minWidthPoly2
+                , height = 730;//(window.innerHeight < 500 ? 500 : window.innerHeight);
+            d3.select("svg").attr("width", width).attr("height", height);
+            force.size([width, height]).resume();
+
+            rect.attr("x", minWidthPoly1);
+
+            points ="0,0 " + minWidthPoly1 + ",0 " +minWidthPoly2 + "," + height + " " + "0," + height;
+            polygon
+                .attr("points", points );
+
+            legendContainerHeight = d3.select("g.legendContainer").node().getBoundingClientRect().height;
+
+            legendContainer.attr("transform", "translate(0," + ((height-legendContainerHeight)/2) + ")");
+
+            polygon.moveToFront();
+            legendContainer.moveToFront();
+            tick();
+        }
+    }
+    </script>
+
+</body>
+</html>
